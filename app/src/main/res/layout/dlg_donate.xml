@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="?attr/dialogPreferredPadding"
+    android:paddingBottom="0dp">
+
+    <Spinner android:id="@+id/spinner_donation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textSize="17dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBaseline="@id/spinner_donation"
+        android:textSize="17dp"
+        android:text="@string/lbl_donation" />
+
+    <Spinner android:id="@+id/spinner_recurring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/spinner_donation"
+        android:layout_marginTop="5dp"
+        android:textSize="17dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBaseline="@id/spinner_recurring"
+        android:textSize="17dp"
+        android:text="@string/lbl_recurring" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_recurring"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/lbl_payments_processed_by"
+        android:textColor="@color/secondary_text"/>
+
+
+</RelativeLayout>

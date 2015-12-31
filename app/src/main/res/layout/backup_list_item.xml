@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="horizontal"
+	android:padding="10dip"
+	android:gravity="center_vertical"
+	android:minHeight="50dip">
+	
+	<TextView android:id="@+id/backup_item_name"
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:layout_weight="1"	  
+	  android:textSize="16dip" 
+	  android:textStyle="bold"/>
+	
+	<TextView android:id="@+id/backup_item_size"
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+    	android:textColor="#777777"
+    	android:textSize="14dip" /> 
+    	
+    	
+</LinearLayout>

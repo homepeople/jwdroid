@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jwdroid"
+    android:versionCode="30"
+    android:versionName="1.4.0">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.MainMenu">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.TerritoryList"
+            android:parentActivityName=".ui.MainMenu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.MainMenu" />
+        </activity>
+        <activity
+            android:name=".ui.TerritoryAdd"
+            android:label="@string/title_territory_add"></activity>
+        <activity
+            android:name=".ui.Territory"
+            android:parentActivityName=".ui.TerritoryList">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.TerritoryList" />
+        </activity>
+        <activity android:name=".ui.Door" />
+        <activity android:name=".ui.Visit" />
+        <activity android:name=".ui.TerritoryInfo" />
+        <activity android:name=".ui.Preferences" />
+        <activity
+            android:name=".ui.PeopleList"
+            android:parentActivityName=".ui.MainMenu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.MainMenu" />
+        </activity>
+        <activity
+            android:name=".ui.Chrono"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.jwdroid.ui.MainMenu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jwdroid.ui.MainMenu" />
+        </activity>
+        <activity
+            android:name=".ui.Session"
+            android:parentActivityName=".ui.Report">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.Report" />
+        </activity>
+        <activity
+            android:name=".ui.Report"
+            android:parentActivityName=".ui.ReportList">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ReportList" />
+        </activity>
+        <activity
+            android:name=".ui.ReportList"
+            android:parentActivityName=".ui.MainMenu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.MainMenu" />
+        </activity>
+        <activity
+            android:name=".ui.Help"
+            android:parentActivityName=".ui.MainMenu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.MainMenu" />
+        </activity>
+        <activity
+            android:name=".ui.Contribute"
+            android:parentActivityName=".ui.MainMenu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.MainMenu" />
+        </activity>
+        <activity
+            android:name=".ui.BackupList"
+            android:parentActivityName=".ui.MainMenu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.MainMenu" />
+        </activity>
+
+        <service android:name=".ChronoService"></service>
+
+        <activity android:name="com.dropbox.sync.android.DbxAuthActivity" />
+        <activity
+            android:name="com.dropbox.client2.android.AuthActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <data android:scheme="db-nll1o6m22dxqt40" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.dropbox.sync.android.DbxSyncService"
+            android:enabled="true"
+            android:exported="false"
+            android:label="Dropbox Sync" />
+
+    </application>
+
+
+</manifest> 

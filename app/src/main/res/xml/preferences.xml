@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  
+  <PreferenceCategory
+  	android:title="@string/pref_title_appearance">
+  	
+  	<ListPreference
+  		android:key="list_text_rows"
+  		android:title="@string/pref_list_text_rows"
+  		android:summary="@string/pref_list_text_rows_note"  		
+  		android:defaultValue="2"
+  		android:entries="@array/entries_list_text_rows_preference"
+  		android:entryValues="@array/entries_list_text_rows_preference" />
+  		
+   	<ListPreference
+  		android:key="table_button_size"
+  		android:title="@string/pref_table_button_size"
+  		android:summary="@string/pref_table_button_size_note"  		
+  		android:defaultValue="2"
+  		android:entries="@array/entries_table_button_size_preference"
+  		android:entryValues="@array/entryvalues_table_button_size_preference" />  
+  		
+  	<CheckBoxPreference 
+  		android:key="hide_visited"
+  		android:title="@string/pref_hide_visited"
+  		android:summary="@string/pref_hide_visited_note" 
+  		android:defaultValue="false"/> 
+  		
+  	<CheckBoxPreference 
+  		android:key="object_add_sorted"
+  		android:title="@string/pref_object_add_sorted"
+  		android:summary="@string/pref_object_add_sorted_note" 
+  		android:defaultValue="true"/> 
+  	
+  </PreferenceCategory>
+  
+  <PreferenceCategory
+  	android:title="@string/pref_title_colors">
+  	
+  	<CheckBoxPreference 
+  		android:key="autoset_color"
+  		android:title="@string/pref_autocolor"
+  		android:summary="@string/pref_autocolor_note" 
+  		android:defaultValue="true"/>
+  		
+  	<PreferenceScreen
+  		android:title="@string/pref_assign_colors"
+  		android:dependency="autoset_color"
+  		android:layout="?android:attr/preferenceLayoutChild">
+  		
+	  	<ListPreference
+	  		android:key="color_reject"
+	  		android:title="@string/pref_color_reject"
+	  		android:defaultValue="4"
+	  		android:entries="@array/entries_color_preference"
+	  		android:entryValues="@array/entryvalues_color_preference" />
+	  		
+	  	<ListPreference
+	  		android:key="color_visit"
+	  		android:title="@string/pref_color_visit"
+	  		android:defaultValue="3"
+	  		android:entries="@array/entries_color_preference"
+	  		android:entryValues="@array/entryvalues_color_preference" />
+	  		
+	  	<ListPreference
+	  		android:key="color_return_visit"
+	  		android:title="@string/pref_color_return"
+	  		android:defaultValue="2"
+	  		android:entries="@array/entries_color_preference"
+	  		android:entryValues="@array/entryvalues_color_preference" />
+	  		
+	  	<ListPreference
+	  		android:key="color_study"
+	  		android:title="@string/pref_color_study"
+	  		android:defaultValue="1"
+	  		android:entries="@array/entries_color_preference"
+	  		android:entryValues="@array/entryvalues_color_preference" />
+  	
+  	</PreferenceScreen>
+  	
+  </PreferenceCategory>
+
+  
+  <PreferenceCategory
+  	android:title="@string/pref_title_backup">
+  	
+  	<CheckBoxPreference 
+  		android:key="autobackup"
+  		android:title="@string/pref_autobackup"
+  		android:summary="@string/pref_autobackup_note" 
+  		android:defaultValue="true"/> 
+  	
+  	<EditTextPreference
+		android:key="num_backups"
+		android:title="@string/pref_num_backups"
+		android:summary="@string/pref_num_backups_note"
+		android:defaultValue="20" />
+  	
+    <Preference 
+        android:key="dropbox_off" 
+        android:title="@string/pref_dropbox_off" 
+        android:summary="@string/pref_dropbox_off_note"/>
+        
+		
+
+  	
+  </PreferenceCategory>
+    
+</PreferenceScreen>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fadeScrollbars="true">
+    
+	<ScrollView
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:scrollbars="none">
+		
+		<RelativeLayout android:id="@+id/territory_item_container"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			
+			<RelativeLayout android:id="@+id/territory_item_c1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="1dip"
+				android:layout_marginRight="4dip"
+				android:layout_marginBottom="3dip"
+				android:padding="10dip"
+				android:background="@drawable/territory_block_back">
+			</RelativeLayout>
+			
+			<RelativeLayout android:id="@+id/territory_item_c2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="1dip"
+				android:layout_marginRight="4dip"
+				android:layout_marginBottom="3dip"
+				android:padding="10dip"
+				android:background="@drawable/territory_block_back"
+				android:layout_toRightOf="@id/territory_item_c1">
+			</RelativeLayout>
+			
+			<RelativeLayout android:id="@+id/territory_item_c3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="1dip"
+				android:layout_marginRight="4dip"
+				android:layout_marginBottom="3dip"
+				android:padding="10dip"
+				android:background="@drawable/territory_block_back"
+				android:layout_alignLeft="@id/territory_item_c2"
+				android:layout_below="@id/territory_item_c2">
+			</RelativeLayout>
+			
+		</RelativeLayout>
+			
+	</ScrollView>
+</HorizontalScrollView>

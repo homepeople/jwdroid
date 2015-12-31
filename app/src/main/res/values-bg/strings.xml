@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+<Android Market application description>
+
+Ценен органайзер за проповедната служба, предназначен за Свидетели на Йехова. Води записки, следистатистики и времето, прекарано в службата, преглеждай и подреждай районите и заинтересуваните хора по автоматизиран и интуитивен начин.
+
+Характеристики:
+ * Удобен инструмент за водене на записки по време на проповедна служба.
+ * Преспособими режими на изобразяване, подходящи, както за къщи, така и за блокове.
+ * Преглед на районите по екрани, домакинства, домакини и посещения.
+ * Запазване на датата и часа на всички посещения.
+ * Засичане на времето, прекарано в проповедна служба с помощта на хронометър.
+ * Различни цветове за домакинствата с автоатичен и ръчен режим.
+ * Отчитане на разпространената литература (включително и чрез текстови шаблони в записките), на повторните посещения и библейските изучавания.
+ * Подробно проследяване на всички участия в службата с всички свързани с тях статистически данни.
+ * Съставяне на месечни отчети и изпращане посредством e-mail или SMS.
+ * Ръчно и автоматично запазване на резервни копия.
+ * Напълно безплатно приложение, без реклами.
+
+Проект с отворен код: http://code.google.com/p/jwdroid/
+
+Тагове: Свидетели на Йехова, Свидетелите на Йехова, Библия, проповядване,проповедна служба.
+ -->
+<resources>
+
+    <string name="app_name">JW Droid</string>
+
+    <string name="lbl_territory_name">Име на района:</string>
+    <string name="title_territory_add">Добави район</string>
+    <string name="lbl_territory_desc">Кратко описание:</string>
+    <string name="err_empty_name">Въведете име!</string>
+    <string name="msg_territory_added">Районът е добавен</string>
+    <string name="msg_territory_deleted">Районът е премахнат</string>
+    <string name="territory_list_empty">Списъкът с райони е празен. Можеш да добавиш нов район посредством бутона по-горе.</string>
+    <string name="dlg_territory_delete_msg">Районът ще бъде премахнат безвъзвратно. Сигурен ли си?</string>
+    <string name="dlg_territory_delete_title">Премахни район</string>
+    <string name="dlg_territory_add_label">Име на район:</string>
+    <string name="dlg_territory_add_note">Пример: бул. Цар Борис III, № 227</string>
+
+    <string name="btn_add">Добави</string>
+    <string name="btn_ok">Добре</string>
+    <string name="btn_yes">Да</string>
+    <string name="btn_no">Не</string>
+    <string name="btn_cancel">Отмени</string>
+
+    <string name="lbl_magazines">Списания:</string>
+    <string name="lbl_brochures">Брошури:</string>
+    <string name="lbl_books">Книги:</string>
+    <string name="lbl_returns">Повторни посещения:</string>
+    <string name="lbl_hours">Часове:</string>
+    <string name="lbl_studies">Библ. изуч.:</string>
+
+    <string name="lbl_chrono_started_time">Начало в %s</string>
+    <string name="lbl_chrono_stopped">Хронометърът е спрян</string>
+    <string name="btn_chrono_pause">Пауза</string>
+    <string name="btn_chrono_resume">Продължи</string>
+    <string name="btn_chrono_finish">Стоп</string>
+    <string name="btn_chrono_start">Старт</string>
+    <string name="chk_chrono_calc_auto"> Извлечи от посещенията</string>
+    <string name="msg_chrono_finish">Искаш ли да приключиш службата?</string>
+    <string name="msg_chrono_start">Искаш ли да започнеш службата?</string>
+    <string name="msg_chrono_service_started">Хронометърът за служба е пуснат</string>
+    <string name="lbl_chrono_current_time">Време на службата:</string>
+    <string name="lbl_chrono_service_note">Натисни, за да преминеш към хронометъра</string>
+
+    <string name="action_add_single_object">Добави един</string>
+    <string name="action_add_many_objects">Добави няколко</string>
+    <string name="dlg_add_single_object_note">Наример номер на апартамент или къща</string>
+    <string name="msg_object_name">Озаглави:</string>
+    <string name="lbl_set_row">Редове:</string>
+    <string name="lbl_set_col">Колони:</string>
+    <string name="lbl_numbers_from">Номера от:</string>
+    <string name="lbl_numbers_to">до:</string>
+    <string name="msg_arrange_after_add">Добавени домакинства. За твое удобство (например ако добавяш вход от блок) можеш да подредиш домакинствата по редове и колони в менюто \&quot;Подреди\&quot;. Искаш ли да го направиш сега?</string>
+    <string name="msg_error">Грешка!</string>
+    <string name="msg_object_deleted">Домакинството е изтрито</string>
+    <string name="err_invalid_input">Неправилен запис!</string>
+    <string name="err_no_cols_value">Въведи броя колони!</string>
+    <string name="action_object_change_name">Заглавие</string>
+    <string name="action_object_change_color">Цвят</string>
+    <string name="action_object_move_up">Нагоре</string>
+    <string name="action_object_move_down">Надолу</string>
+    <string name="action_object_delete">Изтрий</string>
+    <string name="action_object_move">Премести</string>
+
+    <string name="lbl_from">От:</string>
+    <string name="lbl_to">До:</string>
+    <string name="lbl_rows">Редове:</string>
+    <string name="lbl_cols">Колони:</string>
+    <string name="li_top_down">От горе на долу</string>
+    <string name="li_bottom_up">От долу на горе</string>
+    <string name="li_left_right">От ляво на дясно</string>
+    <string name="li_right_left">От дясно на ляво</string>
+    <string name="lbl_one_color">  Един цвят</string>
+    <string name="lbl_two_colors">  Два цвята</string>
+
+    <string name="lbl_door_empty">Възможно е тук да живее нов домакин. \n\nДобави ново посещение посредством бутона по-горе.</string>
+    <string name="lbl_group_empty">Този екран е празен.\n\nДобави нови домакинства посредством бутона по-горе.</string>
+
+    <string name="title_help">Помощ</string>
+    <string name="title_territory_list">Райони</string>
+    <string name="title_people">Хора</string>
+    <string name="title_reports">Отчети</string>
+    <string name="title_chrono">Хронометър</string>
+
+    <string name="lbl_people_list_empty">Списъкът с домакини е празен. \n\nДобави нов човек посредством бутона по-горе или в секцията &quot;Райони&quot;.</string>
+    <string name="lbl_person_add_from_people">Обърни внимание, че този човек ще бъде добавен без връзка с някой район.</string>
+
+    <string name="title_report">Отчет за %s</string>
+    <string name="action_calc_type_sessions">Според списъка със служба</string>
+    <string name="action_calc_type_visits">Според посещенията</string>
+    <string name="lbl_report_no_data">Няма данни</string>
+    <string name="msg_delete_session">Наистина ли искаш да изтриеш информацията за тази служба?</string>
+    <string name="msg_session_deleted">Информацията е изтрита</string>
+    <string name="action_session_delete">Изтрий</string>
+    <string name="title_session">Служба на %s</string>
+    <string name="lbl_report_list_empty">Списъкът с отчети е празен.</string>
+    <string name="lbl_report_summary">Общо</string>
+    <string name="lbl_report_empty">Отчетът е празен.</string>
+    <string name="lbl_session_desc">Описание на службата:</string>
+
+    <string name="lbl_territory_notes">Бележки</string>
+    <string name="lbl_territory_got">Районът е взет на:</string>
+    <string name="lbl_territory_finished">Районът е обработван:</string>
+    <string name="lbl_territory_last_visit">Последно посещение:</string>
+    <string name="action_territory_change_name">Име</string>
+    <string name="action_territory_info">Информация</string>
+    <string name="action_territory_delete">Изтрий</string>
+
+    <string name="lbl_visit_type">Посещения:</string>
+    <string-array name="visit_types">
+        <item>НК</item>
+        <item>Първо посещение</item>
+        <item>Повторно посещение</item>
+        <item>Библейско изучаване</item>
+    </string-array>
+
+    <string name="lbl_visit_date">Дата:</string>
+    <string name="chk_visit_calc_auto">Извлечи от текста</string>
+    <string name="msg_choose_color">Избери цвят:</string>
+    <string name="msg_person_desc">Описание на домакина:</string>
+    <string name="msg_delete_visit">Сигурен ли си, че искаш да изтриеш това посещение?</string>
+    <string name="msg_delete_person">Наистина ли искаш да изтриеш този домакин и всичките му посещения?</string>
+    <string name="msg_person_deleted">Домакинът е изтрит</string>
+    <string name="msg_visit_deleted">Посещението е изтрито</string>
+    <string name="title_visit">Посещение</string>
+    <string name="action_person_change">Промени</string>
+    <string name="action_person_delete">Изтрий</string>
+    <string name="action_person_reject">Не се интересува</string>
+    <string name="action_person_nreject">Интересува се</string>
+    <string name="action_visit_delete">Изтрий</string>
+
+    <string name="menu_preferences">Предпочитания</string>
+    <string name="menu_feedback">Подаване на обратна връзка</string>
+    <string name="menu_help">Помощ</string>
+    <string name="menu_session_date">Дата и час</string>
+    <string name="menu_change_session_date">Промени датата</string>
+    <string name="menu_change_session_time">Промени часа</string>
+    <string name="menu_set_position">Задай позиция</string>
+    <string name="menu_move_up">Премести нагоре</string>
+    <string name="menu_move_down">Премести надолу</string>
+    <string name="menu_move_left">Премести наляво</string>
+    <string name="menu_move_right">Премести надясно</string>
+    <string name="menu_territory_info">Информация</string>
+    <string name="menu_territory_layout">Изглед</string>
+    <string name="menu_territory_arrange">Подреди</string>
+    <string name="menu_territory_shift_up">Премести всички нагоре</string>
+    <string name="menu_territory_shift_down">Премести всички надолу</string>
+    <string name="menu_territory_shift_left">Премести всички наляво</string>
+    <string name="menu_territory_shift_right">Премести всички надясно</string>
+
+    <string name="title_preferences">Предпочитания</string>
+
+    <string name="pref_title_appearance">Външен вид</string>
+    <string name="pref_list_text_rows">Брой редове</string>
+    <string name="pref_list_text_rows_note">Брой на показваните редове от последната записка за домакинството при списъчен изглед</string>
+    <string name="pref_table_button_size">Размер на бутоните</string>
+    <string name="pref_table_button_size_note">Размер на бутоните, представящи домакинствата в табличен изглед</string>
+    <string-array name="entries_table_button_size_preference">
+        <item>Малък</item>
+        <item>Среден</item>
+        <item>Голям</item>
+    </string-array>
+
+    <string name="pref_title_colors">Цветове</string>
+    <string name="pref_autocolor">Автоматична настройка на цветовете</string>
+    <string name="pref_autocolor_note">Автоматично зададени цветове при определени условия</string>
+    <string name="pref_assign_colors">Настрой цветовете</string>
+    <string name="pref_color_reject">Не се интересува</string>
+    <string name="pref_color_visit">Първо посещение</string>
+    <string name="pref_color_return">Повторно посещение</string>
+    <string name="pref_color_study">Библейско изучаване</string>
+    <string-array name="entries_color_preference">
+        <item>Не променяй</item>
+        <item>Син</item>
+        <item>Зелен</item>
+        <item>Жълт</item>
+        <item>Червен</item>
+        <item>Светлосин</item>
+        <item>Светлозелен</item>
+        <item>Светложълт</item>
+        <item>Светлочервен</item>
+    </string-array>
+
+    <string name="pref_title_literature">Отчитане на литература</string>
+    <string name="pref_assign_templates">Настрой шаблони</string>
+    <string name="pref_assign_templates_note">Настрой текстови шаблони, които да използваш в записките си, за да отчиташ литературата</string>
+    <string name="pref_template_magazine">Списание</string>
+    <string name="pref_template_brochure">Брошура</string>
+    <string name="pref_template_book">Книга</string>
+    <string name="pref_template_magazine_default">+сп</string>
+    <string name="pref_template_brochure_default">+бр</string>
+    <string name="pref_template_book_default">+кн</string>
+
+    <string-array name="months">
+        <item>януари</item>
+        <item>февруари</item>
+        <item>март</item>
+        <item>април</item>
+        <item>май</item>
+        <item>юни</item>
+        <item>юли</item>
+        <item>август</item>
+        <item>септември</item>
+        <item>октомври</item>
+        <item>ноември</item>
+        <item>декември</item>
+    </string-array>
+
+    <string-array name="plural_magazines">
+        <item>списание</item>
+        <item>списания</item>
+    </string-array>
+
+    <string-array name="plural_brochures">
+        <item>брошура</item>
+        <item>брошури</item>
+    </string-array>
+
+    <string-array name="plural_books">
+        <item>книга</item>
+        <item>книги</item>
+    </string-array>
+
+    <string-array name="plural_returns">
+        <item>повторно посещение</item>
+        <item>повторни посещения</item>
+    </string-array>
+
+
+    <string-array name="plural_studies">
+        <item>библейско изучаване</item>
+        <item>библейски изучавания</item>
+    </string-array>
+
+    <string-array name="plural_visits">
+        <item>посещение</item>
+        <item>посещения</item>
+    </string-array>
+
+
+    <string name="title_tip">Съвет</string>
+    <string name="msg_tip_literature_templates" formatted="false">Обърни внимание, че можеш да използваш тези текстови шаблони, за разпространената литература: \n%s, %s, %s\n\nНапример: \„Разпространени %s за децата.\“</string>
+
+    <!-- v1.2 -->
+
+    <string name="msg_person">Домакин</string>
+    <string name="lbl_person_desc">Описание на домакина</string>
+    <string name="lbl_male">мъж</string>
+    <string name="lbl_female">жена</string>
+    <string name="lbl_male_letter">М</string>
+    <string name="lbl_female_letter">Ж</string>
+    <string name="msg_choose_age">Избери възраст:</string>
+
+    <string name="lbl_visit_text">Описание на посещението</string>
+
+    <string name="action_object_add_na_visit">Не е вкъщи</string>
+    <string name="msg_added_na_visit">Посещението е добавено на %s</string>
+
+    <string name="pref_hide_visited">Скрий посещенията, направени днес</string>
+    <string name="pref_hide_visited_note">Скрий посещенията, направени днес (отбелязани с квадратче за отметка)</string>
+
+    <string name="msg_delete_object">Всички домакини и посещенията им ще бъдат изтрити! Наистина ли искаш да изтриеш домакинството?</string>
+
+    <string name="menu_territory_sort">Подреждане на списък</string>
+    <string name="msg_territory_sort">Списъкът да бъде ли подреден по име на домакинството?</string>
+
+    <string-array name="menu_move_list">
+        <item>Задай позиция</item>
+        <item>Премести нагоре</item>
+        <item>Премести надолу</item>
+    </string-array>
+
+    <string name="pref_object_add_sorted">Автоматично подреждане на списък</string>
+    <string name="pref_object_add_sorted_note">Въведи ново домакинство, като подредиш списъка по име (само при списъчен изглед)</string>
+
+    <string name="menu_backups">Резервно копие</string>
+    <string name="lbl_backup_list_empty">Списъкът с резервни копия е празен.</string>
+    <string name="msg_backup_failed">Грешка при създаването на резервно копие</string>
+    <string name="pref_title_backup">Резервни копия</string>
+    <string name="pref_autobackup">Автоматично създаване на резервни копия</string>
+    <string name="pref_autobackup_note">Автоматично създай ново резервно копие след всяка служба</string>
+    <string name="pref_num_backups">Брой копия</string>
+    <string name="pref_num_backups_note">Максимален брой резервни копя</string>
+    <string name="msg_create_backup">Искаш ли да създадеш ново резервно копие?</string>
+    <string name="msg_delete_backup">Искаш ли да изтриеш това резервно копие?</string>
+    <string name="msg_restore_backup">Предупреждение: Всички данни ще бъдат безвъзвратно загубени и заменени с данните от резервното копие. Сигурен ли си?</string>
+    <string name="action_backup_restore">Възстанови</string>
+    <string name="action_backup_delete">Изтрий</string>
+    <string name="msg_restore_backup_failed">Грешка при възстановяването на резервното копие</string>
+    <string name="msg_restore_backup_success">Резервното копие беше възстановено успешно</string>
+
+    <string name="msg_revision_notes">Какво ново в тази версия?</string>
+<string name="msg_revision_notes_1_2" formatted="true"><b>Версия 1.2</b>\n\nРезервни копия на данни, включително  и автоматично генериране\n\nРъчно добавяне на служба\n\nОпростено  редактиране на датата и времето за служба\n\nНов знак за отбелязване на  посетените  домакинства днес\n\nПодреждане на домакинствата по  име\n\nОпростено редактиране на възрастта и пола, след
+ създаването на  нов домакин\n\nБързо поставяне на отметки \„Никого вкъщи\“, без  въвеждане на домакин\n\nМалки подобрения във външния вид.</string>
+
+    <!-- v1.2.1 -->
+
+    <string name="msg_backup_created">Резервното копие е създадено</string>
+    <string name="pref_backups_manage">Управлеие на резервните копия</string>
+    <string name="pref_backups_manage_note">Виж списъка със създадените резервни копия</string>
+</resources>

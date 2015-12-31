@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+<Android Market application description>
+
+Ett effektivt verktyg i tjänsten på fältet för Jehovas vittnen. Anteckna, håll koll på tid och placerad litteratur, visa och ordna distrikt och intresserade personer på ett bekvämt, automatiserat och intuitivt sätt.
+
+Funktioner:
+ * Gör anteckningar i tjänsten på ett bekvämt sätt.
+ * Flexibelt visningsläge som passar lika bra för villor som för hyreshus.
+ * Ordna distrikt i hushåll, personer, besök.
+ * Sparar tid och datum för varje besök.
+ * Mät tiden i tjänsten med tidtagarläget.
+ * Olika färger för varje hushåll, automatiskt eller manuellt.
+ * Räknar placerad litteratur (även via nyckelord i anteckningarna), återbesök och bibelstudier.
+ * Detaljerad historik över all tjänst med all väsentlig information.
+ * Generera månadsrapport och skicka via e-post eller SMS.
+ * Manuell eller automatisk säkerhetskopiering.
+ * Appen är helt gratis, ingen reklam.
+
+Källkoden finns som open source på: http://code.google.com/p/jwdroid/
+
+Tags: Jehovah's Witnesses, Bible, preaching, ministry, Jehovas vittnen, Bibel, predika, tjänst.
+ -->
+<resources>
+
+    <string name="app_name">JW Droid</string>
+
+    <string name="lbl_territory_name">Namn på distrikt:</string>
+    <string name="title_territory_add">Lägg till distrikt</string>
+    <string name="lbl_territory_desc">Kort beskrivning:</string>
+    <string name="err_empty_name">Ange ett namn!</string>
+    <string name="msg_territory_added">Distrikt tillagt</string>
+    <string name="msg_territory_deleted">Distrikt borttaget</string>
+    <string name="territory_list_empty">Inga distrikt i listan. Lägg till ett med knappen ovanför.</string>
+    <string name="dlg_territory_delete_msg">Du kan inte ångra ett borttaget distrikt. Är du säker?</string>
+    <string name="dlg_territory_delete_title">Ta bort distrikt</string>
+    <string name="dlg_territory_add_label">Namn på distrikt:</string>
+    <string name="dlg_territory_add_note">T.ex. gatunamn</string>
+
+    <string name="btn_add">Lägg till</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_yes">Ja</string>
+    <string name="btn_no">Nej</string>
+    <string name="btn_cancel">Avbryt</string>
+
+    <string name="lbl_magazines">Tidskrifter:</string>
+    <string name="lbl_brochures">Broschyrer:</string>
+    <string name="lbl_books">Böcker:</string>
+    <string name="lbl_returns">Återbesök:</string>
+    <string name="lbl_hours">Timmar:</string>
+    <string name="lbl_studies">Bibelstudier:</string>
+
+    <string name="title_chrono">Tidtagare</string>
+    <string name="lbl_chrono_started_time">Startade klockan %s</string>
+    <string name="lbl_chrono_stopped">Tidtagaren stoppad</string>
+    <string name="btn_chrono_pause">Paus</string>
+    <string name="btn_chrono_resume">Fortsätt</string>
+    <string name="btn_chrono_finish">Klar</string>
+    <string name="btn_chrono_start">Start</string>
+    <string name="chk_chrono_calc_auto"> Ta från besöken</string>
+    <string name="msg_chrono_finish">Avsluta tjänst?</string>
+    <string name="msg_chrono_start">Påbörja tjänst?</string>
+    <string name="msg_chrono_service_started">Tidtagare för tjänsten startad</string>
+    <string name="lbl_chrono_current_time">Tid i tjänsten:</string>
+    <string name="lbl_chrono_service_note">Markera för att gå till tidtagaren</string>
+
+    <string name="action_add_single_object">Lägg till ett</string>
+    <string name="action_add_many_objects">Lägg till flera</string>
+    <string name="dlg_add_single_object_note">T.ex. lägenhet eller husnummer</string>
+    <string name="msg_object_name">Skriv in rubrik:</string>
+    <string name="lbl_set_row">Rad:</string>
+    <string name="lbl_set_col">Kolumn:</string>
+    <string name="lbl_numbers_from">Från nummer:</string>
+    <string name="lbl_numbers_to">till:</string>
+    <string name="msg_arrange_after_add">Hushåll tillagda. Du kan ordna dem i rader och kolumner (t.ex. om du lade till en trappuppgång) via menyn \&quot;Ordna\&quot;. Vill du göra det nu direkt?</string>
+    <string name="msg_error">Fel!</string>
+    <string name="msg_object_deleted">Hushåll borttaget</string>
+    <string name="err_invalid_input">Ogiltig inmatning!</string>
+    <string name="err_no_cols_value">Ange antal kolumner!</string>
+    <string name="action_object_change_name">Rubrik</string>
+    <string name="action_object_change_color">Färg</string>
+    <string name="action_object_move_up">Upp</string>
+    <string name="action_object_move_down">Ner</string>
+    <string name="action_object_delete">Ta bort</string>
+    <string name="action_object_move">Flytta</string>
+
+    <string name="lbl_from">Från:</string>
+    <string name="lbl_to">Till:</string>
+    <string name="lbl_rows">Rader:</string>
+    <string name="lbl_cols">Kolumner:</string>
+    <string name="li_top_down">Uppifrån och ner</string>
+    <string name="li_bottom_up">Nerifrån och upp</string>
+    <string name="li_left_right">Vänster till höger</string>
+    <string name="li_right_left">Höger till vänster</string>
+    <string name="lbl_one_color">  En färg</string>
+    <string name="lbl_two_colors">  Två färger</string>
+
+    <string name="lbl_door_empty">Lägg till en person här.\n\nSkapa ett besök med knappen ovanför.</string>
+    <string name="lbl_group_empty">Inga hushåll i listan.\n\nLägg till några med knappen ovanför.</string>
+
+    <string name="title_help">Hjälp</string>
+    <string name="title_territory_list">Distrikt</string>
+    <string name="title_people">Personer</string>
+    <string name="title_reports">Rapporter</string>
+
+    <string name="lbl_people_list_empty">Inga personer i listan. \n\nLägg till en med knappen ovanför eller i läget \&quot;Distrikt\&quot;.</string>
+    <string name="lbl_person_add_from_people">Observera att den här personen kommer läggas till utan anknytning till något distrikt.</string>
+
+    <string name="title_report">Rapport för %s</string>
+    <string name="action_calc_type_sessions">Från rapporter</string>
+    <string name="action_calc_type_visits">Från besök</string>
+    <string name="lbl_report_no_data">Inga data</string>
+    <string name="msg_delete_session">Vill du verkligen ta bort den här rapporten?</string>
+    <string name="msg_session_deleted">Rapporten borttagen</string>
+    <string name="action_session_delete">Ta bort</string>
+    <string name="title_session">Tjänst i %s</string>
+    <string name="lbl_report_list_empty">Inga rapporter i listan.</string>
+    <string name="lbl_report_summary">Totalt</string>
+    <string name="lbl_report_empty">Tom rapport.</string>
+    <string name="lbl_session_desc">Beskrivning av tjänst:</string>
+
+    <string name="lbl_territory_notes">Anteckningar</string>
+    <string name="lbl_territory_got">Distriktet hämtades ut:</string>
+    <string name="lbl_territory_finished">Distriktet återlämnades:</string>
+    <string name="lbl_territory_last_visit">Senaste besök:</string>
+    <string name="action_territory_change_name">Namn</string>
+    <string name="action_territory_info">Info</string>
+    <string name="action_territory_delete">Ta bort</string>
+
+    <string name="lbl_visit_type">Besök:</string>
+    <string-array name="visit_types">
+        <item>Ej hemma</item>
+        <item>Vanligt besök</item>
+        <item>Återbesök</item>
+        <item>Bibelstudium</item>
+    </string-array>
+
+    <string name="lbl_visit_date">Datum:</string>
+    <string name="chk_visit_calc_auto">Ta från text</string>
+    <string name="msg_choose_color">Välj färg:</string>
+    <string name="msg_person_desc">Beskrivning av person:</string>
+    <string name="msg_delete_visit">Är du säker att du vill ta bort det här besöket?</string>
+    <string name="msg_delete_person">Vill du verkligen ta bort den här personen och alla personens besök?</string>
+    <string name="msg_person_deleted">Personen borttagen</string>
+    <string name="msg_visit_deleted">Besöket borttaget</string>
+    <string name="title_visit">Besök</string>
+    <string name="action_person_change">Redigera</string>
+    <string name="action_person_delete">Ta bort</string>
+    <string name="action_person_reject">Ej intresserad</string>
+    <string name="action_person_nreject">Intresserad</string>
+    <string name="action_visit_delete">Ta bort</string>
+
+    <string name="menu_preferences">Inställningar</string>
+    <string name="menu_feedback">Tyck till</string>
+    <string name="menu_help">Hjälp</string>
+    <string name="menu_session_date">Datum och tid</string>
+    <string name="menu_change_session_date">Ändra datum</string>
+    <string name="menu_change_session_time">Ändra tid</string>
+    <string name="menu_set_position">Ange position</string>
+    <string name="menu_move_up">Flytta upp</string>
+    <string name="menu_move_down">Flytta ner</string>
+    <string name="menu_move_left">Flytta vänster</string>
+    <string name="menu_move_right">Flytta höger</string>
+    <string name="menu_territory_info">Info</string>
+    <string name="menu_territory_layout">Layout</string>
+    <string name="menu_territory_arrange">Ordna</string>
+    <string name="menu_territory_shift_up">Flytta alla uppåt</string>
+    <string name="menu_territory_shift_down">Flytta alla nedåt</string>
+    <string name="menu_territory_shift_left">Flytta alla åt vänster</string>
+    <string name="menu_territory_shift_right">Flytta alla åt höger</string>
+
+    <string name="title_preferences">Inställningar</string>
+
+    <string name="pref_title_appearance">Utseende</string>
+    <string name="pref_list_text_rows">Antal rader</string>
+    <string name="pref_list_text_rows_note">Antal rader av den senaste anteckningen som visas i listvyn för hushåll</string>
+    <string name="pref_table_button_size">Knappstorlek</string>
+    <string name="pref_table_button_size_note">Storleken på knapparna i rutnätsvyn</string>
+    <string-array name="entries_table_button_size_preference">
+        <item>Liten</item>
+        <item>Mellan</item>
+        <item>Stor</item>
+    </string-array>
+
+    <string name="pref_title_colors">Färger</string>
+    <string name="pref_autocolor">Färglägg automatiskt</string>
+    <string name="pref_autocolor_note">Sätt automatiskt färger för olika kriterier</string>
+    <string name="pref_assign_colors">Inställningar för färger</string>
+    <string name="pref_color_reject">Inte intresserad</string>
+    <string name="pref_color_visit">Besök</string>
+    <string name="pref_color_return">Återbesök</string>
+    <string name="pref_color_study">Bibelstudium</string>
+    <string-array name="entries_color_preference">
+        <item>Ändra inget</item>
+        <item>Blå</item>
+        <item>Grön</item>
+        <item>Gul</item>
+        <item>Röd</item>
+        <item>Ljusblå</item>
+        <item>Ljusgrön</item>
+        <item>Ljusgul</item>
+        <item>Ljusröd</item>
+    </string-array>
+
+    <string name="pref_title_literature">Räkna litteratur</string>
+    <string name="pref_assign_templates">Nyckelord</string>
+    <string name="pref_assign_templates_note">Ställ in nyckelord för att räkna litteratur från anteckningarna</string>
+    <string name="pref_template_magazine">Tidskrift</string>
+    <string name="pref_template_brochure">Broschyr</string>
+    <string name="pref_template_tract">Vikblad</string>
+    <string name="pref_template_book">Bok</string>
+    <string name="pref_template_magazine_default">+t</string>
+    <string name="pref_template_brochure_default">+br</string>
+    <string name="pref_template_book_default">+bk</string>
+    <string name="pref_template_tract_default">+v</string>
+
+    <string-array name="months">
+        <item>Januari</item>
+        <item>Februari</item>
+        <item>Mars</item>
+        <item>April</item>
+        <item>Maj</item>
+        <item>Juni</item>
+        <item>Juli</item>
+        <item>Augusti</item>
+        <item>September</item>
+        <item>Oktober</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="plural_magazines">
+        <item>tidskrift</item>
+        <item>tidskrifter</item>
+    </string-array>
+
+    <string-array name="plural_brochures">
+        <item>broschyr</item>
+        <item>broschyrer</item>
+    </string-array>
+
+    <string-array name="plural_books">
+        <item>bok</item>
+        <item>böcker</item>
+    </string-array>
+
+    <string-array name="plural_returns">
+        <item>återbesök</item>
+        <item>återbesök</item>
+    </string-array>
+
+
+    <string-array name="plural_studies">
+        <item>bibelstudium</item>
+        <item>bibelstudier</item>
+    </string-array>
+
+    <string-array name="plural_visits">
+        <item>besök</item>
+        <item>besök</item>
+    </string-array>
+
+
+    <string name="title_tip">Tips</string>
+    <string name="msg_tip_literature_templates" formatted="false">Du kan använda de här nyckelorden för litteratur ska räknas automatiskt:\n%s, %s, %s\n\nT.ex.: \"Placerade %s om barn.\"</string>
+
+    <!-- v1.2 -->
+
+    <string name="msg_person">Person</string>
+    <string name="lbl_person_desc">Beskrivning av personen</string>
+    <string name="lbl_male">Man</string>
+    <string name="lbl_female">Kvinna</string>
+    <string name="lbl_male_letter">M</string>
+    <string name="lbl_female_letter">K</string>
+    <string name="msg_choose_age">Välj ålder:</string>
+
+    <string name="lbl_visit_text">Anteckningar</string>
+
+    <string name="action_object_add_na_visit">Ej hemma</string>
+    <string name="msg_added_na_visit">Lade till \'ej hemma\' %s</string>
+
+    <string name="pref_hide_visited">Göm dagens besök</string>
+    <string name="pref_hide_visited_note">Göm de hushåll som fått besök idag</string>
+
+    <string name="msg_delete_object">Alla personer och besök i det här hushållet kommer tas bort! Vill du verkligen ta bort hushållet?</string>
+
+    <string name="menu_territory_sort">Sortera</string>
+    <string name="msg_territory_sort">Sortera listan i bokstavsordning?</string>
+
+    <string-array name="menu_move_list">
+        <item>Ange position</item>
+        <item>Flytta upp</item>
+        <item>Flytta ner</item>
+    </string-array>
+
+    <string name="pref_object_add_sorted">Sortera automatiskt</string>
+    <string name="pref_object_add_sorted_note">Sortera automatiskt in nya hushåll i bokstavsordning (endast i listvyn)</string>
+
+    <string name="menu_backups">Säkerhetskopior</string>
+    <string name="lbl_backup_list_empty">Inga säkerhetskopior.</string>
+    <string name="msg_backup_failed">Fel vid säkerhetskopiering</string>
+    <string name="pref_title_backup">Säkerhetskopior</string>
+    <string name="pref_autobackup">Automatisk säkerhetskopiering</string>
+    <string name="pref_autobackup_note">Skapa automatiskt en säkerhetskopia efter varje rapport</string>
+    <string name="pref_num_backups">Antal kopior</string>
+    <string name="pref_num_backups_note">Maxiamalt antal säkerhetskopior</string>
+    <string name="msg_create_backup">Skapa ny säkerhetskopia?</string>
+    <string name="msg_delete_backup">Radera säkerhetskopian?</string>
+    <string name="msg_restore_backup">Varning: ALLA nuvarande data kommer raderas permanent och ersättas av säkerhetskopian. Är du säker?</string>
+    <string name="action_backup_restore">Återställ</string>
+    <string name="action_backup_delete">Radera</string>
+    <string name="msg_restore_backup_failed">Fel vid återställning</string>
+    <string name="msg_restore_backup_success">Säkerhetskopian har återställts</string>
+
+    <string name="msg_revision_notes">Nyheter</string>
+
+    <!-- v1.2.1 -->
+
+    <string name="msg_backup_created">Säkerhetskopia skapad</string>
+    <string name="pref_backups_manage">Hantera säkerhetskopior</string>
+    <string name="pref_backups_manage_note">Visa lista på sparade säkerhetskopior</string>
+
+    <!--  v1.2.3 -->
+    <string name="msg_revision_notes_1_2_3" formatted="true"><b>Version 1.2.3</b>\n\n* Added French, Dutch, Romanian, Lithuanian and Czech translations. Thanks to all the translators!\n\n* Fixed bug that lead to app crashes in certain conditions.\n\n* Fixed bug that caused previous month report hide and the current one double on the 1st day of a new month.\n\n* Fixed and rebuilt Chronometer module, now it works properly in all cases and without crashes.\n\n<b>Version 1.2</b>\n\n* Data backups, including automatic\n\n* Manual adding service sessions\n\n* Simplified editing of service date and time\n\n* New mark on households visited today\n\n* Sorting households by name\n\n* Quick editing of age and gender after creating a new tenant\n\n* Quick mark \"Not at home\" without entering a household\n\n* Minor interface improvements</string>
+
+    <!--  v1.2.4 -->
+    <string name="msg_revision_notes_1_2_4" formatted="true"><b>Version 1.2.4</b>\n\n* Added Bulgarian translation.\n\n* Fixed an issue where current date of N/A visits would not set as current.\n\n<b>Version 1.2.3</b>\n\n* Added French, Dutch, Romanian, Lithuanian and Czech translations. Thanks to all the translators!\n\n* Fixed bug that lead to app crashes in certain conditions.\n\n* Fixed bug that caused previous month report hide and the current one double on the 1st day of a new month.\n\n* Fixed and rebuilt Chronometer module, now it works properly in all cases and without crashes.\n\n<b>Version 1.2</b>\n\n* Data backups, including automatic\n\n* Manual adding service sessions\n\n* Simplified editing of service date and time\n\n* New mark on households visited today\n\n* Sorting households by name\n\n* Quick editing of age and gender after creating a new tenant\n\n* Quick mark \"Not at home\" without entering a household\n\n* Minor interface improvements</string>
+
+    <!-- v1.3 -->
+    <string name="msg_revision_notes_1_3" formatted="true"><b>Version 1.3</b>\n\nYour data can be automatically uploaded to your Dropbox and synced across connected devices\n\nNew field for tracts in reports\n\nChronometer can be changed per 1 minute\n\nA few bugs fixed\n\n<b>Attention!</b> This is the last version with Android 2.x support. Next major release will be available for Android 4.x devices only.</string>
+    <string name="lbl_tracts">Vikblad:</string>
+    <string-array name="plural_tracts">
+        <item>vikblad</item>
+        <item>vikblad</item>
+    </string-array>
+    <string name="lbl_brochures_tracts">Broschyrer &amp; vikblad:</string>
+    <string-array name="plural_brochures_tracts">
+        <item>broschyr eller vikblad</item>
+        <item>broschyrer eller vikblad</item>
+    </string-array>
+    <string name="lbl_please_wait">Var vänlig vänta...</string>
+    <string name="title_drive">Säkerhetskopiera till Dropbox</string>
+    <string name="lbl_drive">Dropbox</string>
+    <string name="lbl_local_folder">Lokal mapp</string>
+    <string name="lbl_drive_desc">Din data kan laddas upp automatiskt till Dropbox och synkroniseras mellan flera enheter.</string>
+    <string name="lbl_drive_turn_on">Slå på</string>
+    <string name="lbl_backups_empty">Inga säkerhetskopior</string>
+    <string name="pref_dropbox_off">Koppla bort Dropbox</string>
+    <string name="pref_dropbox_off_note">Logga ut från Dropbox och sluta synkronisera</string>
+</resources>

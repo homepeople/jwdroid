@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:text="@string/lbl_one_color" />
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TableRow android:id="@+id/dlg_color_row_1">
+
+                <RelativeLayout style="@style/DlgColor.ButtonContainer">
+
+                    <View style="@style/DlgColor.ActiveBorder" />
+
+                    <Button
+                        style="@style/DlgColor.ColorButton"
+                        android:background="@drawable/btn_colored_gray"
+                        android:tag="0" />
+                </RelativeLayout>
+
+
+                <RelativeLayout style="@style/DlgColor.ButtonContainer">
+
+                    <View style="@style/DlgColor.ActiveBorder" />
+
+                    <Button
+                        style="@style/DlgColor.ColorButton"
+                        android:background="@drawable/btn_colored_blue"
+                        android:tag="1" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/DlgColor.ButtonContainer">
+
+                    <View style="@style/DlgColor.ActiveBorder" />
+
+                    <Button
+                        style="@style/DlgColor.ColorButton"
+                        android:background="@drawable/btn_colored_green"
+                        android:tag="2" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/DlgColor.ButtonContainer">
+
+                    <View style="@style/DlgColor.ActiveBorder" />
+
+                    <Button
+                        style="@style/DlgColor.ColorButton"
+                        android:background="@drawable/btn_colored_yellow"
+                        android:tag="3" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/DlgColor.ButtonContainer">
+
+                    <View style="@style/DlgColor.ActiveBorder" />
+
+                    <Button
+                        style="@style/DlgColor.ColorButton"
+                        android:background="@drawable/btn_colored_red"
+                        android:tag="4" />
+                </RelativeLayout>
+
+            </TableRow>
+
+            <TableRow android:id="@+id/dlg_color_row_2">
+
+                <RelativeLayout style="@style/DlgColor.ButtonContainer">
+
+                    <View style="@style/DlgColor.ActiveBorder" />
+
+                    <Button
+                        style="@style/DlgColor.ColorButton.Light"
+                        android:background="@drawable/btn_colored_lightgray"
+                        android:tag="5" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/DlgColor.ButtonContainer">
+
+                    <View style="@style/DlgColor.ActiveBorder" />
+
+                    <Button
+                        style="@style/DlgColor.ColorButton.Light"
+                        android:background="@drawable/btn_colored_lightblue"
+                        android:tag="6" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/DlgColor.ButtonContainer">
+
+                    <View style="@style/DlgColor.ActiveBorder" />
+
+                    <Button
+                        style="@style/DlgColor.ColorButton.Light"
+                        android:background="@drawable/btn_colored_lightgreen"
+                        android:tag="7" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/DlgColor.ButtonContainer">
+
+                    <View style="@style/DlgColor.ActiveBorder" />
+
+                    <Button
+                        style="@style/DlgColor.ColorButton.Light"
+                        android:background="@drawable/btn_colored_lightyellow"
+                        android:tag="8" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/DlgColor.ButtonContainer">
+
+                    <View style="@style/DlgColor.ActiveBorder" />
+
+                    <Button
+                        style="@style/DlgColor.ColorButton.Light"
+                        android:background="@drawable/btn_colored_lightred"
+                        android:tag="9" />
+                </RelativeLayout>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/lbl_two_colors" />
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TableRow android:id="@+id/dlg_color_row_3">
+
+                <RelativeLayout style="@style/DlgColor.ButtonContainer">
+
+                    <View style="@style/DlgColor.ActiveBorder" />
+
+                    <com.jwdroid.TriangleButton
+                        style="@style/DlgColor.ColorButton"
+                        android:background="@drawable/btn_colored_gray"
+                        android:tag="0"
+                        app:triangleFillColor="@color/gray_light"
+                        app:triangleStrokeColor="@color/gray" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/DlgColor.ButtonContainer">
+
+                    <View style="@style/DlgColor.ActiveBorder" />
+
+                    <com.jwdroid.TriangleButton
+                        style="@style/DlgColor.ColorButton"
+                        android:background="@drawable/btn_colored_gray"
+                        android:tag="1"
+                        app:triangleFillColor="@color/blue_light"
+                        app:triangleStrokeColor="@color/blue" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/DlgColor.ButtonContainer">
+
+                    <View style="@style/DlgColor.ActiveBorder" />
+
+                    <com.jwdroid.TriangleButton
+                        style="@style/DlgColor.ColorButton"
+                        android:background="@drawable/btn_colored_gray"
+                        android:tag="2"
+                        app:triangleFillColor="@color/green_light"
+                        app:triangleStrokeColor="@color/green" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/DlgColor.ButtonContainer">
+
+                    <View style="@style/DlgColor.ActiveBorder" />
+
+                    <com.jwdroid.TriangleButton
+                        style="@style/DlgColor.ColorButton"
+                        android:background="@drawable/btn_colored_gray"
+                        android:tag="3"
+                        app:triangleFillColor="@color/yellow_light"
+                        app:triangleStrokeColor="@color/yellow" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/DlgColor.ButtonContainer">
+
+                    <View style="@style/DlgColor.ActiveBorder" />
+
+                    <com.jwdroid.TriangleButton
+                        style="@style/DlgColor.ColorButton"
+                        android:background="@drawable/btn_colored_gray"
+                        android:tag="4"
+                        app:triangleFillColor="@color/red_light"
+                        app:triangleStrokeColor="@color/red" />
+                </RelativeLayout>
+
+            </TableRow>
+
+            <TableRow android:id="@+id/dlg_color_row_4">
+
+                <RelativeLayout style="@style/DlgColor.ButtonContainer">
+
+                    <View style="@style/DlgColor.ActiveBorder" />
+
+                    <com.jwdroid.TriangleButton
+                        style="@style/DlgColor.ColorButton"
+                        android:background="@drawable/btn_colored_gray"
+                        android:tag="5"
+                        app:triangleFillColor="@color/lightgray_light"
+                        app:triangleStrokeColor="@color/lightgray" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/DlgColor.ButtonContainer">
+
+                    <View style="@style/DlgColor.ActiveBorder" />
+
+                    <com.jwdroid.TriangleButton
+                        style="@style/DlgColor.ColorButton"
+                        android:background="@drawable/btn_colored_gray"
+                        android:tag="6"
+                        app:triangleFillColor="@color/lightblue_light"
+                        app:triangleStrokeColor="@color/lightblue" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/DlgColor.ButtonContainer">
+
+                    <View style="@style/DlgColor.ActiveBorder" />
+
+                    <com.jwdroid.TriangleButton
+                        style="@style/DlgColor.ColorButton"
+                        android:background="@drawable/btn_colored_gray"
+                        android:tag="7"
+                        app:triangleFillColor="@color/lightgreen_light"
+                        app:triangleStrokeColor="@color/lightgreen" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/DlgColor.ButtonContainer">
+
+                    <View style="@style/DlgColor.ActiveBorder" />
+
+                    <com.jwdroid.TriangleButton
+                        style="@style/DlgColor.ColorButton"
+                        android:background="@drawable/btn_colored_gray"
+                        android:tag="8"
+                        app:triangleFillColor="@color/lightyellow_light"
+                        app:triangleStrokeColor="@color/lightyellow" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/DlgColor.ButtonContainer">
+
+                    <View style="@style/DlgColor.ActiveBorder" />
+
+                    <com.jwdroid.TriangleButton
+                        style="@style/DlgColor.ColorButton"
+                        android:background="@drawable/btn_colored_gray"
+                        android:tag="9"
+                        app:triangleFillColor="@color/lightred_light"
+                        app:triangleStrokeColor="@color/lightred" />
+                </RelativeLayout>
+
+            </TableRow>
+
+        </TableLayout>
+
+
+    </LinearLayout>
+</ScrollView>

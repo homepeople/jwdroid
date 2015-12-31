@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id="@+id/door"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            android:theme="?attr/actionBarTheme"/>
+
+
+    </LinearLayout>
+
+    <com.jwdroid.TriangleView
+        android:id="@+id/title_color1"
+        android:layout_width="25dip"
+        android:layout_height="25dip"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_gravity="right|top"
+        app:fillColor="@color/gray"
+        app:orientation="top_right"
+        app:radius="0" />
+
+    <com.jwdroid.TriangleView
+        android:id="@+id/title_color2"
+        android:layout_width="12dip"
+        android:layout_height="12dip"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_gravity="right|top"
+        app:fillColor="@color/gray"
+        app:orientation="top_right"
+        app:radius="0" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/ic_add_white_24dp"
+        android:stateListAnimator="@anim/fab_state"
+        app:pressedTranslationZ="12dp"
+        app:layout_behavior="com.jwdroid.ScrollAwareFABBehavior"/>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<attr name="orientation" format="string" />
+
+	<declare-styleable name="DividerView">
+        <attr name="dividerColor" format="color" />
+    </declare-styleable>
+    
+     <declare-styleable name="EllipsizingTextView">
+        <attr name="maxLines" format="integer" />
+    </declare-styleable>    
+    
+     <declare-styleable name="TriangleView">
+        <attr name="orientation" />
+        <attr name="fillColor" format="reference|color" />
+        <attr name="strokeColor" format="reference|color" />
+        <attr name="radius" format="integer" />
+    </declare-styleable>       
+    
+    <declare-styleable name="TriangleButton">        
+    	<attr name="orientation" />
+        <attr name="triangleFillColor" format="reference|color" />
+        <attr name="triangleStrokeColor" format="reference|color" />
+    </declare-styleable>      
+</resources>

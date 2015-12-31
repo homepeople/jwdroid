@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/territory"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="?attr/actionBarTheme" />
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:paddingBottom="8dip">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/btn_timer_less"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:layout_marginRight="12dip"
+                        android:src="@drawable/minus_disablable" />
+
+                    <TextView
+                        android:id="@+id/lbl_timer_hour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="80dip"
+                        android:textColor="@color/primary_dark"/>
+
+                    <TextView
+                        android:id="@+id/lbl_timer_colon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textSize="60dip"
+                        android:textColor="@color/primary_dark"/>
+
+                    <TextView
+                        android:id="@+id/lbl_timer_minute"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00"
+                        android:textSize="80dip"
+                        android:textColor="@color/primary_dark"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_timer_more"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:layout_marginLeft="12dip"
+                        android:src="@drawable/plus_disablable" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/lbl_started_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dip"
+                    android:layout_marginTop="-10dip"
+                    android:gravity="center"
+                    android:text="@string/lbl_chrono_started_time"
+                    android:textColor="#999999"
+                    android:textSize="15dip" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btn_pause"
+                        android:layout_width="130dip"
+                        android:layout_height="wrap_content"
+                        android:text="@string/btn_chrono_pause"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_resume"
+                        android:layout_width="130dip"
+                        android:layout_height="wrap_content"
+                        android:text="@string/btn_chrono_resume"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_finish"
+                        android:theme="@style/AccentButton"
+                        android:layout_width="130dip"
+                        android:layout_height="wrap_content"
+                        android:text="@string/btn_chrono_finish"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_start"
+                        android:theme="@style/AccentButton"
+                        android:layout_width="130dip"
+                        android:layout_height="wrap_content"
+                        android:text="@string/btn_chrono_start"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#bbbbbb" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:background="#eeeeee">
+
+
+                <CheckBox
+                    android:id="@+id/chk_calc_auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dip"
+                    android:checked="true"
+                    android:text="@string/chk_chrono_calc_auto" />
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/chk_calc_auto"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dip">
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="100dip"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:paddingTop="10dip"
+                            android:text="@string/lbl_placements"
+                            android:textColor="#777"
+                            android:textSize="16dip" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <ImageButton
+                                android:id="@+id/btn_publications_less"
+                                android:layout_width="40dip"
+                                android:layout_height="40dip"
+                                android:layout_marginLeft="8dip"
+                                android:src="@drawable/minus_disablable" />
+
+                            <TextView
+                                android:id="@+id/text_publications"
+                                android:layout_width="30dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dip"
+                                android:gravity="center"
+                                android:text="0"
+                                android:textSize="20dip"
+                                android:textStyle="bold"
+                                android:textColor="@color/primary_dark"/>
+
+                            <ImageButton
+                                android:id="@+id/btn_publications_more"
+                                android:layout_width="40dip"
+                                android:layout_height="40dip"
+                                android:layout_marginLeft="8dip"
+                                android:src="@drawable/plus_disablable" />
+
+                            <TextView
+                                android:id="@+id/text_visit_publications"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dip"
+                                android:gravity="center"
+                                android:text="+0"
+                                android:textColor="#999999"
+                                android:textSize="20dip" />
+
+                        </LinearLayout>
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:paddingTop="10dip"
+                            android:text="@string/lbl_videos"
+                            android:textColor="#777"
+                            android:textSize="16dip" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <ImageButton
+                                android:id="@+id/btn_videos_less"
+                                android:layout_width="40dip"
+                                android:layout_height="40dip"
+                                android:layout_marginLeft="8dip"
+                                android:src="@drawable/minus_disablable" />
+
+                            <TextView
+                                android:id="@+id/text_videos"
+                                android:layout_width="30dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dip"
+                                android:gravity="center"
+                                android:text="0"
+                                android:textSize="20dip"
+                                android:textStyle="bold"
+                                android:textColor="@color/primary_dark"/>
+
+                            <ImageButton
+                                android:id="@+id/btn_videos_more"
+                                android:layout_width="40dip"
+                                android:layout_height="40dip"
+                                android:layout_marginLeft="8dip"
+                                android:src="@drawable/plus_disablable" />
+
+                            <TextView
+                                android:id="@+id/text_visit_videos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dip"
+                                android:gravity="center"
+                                android:text="+0"
+                                android:textColor="#999999"
+                                android:textSize="20dip" />
+
+                        </LinearLayout>
+
+                    </TableRow>
+
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:paddingTop="10dip"
+                            android:text="@string/lbl_returns"
+                            android:textColor="#777"
+                            android:textSize="16dip" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <ImageButton
+                                android:id="@+id/btn_returns_less"
+                                android:layout_width="40dip"
+                                android:layout_height="40dip"
+                                android:layout_marginLeft="8dip"
+                                android:src="@drawable/minus_disablable" />
+
+                            <TextView
+                                android:id="@+id/text_returns"
+                                android:layout_width="30dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dip"
+                                android:gravity="center"
+                                android:text="0"
+                                android:textSize="20dip"
+                                android:textStyle="bold"
+                                android:textColor="@color/primary_dark"/>
+
+                            <ImageButton
+                                android:id="@+id/btn_returns_more"
+                                android:layout_width="40dip"
+                                android:layout_height="40dip"
+                                android:layout_marginLeft="8dip"
+                                android:src="@drawable/plus_disablable" />
+
+                            <TextView
+                                android:id="@+id/text_visit_returns"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dip"
+                                android:gravity="center"
+                                android:text="+0"
+                                android:textColor="#999999"
+                                android:textSize="20dip" />
+
+                        </LinearLayout>
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

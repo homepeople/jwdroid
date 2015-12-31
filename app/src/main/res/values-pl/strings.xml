@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+<Opis aplikacji Android Market>
+
+Organizer wielozadaniowy dla Świadków Jehowy, pozwalający tworzyć notatki, dogodnie wyświetlać i rozmieszczać tereny i zainteresowane osoby, automatycznie śledzić statystyki i czas służby polowej.
+
+Features:
+ * Notatki ze służby polowej dogodne zarówno dla  prywatnych domów jak i bloków mieszkalnych..
+ * Wyświetlanie na ekranie terenów, mieszkań, mieszkańców, wizyt.
+ * Zapisywanie daty i czasu wszystkich wizyt.
+ * Dostosowywanie kolorów dla mieszkań w trybie automatycznym lub ręcznym.
+ * Śledzenie pozostawionej literatury (w tym przez szablony tekstu w notatkach), ponownych odwiedzin, studiów biblijnych.
+ * Szczegółowe śledzenie wszystkich sesji służby z czasem i powiązanymi statystykami.
+ * Przygotowywanie całkowitego miesięcznego sprawozdania i przesyłanie go przez e-mail lub SMS.
+ * Całkowicie bezpłatna aplikacja, żadnych reklam.
+
+Bezpośrednie źródło projektu: http://code.google.com/p/jwdroid/
+
+Tags: Jehovah's Witnesses, Bible, preaching, ministry <add the same translated tags here>.
+ -->
+<resources>
+
+    <string name="app_name">JW Droid</string>
+
+    <string name="lbl_territory_name">Nazwa terenu:</string>
+    <string name="title_territory_add">Dodaj teren</string>
+    <string name="lbl_territory_desc">Krótki opis:</string>
+    <string name="err_empty_name">Wprowadź nazwę!</string>
+    <string name="msg_territory_added">Teren dodany</string>
+    <string name="msg_territory_deleted">Teren usunięty</string>
+    <string name="territory_list_empty">Lista terenu jest pusta. Możesz dodać nowy teren przez przycisk powyżej.</string>
+    <string name="dlg_territory_delete_msg">Usunięcie terenu nie może zostać cofniete. Czy jesteś pewny?</string>
+    <string name="dlg_territory_delete_title">Usuń teren</string>
+    <string name="dlg_territory_add_label">Nazwa terenu:</string>
+    <string name="dlg_territory_add_note">Na przykład, nazwa ulicy</string>
+
+    <string name="btn_add">Dodaj</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_yes">Tak</string>
+    <string name="btn_no">Nie</string>
+    <string name="btn_cancel">Anuluj</string>
+
+    <string name="lbl_magazines">Czasopisma:</string>
+    <string name="lbl_brochures">Broszury:</string>
+    <string name="lbl_books">Książki:</string>
+    <string name="lbl_returns">Odwiedziny ponowne:</string>
+    <string name="lbl_hours">Godziny:</string>
+    <string name="lbl_studies">Studia Biblijne:</string>
+
+    <string name="lbl_chrono_started_time">Rozpocznij w %s</string>
+    <string name="lbl_chrono_stopped">Pomiar czasu został zatrzymany</string>
+    <string name="btn_chrono_pause">Przerwa</string>
+    <string name="btn_chrono_resume">Przywróć</string>
+    <string name="btn_chrono_finish">Koniec</string>
+    <string name="btn_chrono_start">Start</string>
+    <string name="chk_chrono_calc_auto"> Weź z odwiedzin</string>
+    <string name="msg_chrono_finish">Koniec służby?</string>
+    <string name="msg_chrono_start">Początek służby?</string>
+    <string name="msg_chrono_service_started">Pomiar czasu służby rozpoczęty</string>
+    <string name="lbl_chrono_current_time">Czas służby:</string>
+    <string name="lbl_chrono_service_note">Wybierz, by przejś do pomiaru czasu</string>
+
+    <string name="action_add_single_object">Dodaj pojedynczo</string>
+    <string name="action_add_many_objects">Dodaj kilka</string>
+    <string name="dlg_add_single_object_note">Na przykład, apartament lub numer domu</string>
+    <string name="msg_object_name">Wprowadź nagłówek:</string>
+    <string name="lbl_set_row">Rząd:</string>
+    <string name="lbl_set_col">Kolumna:</string>
+    <string name="lbl_numbers_from">Numery od:</string>
+    <string name="lbl_numbers_to">do:</string>
+    <string name="msg_arrange_after_add">>Mieszkania zostały dodane. Dla twojej wygody (na przykład, jeżeli dodajesz blok mieszkalny) możesz zaplanować siatkę z rzędami i kolumnami w  \&quot;Planowanie\&quot; menu. Czy chciałbyś zrobić to teraz?</string>
+    <string name="msg_error">Błąd!</string>
+    <string name="msg_object_deleted">Mieszkanie usunięto</string>
+    <string name="err_invalid_input">Nieprawidłowe dane wejściowe!</string>
+    <string name="err_no_cols_value">Wprowadź liczbę kolumn!</string>
+    <string name="action_object_change_name">Nagłówek</string>
+    <string name="action_object_change_color">Kolor</string>
+    <string name="action_object_move_up">W górę</string>
+    <string name="action_object_move_down">W dół</string>
+    <string name="action_object_delete">Usuń</string>
+    <string name="action_object_move">Przenieś</string>
+
+    <string name="lbl_from">Z:</string>
+    <string name="lbl_to">Do:</string>
+    <string name="lbl_rows">Rzędy:</string>
+    <string name="lbl_cols">Kolumny:</string>
+    <string name="li_top_down">Maksymalnie na dół</string>
+    <string name="li_bottom_up">Maksymalnie do góry</string>
+    <string name="li_left_right">Z lewej do prawej</string>
+    <string name="li_right_left">Z prawej do lewej</string>
+    <string name="lbl_one_color"> Kolor jednolity</string>
+    <string name="lbl_two_colors">Dwa kolory</string>
+
+    <string name="lbl_door_empty">Utwórz nowego mieszkańsca tutaj.\n\nDodaje nową wizytę przez przycisk powyżej.</string>
+    <string name="lbl_group_empty">Ten ekran jest pusty.\n\nDodaj nowe mieszkanie przez przycisk powyżej.</string>
+
+    <string name="title_help">Pomoc</string>
+    <string name="title_territory_list">Tereny</string>
+    <string name="title_people">Osoby</string>
+    <string name="title_reports">Sprawozdania</string>
+    <string name="title_chrono">pomiar czasu</string>
+
+    <string name="lbl_people_list_empty">Lista osób jest pusta. \n\nDodaj nową osobę przez przycisk powyżej albo w &amp;quot;Tereny&amp;quot; sekcja.</string>
+    <string name="lbl_person_add_from_people">Zauważ, że ta osoba będzie dodana bez powiązania z jakimkolwiek terenem.</string>
+
+    <string name="title_report">Sprawozdanie dla %s</string>
+    <string name="action_calc_type_sessions">Przez listę służby</string>
+    <string name="action_calc_type_visits">Przez wizyty</string>
+    <string name="lbl_report_no_data">Brak danych</string>
+    <string name="msg_delete_session">Naprawdę chcesz usuną tą służbę?</string>
+    <string name="msg_session_deleted">Służba usunięta</string>
+    <string name="action_session_delete">Usuń</string>
+    <string name="title_session">Służba w %s</string>
+    <string name="lbl_report_list_empty">Lista sprawozdań jest pusta.</string>
+    <string name="lbl_report_summary">Całkowicie</string>
+    <string name="lbl_report_empty">Sprawozdanie puste.</string>
+    <string name="lbl_session_desc">Opis służby:</string>
+
+    <string name="lbl_territory_notes">Notatki</string>
+    <string name="lbl_territory_got">Teren pobrany:</string>
+    <string name="lbl_territory_finished">Teren opracowany:</string>
+    <string name="lbl_territory_last_visit">Ostatnia wizyta:</string>
+    <string name="action_territory_change_name">Nazwa</string>
+    <string name="action_territory_info">Informacja</string>
+    <string name="action_territory_delete">Usuń</string>
+
+    <string name="lbl_visit_type">Wizyta:</string>
+    <string-array name="visit_types">
+        <item>N/O</item>
+        <item>Wizyta</item>
+        <item>Odwiedziny ponowne</item>
+        <item>Studium biblijne</item>
+    </string-array>
+
+    <string name="lbl_visit_date">Data:</string>
+    <string name="chk_visit_calc_auto">Pobierz z tekstu</string>
+    <string name="msg_choose_color">Wybierz kolor:</string>
+    <string name="msg_delete_visit">Jesteś pewny, że chcesz usunąć tą wizytę?</string>
+    <string name="msg_delete_person">Naprawdę chcesz usuną tego mieszkańca i wszystkie powiązane wizyty?</string>
+    <string name="msg_person_deleted">Mieszkaniec usunięty</string>
+    <string name="msg_visit_deleted">Wizyta usunęła</string>
+    <string name="title_visit">Wizyta</string>
+    <string name="action_person_change">Edytuj</string>
+    <string name="action_person_delete">Usuń</string>
+    <string name="action_person_reject">Nie zainteresowany</string>
+    <string name="action_person_nreject">Zainteresowany</string>
+    <string name="action_visit_delete">Usunąć</string>
+
+    <string name="menu_preferences">Preferencje</string>
+    <string name="menu_feedback">Wyślij komunikat</string>
+    <string name="menu_help">Pomoc</string>
+    <string name="menu_session_date">Data i czas</string>
+    <string name="menu_change_session_date">Zmień datę</string>
+    <string name="menu_change_session_time">Żmień czas</string>
+    <string name="menu_set_position">Ustaw pozycję</string>
+    <string name="menu_move_up">Przenieś w górę</string>
+    <string name="menu_move_down">Przenieś w dół</string>
+    <string name="menu_move_left">Przenieś w lewo</string>
+    <string name="menu_move_right">Przenieś w prawo</string>
+    <string name="menu_territory_info">Informacja</string>
+    <string name="menu_territory_layout">Układ</string>
+    <string name="menu_territory_arrange">Rozmieść</string>
+    <string name="menu_territory_shift_up">Przenieś wszystko w górę</string>
+    <string name="menu_territory_shift_down">Przenieś wszystko w dół</string>
+    <string name="menu_territory_shift_left">Przenieś wszystko w lewo</string>
+    <string name="menu_territory_shift_right">Przenieś wszystko w prawo</string>
+
+    <string name="title_preferences">Preferencje</string>
+
+    <string name="pref_title_appearance">Wygląd</string>
+    <string name="pref_list_text_rows">Liczba rzędów</string>
+    <string name="pref_list_text_rows_note">liczba wyświetlanych rzędów treści ostatniej notatki z mieszkania, pokazywana w widoku listy</string>
+    <string name="pref_table_button_size">Wielkość przycisku</string>
+    <string name="pref_table_button_size_note">Wielkość przycisków reprezentujących mieszkania w widoku siatki</string>
+    <string-array name="entries_table_button_size_preference">
+        <item>Mały</item>
+        <item>Średni</item>
+        <item>Duży</item>
+    </string-array>
+
+    <string name="pref_title_colors">Kolor</string>
+    <string name="pref_autocolor">Auto-Ustawienia kolorów</string>
+    <string name="pref_autocolor_note">Automatycznie ustaw kolor pod pewnymi warunkami</string>
+    <string name="pref_assign_colors">Ustawienia kolorów</string>
+    <string name="pref_color_reject">Nie zainteresowany</string>
+    <string name="pref_color_visit">Wizyta</string>
+    <string name="pref_color_return">Odwiedziny ponowne</string>
+    <string name="pref_color_study">Studium biblijne</string>
+    <string-array name="entries_color_preference">
+        <item>Bez\ zmian</item>
+        <item>Niebieski</item>
+        <item>Zielony</item>
+        <item>Żółty</item>
+        <item>Czerwony</item>
+        <item>Jasno niebieski</item>
+        <item>Jasno zielony</item>
+        <item>Jasno żółty</item>
+        <item>Jasno czerwony</item>
+    </string-array>
+
+    <string name="pref_title_literature">Śledzenie literatury</string>
+    <string name="pref_assign_templates">Ustaw Szablony</string>
+    <string name="pref_assign_templates_note">Ustaw tekst szblonu, który będzie używany dla śledzenia literatury w notatkach</string>
+    <string name="pref_template_magazine">Czasopismo</string>
+    <string name="pref_template_brochure">Broszura</string>
+    <string name="pref_template_book">Książka</string>
+    <string name="pref_template_magazine_default">+cz</string>
+    <string name="pref_template_brochure_default">+br</string>
+    <string name="pref_template_book_default">+ks</string>
+
+    <string-array name="months">
+        <item>Styczeń</item>
+        <item>Luty</item>
+        <item>Marzec</item>
+        <item>Kwiecień</item>
+        <item>Maj</item>
+        <item>Czerwiec</item>
+        <item>Lipiec</item>
+        <item>Sierpień</item>
+        <item>Wrzesień</item>
+        <item>Październik</item>
+        <item>Listopad</item>
+        <item>Grudzień</item>
+    </string-array>
+
+    <string-array name="plural_magazines">
+        <item>czasopismo</item>
+        <item>czasopismo</item>
+        <item>czasopisma</item>
+    </string-array>
+
+    <string-array name="plural_brochures">
+        <item>broszura</item>
+        <item>broszura</item>
+        <item>broszury</item>
+    </string-array>
+
+    <string-array name="plural_books">
+        <item>książka</item>
+        <item>książka</item>
+        <item>książki</item>
+    </string-array>
+
+    <string-array name="plural_returns">
+        <item>odwiedziny ponowne</item>
+        <item>odwiedziny ponowne</item>
+        <item>odwiedziny ponowne</item>
+    </string-array>
+
+
+    <string-array name="plural_studies">
+        <item>studium biblijne</item>
+        <item>studium biblijne</item>
+        <item>studia biblijne</item>
+    </string-array>
+
+    <string-array name="plural_visits">
+        <item>wizyta</item>
+        <item>wizyta</item>
+        <item>wizyty</item>
+    </string-array>
+
+
+    <string name="title_tip">Wskazówka</string>
+    <string name="msg_tip_literature_templates" formatted="false">Zauważ, że możesz użyć tych szablonów tekstowych dla pozostawianejliteratury:\n%s, %s, %s\n\nnNa przykład: \"Pozostawiono%s o dzieciach.\"</string>
+
+    <!-- v1.2 -->
+
+    <string name="msg_person">Mieszkaniec</string>
+    <string name="lbl_person_desc">Opis mieszkańca</string>
+    <string name="lbl_male">Mężczyzna</string>
+    <string name="lbl_female">Kobieta</string>
+    <string name="lbl_male_letter">M</string>
+    <string name="lbl_female_letter">K</string>
+    <string name="msg_choose_age">Wybierz wiek:</string>
+
+    <string name="lbl_visit_text">Treś wizyty</string>
+
+    <string name="action_object_add_na_visit">Not at home</string>
+    <string name="msg_added_na_visit">Added \'N/A\' visit at %s</string>
+
+    <string name="pref_hide_visited">Hide visited today</string>
+    <string name="pref_hide_visited_note">Hide households visited today (marked with checkbox)</string>
+
+    <string name="msg_delete_object">All tenants and their visits will be deleted! Do you really want to delete the household?</string>
+
+    <string name="menu_territory_sort">Sort</string>
+    <string name="msg_territory_sort">Soft list by household name?</string>
+
+    <string-array name="menu_move_list">
+        <item>Set position</item>
+        <item>Move up</item>
+        <item>Move down</item>
+    </string-array>
+
+    <string name="pref_object_add_sorted">Auto sort</string>
+    <string name="pref_object_add_sorted_note">Insert a new household with sorting by name (only for list view)</string>
+
+    <string name="menu_backups">Backups</string>
+    <string name="lbl_backup_list_empty">Backup list empty.</string>
+    <string name="msg_backup_failed">Error creating backup copy</string>
+    <string name="pref_title_backup">Backups</string>
+    <string name="pref_autobackup">Auto backup</string>
+    <string name="pref_autobackup_note">Automatically create a new backup after each service session</string>
+    <string name="pref_num_backups">Copies number</string>
+    <string name="pref_num_backups_note">Max number of stored backups</string>
+    <string name="msg_create_backup">Create new backup?</string>
+    <string name="msg_delete_backup">Delete this backup?</string>
+    <string name="msg_restore_backup">Warning: ALL current data will be permanently lost and replaced with data from the backup. Are you sure?</string>
+    <string name="action_backup_restore">Restore</string>
+    <string name="action_backup_delete">Delete</string>
+    <string name="msg_restore_backup_failed">Error restoring backup copy</string>
+    <string name="msg_restore_backup_success">Backup has been successfully restored</string>
+
+    <string name="msg_revision_notes">What\'s new</string>
+<string name="msg_revision_notes_1_2" formatted="true"><b>Version 1.2</b>\n\nData backups, including automatic\n\nManual adding service sessions\n\nSimplified editing of service date and time\n\nNew mark on households visited today\n\nSorting households by name\n\nQuick editing of age and gender after creating a new tenant\n\nQuick mark \"Not at home\" without entering a household\n\nMinor interface improvements
+</string>
+    <!-- v1.2.1 -->
+
+    <string name="msg_backup_created">Backup created</string>
+    <string name="pref_backups_manage">Manage backups</string>
+    <string name="pref_backups_manage_note">View list of created backups</string>
+
+</resources>

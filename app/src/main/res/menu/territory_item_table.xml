@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:title="@string/menu_set_position" android:id="@+id/menu_set_position" />
+	<item android:title="@string/menu_move_up" android:id="@+id/menu_shift_up" />
+	<item android:title="@string/menu_move_down" android:id="@+id/menu_shift_down" />
+	<item android:title="@string/menu_move_left" android:id="@+id/menu_shift_left" />
+	<item android:title="@string/menu_move_right" android:id="@+id/menu_shift_right" />
+</menu>

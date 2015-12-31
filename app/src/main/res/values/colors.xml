@@ -1,0 +1,52 @@
+<resources>
+    <color name="gray">#999999</color>
+    <color name="gray_light">#cbcbcb</color>
+
+    <color name="lightgray">#d8d8d8</color>
+    <color name="lightgray_light">#f8f8f8</color>
+
+    <color name="green">#559955</color>
+    <color name="green_light">#6fc76f</color>
+
+    <color name="lightgreen">#4ed44e</color>
+    <color name="lightgreen_light">#5eff5e</color>
+
+    <color name="red">#995555</color>
+    <color name="red_light">#d07474</color>
+
+    <color name="lightred">#d64444</color>
+    <color name="lightred_light">#ff5151</color>
+
+    <color name="blue">#557799</color>
+    <color name="blue_light">#73a1cf</color>
+
+    <color name="lightblue">#408fde</color>
+    <color name="lightblue_light">#49a4ff</color>
+
+    <color name="yellow">#999555</color>
+    <color name="yellow_light">#cfca73</color>
+
+    <color name="lightyellow">#d5cc40</color>
+    <color name="lightyellow_light">#fff54d</color>
+
+    <color name="white">#ffffff</color>
+
+    <color name="dlg_active_border">#aaa</color>
+    <color name="btn_disabled">#00ffffff</color>
+
+
+    <color name="list_divider">#cccccc</color>
+
+    <color name="primary">#607D8B</color>
+    <color name="primary_dark">#455A64</color>
+    <color name="primary_light">#CFD8DC</color>
+    <color name="accent">#448AFF</color>
+    <color name="accent_dark">#0D47A1</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="primary_material_light_1">#607d8b</color>
+
+
+</resources>

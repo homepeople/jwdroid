@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content">  
+  
+  <RelativeLayout android:id="@+id/layout_dlgedit"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:paddingTop="?attr/dialogPreferredPadding"
+  	android:paddingLeft="?attr/dialogPreferredPadding"
+  	android:paddingRight="?attr/dialogPreferredPadding">
+  		
+  	<EditText android:id="@+id/edit_dlgedit_text"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:hint="@string/lbl_person_desc"
+	  	android:inputType="text|textCapWords"/>
+	
+  	<Button android:id="@+id/btn_person_male"
+  		android:layout_width="wrap_content"
+  		android:layout_height="45dip"
+  		android:layout_below="@id/edit_dlgedit_text"
+  		android:minWidth="65dip"
+  		android:text="@string/lbl_male" />
+  		
+  	<Button android:id="@+id/btn_person_female"
+  		android:layout_width="wrap_content"
+  		android:layout_height="45dip"
+  		android:layout_below="@id/edit_dlgedit_text"
+  		android:layout_toRightOf="@id/btn_person_male"
+  		android:minWidth="65dip"  		
+  		android:text="@string/lbl_female" />
+  	  	 
+  </RelativeLayout>
+</ScrollView>

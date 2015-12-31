@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+<Android Market application description>
+
+Galinga tarnybos tvarkyklė Jehovos liudytojams. Išsaugokit įrašus, stebėkit statistikas ir tarnybos laiką, patogiai peržiūrėkit ir tvarkykit teritorijas ir susidomejusius automatizuotu ir patogiu būdu.
+
+Ypatybės:
+ * Patogu laikyti tarnybos užrašus ir valandas.
+ * Patogus ekrano išdėstymas tiek namams, tiek butams.
+ * Teritorijų išdėstymas pagal ekranus, namus, gyentojus ir aplankymus.
+ * Išsaugomas visų vizitų laikas.
+ * Tarnybos laiko spaičiasvimas laikmačiu.
+ * Parenkamos butų/namų spalvos automatiškai arba rankiniu būdu.
+ * Sekama palikta literatūra (galima naudoti teksto šablonus užrašuose), pakartotiniai aplankymai, Biblijos studijos.
+ * Išsamus visos tarnybos sesijos sekimas su svarbiom statsistikomis.
+ * Galimybė išsiųsti mėnesio ataskaitą el-paštu arba SMS žinute.
+ * Rankinis ir automatitis atsarginių kopijų gaminimas
+ * Visiškai nemokama, jokių reklamų
+
+Atviro kodo projektas: http://code.google.com/p/jwdroid/
+
+Žymės: Jehovah's Witnesses, Bible, preaching, ministry, Jehovos liudytojai, Biblija, skelbimas, tarnyba.
+ -->
+<resources>
+
+    <string name="app_name">JW Droid</string>
+
+    <string name="lbl_territory_name">Teritorijos pavadinimas:</string>
+    <string name="title_territory_add">Pridėti teritoriją</string>
+    <string name="lbl_territory_desc">Trumpas aprašymas:</string>
+    <string name="err_empty_name">Įveskite vardą!</string>
+    <string name="msg_territory_added">Teritorija pridėta</string>
+    <string name="msg_territory_deleted">Teritorija pašalinta</string>
+    <string name="territory_list_empty">Teritorijos sąrašas tuščias. Galite pridėti naują teritoriją, paspausdami viršuje esantį mygtuką.</string>
+    <string name="dlg_territory_delete_msg">Ištrynę teritoriją negalėsite to atšaukti. Tęsti?</string>
+    <string name="dlg_territory_delete_title">Ištrinti teritoriją</string>
+    <string name="dlg_territory_add_label">Teritorijos pavadinimas:</string>
+    <string name="dlg_territory_add_note">Pavyzdžiui, gatvės pavadinimas</string>
+
+    <string name="btn_add">Pridėti</string>
+    <string name="btn_ok">Gerai</string>
+    <string name="btn_yes">Taip</string>
+    <string name="btn_no">Ne</string>
+    <string name="btn_cancel">Atšaukti</string>
+
+    <string name="lbl_magazines">Žurnalai:</string>
+    <string name="lbl_brochures">Brošiūros:</string>
+    <string name="lbl_books">Knygos:</string>
+    <string name="lbl_returns">Pakartotiniai aplakymai:</string>
+    <string name="lbl_hours">Valandos:</string>
+    <string name="lbl_studies">B. studijos:</string>
+
+    <string name="lbl_chrono_started_time">Pradėta %s</string>
+    <string name="lbl_chrono_stopped">Laikmatis sustabdytas</string>
+    <string name="btn_chrono_pause">Pauzė</string>
+    <string name="btn_chrono_resume">Tęsti</string>
+    <string name="btn_chrono_finish">Pabaigti</string>
+    <string name="btn_chrono_start">Pradėti</string>
+    <string name="chk_chrono_calc_auto">Įtraukti iš aplankymų</string>
+    <string name="msg_chrono_finish">Pabaigti tarnybą?</string>
+    <string name="msg_chrono_start">Pradėti tarnybą?</string>
+    <string name="msg_chrono_service_started">Tarnybos laikas pradėtas skaičioti</string>
+    <string name="lbl_chrono_current_time">Tarnybos laikas:</string>
+    <string name="lbl_chrono_service_note">Pasirinkite, kad nueitumėte į laikmatį</string>
+
+    <string name="action_add_single_object">Pridėti vieną</string>
+    <string name="action_add_many_objects">Pridėti keletą</string>
+    <string name="dlg_add_single_object_note">Pavyzdžiui, buto arba namo numeris</string>
+    <string name="msg_object_name">Pridėkite antraštę:</string>
+    <string name="lbl_set_row">Eilutė:</string>
+    <string name="lbl_set_col">Stulpelis:</string>
+    <string name="lbl_numbers_from">Numeriai nuo:</string>
+    <string name="lbl_numbers_to">iki:</string>
+    <string name="msg_arrange_after_add">Butas/namas pridėtas. Jūsų patogumui (pavyzdžiui, jei pridėjote daugiabučio įrašą) galite sutvarkyti vaizdą į eilutes ir stulpelius nuėję į \&quot;Sutvarkyti\&quot; meniu. Ar norėtumėte tai padaryti dabar?</string>
+    <string name="msg_error">Klaida!</string>
+    <string name="msg_object_deleted">Butas/Namas ištrintas</string>
+    <string name="err_invalid_input">Neteisingai įvesti duomenys!</string>
+    <string name="err_no_cols_value">Įveskite stulpelių skaičių!</string>
+    <string name="action_object_change_name">Antraštė</string>
+    <string name="action_object_change_color">Spalva</string>
+    <string name="action_object_move_up">Aukštyn</string>
+    <string name="action_object_move_down">Žemyn</string>
+    <string name="action_object_delete">Ištrinti</string>
+    <string name="action_object_move">Perkelti</string>
+
+    <string name="lbl_from">Nuo:</string>
+    <string name="lbl_to">Iki:</string>
+    <string name="lbl_rows">Eilutės:</string>
+    <string name="lbl_cols">Stulpeliai:</string>
+    <string name="li_top_down">Iš viršaus į apačią</string>
+    <string name="li_bottom_up">Iš apačios į viršų</string>
+    <string name="li_left_right">Iš kairės į dešinę</string>
+    <string name="li_right_left">Iš dešinės į kairę</string>
+    <string name="lbl_one_color">  Viena spalva</string>
+    <string name="lbl_two_colors">  Dvi spalvos</string>
+
+    <string name="lbl_door_empty">Sukurkite naują gyventoją.\n\nPridėkite naują aplankymą paspausdami viršuje esantį mygtuką.</string>
+    <string name="lbl_group_empty">Šis langas yra tuščias.\n\nPridėkite naują butą/namą paspausdami viršuje esantį mygtuką.</string>
+
+    <string name="title_help">Pagalba</string>
+    <string name="title_territory_list">Teritorijos</string>
+    <string name="title_people">Žmonės</string>
+    <string name="title_reports">Ataskaitos</string>
+    <string name="title_chrono">Laikmatis</string>
+
+    <string name="lbl_people_list_empty">Žmonių sarašas tuščias. \n\nPridėkite naują asmenį paspausdami viršuje esantį mygtuką arba nueikite į &quot;Teritorijos&quot; skirsnį.</string>
+    <string name="lbl_person_add_from_people">Pastaba! Šis žmogus nebus susietas su teritorija.</string>
+
+    <string name="title_report">Ataskaita. %s</string>
+    <string name="action_calc_type_sessions">Pagal tarnybos sąrašą</string>
+    <string name="action_calc_type_visits">Pagal aplankymus</string>
+    <string name="lbl_report_no_data">Nėra duomenų</string>
+    <string name="msg_delete_session">Ar tikrai norite ištrinti šią tarnybą?</string>
+    <string name="msg_session_deleted">Tarnyba ištrinta</string>
+    <string name="action_session_delete">Ištrinti</string>
+    <string name="title_session">Tarnyba %s</string>
+    <string name="lbl_report_list_empty">Ataskaitų sąrašas tuščias.</string>
+    <string name="lbl_report_summary">Iš viso</string>
+    <string name="lbl_report_empty">Ataskaita tuščia.</string>
+    <string name="lbl_session_desc">Tarnybos aprašas:</string>
+
+    <string name="lbl_territory_notes">Užrašai</string>
+    <string name="lbl_territory_got">Teritorija paimta:</string>
+    <string name="lbl_territory_finished">Teritorija pereita:</string>
+    <string name="lbl_territory_last_visit">Paskutinis apsilankymas:</string>
+    <string name="action_territory_change_name">Pavadinimas</string>
+    <string name="action_territory_info">Informacija</string>
+    <string name="action_territory_delete">Ištrinti</string>
+
+    <string name="lbl_visit_type">Apsilakymas:</string>
+    <string-array name="visit_types">
+        <item>Ne namie</item>
+        <item>Įprastas aplankymas</item>
+        <item>Pakartotinis aplankymas</item>
+        <item>Biblijos studija</item>
+    </string-array>
+
+    <string name="lbl_visit_date">Data:</string>
+    <string name="chk_visit_calc_auto">Įtraukti iš užrašų</string>
+    <string name="msg_choose_color">Pasirinkite spalvą:</string>
+    <string name="msg_person_desc">Aprašykite gyventoją:</string>
+    <string name="msg_delete_visit">Ar tikrai norite išrinti šį aplankymą?</string>
+    <string name="msg_delete_person">Ar tikrai norite ištrinti šė gyventoją ir visus susijusius aplankymus?</string>
+    <string name="msg_person_deleted">Gyventojas ištrintas</string>
+    <string name="msg_visit_deleted">Aplankymas ištrintas</string>
+    <string name="title_visit">Aplankymas</string>
+    <string name="action_person_change">Pakeisti</string>
+    <string name="action_person_delete">Ištrinti</string>
+    <string name="action_person_reject">Atsisakė</string>
+    <string name="action_person_nreject">Susidomėjęs</string>
+    <string name="action_visit_delete">Ištrinti</string>
+
+    <string name="menu_preferences">Nustatymai</string>
+    <string name="menu_feedback">Siųsti atsiliepimus</string>
+    <string name="menu_help">Pagalba</string>
+    <string name="menu_session_date">Data ir laikas</string>
+    <string name="menu_change_session_date">Pakeisti datą</string>
+    <string name="menu_change_session_time">Pakeisti laiką</string>
+    <string name="menu_set_position">Nustatyti vietą</string>
+    <string name="menu_move_up">Perkelti aukštyn</string>
+    <string name="menu_move_down">Perkelti žemyn</string>
+    <string name="menu_move_left">Perkelti į kairę</string>
+    <string name="menu_move_right">Perkelti į dešinę</string>
+    <string name="menu_territory_info">Informacija</string>
+    <string name="menu_territory_layout">Išdėstymas</string>
+    <string name="menu_territory_arrange">Sutvarkyti</string>
+    <string name="menu_territory_shift_up">Visus perkelti aukštyn</string>
+    <string name="menu_territory_shift_down">Visus perkelti žemyn</string>
+    <string name="menu_territory_shift_left">Visus perkelti į kairę</string>
+    <string name="menu_territory_shift_right">Visus perkelti į dešinę</string>
+
+    <string name="title_preferences">Nustatymai</string>
+
+    <string name="pref_title_appearance">Išvaizda</string>
+    <string name="pref_list_text_rows">Eilučių skaičius</string>
+    <string name="pref_list_text_rows_note">Kiek eilučių bus rodoma paskutinių namo/buto užrašų, pasirinkus sąrašo vaizdą</string>
+    <string name="pref_table_button_size">Mygtuko dydis</string>
+    <string name="pref_table_button_size_note">Buto/namo mygtukų dydis pasirinkus tinklelio vaizdą</string>
+    <string-array name="entries_table_button_size_preference">
+        <item>Mažas</item>
+        <item>Vidutinis</item>
+        <item>Didelis</item>
+    </string-array>
+
+    <string name="pref_title_colors">Spalvos</string>
+    <string name="pref_autocolor">Automatinis spalvų pasirinkimas</string>
+    <string name="pref_autocolor_note">Automatiškai nustatyti spalvas pagal situaciją</string>
+    <string name="pref_assign_colors">Nustatyti spalvas</string>
+    <string name="pref_color_reject">Atsisakė</string>
+    <string name="pref_color_visit">Apsilankymas</string>
+    <string name="pref_color_return">Pakartotinis apsilankymas</string>
+    <string name="pref_color_study">Biblijos studija</string>
+    <string-array name="entries_color_preference">
+        <item>Pakeisti/nepakeisti</item>
+        <item>Mėlyna</item>
+        <item>Žalia</item>
+        <item>Geltona</item>
+        <item>Raudona</item>
+        <item>Šviesiai mėlyna</item>
+        <item>Šviesiai žalia</item>
+        <item>Šviesiai geltona</item>
+        <item>Šviesiai raudona</item>
+    </string-array>
+
+    <string name="pref_title_literature">Literatūros skaičiavimas</string>
+    <string name="pref_assign_templates">Nustatyti šablonus</string>
+    <string name="pref_assign_templates_note">Nustatykite teksto šablonus, kuriuos naudosite užrašuose, skaičiuodami literatūrą</string>
+    <string name="pref_template_magazine">Žurnalas</string>
+    <string name="pref_template_brochure">Brošiūra</string>
+    <string name="pref_template_book">Knyga</string>
+    <string name="pref_template_magazine_default">+z</string>
+    <string name="pref_template_brochure_default">+b</string>
+    <string name="pref_template_book_default">+k</string>
+
+    <string-array name="months">
+        <item>Sausis</item>
+        <item>Vasaris</item>
+        <item>Kovas</item>
+        <item>Balandis</item>
+        <item>Gegužė</item>
+        <item>Birželis</item>
+        <item>Liepa</item>
+        <item>Rugpjūtis</item>
+        <item>Rugsėjis</item>
+        <item>Spalis</item>
+        <item>Lapkritis</item>
+        <item>Gruodis</item>
+    </string-array>
+
+    <string-array name="plural_magazines">
+        <item>žurnalas</item>
+        <item>žurnalai</item>
+    </string-array>
+
+    <string-array name="plural_brochures">
+        <item>brošiūra</item>
+        <item>brošiūros</item>
+    </string-array>
+
+    <string-array name="plural_books">
+        <item>knyga</item>
+        <item>knygos</item>
+    </string-array>
+
+    <string-array name="plural_returns">
+        <item>pakartotinis aplankymas</item>
+        <item>pakartotiniai aplankymai</item>
+    </string-array>
+
+
+    <string-array name="plural_studies">
+        <item>biblijos studija</item>
+        <item>biblijos studijos</item>
+    </string-array>
+
+    <string-array name="plural_visits">
+        <item>aplankymas</item>
+        <item>aplankymai</item>
+    </string-array>
+
+
+    <string name="title_tip">Patarimas</string>
+    <string name="msg_tip_literature_templates" formatted="false">Jūs galite naudoti šiuos šablonus, kai paliekate literatūros:\n%s, %s, %s\n\nPavyzdžiui, \"Palikau %s apie vaikus.\"</string>
+
+    <!-- v1.2 -->
+
+    <string name="msg_person">Gyventojas</string>
+    <string name="lbl_person_desc">Gyventojo aprašymas</string>
+    <string name="lbl_male">Vyras</string>
+    <string name="lbl_female">Moteris</string>
+    <string name="lbl_male_letter">V</string>
+    <string name="lbl_female_letter">M</string>
+    <string name="msg_choose_age">Pasirinkite amžių:</string>
+
+    <string name="lbl_visit_text">Apsilankymo turinys</string>
+
+    <string name="action_object_add_na_visit">Ne namie</string>
+    <string name="msg_added_na_visit">Pridetas \'Ne namie\' vizitas %s</string>
+
+    <string name="pref_hide_visited">Slėpti šiandien aplankytus</string>
+    <string name="pref_hide_visited_note">Šiandien aplankytus butus/namus paslėpti (pažymėtus)</string>
+
+    <string name="msg_delete_object">Visi gyventojai ir aplankymai bus ištrinti! Ar tikrai norite ištrinti?</string>
+
+    <string name="menu_territory_sort">Rūšiuoti</string>
+    <string name="msg_territory_sort">Rūšiuoti pagal buto/namo pavadinimą?</string>
+
+    <string-array name="menu_move_list">
+        <item>Nustatyti padėtį</item>
+        <item>Perkelti aukštyn</item>
+        <item>Perkelti žemyn</item>
+    </string-array>
+
+    <string name="pref_object_add_sorted">Rūšiuoti automatiškai</string>
+    <string name="pref_object_add_sorted_note">Pridėti naują butą/namą, rūšiuojant pagal pavadinimą (tik sąrašo vaizde)</string>
+
+    <string name="menu_backups">Atsarginės kopijos</string>
+    <string name="lbl_backup_list_empty">Atsarginių kopijų sąrašas tuščias.</string>
+    <string name="msg_backup_failed">Klaida kuriant atsargines kopijas</string>
+    <string name="pref_title_backup">Atsarginės kopijos</string>
+    <string name="pref_autobackup">Automatiškai daryti atsargines kopijas</string>
+    <string name="pref_autobackup_note">Automatiškai daryti naujas atsargines kopijas po kiekvienos skelbimo sesijos</string>
+    <string name="pref_num_backups">Kopijų skaičius</string>
+    <string name="pref_num_backups_note">Didžiausias saugomų kopijų skaičius</string>
+    <string name="msg_create_backup">Kurti naują atsarginę kopiją?</string>
+    <string name="msg_delete_backup">Ištrinti šia atsarginę kopiją?</string>
+    <string name="msg_restore_backup">Dėmesio! VISA turima informacija bus negrįžtamai ištrinta ir pakeista atsarginėmis kopijomis. Tęsti?</string>
+    <string name="action_backup_restore">Atkurti</string>
+    <string name="action_backup_delete">Ištrinti</string>
+    <string name="msg_restore_backup_failed">Klaida atkuriant atsarginę kopiją</string>
+    <string name="msg_restore_backup_success">Sėkmingai pavyko atkurti atsarginę kopiją</string>
+
+    <string name="msg_revision_notes">Kas naujo</string>
+<string name="msg_revision_notes_1_2" formatted="true"><b>Versija 1.2</b>\n\nInformacijos atsarginės kopijos, įskaitant automatišką\n\nRankinį tarnybos sesijų pridėjimas\n\nSupaprastintas tarnybos datos ir laiko redagavimas\n\nNauja žymė aplankius namą/butą šiandien\n\nButų/namų grupavimas pagal pavadinimą\n\nGreitas anžiaus ir lyties redagavimas po to, kai sukuriamas naujas gyventojas\n\nGreitas  \"Ne namie\" žymėjimas be buto/namo įvedimo\n\nNedideli sąsajų patobulinimai
+</string>
+
+    <!-- v1.2.1 -->
+
+    <string name="msg_backup_created">Sukurta atsarginė kopija</string>
+    <string name="pref_backups_manage">Tvarkyti atsargines kopijas</string>
+    <string name="pref_backups_manage_note">Žiūrėti atsarginių kopijų sąrašą</string>
+</resources>

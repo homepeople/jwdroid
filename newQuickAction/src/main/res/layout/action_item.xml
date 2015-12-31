@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+**
+** /res/layout/action_item.xml
+**
+** Author: Lorensius W. L. T <lorenz@londatiga.net>
+**
+*/ 
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="@drawable/quickaction_slider_btn_back">
+	
+	<LinearLayout android:id="@+id/item"
+		android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:paddingTop="6dip"
+		android:paddingBottom="0dip"
+		android:paddingLeft="15dip"
+		android:paddingRight="15dip" 
+		android:clickable="true"
+		android:background="@drawable/quickaction_slider_btn">
+	
+		<ImageView
+			android:id="@+id/iv_icon" 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"/>
+	
+		<TextView 
+			android:id="@+id/tv_title"
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent"
+			android:layout_marginTop="3dip"  
+			android:gravity="center_vertical|center_horizontal"
+			android:textSize="13sp"
+			android:textColor="#000000"
+			android:minWidth="40dip"/>
+	</LinearLayout>
+		
+</LinearLayout>

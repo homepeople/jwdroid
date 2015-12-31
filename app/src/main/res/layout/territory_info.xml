@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/territory"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="?attr/actionBarTheme" />
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#eeeeee"
+            android:orientation="vertical"
+            android:padding="10dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_territory_notes"
+                android:textSize="16dip"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_notes"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:minLines="5"
+                android:textSize="15dip" />
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:stretchColumns="0">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_territory_got"
+                        android:textColor="#777"
+                        android:textSize="16dip" />
+
+                    <Button
+                        android:id="@+id/btn_started"
+                        android:layout_width="130dip"
+                        android:layout_height="wrap_content"
+                        android:text="22.09.11"
+                        android:textSize="18dip" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_territory_finished"
+                        android:textColor="#777"
+                        android:textSize="16dip" />
+
+                    <Button
+                        android:id="@+id/btn_finished"
+                        android:layout_width="130dip"
+                        android:layout_height="wrap_content"
+                        android:text=" - "
+                        android:textSize="18dip" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="10dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_territory_last_visit"
+                        android:textColor="#777"
+                        android:textSize="16dip" />
+
+                    <TextView
+                        android:id="@+id/lbl_modified"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="18dip" />
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

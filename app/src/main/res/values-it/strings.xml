@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+<Android Market application description>
+
+Powerful service organizer for Jehovah's Witnesses. Keep records, track statistics and service time, conveniently view and arrange territories and interested persons in an automated and intuitive way.
+
+Features:
+ * Conveniently keeping records in service.
+ * Flexible display modes equally fitting for private houses and condominiums.
+ * Viewing territories by screens, households, tenants, visits.
+ * Saving date and time of all visits.
+ * Tracking of service time in the chronometer mode.
+ * Custom colors for households in automatic or manual mode.
+ * Tracking of placed literature (including via text templates in notes), return visits, Bible studies.
+ * Detailed tracking of all service sessions with all relevant statistics.
+ * Composing total monthly reports and sending via e-mail or SMS.
+ * Manual and automatic data backups.
+ * Absolutely free app, no ads.
+
+Open source project: http://code.google.com/p/jwdroid/
+
+Tags: Jehovah's Witnesses, Bible, preaching, ministry <add the same translated tags here>.
+ -->
+<resources>
+
+    <string name="app_name">JW Droid</string>
+
+    <string name="lbl_territory_name">Territory name:</string>
+    <string name="title_territory_add">Add territory</string>
+    <string name="lbl_territory_desc">Short description:</string>
+    <string name="err_empty_name">Enter the name!</string>
+    <string name="msg_territory_added">Territory added</string>
+    <string name="msg_territory_deleted">Territory removed</string>
+    <string name="territory_list_empty">Territory list is empty. You may add a new territory by the button above.</string>
+    <string name="dlg_territory_delete_msg">Territory deletion cannot be undone. Are you sure?</string>
+    <string name="dlg_territory_delete_title">Delete territory</string>
+    <string name="dlg_territory_add_label">Territory name:</string>
+    <string name="dlg_territory_add_note">For example, street name</string>
+
+    <string name="btn_add">Add</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_yes">Yes</string>
+    <string name="btn_no">No</string>
+    <string name="btn_cancel">Cancel</string>
+
+    <string name="lbl_magazines">Magazines:</string>
+    <string name="lbl_brochures">Brochures:</string>
+    <string name="lbl_books">Books:</string>
+    <string name="lbl_returns">Return visits:</string>
+    <string name="lbl_hours">Hours:</string>
+    <string name="lbl_studies">B. studies:</string>
+
+    <string name="lbl_chrono_started_time">Started at %s</string>
+    <string name="lbl_chrono_stopped">Chronometer is stopped</string>
+    <string name="btn_chrono_pause">Pause</string>
+    <string name="btn_chrono_resume">Resume</string>
+    <string name="btn_chrono_finish">Finish</string>
+    <string name="btn_chrono_start">Start</string>
+    <string name="chk_chrono_calc_auto"> Take from visits</string>
+    <string name="msg_chrono_finish">End service?</string>
+    <string name="msg_chrono_start">Start service?</string>
+    <string name="msg_chrono_service_started">Service chronometer started</string>
+    <string name="lbl_chrono_current_time">Service time:</string>
+    <string name="lbl_chrono_service_note">Select to go to chronometer</string>
+
+    <string name="action_add_single_object">Add one</string>
+    <string name="action_add_many_objects">Add some</string>
+    <string name="dlg_add_single_object_note">For example, apartment or house number</string>
+    <string name="msg_object_name">Enter heading:</string>
+    <string name="lbl_set_row">Row:</string>
+    <string name="lbl_set_col">Column:</string>
+    <string name="lbl_numbers_from">Numbers from:</string>
+    <string name="lbl_numbers_to">to:</string>
+    <string name="msg_arrange_after_add">Households added. For your convenience (for example, if you add a condominium entrance) you may arrange the grid by rows and columns in the \&quot;Arrange\&quot; menu. Would you like to do it now?</string>
+    <string name="msg_error">Error!</string>
+    <string name="msg_object_deleted">Household deleted</string>
+    <string name="err_invalid_input">Invalid input!</string>
+    <string name="err_no_cols_value">Enter number of columns!</string>
+    <string name="action_object_change_name">Heading</string>
+    <string name="action_object_change_color">Color</string>
+    <string name="action_object_move_up">Up</string>
+    <string name="action_object_move_down">Down</string>
+    <string name="action_object_delete">Delete</string>
+    <string name="action_object_move">Move</string>
+
+    <string name="lbl_from">From:</string>
+    <string name="lbl_to">To:</string>
+    <string name="lbl_rows">Rows:</string>
+    <string name="lbl_cols">Columns:</string>
+    <string name="li_top_down">Top-down</string>
+    <string name="li_bottom_up">Bottom-up</string>
+    <string name="li_left_right">Left to right</string>
+    <string name="li_right_left">Right to left</string>
+    <string name="lbl_one_color">  Solid color</string>
+    <string name="lbl_two_colors">  Two colors</string>
+
+    <string name="lbl_door_empty">Create a new tenant here.\n\nAdd a new visit by the button above.</string>
+    <string name="lbl_group_empty">This screen is empty.\n\nAdd new households by the button above.</string>
+
+    <string name="title_help">Help</string>
+    <string name="title_territory_list">Territories</string>
+    <string name="title_people">People</string>
+    <string name="title_reports">Reports</string>
+    <string name="title_chrono">Chronometer</string>
+
+    <string name="lbl_people_list_empty">People list is empty. \n\nAdd new person by the button above or in the &quot;Territories&quot; section.</string>
+    <string name="lbl_person_add_from_people">Note that this person will be added without connection to any territory.</string>
+
+    <string name="title_report">Report for %s</string>
+    <string name="action_calc_type_sessions">By service list</string>
+    <string name="action_calc_type_visits">By visits</string>
+    <string name="lbl_report_no_data">No data</string>
+    <string name="msg_delete_session">Do you really want to delete this service?</string>
+    <string name="msg_session_deleted">Service deleted</string>
+    <string name="action_session_delete">Delete</string>
+    <string name="title_session">Service at %s</string>
+    <string name="lbl_report_list_empty">Reports list is empty.</string>
+    <string name="lbl_report_summary">Total</string>
+    <string name="lbl_report_empty">Report empty.</string>
+    <string name="lbl_session_desc">Service description:</string>
+
+    <string name="lbl_territory_notes">Notes</string>
+    <string name="lbl_territory_got">Territory taken:</string>
+    <string name="lbl_territory_finished">Territory worked:</string>
+    <string name="lbl_territory_last_visit">Last visit:</string>
+    <string name="action_territory_change_name">Name</string>
+    <string name="action_territory_info">Info</string>
+    <string name="action_territory_delete">Delete</string>
+
+    <string name="lbl_visit_type">Visit:</string>
+    <string-array name="visit_types">
+        <item>N/A</item>
+        <item>Normal visit</item>
+        <item>Return visit</item>
+        <item>Bible study</item>
+    </string-array>
+
+    <string name="lbl_visit_date">Date:</string>
+    <string name="chk_visit_calc_auto">Take from text</string>
+    <string name="msg_choose_color">Choose color:</string>
+    <string name="msg_person_desc">Enter tenant description:</string>
+    <string name="msg_delete_visit">Are you sure you want to delete this visit?</string>
+    <string name="msg_delete_person">Do you really want to delete this tenant and all associated visits?</string>
+    <string name="msg_person_deleted">Tenant deleted</string>
+    <string name="msg_visit_deleted">Visit deleted</string>
+    <string name="title_visit">Visit</string>
+    <string name="action_person_change">Edit</string>
+    <string name="action_person_delete">Delete</string>
+    <string name="action_person_reject">Not interested</string>
+    <string name="action_person_nreject">Interested</string>
+    <string name="action_visit_delete">Delete</string>
+
+    <string name="menu_preferences">Preferences</string>
+    <string name="menu_feedback">Send feedback</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_session_date">Date and time</string>
+    <string name="menu_change_session_date">Change date</string>
+    <string name="menu_change_session_time">Change time</string>
+    <string name="menu_set_position">Set position</string>
+    <string name="menu_move_up">Move up</string>
+    <string name="menu_move_down">Move down</string>
+    <string name="menu_move_left">Move left</string>
+    <string name="menu_move_right">Move right</string>
+    <string name="menu_territory_info">Info</string>
+    <string name="menu_territory_layout">Layout</string>
+    <string name="menu_territory_arrange">Arrange</string>
+    <string name="menu_territory_shift_up">Move all up</string>
+    <string name="menu_territory_shift_down">Move all down</string>
+    <string name="menu_territory_shift_left">Move all left</string>
+    <string name="menu_territory_shift_right">Move all right</string>
+
+    <string name="title_preferences">Preferences</string>
+
+    <string name="pref_title_appearance">Appearance</string>
+    <string name="pref_list_text_rows">Rows number</string>
+    <string name="pref_list_text_rows_note">Number of rows of the last note of the household to display in list view</string>
+    <string name="pref_table_button_size">Button size</string>
+    <string name="pref_table_button_size_note">Size of buttons representing households in grid view</string>
+    <string-array name="entries_table_button_size_preference">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Big</item>
+    </string-array>
+
+    <string name="pref_title_colors">Colors</string>
+    <string name="pref_autocolor">Auto-set colors</string>
+    <string name="pref_autocolor_note">Automatically set color against certain conditions</string>
+    <string name="pref_assign_colors">Set colors</string>
+    <string name="pref_color_reject">Not interested</string>
+    <string name="pref_color_visit">Visit</string>
+    <string name="pref_color_return">Return visit</string>
+    <string name="pref_color_study">Bible study</string>
+    <string-array name="entries_color_preference">
+        <item>Don\'t change</item>
+        <item>Blue</item>
+        <item>Green</item>
+        <item>Yellow</item>
+        <item>Red</item>
+        <item>Bright blue</item>
+        <item>Bright green</item>
+        <item>Bright yellow</item>
+        <item>Bright red</item>
+    </string-array>
+
+    <string name="pref_title_literature">Literature tracking</string>
+    <string name="pref_assign_templates">Set templates</string>
+    <string name="pref_assign_templates_note">Set text templates to use in notes for tracking literature</string>
+    <string name="pref_template_magazine">Magazine</string>
+    <string name="pref_template_brochure">Brochure</string>
+    <string name="pref_template_book">Book</string>
+    <string name="pref_template_magazine_default">+m</string>
+    <string name="pref_template_brochure_default">+br</string>
+    <string name="pref_template_book_default">+bk</string>
+
+    <string-array name="months">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="plural_magazines">
+        <item>magazine</item>
+        <item>magazines</item>
+    </string-array>
+
+    <string-array name="plural_brochures">
+        <item>brochure</item>
+        <item>brochures</item>
+    </string-array>
+
+    <string-array name="plural_books">
+        <item>book</item>
+        <item>books</item>
+    </string-array>
+
+    <string-array name="plural_returns">
+        <item>return visit</item>
+        <item>return visits</item>
+    </string-array>
+
+
+    <string-array name="plural_studies">
+        <item>bible study</item>
+        <item>bible studies</item>
+    </string-array>
+
+    <string-array name="plural_visits">
+        <item>visit</item>
+        <item>visits</item>
+    </string-array>
+
+
+    <string name="title_tip">Tip</string>
+    <string name="msg_tip_literature_templates" formatted="false">Note that you can use these text templates for placed literature:\n%s, %s, %s\n\nFor example: \"Placed %s about children.\"</string>
+
+    <!-- v1.2 -->
+
+    <string name="msg_person">Tenant</string>
+    <string name="lbl_person_desc">Tenant description</string>
+    <string name="lbl_male">Man</string>
+    <string name="lbl_female">Woman</string>
+    <string name="lbl_male_letter">M</string>
+    <string name="lbl_female_letter">W</string>
+    <string name="msg_choose_age">Choose age:</string>
+
+    <string name="lbl_visit_text">Visit content</string>
+
+    <string name="action_object_add_na_visit">Not at home</string>
+    <string name="msg_added_na_visit">Added \'N/A\' visit at %s</string>
+
+    <string name="pref_hide_visited">Hide visited today</string>
+    <string name="pref_hide_visited_note">Hide households visited today (marked with checkbox)</string>
+
+    <string name="msg_delete_object">All tenants and their visits will be deleted! Do you really want to delete the household?</string>
+
+    <string name="menu_territory_sort">Sort</string>
+    <string name="msg_territory_sort">Sort list by household name?</string>
+
+    <string-array name="menu_move_list">
+        <item>Set position</item>
+        <item>Move up</item>
+        <item>Move down</item>
+    </string-array>
+
+    <string name="pref_object_add_sorted">Auto sort</string>
+    <string name="pref_object_add_sorted_note">Insert a new household with sorting by name (only for list view)</string>
+
+    <string name="menu_backups">Backups</string>
+    <string name="lbl_backup_list_empty">Backup list empty.</string>
+    <string name="msg_backup_failed">Error creating backup copy</string>
+    <string name="pref_title_backup">Backups</string>
+    <string name="pref_autobackup">Auto backup</string>
+    <string name="pref_autobackup_note">Automatically create a new backup after each service session</string>
+    <string name="pref_num_backups">Copies number</string>
+    <string name="pref_num_backups_note">Max number of stored backups</string>
+    <string name="msg_create_backup">Create new backup?</string>
+    <string name="msg_delete_backup">Delete this backup?</string>
+    <string name="msg_restore_backup">Warning: ALL current data will be permanently lost and replaced with data from the backup. Are you sure?</string>
+    <string name="action_backup_restore">Restore</string>
+    <string name="action_backup_delete">Delete</string>
+    <string name="msg_restore_backup_failed">Error restoring backup copy</string>
+    <string name="msg_restore_backup_success">Backup has been successfully restored</string>
+
+    <string name="msg_revision_notes">What\'s new</string>
+
+    <!-- v1.2.1 -->
+
+    <string name="msg_backup_created">Backup created</string>
+    <string name="pref_backups_manage">Manage backups</string>
+    <string name="pref_backups_manage_note">View list of created backups</string>
+
+    <!--  v1.2.3 -->
+    <string name="msg_revision_notes_1_2_3" formatted="true"><b>Version 1.2.3</b>\n\n* Added French, Dutch, Romanian, Lithuanian and Czech translations. Thanks to all the translators!\n\n* Fixed bug that lead to app crashes in certain conditions.\n\n* Fixed bug that caused previous month report hide and the current one double on the 1st day of a new month.\n\n* Fixed and rebuilt Chronometer module, now it works properly in all cases and without crashes.\n\n<b>Version 1.2</b>\n\n* Data backups, including automatic\n\n* Manual adding service sessions\n\n* Simplified editing of service date and time\n\n* New mark on households visited today\n\n* Sorting households by name\n\n* Quick editing of age and gender after creating a new tenant\n\n* Quick mark \"Not at home\" without entering a household\n\n* Minor interface improvements</string>
+
+    <!--  v1.2.4 -->
+    <string name="msg_revision_notes_1_2_4" formatted="true"><b>Version 1.2.4</b>\n\n* Added Bulgarian translation.\n\n* Fixed an issue where current date of N/A visits would not set as current.\n\n<b>Version 1.2.3</b>\n\n* Added French, Dutch, Romanian, Lithuanian and Czech translations. Thanks to all the translators!\n\n* Fixed bug that lead to app crashes in certain conditions.\n\n* Fixed bug that caused previous month report hide and the current one double on the 1st day of a new month.\n\n* Fixed and rebuilt Chronometer module, now it works properly in all cases and without crashes.\n\n<b>Version 1.2</b>\n\n* Data backups, including automatic\n\n* Manual adding service sessions\n\n* Simplified editing of service date and time\n\n* New mark on households visited today\n\n* Sorting households by name\n\n* Quick editing of age and gender after creating a new tenant\n\n* Quick mark \"Not at home\" without entering a household\n\n* Minor interface improvements</string>
+</resources>

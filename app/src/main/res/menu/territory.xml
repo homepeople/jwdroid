@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_add"
+        android:icon="@drawable/ic_add_white_48dp"
+        android:title="@string/btn_add"
+        app:showAsAction="always|withText"/>
+    <item
+        android:id="@+id/menu_display_mode"
+        android:icon="@drawable/ic_apps_white_48dp"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/menu_info"
+        android:icon="@drawable/ic_assignment_white_48dp"
+        android:title="@string/menu_territory_info"
+        app:showAsAction="ifRoom"/>
+    <group android:id="@+id/menu_group_table">
+        <item
+            android:icon="@drawable/ic_menu_arrange"
+            android:title="@string/menu_territory_layout">
+            <menu>
+                <item
+                    android:id="@+id/menu_arrange"
+                    android:title="@string/menu_territory_arrange" />
+                <item
+                    android:id="@+id/menu_shift_up"
+                    android:title="@string/menu_territory_shift_up" />
+                <item
+                    android:id="@+id/menu_shift_down"
+                    android:title="@string/menu_territory_shift_down" />
+                <item
+                    android:id="@+id/menu_shift_left"
+                    android:title="@string/menu_territory_shift_left" />
+                <item
+                    android:id="@+id/menu_shift_right"
+                    android:title="@string/menu_territory_shift_right" />
+            </menu>
+        </item>
+    </group>
+    <group android:id="@+id/menu_group_list">
+        <item
+            android:id="@+id/menu_sort"
+            android:icon="@android:drawable/ic_menu_sort_by_size"
+            android:title="@string/menu_territory_sort" />
+    </group>
+    <item
+        android:id="@+id/menu_rename"
+        android:title="@string/btn_rename" />
+    <item
+        android:id="@+id/menu_delete"
+        android:title="@string/action_territory_delete" />
+</menu>

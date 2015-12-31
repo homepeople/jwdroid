@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:gravity="center">
+<com.jwdroid.DialogArrangeLayout android:id="@+id/dlg_arrange"
+  android:orientation="vertical"
+  android:layout_width="wrap_content"
+  android:layout_height="fill_parent"
+  android:layout_gravity="center_horizontal"
+  
+  android:paddingTop="15dip"
+  android:paddingBottom="5dip">
+
+	<TextView android:id="@+id/lbl_arrange_rows"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"
+		android:text="@string/lbl_rows" />
+	<EditText android:id="@+id/edit_arrange_rows"
+		android:layout_width="100dip"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/lbl_arrange_rows"
+		android:layout_marginTop="3dip"
+		android:layout_alignParentLeft="true"
+		android:inputType="phone"/>
+	<EditText android:id="@+id/edit_arrange_cols"
+		android:layout_width="100dip"
+		android:layout_height="wrap_content"
+		android:layout_alignTop="@id/edit_arrange_rows"
+		android:layout_marginLeft="15dip"
+		android:layout_toRightOf="@id/edit_arrange_rows"
+		android:inputType="phone"/>
+	<TextView android:id="@+id/lbl_arrange_cols"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_above="@id/edit_arrange_cols"
+		android:layout_alignLeft="@id/edit_arrange_cols"
+		android:layout_marginBottom="3dip"
+		android:text="@string/lbl_cols" />
+		
+	<Spinner android:id="@+id/spinner_arrange_direction_vertical"
+		android:layout_width="215dip"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/edit_arrange_rows"
+		android:layout_alignLeft="@id/edit_arrange_rows"
+		android:layout_marginTop="5dip"/>
+	<Spinner android:id="@+id/spinner_arrange_direction_horizontal"
+		android:layout_width="215dip"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/spinner_arrange_direction_vertical"
+		android:layout_alignLeft="@id/edit_arrange_rows"
+		android:layout_marginTop="5dip"/>
+
+</com.jwdroid.DialogArrangeLayout>
+</ScrollView>							

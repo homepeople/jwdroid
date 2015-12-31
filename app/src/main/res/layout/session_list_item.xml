@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical|left"
+    android:minHeight="50dip">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical|left"
+        android:orientation="vertical"
+        android:paddingBottom="7dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="13dip"
+        android:paddingTop="7dip">
+
+        <TextView
+            android:id="@+id/session_item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dip" />
+
+        <TextView
+            android:id="@+id/session_item_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/secondary_text"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/session_item_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:layout_weight="1"
+            android:textColor="@color/secondary_text"
+            android:textSize="13dip" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/session_item_minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dip"
+        android:textColor="@color/primary"
+        android:textSize="20dip" />
+
+</LinearLayout>

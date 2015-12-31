@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">JW Droid</string>
+
+    <string name="lbl_territory_name">Nome do território:</string>
+    <string name="title_territory_add">Adicionar território</string>
+    <string name="lbl_territory_desc">Breve descrição:</string>
+    <string name="err_empty_name">Insira o nome!</string>
+    <string name="msg_territory_added">Território adicionado</string>
+    <string name="msg_territory_deleted">Território removido</string>
+    <string name="territory_list_empty">A lista de territórios está vazia. Pode adicionar um novo território pelo botão acima.</string>
+    <string name="dlg_territory_delete_msg">A remoção do território não pode ser restaurada. Tem a certeza?</string>
+    <string name="dlg_territory_delete_title">Apagar território</string>
+    <string name="dlg_territory_add_label">Nome do território:</string>
+    <string name="dlg_territory_add_note">Por exemplo, Rua X</string>
+
+    <string name="btn_add">Adicionar</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_yes">Sim</string>
+    <string name="btn_no">Não</string>
+    <string name="btn_cancel">Cancelar</string>
+
+    <string name="lbl_magazines">Revistas:</string>
+    <string name="lbl_brochures">Brochuras:</string>
+    <string name="lbl_books">Livros:</string>
+    <string name="lbl_returns">Revisitas:</string>
+    <string name="lbl_hours">Horas:</string>
+    <string name="lbl_studies">E. Bíblicos:</string>
+
+    <string name="lbl_chrono_started_time">Começou à %s</string>
+    <string name="lbl_chrono_stopped">Cronómetro parado</string>
+    <string name="btn_chrono_pause">Pausar</string>
+    <string name="btn_chrono_resume">Continuar</string>
+    <string name="btn_chrono_finish">Terminar</string>
+    <string name="btn_chrono_start">Começar</string>
+    <string name="chk_chrono_calc_auto"> Obter das visitas</string>
+    <string name="msg_chrono_finish">Terminar o serviço?</string>
+    <string name="msg_chrono_start">Começar o serviço?</string>
+    <string name="msg_chrono_service_started">Cronómetro de serviço terminado</string>
+    <string name="lbl_chrono_current_time">Tempo no serviço:</string>
+    <string name="lbl_chrono_service_note">Selecione para ir para o cronómetro</string>
+
+    <string name="action_add_single_object">Adicionar um</string>
+    <string name="action_add_many_objects">Adicionar alguns</string>
+    <string name="dlg_add_single_object_note">Por exemplo, apartamento ou nº da casa</string>
+    <string name="msg_object_name">Insira o cabeçalho:</string>
+    <string name="lbl_set_row">Linha:</string>
+    <string name="lbl_set_col">Coluna:</string>
+    <string name="lbl_numbers_from">Números desde:</string>
+    <string name="lbl_numbers_to">até:</string>
+    <string name="msg_arrange_after_add">Moradores adicionados. Para a sua conveniência (por exemplo, se adicionar um condomínio), pode organizar uma grelha de colunas e linhas no menu \&quot;Organizar\&quot; . Gostaria de fazê-lo agora?</string>
+    <string name="msg_error">Erro!</string>
+    <string name="msg_object_deleted">Morador removido</string>
+    <string name="err_invalid_input">Inserção inválida!</string>
+    <string name="err_no_cols_value">Insira o número de colunas!</string>
+    <string name="action_object_change_name">Cabeçalho</string>
+    <string name="action_object_change_color">Cor</string>
+    <string name="action_object_move_up">Cima</string>
+    <string name="action_object_move_down">Baixo</string>
+    <string name="action_object_delete">Remover</string>
+    <string name="action_object_move">Mover</string>
+
+    <string name="lbl_from">Desde:</string>
+    <string name="lbl_to">Até:</string>
+    <string name="lbl_rows">Linhas:</string>
+    <string name="lbl_cols">Colunas:</string>
+    <string name="li_top_down">Cima-baixo</string>
+    <string name="li_bottom_up">Baixo-cima</string>
+    <string name="li_left_right">Esquerda para direita</string>
+    <string name="li_right_left">Direita para esquerda</string>
+    <string name="lbl_one_color">  Cor sólida</string>
+    <string name="lbl_two_colors">  Duas cores</string>
+
+    <string name="lbl_door_empty">Crie um novo morador aqui.\n\nAdicione uma nova vista no botão acima.</string>
+    <string name="lbl_group_empty">Este ecrã está vazio.\n\nAdicione novos moradores no botão acima.</string>
+
+    <string name="title_help">Ajuda</string>
+    <string name="title_territory_list">Territórios</string>
+    <string name="title_people">Pessoas</string>
+    <string name="title_reports">Relatórios</string>
+    <string name="title_chrono">Cronómetro</string>
+
+    <string name="lbl_people_list_empty">A lista de pessoas está vazia. \n\nAdicionar uma nova pessoa pelo botão acima ou na secção &amp;quot;Territórios&amp;quot; .</string>
+    <string name="lbl_person_add_from_people">Note que esta pessoa será adicionada sem nenhum território atribuído.</string>
+
+    <string name="title_report">Relatório de %s</string>
+    <string name="action_calc_type_sessions">Por lista do serviço</string>
+    <string name="action_calc_type_visits">Por visitas</string>
+    <string name="lbl_report_no_data">Sem informação</string>
+    <string name="msg_delete_session">Quer mesmo apagar este serviço?</string>
+    <string name="msg_session_deleted">Serviço removido</string>
+    <string name="action_session_delete">Remover</string>
+    <string name="title_session">Serviço em %s</string>
+    <string name="lbl_report_list_empty">A lista de relatórios está vazia.</string>
+    <string name="lbl_report_summary">Total</string>
+    <string name="lbl_report_empty">Relatório vazio.</string>
+    <string name="lbl_session_desc">Descrição do serviço:</string>
+
+    <string name="lbl_territory_notes">Notas</string>
+    <string name="lbl_territory_got">Território selecionado:</string>
+    <string name="lbl_territory_finished">Território trabalhado:</string>
+    <string name="lbl_territory_last_visit">Última visita:</string>
+    <string name="action_territory_change_name">Nome</string>
+    <string name="action_territory_info">Informação</string>
+    <string name="action_territory_delete">Remover</string>
+
+    <string name="lbl_visit_type">Visita:</string>
+    <string-array name="visit_types">
+        <item>N/A</item>
+        <item>Visita normal</item>
+        <item>Revisita</item>
+        <item>Estudo Bíblico</item>
+    </string-array>
+
+    <string name="lbl_visit_date">Data:</string>
+    <string name="chk_visit_calc_auto">Adquirir do texto</string>
+    <string name="msg_choose_color">Escolher a cor:</string>
+    <string name="msg_person_desc">Insira uma descrição do morador:</string>
+    <string name="msg_delete_visit">Tem a certeza de que pretende apagar a visita?</string>
+    <string name="msg_delete_person">Quer mesmo apagar este morador e todas as visitas associadas?</string>
+    <string name="msg_person_deleted">Morador removido</string>
+    <string name="msg_visit_deleted">Visita removida</string>
+    <string name="title_visit">Visita</string>
+    <string name="action_person_change">Editar</string>
+    <string name="action_person_delete">Remover</string>
+    <string name="action_person_reject">Não interessado</string>
+    <string name="action_person_nreject">Interessado</string>
+    <string name="action_visit_delete">Remover</string>
+
+    <string name="menu_preferences">Preferências</string>
+    <string name="menu_feedback">Enviar opinião</string>
+    <string name="menu_help">Ajuda</string>
+    <string name="menu_session_date">Data e hora</string>
+    <string name="menu_change_session_date">Mudar data</string>
+    <string name="menu_change_session_time">Mudar hora</string>
+    <string name="menu_set_position">Indicar posição</string>
+    <string name="menu_move_up">Mover para cima</string>
+    <string name="menu_move_down">Mover para baixo</string>
+    <string name="menu_move_left">Mover para a esquerda</string>
+    <string name="menu_move_right">Move para a direita</string>
+    <string name="menu_territory_info">Informação</string>
+    <string name="menu_territory_layout">Disposição</string>
+    <string name="menu_territory_arrange">Organizar</string>
+    <string name="menu_territory_shift_up">Mover todos para cima</string>
+    <string name="menu_territory_shift_down">Mover todos para baixo</string>
+    <string name="menu_territory_shift_left">Mover todos para a esquerda</string>
+    <string name="menu_territory_shift_right">Mover todos para a direita</string>
+
+    <string name="title_preferences">Preferências</string>
+
+    <string name="pref_title_appearance">Aparência</string>
+    <string name="pref_list_text_rows">Número de linhas</string>
+    <string name="pref_list_text_rows_note">Número de linhas da última nota sobre morador para mostrar na vista de lista</string>
+    <string name="pref_table_button_size">Tamanho do botão</string>
+    <string name="pref_table_button_size_note">Tamanho de botões a representar os moradores na vista de grelha</string>
+    <string-array name="entries_table_button_size_preference">
+        <item>Pequeno</item>
+        <item>Medio</item>
+        <item>Grande</item>
+    </string-array>
+
+    <string name="pref_title_colors">Cores</string>
+    <string name="pref_autocolor">Auto-selecionar cores</string>
+    <string name="pref_autocolor_note">Selecionar cores automaticamente de acordo com restrições</string>
+    <string name="pref_assign_colors">Selecionar cores</string>
+    <string name="pref_color_reject">Não interessado</string>
+    <string name="pref_color_visit">Visita</string>
+    <string name="pref_color_return">Revisita</string>
+    <string name="pref_color_study">Estudo Bíblico</string>
+    <string-array name="entries_color_preference">
+        <item>Não alterar</item>
+        <item>Azul</item>
+        <item>Verde</item>
+        <item>Amarelo</item>
+        <item>Vermelho</item>
+        <item>Azul claro</item>
+        <item>Verde claro</item>
+        <item>Amarelo claro</item>
+        <item>Vermelho claro</item>
+    </string-array>
+
+    <string name="pref_title_literature">Acompanhamento da literatura</string>
+    <string name="pref_assign_templates">Definir pré-definidos</string>
+    <string name="pref_assign_templates_note">Definir textos pré-definidos para usar no acompanhamento da literatura</string>
+    <string name="pref_template_magazine">Revista</string>
+    <string name="pref_template_brochure">Brochura</string>
+    <string name="pref_template_book">Livro</string>
+    <string name="pref_template_magazine_default">--r</string>
+    <string name="pref_template_brochure_default">--b</string>
+    <string name="pref_template_book_default">--l</string>
+
+    <string-array name="months">
+        <item>Janeiro</item>
+        <item>Fevereiro</item>
+        <item>Março</item>
+        <item>Abril</item>
+        <item>Maio</item>
+        <item>Junho</item>
+        <item>Julho</item>
+        <item>Agosto</item>
+        <item>Setembro</item>
+        <item>Outobro</item>
+        <item>Novembro</item>
+        <item>Dezembro</item>
+    </string-array>
+
+    <string-array name="plural_magazines">
+        <item>revista</item>
+        <item>revistas</item>
+    </string-array>
+
+    <string-array name="plural_brochures">
+        <item>brochura</item>
+        <item>brochuras</item>
+    </string-array>
+
+    <string-array name="plural_books">
+        <item>livro</item>
+        <item>livros</item>
+    </string-array>
+
+    <string-array name="plural_returns">
+        <item>revisita</item>
+        <item>revisitas</item>
+    </string-array>
+
+
+    <string-array name="plural_studies">
+        <item>estudo bíblico</item>
+        <item>estudos bíblicos</item>
+    </string-array>
+
+    <string-array name="plural_visits">
+        <item>visita</item>
+        <item>visitas</item>
+    </string-array>
+
+    <string name="title_tip">Sugestão</string>
+    <string name="msg_tip_literature_templates" formatted="false">Note que para usar estes atalhos em literatura deixada use: \n%s, %s, %s\n\nPor exemplo: \"Colocada %s sobre crianças.\"</string>
+
+    <!-- v1.2 -->
+
+    <string name="msg_person">Morador</string>
+    <string name="lbl_person_desc">Descrição do morador</string>
+    <string name="lbl_male">Masculino</string>
+    <string name="lbl_female">Feminino</string>
+    <string name="lbl_male_letter">M</string>
+    <string name="lbl_female_letter">F</string>
+    <string name="msg_choose_age">Escolha a idade:</string>
+
+    <string name="lbl_visit_text">Conteúdo da visita</string>
+
+    <string name="action_object_add_na_visit">Ninguém em casa</string>
+    <string name="msg_added_na_visit">Added \'N/A\' visit at %s</string>
+
+    <string name="pref_hide_visited">Esconder as visitadas hoje</string>
+    <string name="pref_hide_visited_note">Esconder moradas que já foram visitadas hoje (marcadas com um X)</string>
+
+    <string name="msg_delete_object">Todos os moradores e as suas visitas serão apagados! Pretende mesmo remover o morador?</string>
+
+    <string name="menu_territory_sort">Ordenar</string>
+    <string name="msg_territory_sort">Pretende ordenar a lista por nome de morador?</string>
+
+    <string-array name="menu_move_list">
+        <item>Definir posição</item>
+        <item>Mover para cima</item>
+        <item>Mover para baixo</item>
+    </string-array>
+
+    <string name="pref_object_add_sorted">Ordenar automaticamente</string>
+    <string name="pref_object_add_sorted_note">Inserir um novo morador com ordenação por nome (apenas para a vista de lista)</string>
+
+    <string name="menu_backups">Cópias de segurança</string>
+    <string name="lbl_backup_list_empty">A lista de cópias de segurança está vazia.</string>
+    <string name="msg_backup_failed">Erro ao criar cópia de segurança</string>
+    <string name="pref_title_backup">Cópias de segurança</string>
+    <string name="pref_autobackup">Cópia de segurança automática</string>
+    <string name="pref_autobackup_note">Criar cópias de segurança automaticamente após cada sessão de serviço</string>
+    <string name="pref_num_backups">Número de cópias</string>
+    <string name="pref_num_backups_note">Nº máximo de cópias de segurança guardados</string>
+    <string name="msg_create_backup">Quer criar uma nova cópia de segurança?</string>
+    <string name="msg_delete_backup">Quer apagar esta cópia de segurança?</string>
+    <string name="msg_restore_backup">Aviso: TODA a informação será apagada permanentemente e será substituida pelos dados da cópia de segurança. Pretende continuar?</string>
+    <string name="action_backup_restore">Restaurar</string>
+    <string name="action_backup_delete">Apagar</string>
+    <string name="msg_restore_backup_failed">Erro ao restaurar a cópia de segurança</string>
+    <string name="msg_restore_backup_success">A cópia de segurança foi restaurada com sucesso</string>
+
+    <string name="msg_revision_notes">O que há de novo?</string>
+    <string name="msg_revision_notes_1_2" formatted="true"><b>Versão 1.2</b>\n\nCópias de segurança, incluindo opção automática \n\nAdições de sessões de serviço manual\n\n Edição da data de serviço e tempo simplificada\n\nNovo marcador para moradores visitados hoje\n\nOrdenar moradores por nome\n\nRápida edição da idade e género depois de criar um morador\n\nNota rápida \"Ninguém em casa\" sem ter de inserir um morador\n\nAlgumas melhorias da interface</string>
+
+    <!-- v1.2.1 -->
+
+    <string name="msg_backup_created">Cópia de segurança criada</string>
+    <string name="pref_backups_manage">Manejar as cópias de segurança</string>
+    <string name="pref_backups_manage_note">Ver lista das cópias de segurança</string>
+
+    <!-- 1.4.0 -->
+    <string name="lbl_placements">Colocações:</string>video showings
+    <string name="lbl_videos">Vídeos mostrados:</string>
+    <string-array name="plural_placements">
+        <item>colocação</item>
+        <item>colocações</item>
+    </string-array>
+    <string-array name="plural_videos">
+        <item>vídeos mostrados</item>
+        <item>vídeo mostrado</item>
+    </string-array>
+    <string name="lbl_service_year" formatted="false">%s/%s ano de serviço</string>
+    <string name="msg_contribute">Parece que tem usado o JW Droid durante muito tempo. Estamos felizes que o considera útil!\n\nA App foi desenvolvida em 2010, e agora estamos a trabalhar uma versão atualizada, moderna e com novas funcionalidades. Pode acelerar o trabalho por contribuir para o projeto. Obrigado!\n\n&#8212; JW Droid Team</string>
+    <string name="lbl_contribute">Estamos felizes que o considera útil!\n\nA App foi desenvolvida em 2010, e agora estamos a trabalhar uma versão atualizada, moderna e com novas funcionalidades. Pode acelerar o trabalho por contribuir para o projeto. Obrigado!</string>
+    <string name="btn_donate">Doações para apoiar o desenvolvimento</string>
+    <string name="btn_review">Comentário sobre Google Play</string>
+    <string name="btn_translate">Ajuda com tradução</string>
+    <string name="btn_save">Salvar</string>
+    <string name="btn_send">Enviar</string>
+    <string name="btn_refresh">Atualizar</string>
+    <string name="btn_learn_more">Aprender mais</string>
+    <string name="btn_no_thanks">Não, obrigado</string>
+    <string name="btn_rename">Renomear</string>
+    <string name="title_contribute">Contribuir</string>
+    <string name="lbl_donation">Doação:</string>
+    <string name="lbl_recurring">Recorrente:</string>
+    <string-array name="btn_recurring">
+        <item>Uma vez</item>
+        <item>A cada 6 meses</item>
+        <item>A cada 12 meses</item>
+    </string-array>
+    <string name="lbl_payments_processed_by">Os pagamentos são processados através do Google Play.</string>
+
+</resources>

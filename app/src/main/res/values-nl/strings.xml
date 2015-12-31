@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+<Android Market application description>
+
+Krachtig diensthulpmiddel voor Jehovah's Getuigen. Informatie bijhouden, statistieken en velddiensttijd opvolgen, gemakkelijk plaatsen en geïnteresseerde personen zowel bekijken als rangschikken op een handige en intuïtieve manier.
+
+Functies:
+ * Gemakkelijk informatie bijhouden in de dienst.
+ * Flexibele schermindelingen; geschikt voor zowel huizen als flats.
+ * Plaatsen bekijken o.b.v. huishoudens, bewoners, bezoeken, enz.
+ * Datum en tijd bijhouden van alle bezoeken.
+ * Tijd in de velddienst bijhouden in de chronometer-modus.
+ * Aangepaste kleuren voor huishoudens (automatisch of handmatig).
+ * Verspreidde lectuur (ook via - vooraf ingestelde - afkortingen in notities), nabezoeken en Bijbelstudies bijhouden.
+ * Gedetailleerde informatie over alle velddienstmomenten met bijbehorende statistieken.
+ * Maandelijkse totaalrapportjes laten opstellen en verzenden via e-mail of SMS.
+ * Handmatige en automatische back-ups.
+ * App volledig vrij, geen advertenties.
+
+Openbron project: http://code.google.com/p/jwdroid/
+
+Tags: Jehovah's Witnesses, Bible, preaching, ministry, Jehovah's Getuigen, Bijbel, prediking, velddienst.
+ -->
+<resources>
+
+    <string name="app_name">JW Droid</string>
+
+    <string name="lbl_territory_name">Plaatsnaam:</string>
+    <string name="title_territory_add">Plaats toevoegen</string>
+    <string name="lbl_territory_desc">Korte beschrijving:</string>
+    <string name="err_empty_name">Naam invullen!</string>
+    <string name="msg_territory_added">Plaats toegevoegd</string>
+    <string name="msg_territory_deleted">Plaats verwijderd</string>
+    <string name="territory_list_empty">Geen locaties in de lijst. U kunt nieuwe plaatsen toevoegen met de knop hierboven.</string>
+    <string name="dlg_territory_delete_msg">Het verwijderen van een plaats kan niet ongedaan gemaakt worden. Verder gaan?</string>
+    <string name="dlg_territory_delete_title">Plaats verwijderen</string>
+    <string name="dlg_territory_add_label">Plaatsnaam:</string>
+    <string name="dlg_territory_add_note">Bijvoorbeeld een straat- of wijknaam</string>
+
+    <string name="btn_add">Toevoegen</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_yes">Ja</string>
+    <string name="btn_no">Nee</string>
+    <string name="btn_cancel">Annuleren</string>
+
+    <string name="lbl_magazines">Tijdschriften:</string>
+    <string name="lbl_brochures">Brochures:</string>
+    <string name="lbl_books">Boeken:</string>
+    <string name="lbl_returns">Nabezoeken:</string>
+    <string name="lbl_hours">Uren:</string>
+    <string name="lbl_studies">Bijbelstudies:</string>
+
+    <string name="lbl_chrono_started_time">Gestart op %s</string>
+    <string name="lbl_chrono_stopped">Chronometer is gestopt</string>
+    <string name="btn_chrono_pause">Pauzeren</string>
+    <string name="btn_chrono_resume">Hervatten</string>
+    <string name="btn_chrono_finish">Beëindigen</string>
+    <string name="btn_chrono_start">Starten</string>
+    <string name="chk_chrono_calc_auto"> Uit de bezoeken ophalen (autom.)</string>
+    <string name="msg_chrono_finish">Dienst afsluiten?</string>
+    <string name="msg_chrono_start">Dienst starten?</string>
+    <string name="msg_chrono_service_started">Dienstchronometer gestart</string>
+    <string name="lbl_chrono_current_time">Velddiensttijd:</string>
+    <string name="lbl_chrono_service_note">Selecteren om naar de chronometer te gaan</string>
+
+    <string name="action_add_single_object">Eén toevoegen</string>
+    <string name="action_add_many_objects">Meerdere toevoegen</string>
+    <string name="dlg_add_single_object_note">Bijvoorbeeld een appartement of huisnummer</string>
+    <string name="msg_object_name">Titel invullen:</string>
+    <string name="lbl_set_row">Rij:</string>
+    <string name="lbl_set_col">Kolom:</string>
+    <string name="lbl_numbers_from">Nummers vanaf:</string>
+    <string name="lbl_numbers_to">tot:</string>
+    <string name="msg_arrange_after_add">Huishoudens toegevoegd. Voor uw comfort (bijvoorbeeld bij het toevoegen van de ingang van een appartement) kunt u het rooster rangschikken met rijen en kolommen in het \&quot;Rangschikken\&quot;-menu. Wilt u dit nu doen?</string>
+    <string name="msg_error">Fout!</string>
+    <string name="msg_object_deleted">Huishouden verwijderd</string>
+    <string name="err_invalid_input">Ongeldige invoer!</string>
+    <string name="err_no_cols_value">Aantal kolommen invoeren!</string>
+    <string name="action_object_change_name">Titel</string>
+    <string name="action_object_change_color">Kleur</string>
+    <string name="action_object_move_up">Omhoog</string>
+    <string name="action_object_move_down">Omlaag</string>
+    <string name="action_object_delete">Verwijderen</string>
+    <string name="action_object_move">Verplaatsen</string>
+
+    <string name="lbl_from">Van:</string>
+    <string name="lbl_to">Tot:</string>
+    <string name="lbl_rows">Rijen:</string>
+    <string name="lbl_cols">Kolommen:</string>
+    <string name="li_top_down">Oplopend</string>
+    <string name="li_bottom_up">Aflopend</string>
+    <string name="li_left_right">Van links naar rechts</string>
+    <string name="li_right_left">Van rechts naar links</string>
+    <string name="lbl_one_color">  Egale kleur</string>
+    <string name="lbl_two_colors">  Twee kleuren</string>
+
+    <string name="lbl_door_empty">Hier is het mogelijk nieuwe bewoners toe te voegen.\n\nU kunt een nieuw bezoek toevoegen met de knop bovenaan.</string>
+    <string name="lbl_group_empty">Dit scherm is leeg.\n\nNieuwe huishoudens kunt u toevoegen met de knop bovenaan.</string>
+
+    <string name="title_help">Help</string>
+    <string name="title_territory_list">Plaatsen</string>
+    <string name="title_people">Mensen</string>
+    <string name="title_reports">Rapportering</string>
+    <string name="title_chrono">Chronometer</string>
+
+    <string name="lbl_people_list_empty">Lijst met mensen is leeg. \n\nNieuwe personen kunt u toevoegen met de knop bovenaan of (aangeraden) in het onderdeel &quot;Plaatsen&quot;.</string>
+    <string name="lbl_person_add_from_people">Opmerking: deze persoon zal worden toegevoegd zonder enige connectie met een plaatsnaam.</string>
+
+    <string name="title_report">Rapport van %s</string>
+    <string name="action_calc_type_sessions">Op dienstsessies</string>
+    <string name="action_calc_type_visits">Op bezoeken</string>
+    <string name="lbl_report_no_data">Geen data</string>
+    <string name="msg_delete_session">Wilt u deze velddienstsessie zeker verwijderen?</string>
+    <string name="msg_session_deleted">Dienstsessie verwijderd</string>
+    <string name="action_session_delete">Verwijderen</string>
+    <string name="title_session">Veldienst op %s</string>
+    <string name="lbl_report_list_empty">Rapporteringslijst is leeg.</string>
+    <string name="lbl_report_summary">Totaal</string>
+    <string name="lbl_report_empty">Leeg rapport.</string>
+    <string name="lbl_session_desc">Beschrijving velddienst:</string>
+
+    <string name="lbl_territory_notes">Notities</string>
+    <string name="lbl_territory_got">Gebied genomen:</string>
+    <string name="lbl_territory_finished">Gebied afgewerkt:</string>
+    <string name="lbl_territory_last_visit">Laatste bezoek:</string>
+    <string name="action_territory_change_name">Naam</string>
+    <string name="action_territory_info">Info</string>
+    <string name="action_territory_delete">Verwijderen</string>
+
+    <string name="lbl_visit_type">Bezoek:</string>
+    <string-array name="visit_types">
+        <item>n.v.t.</item>
+        <item>Normaal bezoek</item>
+        <item>Nabezoek</item>
+        <item>Bijbelstudie</item>
+    </string-array>
+
+    <string name="lbl_visit_date">Datum:</string>
+    <string name="chk_visit_calc_auto">Uit de tekst halen (autom.)</string>
+    <string name="msg_choose_color">Een kleur kiezen:</string>
+    <string name="msg_person_desc">Beschrijving van de bewoner invoeren::</string>
+    <string name="msg_delete_visit">Weet u zeker dat u dit bezoek wilt verwijderen?</string>
+    <string name="msg_delete_person">Deze bewoner en alle bijbehorende bezoeken echt verwijderen?</string>
+    <string name="msg_person_deleted">Bewoner verwijderd</string>
+    <string name="msg_visit_deleted">Bezoek verwijderd</string>
+    <string name="title_visit">Bezoek</string>
+    <string name="action_person_change">Bewerken</string>
+    <string name="action_person_delete">Verwijderen</string>
+    <string name="action_person_reject">Niet geïnteresseerd</string>
+    <string name="action_person_nreject">Geïnteresseerd</string>
+    <string name="action_visit_delete">Verwijderen</string>
+
+    <string name="menu_preferences">Voorkeuren</string>
+    <string name="menu_feedback">Feedback verzenden</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_session_date">Datum en tijd</string>
+    <string name="menu_change_session_date">Datum veranderen</string>
+    <string name="menu_change_session_time">Tijd wijzigen</string>
+    <string name="menu_set_position">Positie instellen</string>
+    <string name="menu_move_up">Naar boven</string>
+    <string name="menu_move_down">Naar beneden</string>
+    <string name="menu_move_left">Naar links</string>
+    <string name="menu_move_right">Naar rechts</string>
+    <string name="menu_territory_info">Info</string>
+    <string name="menu_territory_layout">Lay-out</string>
+    <string name="menu_territory_arrange">Rangschikken</string>
+    <string name="menu_territory_shift_up">Alles naar boven</string>
+    <string name="menu_territory_shift_down">Alles naar beneden</string>
+    <string name="menu_territory_shift_left">Alles naar links</string>
+    <string name="menu_territory_shift_right">Alles naar rechts</string>
+
+    <string name="title_preferences">Voorkeuren</string>
+
+    <string name="pref_title_appearance">Weergave</string>
+    <string name="pref_list_text_rows">Aantal rijen</string>
+    <string name="pref_list_text_rows_note">Aantal rijen van de laatste notitie van een huishouden die getoond moeten worden in de lijstweergave</string>
+    <string name="pref_table_button_size">Knopgrootte</string>
+    <string name="pref_table_button_size_note">Grootte van de knoppen (vertegenwoordigen huishoudens) in de rasterweergave</string>
+    <string-array name="entries_table_button_size_preference">
+        <item>Klein</item>
+        <item>Gemiddeld</item>
+        <item>Groot</item>
+    </string-array>
+
+    <string name="pref_title_colors">Kleuren</string>
+    <string name="pref_autocolor">Kleuren autom. instellen</string>
+    <string name="pref_autocolor_note">Automatisch de kleur instellen a.d.h.v. bepaalde voorwaarden</string>
+    <string name="pref_assign_colors">Kleuren instellen</string>
+    <string name="pref_color_reject">Niet geïnteresseerd</string>
+    <string name="pref_color_visit">Normaal bezoek</string>
+    <string name="pref_color_return">Nabezoek</string>
+    <string name="pref_color_study">Bijbelstudie</string>
+    <string-array name="entries_color_preference">
+        <item>Niet veranderen</item>
+        <item>Blauw</item>
+        <item>Groen</item>
+        <item>Geel</item>
+        <item>Rood</item>
+        <item>Lichtblauw</item>
+        <item>Lichtgroen</item>
+        <item>Lichtgeel</item>
+        <item>Lichtrood</item>
+    </string-array>
+
+    <string name="pref_title_literature">Lectuur opvolgen</string>
+    <string name="pref_assign_templates">Sjablonen instellen</string>
+    <string name="pref_assign_templates_note">Afkortingen instellen die u kunt gebruiken in notities, zodat lectuur automatisch geteld wordt</string>
+    <string name="pref_template_magazine">Tijdschrift</string>
+    <string name="pref_template_brochure">Brochure</string>
+    <string name="pref_template_book">Boek</string>
+    <string name="pref_template_magazine_default">+ts</string>
+    <string name="pref_template_brochure_default">+br</string>
+    <string name="pref_template_book_default">+bk</string>
+
+    <string-array name="months">
+        <item>Januari</item>
+        <item>Februari</item>
+        <item>Maart</item>
+        <item>April</item>
+        <item>Mei</item>
+        <item>Juni</item>
+        <item>Juli</item>
+        <item>Augustus</item>
+        <item>September</item>
+        <item>Oktober</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="plural_magazines">
+        <item>tijdschrift</item>
+        <item>tijdschriften</item>
+    </string-array>
+
+    <string-array name="plural_brochures">
+        <item>brochure</item>
+        <item>brochures</item>
+    </string-array>
+
+    <string-array name="plural_books">
+        <item>boek</item>
+        <item>boeken</item>
+    </string-array>
+
+    <string-array name="plural_returns">
+        <item>nabezoek</item>
+        <item>nabezoeken</item>
+    </string-array>
+
+
+    <string-array name="plural_studies">
+        <item>Bijbelstudie</item>
+        <item>Bijbelstudies</item>
+    </string-array>
+
+    <string-array name="plural_visits">
+        <item>bezoek</item>
+        <item>bezoeken</item>
+    </string-array>
+
+
+    <string name="title_tip">Tip</string>
+    <string name="msg_tip_literature_templates" formatted="false">Merk op dat u deze tekstsjablonen kunt gebruiken in notities over achtergelaten lectuur:\n %s, %s, %s\n\nBijvoorbeeld: \"%s over kinderen achtergelaten.\"</string>
+
+    <!-- v1.2 -->
+
+    <string name="msg_person">Bewoner</string>
+    <string name="lbl_person_desc">Beschrijving bewoner</string>
+    <string name="lbl_male">Man</string>
+    <string name="lbl_female">Vrouw</string>
+    <string name="lbl_male_letter">M</string>
+    <string name="lbl_female_letter">V</string>
+    <string name="msg_choose_age">Leeftijd kiezen:</string>
+
+    <string name="lbl_visit_text">Inhoud bezoek</string>
+
+    <string name="action_object_add_na_visit">Niet thuis</string>
+    <string name="msg_added_na_visit">\'n.v.t.\'-bezoek op %s toegevoegd</string>
+
+    <string name="pref_hide_visited">Bezocht vandaag verbergen</string>
+    <string name="pref_hide_visited_note">De huishoudens die vandaag bezocht zijn verbergen (aanduiding met een vinkje)</string>
+
+    <string name="msg_delete_object">Alle bewoners en hun bezoeken zullen verwijderd worden! Weet u zeker dat u dit huishouden wilt verwijderen?</string>
+
+    <string name="menu_territory_sort">Rangschikken</string>
+    <string name="msg_territory_sort">Lijst rangschikken op bewonersnamen?</string>
+
+    <string-array name="menu_move_list">
+        <item>Positie instellen</item>
+        <item>Omhoog</item>
+        <item>Omlaag</item>
+    </string-array>
+
+    <string name="pref_object_add_sorted">Autom. rangschikken</string>
+    <string name="pref_object_add_sorted_note">Een nieuw huishouden invoegen met sortering op naam (enkel voor de lijstweergave)</string>
+
+    <string name="menu_backups">Back-ups</string>
+    <string name="lbl_backup_list_empty">Lijst back-ups leeg.</string>
+    <string name="msg_backup_failed">Fout bij het creëren van een back-up</string>
+    <string name="pref_title_backup">Back-ups</string>
+    <string name="pref_autobackup">Auto back-up</string>
+    <string name="pref_autobackup_note">Automatisch een nieuwe back-up creëren na elke velddienstsessie</string>
+    <string name="pref_num_backups">Aantal kopieën</string>
+    <string name="pref_num_backups_note">Max aantal opgeslagen back-ups</string>
+    <string name="msg_create_backup">Nieuwe back-up creëren?</string>
+    <string name="msg_delete_backup">Deze back-up verwijderen?</string>
+    <string name="msg_restore_backup">Waarschuwing: ALLE huidige data zal voorgoed verloren gaan, en vervangen worden met de data uit de back-up. Verder gaan?</string>
+    <string name="action_backup_restore">Terugzetten</string>
+    <string name="action_backup_delete">Verwijderen</string>
+    <string name="msg_restore_backup_failed">Fout bij het terugzetten van de back-up</string>
+    <string name="msg_restore_backup_success">Back-up met succes teruggezet</string>
+
+    <string name="msg_revision_notes">Wat is nieuw?</string>
+<string name="msg_revision_notes_1_2" formatted="true"><b>Versie 1.2</b>\n\nData back-ups (ook automatisch)\n\nHandmatig toevoegen van velddienstsessies\n\nEenvoudiger dienstdatum en -tijd bewerken\n\nNieuwe aanduiding bij huishoudens die vandaag bezocht zijn\n\nHuishoudens rangschikken op naam\n\nSnel aanpassen van tijd en geslacht na toevoegen van een nieuwe bewoner\n\nSnelle aanduiding \"Niet thuis\" zonder het huishouden te openen\n\nKleine verbeteringen aan de interface
+</string>
+
+    <!-- v1.2.1 -->
+
+    <string name="msg_backup_created">Back-up gecreëerd</string>
+    <string name="pref_backups_manage">Back-ups beheren</string>
+    <string name="pref_backups_manage_note">Lijst met aangemaakte back-ups bekijken</string>
+</resources>

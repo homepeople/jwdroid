@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="wrap_content"
+  android:layout_height="fill_parent"
+  android:gravity="center"  
+  android:paddingTop="15dip"
+  android:paddingBottom="5dip">
+
+	<TextView android:id="@+id/lbl_left"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"
+		android:text="@string/lbl_from" />
+	<EditText android:id="@+id/edit_left"
+		android:layout_width="100dip"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/lbl_left"
+		android:layout_marginTop="3dip"
+		android:layout_alignParentLeft="true"
+		android:inputType="phone"/>
+	<EditText android:id="@+id/edit_right"
+		android:layout_width="100dip"
+		android:layout_height="wrap_content"
+		android:layout_alignTop="@id/edit_left"
+		android:layout_marginLeft="15dip"
+		android:layout_toRightOf="@id/edit_left"
+		android:inputType="phone"/>
+	<TextView android:id="@+id/lbl_right"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_above="@id/edit_right"
+		android:layout_alignLeft="@id/edit_right"
+		android:layout_marginBottom="3dip"
+		android:text="@string/lbl_to" />
+
+</RelativeLayout>
