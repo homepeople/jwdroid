@@ -28,4 +28,4 @@ JW Droid has a public beta testing channel on Google Play. In order to participa
 
 Once subscribed, you will receive test releases via Google Play as usual updates. These updates are available only for people who explicitly subscribed to the beta channel.
 
-Leave feedback and follow the news on the [JW Droid Google+ Community](https://plus.google.com/communities/117710348316591352172).
+Leave feedback and follow the news on the [JW Droid Google+ Community](https://plus.google.com/communities/112371364498094492171).
