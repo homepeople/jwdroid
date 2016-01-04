@@ -19,3 +19,13 @@ If you want to help with translation to your language, please go to the correspo
 translate it, and create a Pull Request describing your edits. If your locale is not there, edit the default English locale instead and specify your language in the Pull Request. 
 
 If you are familiar with Android Studio, you can use its Translation Editor to conveniently track the missing locale strings.
+
+## Beta Testing
+
+JW Droid has a public beta testing channel on Google Play. In order to participate in beta testing, subscribe to the channel using this link: 
+
+[**SUBSCRIBE FOR BETA TESTING**](https://play.google.com/apps/testing/com.jwdroid)
+
+Once subscribed, you will receive test releases via Google Play as usual updates. These updates are available only for people who explicitly subscribed to the beta channel.
+
+Leave feedback and follow the news on the [JW Droid Google+ Community](https://plus.google.com/communities/117710348316591352172).
