@@ -3,6 +3,7 @@ package com.jwdroid.ui;
 import android.app.Dialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.preference.PreferenceManager;
@@ -120,6 +121,10 @@ public class MainMenu extends AppCompatActivity {
             case R.id.menu_contribute:
                 intent = new Intent(this, Contribute.class);
                 startActivity(intent);
+                break;
+
+            case R.id.menu_community:
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://plus.google.com/communities/112371364498094492171")));
                 break;
 
         }

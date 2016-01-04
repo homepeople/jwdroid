@@ -381,5 +381,6 @@ Tags: JW, Jehovah's Witnesses, preaching, ministry, organizer, notes
 
     <!-- 1.4.1 -->
     <string name="chk_chrono_calc_auto">Add from visits</string>
+    <string name="menu_community">Google+ Community</string>
 
 </resources>

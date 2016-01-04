@@ -16,4 +16,7 @@
         android:icon="@drawable/ic_thumb_up_white_48dp"
         android:title="@string/title_contribute"
         app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_community"
+        android:title="@string/menu_community"/>
 </menu>

@@ -375,5 +375,6 @@
 
     <!-- 1.4.1 -->
     <string name="chk_chrono_calc_auto">Добавить из посещений</string>
+    <string name="menu_community">Сообщество Google+</string>
 </resources>
 
