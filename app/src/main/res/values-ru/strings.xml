@@ -34,7 +34,6 @@
     <string name="btn_chrono_resume">Возобновить</string>
     <string name="btn_chrono_finish">Завершить</string>
     <string name="btn_chrono_start">Начать</string>
-    <string name="chk_chrono_calc_auto"> Подсчитывать из посещений</string>
 
     <string name="lbl_from">От:</string>
     <string name="lbl_to">До:</string>
@@ -373,5 +372,8 @@
         <item>Раз в год</item>
     </string-array>
     <string name="lbl_payments_processed_by">Платежи обрабатываются Google Play.</string>
+
+    <!-- 1.4.1 -->
+    <string name="chk_chrono_calc_auto">Добавить из посещений</string>
 </resources>
 

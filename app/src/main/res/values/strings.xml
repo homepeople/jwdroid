@@ -60,7 +60,6 @@ Tags: JW, Jehovah's Witnesses, preaching, ministry, organizer, notes
     <string name="btn_chrono_resume">Resume</string>
     <string name="btn_chrono_finish">Finish</string>
     <string name="btn_chrono_start">Start</string>
-    <string name="chk_chrono_calc_auto"> Take from visits</string>
     <string name="msg_chrono_finish">End service?</string>
     <string name="msg_chrono_start">Start service?</string>
     <string name="msg_chrono_service_started">Service chronometer started</string>
@@ -379,5 +378,8 @@ Tags: JW, Jehovah's Witnesses, preaching, ministry, organizer, notes
         <item>Every 12 months</item>
     </string-array>
     <string name="lbl_payments_processed_by">Payments are processed by Google Play.</string>
+
+    <!-- 1.4.1 -->
+    <string name="chk_chrono_calc_auto">Add from visits</string>
 
 </resources>
