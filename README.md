@@ -16,10 +16,8 @@ Features:
 ## Contribution
 
 This project is open source so any contributions are welcome.
-If you want to help with translation to your language, please go to the corresponding `values` locale in [`/app/src/main/res/`](https://github.com/jwdroid/jwdroid/tree/master/app/src/main/res) folder,
-translate it, and create a Pull Request describing your edits. If your locale is not there, edit the default English locale instead and specify your language in the Pull Request. 
 
-If you are familiar with Android Studio, you can use its Translation Editor to conveniently track the missing locale strings.
+If you want to help with translation to your language, please use [this link](https://crowdin.com/project/jwdroid/invite), register a translator account, and follow the instructions.
 
 ## Beta Testing
 

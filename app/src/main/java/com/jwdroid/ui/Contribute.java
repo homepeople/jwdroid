@@ -66,7 +66,7 @@ public class Contribute extends AppCompatActivity implements
         findViewById(R.id.btn_translate).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/jwdroid/jwdroid/blob/master/README.md#contribution"));
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://crowdin.com/project/jwdroid/invite"));
                 startActivity(browserIntent);
             }
         });
