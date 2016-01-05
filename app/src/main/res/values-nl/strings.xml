@@ -198,26 +198,32 @@ Tags: Jehovah\'s Witnesses, Bible, preaching, ministry, Jehovah\'s Getuigen, Bij
   <string-array name="plural_magazines">
     <item>tijdschrift</item>
     <item>tijdschriften</item>
+    <item>magazines</item>
   </string-array>
   <string-array name="plural_brochures">
     <item>brochure</item>
+    <item>brochures</item>
     <item>brochures</item>
   </string-array>
   <string-array name="plural_books">
     <item>boek</item>
     <item>boeken</item>
+    <item>books</item>
   </string-array>
   <string-array name="plural_returns">
     <item>nabezoek</item>
     <item>nabezoeken</item>
+    <item>return visits</item>
   </string-array>
   <string-array name="plural_studies">
     <item>Bijbelstudie</item>
     <item>Bijbelstudies</item>
+    <item>bible studies</item>
   </string-array>
   <string-array name="plural_visits">
     <item>bezoek</item>
     <item>bezoeken</item>
+    <item>visits</item>
   </string-array>
   <string name="title_tip">Tip</string>
   <string name="msg_person">Bewoner</string>
@@ -265,10 +271,12 @@ Tags: Jehovah\'s Witnesses, Bible, preaching, ministry, Jehovah\'s Getuigen, Bij
   <string-array name="plural_tracts">
     <item>tract</item>
     <item>tracts</item>
+    <item>tracts</item>
   </string-array>
   <string name="lbl_brochures_tracts">Brochures &amp; tracts:</string>
   <string-array name="plural_brochures_tracts">
     <item>brochure or tract</item>
+    <item>brochures or tracts</item>
     <item>brochures or tracts</item>
   </string-array>
   <string name="lbl_please_wait">Please wait...</string>
@@ -286,9 +294,11 @@ Tags: Jehovah\'s Witnesses, Bible, preaching, ministry, Jehovah\'s Getuigen, Bij
   <string-array name="plural_placements">
     <item>placement</item>
     <item>placements</item>
+    <item>placements</item>
   </string-array>
   <string-array name="plural_videos">
     <item>video showing</item>
+    <item>video showings</item>
     <item>video showings</item>
   </string-array>
   <string name="lbl_service_year" formatted="false">%s/%s service year</string>

@@ -201,26 +201,32 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <string-array name="plural_magazines">
     <item>revista</item>
     <item>revistas</item>
+    <item>magazines</item>
   </string-array>
   <string-array name="plural_brochures">
     <item>brochura</item>
     <item>brochuras</item>
+    <item>brochures</item>
   </string-array>
   <string-array name="plural_books">
     <item>livro</item>
     <item>livros</item>
+    <item>books</item>
   </string-array>
   <string-array name="plural_returns">
     <item>revisita</item>
     <item>revisitas</item>
+    <item>return visits</item>
   </string-array>
   <string-array name="plural_studies">
     <item>estudo bíblico</item>
     <item>estudos bíblicos</item>
+    <item>bible studies</item>
   </string-array>
   <string-array name="plural_visits">
     <item>visita</item>
     <item>visitas</item>
+    <item>visits</item>
   </string-array>
   <string name="title_tip">Sugestão</string>
   <string name="msg_person">Morador</string>
@@ -268,10 +274,12 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <string-array name="plural_tracts">
     <item>tract</item>
     <item>tracts</item>
+    <item>tracts</item>
   </string-array>
   <string name="lbl_brochures_tracts">Brochures &amp; tracts:</string>
   <string-array name="plural_brochures_tracts">
     <item>brochure or tract</item>
+    <item>brochures or tracts</item>
     <item>brochures or tracts</item>
   </string-array>
   <string name="lbl_please_wait">Please wait...</string>
@@ -289,10 +297,12 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <string-array name="plural_placements">
     <item>colocação</item>
     <item>colocações</item>
+    <item>placements</item>
   </string-array>
   <string-array name="plural_videos">
     <item>vídeos mostrados</item>
     <item>vídeo mostrado</item>
+    <item>video showings</item>
   </string-array>
   <string name="lbl_service_year" formatted="false">%s/%s ano de serviço</string>
   <string name="msg_contribute">Parece que tem usado o JW Droid durante muito tempo. Estamos felizes que o considera útil!\n\nA App foi desenvolvida em 2010, e agora estamos a trabalhar uma versão atualizada, moderna e com novas funcionalidades. Pode acelerar o trabalho por contribuir para o projeto. Obrigado!\n\n— JW Droid Team</string>

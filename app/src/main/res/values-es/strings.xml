@@ -88,20 +88,20 @@ Tags: Jehovah\'s Witnesses, Bible, ministry, Testigos de Jehová, Biblia, Minist
   <string name="title_help">Ayuda</string>
   <string name="title_territory_list">Territorios</string>
   <string name="title_people">Personas</string>
-  <string name="title_reports">Reportes</string>
+  <string name="title_reports">Informes</string>
   <string name="lbl_people_list_empty">Lista de amos esta vacía. \n\nAñade un amo por medio del botón arriba o en la sección de \“Territorios\”.</string>
   <string name="lbl_person_add_from_people">Nota: este amo será añadido sin alguna conexión a un territorio.</string>
-  <string name="title_report">Reporte para %s</string>
+  <string name="title_report">Informe para %s</string>
   <string name="action_calc_type_sessions">Por lista de servicio</string>
   <string name="action_calc_type_visits">Por visitas</string>
-  <string name="lbl_report_no_data">No hay datos!</string>
+  <string name="lbl_report_no_data">Sin datos</string>
   <string name="msg_delete_session">¿Deseas borrar este servicio? </string>
   <string name="msg_session_deleted">Servicio borrado!</string>
   <string name="action_session_delete">Borrar</string>
   <string name="title_session">Servicio en %s</string>
-  <string name="lbl_report_list_empty">Lista de reportes esta vacía.</string>
+  <string name="lbl_report_list_empty">La lista de informes esta vacía.</string>
   <string name="lbl_report_summary">Total</string>
-  <string name="lbl_report_empty">Reporte vacío.</string>
+  <string name="lbl_report_empty">Informe vacío.</string>
   <string name="lbl_session_desc">Descripción de servicio:</string>
   <string name="lbl_territory_notes">Notas</string>
   <string name="lbl_territory_got">Territorio tomado:</string>
@@ -180,42 +180,48 @@ Tags: Jehovah\'s Witnesses, Bible, ministry, Testigos de Jehová, Biblia, Minist
     <item>Rojo brillante</item>
   </string-array>
   <string-array name="months">
-    <item>enero</item>
-    <item>febrero</item>
-    <item>marzo</item>
-    <item>abril</item>
-    <item>mayo</item>
-    <item>junio</item>
-    <item>julio</item>
-    <item>agosto</item>
-    <item>septiembre</item>
-    <item>octubre</item>
-    <item>noviembre</item>
-    <item>diciembre</item>
+    <item>Enero</item>
+    <item>Febrero</item>
+    <item>Marzo</item>
+    <item>Abril</item>
+    <item>Mayo</item>
+    <item>Junio</item>
+    <item>Julio</item>
+    <item>Agosto</item>
+    <item>Septiembre</item>
+    <item>Octubre</item>
+    <item>Noviembre</item>
+    <item>Diciembre</item>
   </string-array>
   <string-array name="plural_magazines">
     <item>revista</item>
     <item>revistas</item>
+    <item>magazines</item>
   </string-array>
   <string-array name="plural_brochures">
     <item>folleto</item>
     <item>folletos</item>
+    <item>brochures</item>
   </string-array>
   <string-array name="plural_books">
     <item>libro</item>
     <item>libros</item>
+    <item>books</item>
   </string-array>
   <string-array name="plural_returns">
     <item>revisita</item>
     <item>revisitas</item>
+    <item>return visits</item>
   </string-array>
   <string-array name="plural_studies">
     <item>estudio bíblico</item>
     <item>estudios bíblicos</item>
+    <item>bible studies</item>
   </string-array>
   <string-array name="plural_visits">
     <item>visita</item>
     <item>visitas</item>
+    <item>visits</item>
   </string-array>
   <string name="title_tip">Contribución</string>
   <string name="msg_person">Amo de casa</string>
@@ -263,11 +269,13 @@ Tags: Jehovah\'s Witnesses, Bible, ministry, Testigos de Jehová, Biblia, Minist
   <string-array name="plural_tracts">
     <item>tratado</item>
     <item>tratados</item>
+    <item>tracts</item>
   </string-array>
   <string name="lbl_brochures_tracts">Folletos y tratados:</string>
   <string-array name="plural_brochures_tracts">
     <item>folleto o tratado</item>
     <item>folletos o tratados</item>
+    <item>brochures or tracts</item>
   </string-array>
   <string name="lbl_please_wait">Espere, por favor...</string>
   <string name="title_drive">Guardar en Dropbox</string>
@@ -284,10 +292,12 @@ Tags: Jehovah\'s Witnesses, Bible, ministry, Testigos de Jehová, Biblia, Minist
   <string-array name="plural_placements">
     <item>publicacion</item>
     <item>publicaciones</item>
+    <item>placements</item>
   </string-array>
   <string-array name="plural_videos">
     <item>presentacion de vídeo</item>
     <item>presentaciones de vídeos</item>
+    <item>video showings</item>
   </string-array>
   <string name="lbl_service_year" formatted="false">%s/%s año de servicio</string>
   <string name="msg_contribute">Parece que ha estando JW Droid por algún tiempo ya. ¡Nos complace saber que haya encontrado esta aplicación útil!\n\nLa versión corriente se completó en el 2010, y ahora estamos trabajando en una versión actualizada y moderna, con algunas funciones addicionales. Usted podría colaborar con nosotros para acelerar el desarrollo de la aplicación. ¡Muchas gracias!\n\n— JW Droid Team</string>
@@ -310,7 +320,7 @@ Tags: Jehovah\'s Witnesses, Bible, ministry, Testigos de Jehová, Biblia, Minist
     <item>Cada 12 meses</item>
   </string-array>
   <string name="lbl_payments_processed_by">Los pagos son procesados por Google Play.</string>
-  <string name="msg_revision_notes_1_4_1" formatted="true"><b>Version 1.4.1</b>\n\nAdded a link to <a href="https://plus.google.com/communities/112371364498094492171">Google+ Community</a> to the main menu.\n\nAdded a link to the <a href="https://crowdin.com/project/jwdroid/invite">online translation service</a> to the contribution dialog. Translators are welcome!\n\n<b>Version 1.4.0</b>\n\nUpdated reports to the new 2016 format.\n\nNew modern visual theme.\n\nAdded service year total hour counters to the Reports section.\n\nRemoved placements text templates as they are unneccessary now.\n\nAdded an option to make an in-app donation payment to support the development.\n\nNew placements calculating mode in the Chronometer.\n\nFixed a bug when restoring from the backup failed sometimes.\n\nFixed a bug with disappearing of old report data.</string>
+  <string name="msg_revision_notes_1_4_1" formatted="true"><b>Versión 1.4.1</b>\n\nAñadido enlace a <a href="https://plus.google.com/communities/112371364498094492171">Comunidad Google+</a> en el menú principal.\n\nAñadido enlace al <a href="https://crowdin.com/project/jwdroid/invite">servicio de traducción en línea</a> al diálogo de contribución. ¡Bienvenidos traductores!\n\n<b>Versión 1.4.0</b>\n\nInforme actualizado al nuevo formato de 2016.\n\nNuevo tema con un aspecto más moderno.\n\nAñadido el total de horas anuales a la sección de Informes.\n\nEliminadas las plantillas textuales al ser ya innecesarias.\n\nAñadida la opción de realizar donaciones para apoyar el desarrollo de esta aplicación.\n\nNuevo espacio para el cálculo de tiempo en el Cronómetro.\n\nCorregido el error que en ocasiones fallaba al restaurar copias de seguridad.\n\nCorregido el error que hacía desaparecer los datos de informes antiguos.</string>
   <string name="chk_chrono_calc_auto"> Toma de visitas</string>
   <string name="menu_community">Comunidad Google+</string>
 </resources>

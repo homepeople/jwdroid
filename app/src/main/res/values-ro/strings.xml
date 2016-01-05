@@ -201,26 +201,32 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <string-array name="plural_magazines">
     <item>revistă</item>
     <item>reviste</item>
+    <item>magazines</item>
   </string-array>
   <string-array name="plural_brochures">
     <item>broşură</item>
     <item>broşuri</item>
+    <item>brochures</item>
   </string-array>
   <string-array name="plural_books">
     <item>carte</item>
     <item>cărţi</item>
+    <item>books</item>
   </string-array>
   <string-array name="plural_returns">
     <item>vizită ulterioară</item>
     <item>vizite ulterioare</item>
+    <item>return visits</item>
   </string-array>
   <string-array name="plural_studies">
     <item>studiu biblic</item>
     <item>studii biblice</item>
+    <item>bible studies</item>
   </string-array>
   <string-array name="plural_visits">
     <item>vizită iniţială</item>
     <item>vizite iniţiale</item>
+    <item>visits</item>
   </string-array>
   <string name="title_tip">Sfat</string>
   <string name="msg_person">Locatar</string>
@@ -268,10 +274,12 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <string-array name="plural_tracts">
     <item>tract</item>
     <item>tracts</item>
+    <item>tracts</item>
   </string-array>
   <string name="lbl_brochures_tracts">Brochures &amp; tracts:</string>
   <string-array name="plural_brochures_tracts">
     <item>brochure or tract</item>
+    <item>brochures or tracts</item>
     <item>brochures or tracts</item>
   </string-array>
   <string name="lbl_please_wait">Please wait...</string>
@@ -289,9 +297,11 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <string-array name="plural_placements">
     <item>placement</item>
     <item>placements</item>
+    <item>placements</item>
   </string-array>
   <string-array name="plural_videos">
     <item>video showing</item>
+    <item>video showings</item>
     <item>video showings</item>
   </string-array>
   <string name="lbl_service_year" formatted="false">%s/%s service year</string>

@@ -200,26 +200,32 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <string-array name="plural_magazines">
     <item>журнал</item>
     <item>журнала</item>
+    <item>журналов</item>
   </string-array>
   <string-array name="plural_brochures">
     <item>брошюра</item>
     <item>брошюры</item>
+    <item>брошюр</item>
   </string-array>
   <string-array name="plural_books">
     <item>книга</item>
     <item>книги</item>
+    <item>книг</item>
   </string-array>
   <string-array name="plural_returns">
     <item>повторное</item>
     <item>повторных</item>
+    <item>повторных посещений</item>
   </string-array>
   <string-array name="plural_studies">
     <item>изучение</item>
     <item>изучения</item>
+    <item>изучений</item>
   </string-array>
   <string-array name="plural_visits">
     <item>посещение</item>
     <item>посещения</item>
+    <item>посещений</item>
   </string-array>
   <string name="title_tip">Подсказка</string>
   <string name="msg_person">Жилец</string>
@@ -267,11 +273,13 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <string-array name="plural_tracts">
     <item>буклет</item>
     <item>буклета</item>
+    <item>буклетов</item>
   </string-array>
   <string name="lbl_brochures_tracts">Брошюры и буклеты:</string>
   <string-array name="plural_brochures_tracts">
     <item>брошюра или буклет</item>
     <item>брошюры или буклета</item>
+    <item>брошюр или буклетов</item>
   </string-array>
   <string name="lbl_please_wait">Подождите...</string>
   <string name="title_drive">Сохранение в Dropbox</string>
@@ -288,10 +296,12 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <string-array name="plural_placements">
     <item>публикация</item>
     <item>публикации</item>
+    <item>публикаций</item>
   </string-array>
   <string-array name="plural_videos">
     <item>показ видео</item>
     <item>показа видео</item>
+    <item>показов видео</item>
   </string-array>
   <string name="lbl_service_year" formatted="false">%s/%s служебный год</string>
   <string name="msg_contribute">Похоже, вы используете JW Droid уже некоторое время. Мы рады, что приложение стало для вас полезным!\n\nЭто приложение было написано в 2010 году. Сейчас мы работаем над обновленной современной версией с новыми функциями. Вы можете ускорить разработку, поддержав проект. Спасибо!\n\n— Команда JW Droid</string>
