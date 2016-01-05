@@ -22,8 +22,7 @@ Features:
 Open source project: https://github.com/jwdroid/jwdroid
 
 Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
-**add the same translated tags here**
-    </string>
+**add the same translated tags here**    </string>
   <string name="app_name">JW Droid</string>
   <string name="lbl_territory_name">!Название участка:</string>
   <string name="title_territory_add">Добавление участка</string>
@@ -284,7 +283,6 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <string name="pref_dropbox_off">Отключить Dropbox</string>
   <string name="pref_dropbox_off_note">Выйти из аккаунта Dropbox и прекратить синхронизацию</string>
   <string name="msg_tip_hold_plus">Подсказка: нажмите и держите кнопку \"+\", чтобы добавить больше времени</string>
-  <string name="msg_revision_notes_1_4" formatted="true"><b>Версия 1.4.0</b>\n\nНовый формат отчетов в 2016 году.\n\nОбновлена визуальная тема приложения.\n\nДобавлены счетчики суммы часов за служебный год.\n\nУбраны шаблоны литературы в тексте посещения, т.к. они теперь не нужны.\n\nДобавлена возможность сделать пожертвование через платеж внутри приложения.\n\nНовый режим подсчета литературы в Хронометре.\n\nИсправлен баг, из-за которого иногда не получалось восстановить резервную копию.\n\nИсправлен баг с пропаданием отчетов за старые месяцы.</string>
   <string name="lbl_placements">Публикации:</string>
   <string name="lbl_videos">Показы видео:</string>
   <string-array name="plural_placements">
@@ -316,6 +314,7 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
     <item>Раз в год</item>
   </string-array>
   <string name="lbl_payments_processed_by">Платежи обрабатываются Google Play.</string>
+  <string name="msg_revision_notes_1_4_1" formatted="true"><b>Версия 1.4.1</b>\n\nДобавлена ссылка на <a href="https://plus.google.com/communities/112371364498094492171">сообщество Google+</a> в главное меню.\n\nДобавлена ссылка на <a href="https://crowdin.com/project/jwdroid/invite">онлайн-сервис переводов</a> в меню "Поддержать проект".\n\n<b>Версия 1.4.0</b>\n\nНовый формат отчетов в 2016 году.\n\nОбновлена визуальная тема приложения.\n\nДобавлены счетчики суммы часов за служебный год.\n\nУбраны шаблоны литературы в тексте посещения, т.к. они теперь не нужны.\n\nДобавлена возможность сделать пожертвование через платеж внутри приложения.\n\nНовый режим подсчета литературы в Хронометре.\n\nИсправлен баг, из-за которого иногда не получалось восстановить резервную копию.\n\nИсправлен баг с пропаданием отчетов за старые месяцы.</string>
   <string name="chk_chrono_calc_auto">Добавить из посещений</string>
   <string name="menu_community">Сообщество Google+</string>
 </resources>

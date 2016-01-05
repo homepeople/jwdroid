@@ -7,13 +7,16 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.preference.PreferenceManager;
+import android.support.annotation.NonNull;
+import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.LayoutInflater;
+import android.text.method.LinkMovementMethod;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
 import com.jwdroid.BugSenseConfig;
 import com.jwdroid.R;
@@ -21,8 +24,6 @@ import com.jwdroid.R;
 import java.io.File;
 
 public class MainMenu extends AppCompatActivity {
-
-    static final private int DIALOG_REVISION_NOTES = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -132,31 +133,17 @@ public class MainMenu extends AppCompatActivity {
     }
 
 
-    @Override
-    protected Dialog onCreateDialog(int id) {
-        Dialog dialog = null;
-        LayoutInflater factory = LayoutInflater.from(this);
-
-        switch (id) {
-            case DIALOG_REVISION_NOTES:
-                dialog = new AlertDialog.Builder(this)
-                        .setTitle(R.string.msg_revision_notes)
-                        .setMessage(R.string.msg_revision_notes_1_4)
-                        .setPositiveButton(R.string.btn_ok, null).create();
-                break;
-        }
-
-        return dialog;
-    }
 
     private void showRevisionNotes() {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        if (!prefs.getBoolean("revision_notes_1_4", false)) {
+        if (!prefs.getBoolean("revision_notes_1_4_1", false)) {
             SharedPreferences.Editor editor = prefs.edit();
-            editor.putBoolean("revision_notes_1_4", true);
+            editor.putBoolean("revision_notes_1_4_1", true);
             editor.commit();
 
-            showDialog(DIALOG_REVISION_NOTES);
+            DialogFragment dialog = new ChangelogDialog();
+            dialog.show(getSupportFragmentManager(), null);
+
         }
     }
 
@@ -166,7 +153,22 @@ public class MainMenu extends AppCompatActivity {
         ContributeDialog.check(this);
     }
 
+    static public class ChangelogDialog extends DialogFragment {
+        @NonNull
+        @Override
+        public Dialog onCreateDialog(Bundle savedInstanceState) {
+            return new AlertDialog.Builder(getActivity())
+                    .setTitle(R.string.msg_revision_notes)
+                    .setMessage(R.string.msg_revision_notes_1_4_1)
+                    .setPositiveButton(R.string.btn_ok, null).create();
+        }
 
+        @Override
+        public void onStart() {
+            super.onStart();
+            ((TextView)getDialog().findViewById(android.R.id.message)).setMovementMethod(LinkMovementMethod.getInstance());
+        }
+    }
 
 
 }
