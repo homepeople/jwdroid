@@ -11,6 +11,7 @@ Features:
 * Detailed tracking of all service sessions with time and relevant statistics.
 * Composing total monthly reports and sending via e-mail or SMS.
 * Absolutely free app, no ads. You can make an in-app donation payment if you wish.
+* Supported languages: English, Spanish, Portuguese, Russian, Ukrainian, Bulgarian, Czech, French, Dutch, Polish, Romanian, Swedish.
 
 ## Contribution
 
