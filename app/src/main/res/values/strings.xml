@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-<Google Play application description>
 
-Powerful service organizer for Jehovah's Witnesses. Keep records, track statistics and service time,
+<resources>
+    <string name="app_description">
+Powerful service organizer for Jehovah\'s Witnesses. Keep records, track statistics and service time,
 conveniently view and arrange territories and interested persons in an automated and intuitive way.
 
 Features:
@@ -21,10 +21,9 @@ Features:
 
 Open source project: https://github.com/jwdroid/jwdroid
 
-Tags: JW, Jehovah's Witnesses, preaching, ministry, organizer, notes
-<add the same translated tags here>.
- -->
-<resources>
+Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
+**add the same translated tags here**
+    </string>
 
     <string name="app_name">JW Droid</string>
 
@@ -203,18 +202,6 @@ Tags: JW, Jehovah's Witnesses, preaching, ministry, organizer, notes
         <item>Bright yellow</item>
         <item>Bright red</item>
     </string-array>
-
-    <string name="pref_title_literature">Literature tracking</string>
-    <string name="pref_assign_templates">Set templates</string>
-    <string name="pref_assign_templates_note">Set text templates to use in notes for tracking literature</string>
-    <string name="pref_template_magazine">Magazine</string>
-    <string name="pref_template_brochure">Brochure</string>
-    <string name="pref_template_tract">Tract</string>
-    <string name="pref_template_book">Book</string>
-    <string name="pref_template_magazine_default">+m</string>
-    <string name="pref_template_brochure_default">+br</string>
-    <string name="pref_template_book_default">+bk</string>
-    <string name="pref_template_tract_default">+t</string>
 
     <string-array name="months">
         <item>January</item>

@@ -1,26 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?><!--
-<Android Market application description>
+<?xml version="1.0" encoding="utf-8"?>
 
+<resources>
+    <string name="app_description">
 Galinga tarnybos tvarkyklė Jehovos liudytojams. Išsaugokit įrašus, stebėkit statistikas ir tarnybos laiką, patogiai peržiūrėkit ir tvarkykit teritorijas ir susidomejusius automatizuotu ir patogiu būdu.
 
 Ypatybės:
- * Patogu laikyti tarnybos užrašus ir valandas.
- * Patogus ekrano išdėstymas tiek namams, tiek butams.
- * Teritorijų išdėstymas pagal ekranus, namus, gyentojus ir aplankymus.
- * Išsaugomas visų vizitų laikas.
- * Tarnybos laiko spaičiasvimas laikmačiu.
- * Parenkamos butų/namų spalvos automatiškai arba rankiniu būdu.
- * Sekama palikta literatūra (galima naudoti teksto šablonus užrašuose), pakartotiniai aplankymai, Biblijos studijos.
- * Išsamus visos tarnybos sesijos sekimas su svarbiom statsistikomis.
- * Galimybė išsiųsti mėnesio ataskaitą el-paštu arba SMS žinute.
- * Rankinis ir automatitis atsarginių kopijų gaminimas
- * Visiškai nemokama, jokių reklamų
+* Patogu laikyti tarnybos užrašus ir valandas.
+* Patogus ekrano išdėstymas tiek namams, tiek butams.
+* Teritorijų išdėstymas pagal ekranus, namus, gyentojus ir aplankymus.
+* Išsaugomas visų vizitų laikas.
+* Tarnybos laiko spaičiasvimas laikmačiu.
+* Parenkamos butų/namų spalvos automatiškai arba rankiniu būdu.
+* Sekama palikta literatūra (galima naudoti teksto šablonus užrašuose), pakartotiniai aplankymai, Biblijos studijos.
+* Išsamus visos tarnybos sesijos sekimas su svarbiom statsistikomis.
+* Galimybė išsiųsti mėnesio ataskaitą el-paštu arba SMS žinute.
+* Rankinis ir automatitis atsarginių kopijų gaminimas
+* Visiškai nemokama, jokių reklamų
 
 Atviro kodo projektas: http://code.google.com/p/jwdroid/
 
-Žymės: Jehovah's Witnesses, Bible, preaching, ministry, Jehovos liudytojai, Biblija, skelbimas, tarnyba.
- -->
-<resources>
+Žymės: Jehovah\'s Witnesses, Bible, preaching, ministry, Jehovos liudytojai, Biblija, skelbimas, tarnyba.
+    </string>
 
     <string name="app_name">JW Droid</string>
 
