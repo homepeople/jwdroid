@@ -196,32 +196,32 @@ Tags: Jehovah\'s Witnesses, Bible, ministry, Testigos de Jehová, Biblia, Minist
   <string-array name="plural_magazines">
     <item>revista</item>
     <item>revistas</item>
-    <item>magazines</item>
+    <item>revistas</item>
   </string-array>
   <string-array name="plural_brochures">
     <item>folleto</item>
     <item>folletos</item>
-    <item>brochures</item>
+    <item>folletos</item>
   </string-array>
   <string-array name="plural_books">
     <item>libro</item>
     <item>libros</item>
-    <item>books</item>
+    <item>libros</item>
   </string-array>
   <string-array name="plural_returns">
     <item>revisita</item>
     <item>revisitas</item>
-    <item>return visits</item>
+    <item>revisitas</item>
   </string-array>
   <string-array name="plural_studies">
     <item>estudio bíblico</item>
     <item>estudios bíblicos</item>
-    <item>bible studies</item>
+    <item>estudios bíblicos</item>
   </string-array>
   <string-array name="plural_visits">
     <item>visita</item>
     <item>visitas</item>
-    <item>visits</item>
+    <item>visitas</item>
   </string-array>
   <string name="title_tip">Contribución</string>
   <string name="msg_person">Amo de casa</string>
@@ -269,13 +269,13 @@ Tags: Jehovah\'s Witnesses, Bible, ministry, Testigos de Jehová, Biblia, Minist
   <string-array name="plural_tracts">
     <item>tratado</item>
     <item>tratados</item>
-    <item>tracts</item>
+    <item>tratados</item>
   </string-array>
   <string name="lbl_brochures_tracts">Folletos y tratados:</string>
   <string-array name="plural_brochures_tracts">
     <item>folleto o tratado</item>
     <item>folletos o tratados</item>
-    <item>brochures or tracts</item>
+    <item>folletos o tratados</item>
   </string-array>
   <string name="lbl_please_wait">Espere, por favor...</string>
   <string name="title_drive">Guardar en Dropbox</string>
@@ -292,12 +292,12 @@ Tags: Jehovah\'s Witnesses, Bible, ministry, Testigos de Jehová, Biblia, Minist
   <string-array name="plural_placements">
     <item>publicacion</item>
     <item>publicaciones</item>
-    <item>placements</item>
+    <item>publicaciones</item>
   </string-array>
   <string-array name="plural_videos">
     <item>presentacion de vídeo</item>
     <item>presentaciones de vídeos</item>
-    <item>video showings</item>
+    <item>presentaciones de vídeos</item>
   </string-array>
   <string name="lbl_service_year" formatted="false">%s/%s año de servicio</string>
   <string name="msg_contribute">Parece que ha estando JW Droid por algún tiempo ya. ¡Nos complace saber que haya encontrado esta aplicación útil!\n\nLa versión corriente se completó en el 2010, y ahora estamos trabajando en una versión actualizada y moderna, con algunas funciones addicionales. Usted podría colaborar con nosotros para acelerar el desarrollo de la aplicación. ¡Muchas gracias!\n\n— JW Droid Team</string>
@@ -320,7 +320,7 @@ Tags: Jehovah\'s Witnesses, Bible, ministry, Testigos de Jehová, Biblia, Minist
     <item>Cada 12 meses</item>
   </string-array>
   <string name="lbl_payments_processed_by">Los pagos son procesados por Google Play.</string>
-  <string name="msg_revision_notes_1_4_1" formatted="true"><b>Versión 1.4.1</b>\n\nAñadido enlace a <a href="https://plus.google.com/communities/112371364498094492171">Comunidad Google+</a> en el menú principal.\n\nAñadido enlace al <a href="https://crowdin.com/project/jwdroid/invite">servicio de traducción en línea</a> al diálogo de contribución. ¡Bienvenidos traductores!\n\n<b>Versión 1.4.0</b>\n\nInforme actualizado al nuevo formato de 2016.\n\nNuevo tema con un aspecto más moderno.\n\nAñadido el total de horas anuales a la sección de Informes.\n\nEliminadas las plantillas textuales al ser ya innecesarias.\n\nAñadida la opción de realizar donaciones para apoyar el desarrollo de esta aplicación.\n\nNuevo espacio para el cálculo de tiempo en el Cronómetro.\n\nCorregido el error que en ocasiones fallaba al restaurar copias de seguridad.\n\nCorregido el error que hacía desaparecer los datos de informes antiguos.</string>
+  <string name="msg_revision_notes_1_4_1" formatted="true"><b>Versión 1.4.1</b>\n\nAñadido enlace a <a href="https://plus.google.com/communities/112371364498094492171">Comunidad Google+</a> en el menú principal.\n\nAñadido enlace al <a href="https://crowdin.com/project/jwdroid/invite">servicio de traducción en línea</a> al diálogo de contribución. ¡Bienvenidos traductores!\n\n<b>Versión 1.4.0</b>\n\nInforme actualizado al nuevo formato de 2016.\n\nNuevo tema con un aspecto más moderno.\n\nAñadido el total de horas anuales a la sección de Informes.\n\nEliminadas las plantillas textuales de las publicaciones al no ser ya necesarias.\n\nAñadida la opción de realizar donaciones para apoyar el desarrollo de esta aplicación.\n\nNuevo modo de calcular las publicaciones en el Cronómetro.\n\nCorregido el error que en ocasiones fallaba al restaurar copias de seguridad.\n\nCorregido el error que hacía desaparecer los datos de informes antiguos.</string>
   <string name="chk_chrono_calc_auto"> Toma de visitas</string>
   <string name="menu_community">Comunidad Google+</string>
 </resources>

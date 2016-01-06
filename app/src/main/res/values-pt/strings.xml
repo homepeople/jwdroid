@@ -37,7 +37,7 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <string name="dlg_territory_add_label">Nome do território:</string>
   <string name="dlg_territory_add_note">Por exemplo, Rua X</string>
   <string name="btn_add">Adicionar</string>
-  <string name="btn_ok">OK</string>
+  <string name="btn_ok">CONFIRMAR</string>
   <string name="btn_yes">Sim</string>
   <string name="btn_no">Não</string>
   <string name="btn_cancel">Cancelar</string>
@@ -201,17 +201,17 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <string-array name="plural_magazines">
     <item>revista</item>
     <item>revistas</item>
-    <item>magazines</item>
+    <item>revistas</item>
   </string-array>
   <string-array name="plural_brochures">
     <item>brochura</item>
     <item>brochuras</item>
-    <item>brochures</item>
+    <item>brochuras</item>
   </string-array>
   <string-array name="plural_books">
     <item>livro</item>
     <item>livros</item>
-    <item>books</item>
+    <item>livros</item>
   </string-array>
   <string-array name="plural_returns">
     <item>revisita</item>
@@ -221,12 +221,12 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <string-array name="plural_studies">
     <item>estudo bíblico</item>
     <item>estudos bíblicos</item>
-    <item>bible studies</item>
+    <item>estudos bíblicos</item>
   </string-array>
   <string-array name="plural_visits">
     <item>visita</item>
     <item>visitas</item>
-    <item>visits</item>
+    <item>revisitas</item>
   </string-array>
   <string name="title_tip">Sugestão</string>
   <string name="msg_person">Morador</string>
@@ -270,27 +270,27 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <string name="msg_backup_created">Cópia de segurança criada</string>
   <string name="pref_backups_manage">Manejar as cópias de segurança</string>
   <string name="pref_backups_manage_note">Ver lista das cópias de segurança</string>
-  <string name="lbl_tracts">Tracts:</string>
+  <string name="lbl_tracts">Folhetos:</string>
   <string-array name="plural_tracts">
-    <item>tract</item>
-    <item>tracts</item>
+    <item>folheto</item>
+    <item>folhetos</item>
     <item>tracts</item>
   </string-array>
   <string name="lbl_brochures_tracts">Brochures &amp; tracts:</string>
   <string-array name="plural_brochures_tracts">
     <item>brochure or tract</item>
-    <item>brochures or tracts</item>
+    <item>brochuras ou folhetos</item>
     <item>brochures or tracts</item>
   </string-array>
-  <string name="lbl_please_wait">Please wait...</string>
-  <string name="title_drive">Backup to Dropbox</string>
+  <string name="lbl_please_wait">Aguarde, por favor...</string>
+  <string name="title_drive">Fazer backup no Dropbox</string>
   <string name="lbl_drive">Dropbox</string>
-  <string name="lbl_local_folder">Local Folder</string>
+  <string name="lbl_local_folder">Pasta local</string>
   <string name="lbl_drive_desc">Your data can be automatically uploaded to your Dropbox and synced across connected devices</string>
-  <string name="lbl_drive_turn_on">Turn On</string>
-  <string name="lbl_backups_empty">Backups list is empty</string>
-  <string name="pref_dropbox_off">Disconnect from Dropbox</string>
-  <string name="pref_dropbox_off_note">Log out from Dropbox account and stop syncing</string>
+  <string name="lbl_drive_turn_on">Ligar</string>
+  <string name="lbl_backups_empty">Lista de backup vazia</string>
+  <string name="pref_dropbox_off">Desconectar do Dropbox</string>
+  <string name="pref_dropbox_off_note">Sair da conta do Dropbox e parar de sincronizar</string>
   <string name="msg_tip_hold_plus">Tip: press &amp; hold the \"+\" button to add a big amount of time</string>
   <string name="lbl_placements">Colocações:</string>
   <string name="lbl_videos">Vídeos mostrados:</string>
@@ -327,5 +327,5 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <string name="lbl_payments_processed_by">Os pagamentos são processados através do Google Play.</string>
   <string name="msg_revision_notes_1_4_1" formatted="true"><b>Version 1.4.1</b>\n\nAdded a link to <a href="https://plus.google.com/communities/112371364498094492171">Google+ Community</a> to the main menu.\n\nAdded a link to the <a href="https://crowdin.com/project/jwdroid/invite">online translation service</a> to the contribution dialog. Translators are welcome!\n\n<b>Version 1.4.0</b>\n\nUpdated reports to the new 2016 format.\n\nNew modern visual theme.\n\nAdded service year total hour counters to the Reports section.\n\nRemoved placements text templates as they are unneccessary now.\n\nAdded an option to make an in-app donation payment to support the development.\n\nNew placements calculating mode in the Chronometer.\n\nFixed a bug when restoring from the backup failed sometimes.\n\nFixed a bug with disappearing of old report data.</string>
   <string name="chk_chrono_calc_auto"> Obter das visitas</string>
-  <string name="menu_community">Google+ Community</string>
+  <string name="menu_community">Comunidade Google+</string>
 </resources>
