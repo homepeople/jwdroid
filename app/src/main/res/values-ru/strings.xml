@@ -12,18 +12,19 @@ Features:
  * Saving date and time of all visits.
  * Tracking of service time in the chronometer mode.
  * Custom colors for households in automatic or manual mode.
- * Tracking of placed literature (including via text templates in notes), return visits, Bible studies.
+ * Tracking of placed literature, return visits, Bible studies.
  * Detailed tracking of all service sessions with all relevant statistics.
  * Composing total monthly reports and sending via e-mail or SMS.
  * Manual and automatic data backups.
  * Saving data to Dropbox and syncing across connected devices.
- * Absolutely free app, no ads. You can make an in-app donation payment if you wish.
+ * Absolutely free app, no ads. You can make an in-app donation payment to support the development, if you wish.
+
+Leave feedback or ask questions on Google+ Community: https://plus.google.com/communities/112371364498094492171
 
 Open source project: https://github.com/jwdroid/jwdroid
 
 Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
-**add the same translated tags here**
-    </string>
+**add the same translated tags here**    </string>
   <string name="app_name">JW Droid</string>
   <string name="lbl_territory_name">!Название участка:</string>
   <string name="title_territory_add">Добавление участка</string>
