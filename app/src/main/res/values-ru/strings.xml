@@ -328,4 +328,5 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <string name="msg_revision_notes_1_4_1" formatted="true"><b>Версия 1.4.1</b>\n\nДобавлена ссылка на <a href="https://plus.google.com/communities/112371364498094492171">сообщество Google+</a> в главное меню.\n\nДобавлена ссылка на <a href="https://crowdin.com/project/jwdroid/invite">онлайн-сервис переводов</a> в меню "Поддержать проект".\n\n<b>Версия 1.4.0</b>\n\nНовый формат отчетов в 2016 году.\n\nОбновлена визуальная тема приложения.\n\nДобавлены счетчики суммы часов за служебный год.\n\nУбраны шаблоны литературы в тексте посещения, т.к. они теперь не нужны.\n\nДобавлена возможность сделать пожертвование через платеж внутри приложения.\n\nНовый режим подсчета литературы в Хронометре.\n\nИсправлен баг, из-за которого иногда не получалось восстановить резервную копию.\n\nИсправлен баг с пропаданием отчетов за старые месяцы.</string>
   <string name="chk_chrono_calc_auto">Добавить из посещений</string>
   <string name="menu_community">Сообщество Google+</string>
+  <string name="menu_about_app">О программе</string>
 </resources>

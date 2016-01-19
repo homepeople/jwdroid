@@ -382,4 +382,12 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
     <string name="chk_chrono_calc_auto">Add from visits</string>
     <string name="menu_community">Google+ Community</string>
 
+    <!-- 1.4.2 -->
+    <string name="menu_about_app">About</string>
+    <string name="lbl_copyright" translatable="false">&#169; 2016 Artem Chivchalov</string>
+    <string name="lbl_thanks" translatable="false">Special thanks to:</string>
+    <string name="lbl_license" translatable="false">The MIT License</string>
+    <string name="lbl_github_url" translatable="false" formatted="true"><a href="https://github.com/jwdroid/jwdroid">https://github.com/jwdroid/jwdroid</a></string>
+
+
 </resources>
