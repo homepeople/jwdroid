@@ -26,7 +26,6 @@ Open source project: https://github.com/jwdroid/jwdroid
 Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
 **add the same translated tags here**
     </string>
-  <string name="app_name">JW Droid</string>
   <string name="lbl_territory_name">Nazwa terenu:</string>
   <string name="title_territory_add">Dodaj teren</string>
   <string name="lbl_territory_desc">Krótki opis:</string>
@@ -272,7 +271,7 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <string name="msg_backup_created">Backup created</string>
   <string name="pref_backups_manage">Manage backups</string>
   <string name="pref_backups_manage_note">View list of created backups</string>
-  <string name="lbl_tracts">Tracts:</string>
+  <string name="lbl_tracts">Traktaty:</string>
   <string-array name="plural_tracts">
     <item>tract</item>
     <item>tracts</item>
@@ -294,19 +293,19 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <string name="pref_dropbox_off">Disconnect from Dropbox</string>
   <string name="pref_dropbox_off_note">Log out from Dropbox account and stop syncing</string>
   <string name="msg_tip_hold_plus">Tip: press &amp; hold the \"+\" button to add a big amount of time</string>
-  <string name="lbl_placements">Placements:</string>
-  <string name="lbl_videos">Video showings:</string>
+  <string name="lbl_placements">Publikacje:</string>
+  <string name="lbl_videos">Wyświetlone filmy:</string>
   <string-array name="plural_placements">
-    <item>placement</item>
-    <item>placements</item>
-    <item>placements</item>
+    <item>publikacja</item>
+    <item>publikacje</item>
+    <item>publikacje</item>
   </string-array>
   <string-array name="plural_videos">
-    <item>video showing</item>
-    <item>video showings</item>
-    <item>video showings</item>
+    <item>wyświetlone filmy</item>
+    <item>wyświetlone filmy</item>
+    <item>wyświetlone filmy</item>
   </string-array>
-  <string name="lbl_service_year" formatted="false">%s/%s service year</string>
+  <string name="lbl_service_year" formatted="false">%s%s służba roczna</string>
   <string name="msg_contribute">You seem to have used JW Droid for some time. We are glad that you find it useful!\n\nThe app was written in 2010, and now we work on an updated, modern version with new features. You could speed up the development by contributing to the project. Thank you!\n\n— JW Droid Team</string>
   <string name="lbl_contribute">We are glad that you find JW Droid useful! The app was written in 2010, and now we work on an updated, modern version with new features. You could speed up the development by contributing to the project. Thank you!</string>
   <string name="btn_donate">Donate to support development</string>

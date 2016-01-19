@@ -26,7 +26,6 @@ Open source project: https://github.com/jwdroid/jwdroid
 Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
 **add the same translated tags here**
     </string>
-  <string name="app_name">JW Droid</string>
   <string name="lbl_territory_name">Název obvodu:</string>
   <string name="title_territory_add">Přidat obvod</string>
   <string name="lbl_territory_desc">Stručný popis:</string>
@@ -124,7 +123,7 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
     <item>Opětovná návštěva</item>
     <item>Biblické studium</item>
   </string-array>
-  <string name="lbl_visit_date">Date:</string>
+  <string name="lbl_visit_date">Datum:</string>
   <string name="chk_visit_calc_auto">Vzít z textu</string>
   <string name="msg_choose_color">Vyberte barvu:</string>
   <string name="msg_person_desc">Zadejte popis zájemce:</string>
@@ -294,8 +293,8 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <string name="pref_dropbox_off">Disconnect from Dropbox</string>
   <string name="pref_dropbox_off_note">Log out from Dropbox account and stop syncing</string>
   <string name="msg_tip_hold_plus">Tip: press &amp; hold the \"+\" button to add a big amount of time</string>
-  <string name="lbl_placements">Placements:</string>
-  <string name="lbl_videos">Video showings:</string>
+  <string name="lbl_placements">Všechny publikace:</string>
+  <string name="lbl_videos">Přehraná videa:</string>
   <string-array name="plural_placements">
     <item>placement</item>
     <item>placements</item>
@@ -306,7 +305,7 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
     <item>video showings</item>
     <item>video showings</item>
   </string-array>
-  <string name="lbl_service_year" formatted="false">%s/%s service year</string>
+  <string name="lbl_service_year" formatted="false">%s/%s služební rok</string>
   <string name="msg_contribute">You seem to have used JW Droid for some time. We are glad that you find it useful!\n\nThe app was written in 2010, and now we work on an updated, modern version with new features. You could speed up the development by contributing to the project. Thank you!\n\n— JW Droid Team</string>
   <string name="lbl_contribute">We are glad that you find JW Droid useful! The app was written in 2010, and now we work on an updated, modern version with new features. You could speed up the development by contributing to the project. Thank you!</string>
   <string name="btn_donate">Donate to support development</string>
@@ -317,7 +316,7 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <string name="btn_refresh">Refresh</string>
   <string name="btn_learn_more">Learn more</string>
   <string name="btn_no_thanks">No, thanks</string>
-  <string name="btn_rename">Rename</string>
+  <string name="btn_rename">Přejmenovat</string>
   <string name="title_contribute">Contribute</string>
   <string name="lbl_donation">Donation:</string>
   <string name="lbl_recurring">Recurring:</string>

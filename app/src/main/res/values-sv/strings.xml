@@ -26,7 +26,6 @@ Open source project: https://github.com/jwdroid/jwdroid
 Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
 **add the same translated tags here**
     </string>
-  <string name="app_name">JW Droid</string>
   <string name="lbl_territory_name">Namn på distrikt:</string>
   <string name="title_territory_add">Lägg till distrikt</string>
   <string name="lbl_territory_desc">Kort beskrivning:</string>

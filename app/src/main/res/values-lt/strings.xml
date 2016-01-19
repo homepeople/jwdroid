@@ -24,7 +24,6 @@ Atvirojo kodo projektas: https://github.com/jwdroid/jwdroid
 
 Tags: JW, Jehovos liudytojai, skelbti, tarnyba, programėlė, užrašai
     </string>
-  <string name="app_name">JW Droid</string>
   <string name="lbl_territory_name">Teritorijos pavadinimas:</string>
   <string name="title_territory_add">Pridėti teritoriją</string>
   <string name="lbl_territory_desc">Trumpas aprašas:</string>
@@ -142,14 +141,14 @@ Tags: JW, Jehovos liudytojai, skelbti, tarnyba, programėlė, užrašai
   <string name="menu_session_date">Data ir laikas</string>
   <string name="menu_change_session_date">Keisti datą</string>
   <string name="menu_change_session_time">Keisti laiką</string>
-  <string name="menu_set_position">Nustatyti vietą</string>
+  <string name="menu_set_position">Nustatyti poziciją</string>
   <string name="menu_move_up">Perkelti aukštyn</string>
   <string name="menu_move_down">Perkelti žemyn</string>
   <string name="menu_move_left">Perkelti į kairę</string>
   <string name="menu_move_right">Perkelti į dešinę</string>
   <string name="menu_territory_info">Informacija</string>
   <string name="menu_territory_layout">Išdėstymas</string>
-  <string name="menu_territory_arrange">Sutvarkyti</string>
+  <string name="menu_territory_arrange">Tvarkyti</string>
   <string name="menu_territory_shift_up">Visus perkelti aukštyn</string>
   <string name="menu_territory_shift_down">Visus perkelti žemyn</string>
   <string name="menu_territory_shift_left">Visus perkelti į kairę</string>
@@ -157,24 +156,24 @@ Tags: JW, Jehovos liudytojai, skelbti, tarnyba, programėlė, užrašai
   <string name="title_preferences">Nustatymai</string>
   <string name="pref_title_appearance">Išvaizda</string>
   <string name="pref_list_text_rows">Eilučių skaičius</string>
-  <string name="pref_list_text_rows_note">Kiek eilučių bus rodoma paskutinių namo/buto užrašų, pasirinkus sąrašo vaizdą</string>
-  <string name="pref_table_button_size">Mygtuko dydis</string>
-  <string name="pref_table_button_size_note">Buto/namo mygtukų dydis pasirinkus tinklelio vaizdą</string>
+  <string name="pref_list_text_rows_note">Kiek eilučių bus rodoma paskutinių namo / buto užrašų, pasirinkus sąrašo vaizdą</string>
+  <string name="pref_table_button_size">Mygtukų dydis</string>
+  <string name="pref_table_button_size_note">Buto / namo mygtukų dydis, pasirinkus tinklelio vaizdą</string>
   <string-array name="entries_table_button_size_preference">
     <item>Mažas</item>
     <item>Vidutinis</item>
     <item>Didelis</item>
   </string-array>
   <string name="pref_title_colors">Spalvos</string>
-  <string name="pref_autocolor">Automatinis spalvų pasirinkimas</string>
+  <string name="pref_autocolor">Automatinis spalvų parinkimas</string>
   <string name="pref_autocolor_note">Automatiškai nustatyti spalvas pagal situaciją</string>
   <string name="pref_assign_colors">Nustatyti spalvas</string>
-  <string name="pref_color_reject">Atsisakė</string>
+  <string name="pref_color_reject">Nesidomi</string>
   <string name="pref_color_visit">Apsilankymas</string>
-  <string name="pref_color_return">Pakartotinis apsilankymas</string>
-  <string name="pref_color_study">Biblijos studija</string>
+  <string name="pref_color_return">Pakartotinis aplankymas</string>
+  <string name="pref_color_study">Biblijos studijos</string>
   <string-array name="entries_color_preference">
-    <item>Pakeisti/nepakeisti</item>
+    <item>Nekeisti</item>
     <item>Mėlyna</item>
     <item>Žalia</item>
     <item>Geltona</item>
@@ -219,55 +218,55 @@ Tags: JW, Jehovos liudytojai, skelbti, tarnyba, programėlė, užrašai
     <item>pakartotinių aplankymų</item>
   </string-array>
   <string-array name="plural_studies">
-    <item>biblijos studija</item>
-    <item>biblijos studijos</item>
+    <item>Biblijos studijos</item>
+    <item>Biblijos studijos</item>
     <item>Biblijos studijos</item>
   </string-array>
   <string-array name="plural_visits">
-    <item>aplankymas</item>
-    <item>aplankymai</item>
+    <item>apsilankymas</item>
+    <item>apsilankymai</item>
     <item>apsilankymų</item>
   </string-array>
   <string name="title_tip">Patarimas</string>
   <string name="msg_person">Gyventojas</string>
-  <string name="lbl_person_desc">Gyventojo aprašymas</string>
+  <string name="lbl_person_desc">Gyventojo aprašas</string>
   <string name="lbl_male">Vyras</string>
   <string name="lbl_female">Moteris</string>
   <string name="lbl_male_letter">V</string>
   <string name="lbl_female_letter">M</string>
   <string name="msg_choose_age">Pasirinkite amžių:</string>
   <string name="lbl_visit_text">Apsilankymo turinys</string>
-  <string name="action_object_add_na_visit">Ne namie</string>
-  <string name="msg_added_na_visit">Pridetas \'Ne namie\' vizitas %s</string>
-  <string name="pref_hide_visited">Slėpti šiandien aplankytus</string>
-  <string name="pref_hide_visited_note">Šiandien aplankytus butus/namus paslėpti (pažymėtus)</string>
-  <string name="msg_delete_object">Visi gyventojai ir aplankymai bus ištrinti! Ar tikrai norite ištrinti?</string>
+  <string name="action_object_add_na_visit">Nėra namie</string>
+  <string name="msg_added_na_visit">Pažymėta „nėra namie“ %s</string>
+  <string name="pref_hide_visited">Slėpti aplankytus šiandien</string>
+  <string name="pref_hide_visited_note">Slėpti namus / butus, kurie aplankyti šiandien (jei pažymėta varnelė)</string>
+  <string name="msg_delete_object">Visi gyventojai ir apsilankymai pas juos bus pašalinti! Ar tikrai norite pašalinti butą / namą?</string>
   <string name="menu_territory_sort">Rūšiuoti</string>
-  <string name="msg_territory_sort">Rūšiuoti pagal buto/namo pavadinimą?</string>
+  <string name="msg_territory_sort">Rūšiuoti pagal buto / namo pavadinimą?</string>
   <string-array name="menu_move_list">
-    <item>Nustatyti padėtį</item>
+    <item>Nustatyti poziciją</item>
     <item>Perkelti aukštyn</item>
     <item>Perkelti žemyn</item>
   </string-array>
   <string name="pref_object_add_sorted">Rūšiuoti automatiškai</string>
-  <string name="pref_object_add_sorted_note">Pridėti naują butą/namą, rūšiuojant pagal pavadinimą (tik sąrašo vaizde)</string>
+  <string name="pref_object_add_sorted_note">Pridėti naują butą / namą, rūšiuojant pagal pavadinimą (tik sąrašo vaizde)</string>
   <string name="menu_backups">Atsarginės kopijos</string>
   <string name="lbl_backup_list_empty">Atsarginių kopijų sąrašas tuščias.</string>
-  <string name="msg_backup_failed">Klaida kuriant atsargines kopijas</string>
+  <string name="msg_backup_failed">Klaida kuriant atsarginę kopiją</string>
   <string name="pref_title_backup">Atsarginės kopijos</string>
   <string name="pref_autobackup">Automatiškai daryti atsargines kopijas</string>
-  <string name="pref_autobackup_note">Automatiškai daryti naujas atsargines kopijas po kiekvienos skelbimo sesijos</string>
+  <string name="pref_autobackup_note">Automatiškai daryti naują atsarginę kopiją po kiekvieno išėjimo į tarnybą</string>
   <string name="pref_num_backups">Kopijų skaičius</string>
   <string name="pref_num_backups_note">Didžiausias saugomų kopijų skaičius</string>
   <string name="msg_create_backup">Kurti naują atsarginę kopiją?</string>
-  <string name="msg_delete_backup">Ištrinti šia atsarginę kopiją?</string>
-  <string name="msg_restore_backup">Dėmesio! VISA turima informacija bus negrįžtamai ištrinta ir pakeista atsarginėmis kopijomis. Tęsti?</string>
+  <string name="msg_delete_backup">Pašalinti šią atsarginę kopiją?</string>
+  <string name="msg_restore_backup">Dėmesio! VISA esama informacija bus negrįžtamai ištrinta ir pakeista informacija iš atsarginės kopijos. Tęsti?</string>
   <string name="action_backup_restore">Atkurti</string>
-  <string name="action_backup_delete">Ištrinti</string>
+  <string name="action_backup_delete">Pašalinti</string>
   <string name="msg_restore_backup_failed">Klaida atkuriant atsarginę kopiją</string>
-  <string name="msg_restore_backup_success">Sėkmingai pavyko atkurti atsarginę kopiją</string>
+  <string name="msg_restore_backup_success">Atsarginė kopija atkurta</string>
   <string name="msg_revision_notes">Kas naujo</string>
-  <string name="msg_backup_created">Sukurta atsarginė kopija</string>
+  <string name="msg_backup_created">Atsarginė kopija sukurta</string>
   <string name="pref_backups_manage">Tvarkyti atsargines kopijas</string>
   <string name="pref_backups_manage_note">Žiūrėti atsarginių kopijų sąrašą</string>
   <string name="lbl_tracts">Lankstinukai:</string>
@@ -292,12 +291,12 @@ Tags: JW, Jehovos liudytojai, skelbti, tarnyba, programėlė, užrašai
   <string name="pref_dropbox_off">Atsijungti nuo Dropbox</string>
   <string name="pref_dropbox_off_note">Atsijungti nuo Dropbox paskyros ir sustabdyti sinchronizavimą</string>
   <string name="msg_tip_hold_plus">Patarimas: jei norite įrašyti daug laiko, nuspauskite ir palaikykite mygtuką „+“</string>
-  <string name="lbl_placements">Placements:</string>
+  <string name="lbl_placements">Spaudinių ir el. failų:</string>
   <string name="lbl_videos">Parodyta vaizdo siužetų:</string>
   <string-array name="plural_placements">
-    <item>spaudinys ar elektroninis failas</item>
-    <item>spaudiniai ir elektroniniai failai</item>
-    <item>placements</item>
+    <item>spaudinys ar el. failas</item>
+    <item>spaudiniai ir el. failai</item>
+    <item>spaudinių ir el. failų</item>
   </string-array>
   <string-array name="plural_videos">
     <item>parodytas vaizdo siužetas</item>
@@ -326,6 +325,6 @@ Tags: JW, Jehovos liudytojai, skelbti, tarnyba, programėlė, užrašai
   </string-array>
   <string name="lbl_payments_processed_by">Mokėjimai vykdomi per Google Play.</string>
   <string name="msg_revision_notes_1_4_1" formatted="true"><b>Versija 1.4.1</b>\n\nPrie pagrindinio meniu pridėta nuoroda į <a href="https://plus.google.com/communities/112371364498094492171">Google+ bendruomenę</a>.\n\nPrie parinkties „parama“ pridėta nuoroda į <a href="https://crowdin.com/project/jwdroid/invite">vertimo internetu puslapį</a>. Priimame vertėjų bendradarbiavimą!\n\n<b>Versija 1.4.0</b>\n\nAtaskaitos atnaujintos pagal 2016 m. formatą.\n\nAtnaujinta vartotojo sąsajos išvaizda.\n\nPrie ataskaitų pridėtas visų metų tarnybos valandų skaičiavimas.\n\nPašalintos leidinių tipų santrumpos, nes jų nebereikia.\n\nPridėta galimybė per pačią programą paremti jos kūrimą finansiškai.\n\nNaujas išplatintų spaudinių ir elektroninių failų skaičiavimo režimas laikmačio lange.\n\nIštaisyta klaida, dėl kurios kartais nepavykdavo atkurti duomenų iš atsarginės kopijos.\n\nIštaisyta klaida, dėl kurios dingdavo senų ataskaitų duomenys.</string>
-  <string name="chk_chrono_calc_auto">Įtraukti iš aplankymų</string>
+  <string name="chk_chrono_calc_auto">Įtraukti iš apsilankymų</string>
   <string name="menu_community">Google+ bendruomenė</string>
 </resources>

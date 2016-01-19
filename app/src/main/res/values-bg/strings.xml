@@ -23,7 +23,6 @@
 Проект с отворен код: http://code.google.com/p/jwdroid/
 
 Тагове: JW, Свидетели на Йехова, проповядване, проповедна служба, органайзер, бележки    </string>
-  <string name="app_name">JW Droid</string>
   <string name="lbl_territory_name">Име на района:</string>
   <string name="title_territory_add">Добави район</string>
   <string name="lbl_territory_desc">Кратко описание:</string>

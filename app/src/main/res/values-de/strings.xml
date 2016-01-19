@@ -24,7 +24,6 @@ Hinterlasse deine Rückmeldungen oder Fragen bei der Google+ Gruppe: https://plu
 Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
 Tags: JZ, Jehovas Zeugen, predigen, Predigtdienst, Planer, Notizen
     </string>
-  <string name="app_name">JW Droid</string>
   <string name="lbl_territory_name">Gebietsname:</string>
   <string name="title_territory_add">Gebiet hinzufügen</string>
   <string name="lbl_territory_desc">Kurzbeschreibung:</string>
@@ -48,26 +47,26 @@ Tags: JZ, Jehovas Zeugen, predigen, Predigtdienst, Planer, Notizen
   <string name="lbl_hours">Stunden:</string>
   <string name="lbl_studies">Bibelstudien:</string>
   <string name="title_chrono">Zeiterfassung</string>
-  <string name="lbl_chrono_started_time">Started at %s</string>
+  <string name="lbl_chrono_started_time">Beginn um %s</string>
   <string name="lbl_chrono_stopped">Zeiterfassung gestoppt</string>
   <string name="btn_chrono_pause">Pause</string>
-  <string name="btn_chrono_resume">Weiter</string>
+  <string name="btn_chrono_resume">Fortsetzen</string>
   <string name="btn_chrono_finish">Fertig</string>
   <string name="btn_chrono_start">Start</string>
   <string name="msg_chrono_finish">Dienst beenden?</string>
   <string name="msg_chrono_start">Dienst starten?</string>
-  <string name="msg_chrono_service_started">Stoppuhr gestartet</string>
+  <string name="msg_chrono_service_started">Zeiterfassung gestartet</string>
   <string name="lbl_chrono_current_time">Dienstzeit:</string>
-  <string name="lbl_chrono_service_note">Zur Zeiterfassung hinzufügen</string>
+  <string name="lbl_chrono_service_note">Drücken, um zur Zeiterfassung zu gehen</string>
   <string name="action_add_single_object">Eins hinzufügen</string>
   <string name="action_add_many_objects">Mehr hinzufügen</string>
-  <string name="dlg_add_single_object_note">Zum Beispiel Haus- oder Apartment-Nummer</string>
+  <string name="dlg_add_single_object_note">Zum Beispiel, Haus- oder Apartment-Nummer</string>
   <string name="msg_object_name">Überschrift einfügen:</string>
   <string name="lbl_set_row">Zeile:</string>
   <string name="lbl_set_col">Spalte:</string>
   <string name="lbl_numbers_from">Nummern von:</string>
   <string name="lbl_numbers_to">bis:</string>
-  <string name="msg_arrange_after_add">Households added. For your convenience (for example, if you add a condominium entrance) you may arrange the grid by rows and columns in the \&quot;Arrange\&quot; menu. Would you like to do it now?</string>
+  <string name="msg_arrange_after_add">Haushalte wurden hinzugefügt. Für deinen Komfort (zum Beispiel, wenn du einen Eingang im Mehrfamilienhaus hinfügst) kannst du Zeilen und Spalten anordnen - mit Hilfe von Menü \&quot;Arrange\&quot;. Willst du das tun?</string>
   <string name="msg_error">Fehler!</string>
   <string name="msg_object_deleted">Haushalt gelöscht</string>
   <string name="err_invalid_input">Ungültige Eingabe!</string>
@@ -82,14 +81,14 @@ Tags: JZ, Jehovas Zeugen, predigen, Predigtdienst, Planer, Notizen
   <string name="lbl_to">Nach:</string>
   <string name="lbl_rows">Zeilen:</string>
   <string name="lbl_cols">Spalten:</string>
-  <string name="li_top_down">Top-down</string>
-  <string name="li_bottom_up">Bottom-up</string>
+  <string name="li_top_down">Nach unten</string>
+  <string name="li_bottom_up">Nach oben</string>
   <string name="li_left_right">Von Links nach Rechts</string>
   <string name="li_right_left">Von Rechts nach Links</string>
   <string name="lbl_one_color">  Vollfarbe</string>
   <string name="lbl_two_colors">  Zwei Farben</string>
-  <string name="lbl_door_empty">Create a new tenant here.\n\nAdd a new visit by the button above.</string>
-  <string name="lbl_group_empty">This screen is empty.\n\nAdd new households by the button above.</string>
+  <string name="lbl_door_empty">Hier kann man einen Wohnungsinhaber eintragen.\n\nFüge einen neuen Besuch mit dem \"+\" Knopf unten rechts.</string>
+  <string name="lbl_group_empty">Dieser Bildschirm ist leer.\n\nFüge neue Haushalte mit dem \"+\" Knopf (oben rechts) hinzu.</string>
   <string name="title_help">Hilfe</string>
   <string name="title_territory_list">Gebiete</string>
   <string name="title_people">Personen</string>
@@ -97,7 +96,7 @@ Tags: JZ, Jehovas Zeugen, predigen, Predigtdienst, Planer, Notizen
   <string name="lbl_people_list_empty">Die Personenliste ist leer. \n\n Eine neue Person durch die Schaltfläche oben oder in den \&quot;Territories\&quot; hinzufügen.</string>
   <string name="lbl_person_add_from_people">Bitte beachte, dass die Person ohne Zuordnung zu einem Gebiet hinzugefügt wird.</string>
   <string name="title_report">Bericht für %s</string>
-  <string name="action_calc_type_sessions">By service list</string>
+  <string name="action_calc_type_sessions">Anhand der Dienstnotizen</string>
   <string name="action_calc_type_visits">Nach Besuchen</string>
   <string name="lbl_report_no_data">Keine Daten</string>
   <string name="msg_delete_session">Willst du diesen Dienst wirklich löschen?</string>
@@ -115,7 +114,7 @@ Tags: JZ, Jehovas Zeugen, predigen, Predigtdienst, Planer, Notizen
   <string name="action_territory_change_name">Name</string>
   <string name="action_territory_info">Info</string>
   <string name="action_territory_delete">Löschen</string>
-  <string name="lbl_visit_type">Besuche:</string>
+  <string name="lbl_visit_type">Besuch:</string>
   <string-array name="visit_types">
     <item>k. A.</item>
     <item>Normaler Besuch</item>
@@ -123,49 +122,49 @@ Tags: JZ, Jehovas Zeugen, predigen, Predigtdienst, Planer, Notizen
     <item>Bibelstudium</item>
   </string-array>
   <string name="lbl_visit_date">Datum:</string>
-  <string name="chk_visit_calc_auto">Take from text</string>
-  <string name="msg_choose_color">Choose color:</string>
-  <string name="msg_person_desc">Enter tenant description:</string>
-  <string name="msg_delete_visit">Are you sure you want to delete this visit?</string>
-  <string name="msg_delete_person">Do you really want to delete this tenant and all associated visits?</string>
-  <string name="msg_person_deleted">Tenant deleted</string>
-  <string name="msg_visit_deleted">Visit deleted</string>
-  <string name="title_visit">Visit</string>
-  <string name="action_person_change">Edit</string>
-  <string name="action_person_delete">Delete</string>
-  <string name="action_person_reject">Not interested</string>
-  <string name="action_person_nreject">Interested</string>
-  <string name="action_visit_delete">Delete</string>
-  <string name="menu_preferences">Preferences</string>
-  <string name="menu_feedback">Send feedback</string>
-  <string name="menu_help">Help</string>
-  <string name="menu_session_date">Date and time</string>
-  <string name="menu_change_session_date">Change date</string>
-  <string name="menu_change_session_time">Change time</string>
-  <string name="menu_set_position">Set position</string>
-  <string name="menu_move_up">Move up</string>
-  <string name="menu_move_down">Move down</string>
-  <string name="menu_move_left">Move left</string>
-  <string name="menu_move_right">Move right</string>
-  <string name="menu_territory_info">Info</string>
-  <string name="menu_territory_layout">Layout</string>
-  <string name="menu_territory_arrange">Arrange</string>
-  <string name="menu_territory_shift_up">Move all up</string>
-  <string name="menu_territory_shift_down">Move all down</string>
-  <string name="menu_territory_shift_left">Move all left</string>
-  <string name="menu_territory_shift_right">Move all right</string>
-  <string name="title_preferences">Preferences</string>
-  <string name="pref_title_appearance">Appearance</string>
-  <string name="pref_list_text_rows">Rows number</string>
-  <string name="pref_list_text_rows_note">Number of rows of the last note of the household to display in list view</string>
-  <string name="pref_table_button_size">Button size</string>
-  <string name="pref_table_button_size_note">Size of buttons representing households in grid view</string>
+  <string name="chk_visit_calc_auto">Zählen aus dem Text</string>
+  <string name="msg_choose_color">Wähle eine Farbe:</string>
+  <string name="msg_person_desc">Wohnungsinhaber beschreiben:</string>
+  <string name="msg_delete_visit">Willst du wirklich diesen Besuch entfernen?</string>
+  <string name="msg_delete_person">Willst du wirklich diesen Wohnungsinhaber und alle seine Besuche entfernen?</string>
+  <string name="msg_person_deleted">Wohnungsinhaber wurde gelöscht</string>
+  <string name="msg_visit_deleted">Besuch wurde gelöscht</string>
+  <string name="title_visit">Besuch</string>
+  <string name="action_person_change">Ändern</string>
+  <string name="action_person_delete">Löschen</string>
+  <string name="action_person_reject">Kein Interesse</string>
+  <string name="action_person_nreject">Interessiert</string>
+  <string name="action_visit_delete">Löschen</string>
+  <string name="menu_preferences">Einstellungen</string>
+  <string name="menu_feedback">Sende eine Rückmeldung</string>
+  <string name="menu_help">Hilfe</string>
+  <string name="menu_session_date">Datum und Zeit</string>
+  <string name="menu_change_session_date">Datum ändern</string>
+  <string name="menu_change_session_time">Zeit ändern</string>
+  <string name="menu_set_position">Position ändern</string>
+  <string name="menu_move_up">Bewege nach oben</string>
+  <string name="menu_move_down">Bewege nach unten</string>
+  <string name="menu_move_left">Bewege nach links</string>
+  <string name="menu_move_right">Bewege nach rechts</string>
+  <string name="menu_territory_info">Information</string>
+  <string name="menu_territory_layout">Anordnung</string>
+  <string name="menu_territory_arrange">Anordnen</string>
+  <string name="menu_territory_shift_up">Bewege alles nach oben</string>
+  <string name="menu_territory_shift_down">Bewege alles nach unten</string>
+  <string name="menu_territory_shift_left">Bewege alles nach links</string>
+  <string name="menu_territory_shift_right">Bewege alles nach rechts</string>
+  <string name="title_preferences">Einstellungen</string>
+  <string name="pref_title_appearance">Aussehen</string>
+  <string name="pref_list_text_rows">Zeilenanzahl</string>
+  <string name="pref_list_text_rows_note">Zeilenanzahl von der letzen Notiz der Haushalts, welche in der Listenansicht angezeigt wird</string>
+  <string name="pref_table_button_size">Knopfgröße</string>
+  <string name="pref_table_button_size_note">Knopfgröße der Haushalte in der Gitteransicht</string>
   <string-array name="entries_table_button_size_preference">
-    <item>Small</item>
-    <item>Medium</item>
-    <item>Big</item>
+    <item>Klein</item>
+    <item>Mittel</item>
+    <item>Groß</item>
   </string-array>
-  <string name="pref_title_colors">Colors</string>
+  <string name="pref_title_colors">Farben</string>
   <string name="pref_autocolor">Farben autom. auswählen</string>
   <string name="pref_autocolor_note">Farben nach bestimmten Bedingungen autom. zuordnen</string>
   <string name="pref_assign_colors">Farbe auswählen</string>
@@ -228,7 +227,7 @@ Tags: JZ, Jehovas Zeugen, predigen, Predigtdienst, Planer, Notizen
     <item>Besuche</item>
     <item>Besuche</item>
   </string-array>
-  <string name="title_tip">Spende</string>
+  <string name="title_tip">Hinweis</string>
   <string name="msg_person">Wohnungsinhaber</string>
   <string name="lbl_person_desc">Beschreibung Wohnungsinhaber</string>
   <string name="lbl_male">Mann</string>
@@ -236,9 +235,9 @@ Tags: JZ, Jehovas Zeugen, predigen, Predigtdienst, Planer, Notizen
   <string name="lbl_male_letter">M</string>
   <string name="lbl_female_letter">F</string>
   <string name="msg_choose_age">Alter auswählen:</string>
-  <string name="lbl_visit_text">Inhalt ansehen</string>
+  <string name="lbl_visit_text">Inhalt Besuch</string>
   <string name="action_object_add_na_visit">Nicht zu Hause</string>
-  <string name="msg_added_na_visit">Added \'N/A\' visit at %s</string>
+  <string name="msg_added_na_visit">Der Besuch wurde um %s hinzugefügt</string>
   <string name="pref_hide_visited">Heutige Besuche ausblenden</string>
   <string name="pref_hide_visited_note">Heute besuchte Haushalte ausblenden (mit Checkbox markiert)</string>
   <string name="msg_delete_object">Alle Wohnungsinhaber und deren Besuche werden gelöscht! Willst du wirklich alle Haushalte löschen?</string>
@@ -256,8 +255,8 @@ Tags: JZ, Jehovas Zeugen, predigen, Predigtdienst, Planer, Notizen
   <string name="msg_backup_failed">Fehler beim Erstellen der Sicherungskopie</string>
   <string name="pref_title_backup">Sicherungen</string>
   <string name="pref_autobackup">Automatische Sicherung</string>
-  <string name="pref_autobackup_note">Automatisch Sicherungen nach jedem Dienst erzeugen</string>
-  <string name="pref_num_backups">Copies number</string>
+  <string name="pref_autobackup_note">Sicherungen nach jedem Dienst automatisch erzeugen</string>
+  <string name="pref_num_backups">Anzahl Kopien</string>
   <string name="pref_num_backups_note">Maximale Anzahl der gespeicherten Sicherungen</string>
   <string name="msg_create_backup">Neue Sicherung erzeugen?</string>
   <string name="msg_delete_backup">Diese Sicherung löschen?</string>
@@ -288,44 +287,44 @@ Tags: JZ, Jehovas Zeugen, predigen, Predigtdienst, Planer, Notizen
   <string name="lbl_local_folder">Lokaler Ordner</string>
   <string name="lbl_drive_desc">Deine Daten können automatisch in deine Dropbox geladen und zwischen deinen Geräten synchronisiert werden</string>
   <string name="lbl_drive_turn_on">Verbinden</string>
-  <string name="lbl_backups_empty">Backups list is empty</string>
-  <string name="pref_dropbox_off">Disconnect from Dropbox</string>
-  <string name="pref_dropbox_off_note">Log out from Dropbox account and stop syncing</string>
-  <string name="msg_tip_hold_plus">Tip: press &amp; hold the \"+\" button to add a big amount of time</string>
-  <string name="lbl_placements">Placements:</string>
-  <string name="lbl_videos">Video showings:</string>
+  <string name="lbl_backups_empty">Liste der Datensicherungen ist leer</string>
+  <string name="pref_dropbox_off">Verbindung zu Dropbox trennen</string>
+  <string name="pref_dropbox_off_note">Aus Dropbox ausloggen und Synchronisation stoppen</string>
+  <string name="msg_tip_hold_plus">Tipp: drücke &amp; halte den \"+\" Knopf, um eine größere Zeitmenge hinzufügen</string>
+  <string name="lbl_placements">Publikationen:</string>
+  <string name="lbl_videos">Videovorführungen:</string>
   <string-array name="plural_placements">
-    <item>placement</item>
-    <item>placements</item>
-    <item>placements</item>
+    <item>Publikation</item>
+    <item>Publikationen</item>
+    <item>Publikationen</item>
   </string-array>
   <string-array name="plural_videos">
-    <item>video showing</item>
-    <item>video showings</item>
-    <item>video showings</item>
+    <item>Videovorführung</item>
+    <item>Videovorführungen</item>
+    <item>Videovorführungen</item>
   </string-array>
-  <string name="lbl_service_year" formatted="false">%s/%s service year</string>
-  <string name="msg_contribute">You seem to have used JW Droid for some time. We are glad that you find it useful!\n\nThe app was written in 2010, and now we work on an updated, modern version with new features. You could speed up the development by contributing to the project. Thank you!\n\n— JW Droid Team</string>
-  <string name="lbl_contribute">We are glad that you find JW Droid useful! The app was written in 2010, and now we work on an updated, modern version with new features. You could speed up the development by contributing to the project. Thank you!</string>
-  <string name="btn_donate">Donate to support development</string>
-  <string name="btn_review">Review on Google Play</string>
-  <string name="btn_translate">Help with translation</string>
-  <string name="btn_save">Save</string>
-  <string name="btn_send">Send</string>
-  <string name="btn_refresh">Refresh</string>
-  <string name="btn_learn_more">Learn more</string>
-  <string name="btn_no_thanks">No, thanks</string>
-  <string name="btn_rename">Rename</string>
-  <string name="title_contribute">Contribute</string>
-  <string name="lbl_donation">Donation:</string>
-  <string name="lbl_recurring">Recurring:</string>
+  <string name="lbl_service_year" formatted="false">%s/%s Dienstjahr</string>
+  <string name="msg_contribute">Wie es scheint, benutzt du JW Droid bereits eine Zeit lang. Wir freuen uns, dass sich diese App für dich als nützlich erwiesen hat!\n\nDiese App wurde im Jahr 2010 geschrieben, und jetzt arbeiten wir an einer moderneren Verion mit neuen Funktionen. Du kannst die Entwicklung beschleunigen, in dem du dieses Projekt unterstützt. Danke!\n\n— JW Droid Team</string>
+  <string name="lbl_contribute">Wir freuen uns, dass sich diese App für dich als nützlich erwiesen hat!\n\nDiese App wurde im Jahr 2010 geschrieben, und jetzt arbeiten wir an einer moderneren Verion mit neuen Funktionen. Du kannst die Entwicklung beschleunigen, in dem du dieses Projekt unterstützt. Danke!</string>
+  <string name="btn_donate">Spende, um Entwicklung zu unterstützen</string>
+  <string name="btn_review">Auf Google Play bewerten</string>
+  <string name="btn_translate">Hilfe mit Übersetzung</string>
+  <string name="btn_save">Speichern</string>
+  <string name="btn_send">Senden</string>
+  <string name="btn_refresh">Aktualisieren</string>
+  <string name="btn_learn_more">Mehr erfahren</string>
+  <string name="btn_no_thanks">Nein, danke</string>
+  <string name="btn_rename">Umbenennen</string>
+  <string name="title_contribute">Projektunterstützung</string>
+  <string name="lbl_donation">Spende:</string>
+  <string name="lbl_recurring">Wiederkehrend:</string>
   <string-array name="btn_recurring">
-    <item>Just once</item>
-    <item>Every 6 months</item>
-    <item>Every 12 months</item>
+    <item>Nur ein Mal</item>
+    <item>Jede 6 Monaten</item>
+    <item>Jedes Jahr</item>
   </string-array>
-  <string name="lbl_payments_processed_by">Payments are processed by Google Play.</string>
-  <string name="msg_revision_notes_1_4_1" formatted="true"><b>Version 1.4.1</b>\n\nAdded a link to <a href="https://plus.google.com/communities/112371364498094492171">Google+ Community</a> to the main menu.\n\nAdded a link to the <a href="https://crowdin.com/project/jwdroid/invite">online translation service</a> to the contribution dialog. Translators are welcome!\n\n<b>Version 1.4.0</b>\n\nUpdated reports to the new 2016 format.\n\nNew modern visual theme.\n\nAdded service year total hour counters to the Reports section.\n\nRemoved placements text templates as they are unneccessary now.\n\nAdded an option to make an in-app donation payment to support the development.\n\nNew placements calculating mode in the Chronometer.\n\nFixed a bug when restoring from the backup failed sometimes.\n\nFixed a bug with disappearing of old report data.</string>
-  <string name="chk_chrono_calc_auto">Add from visits</string>
+  <string name="lbl_payments_processed_by">Zahlungen werden in Google Play bearbeitet.</string>
+  <string name="msg_revision_notes_1_4_1" formatted="true"><b>Version 1.4.1</b>\n\nLink zu <a href="https://plus.google.com/communities/112371364498094492171">Google+ Community</a> im Hauptmenü hinzugefügt.\n\nLink zu <a href="https://crowdin.com/project/jwdroid/invite">Online Übersetzungshilfe</a> in Projektunterstützung hinzugefügt. Übersetzer sind willkommen!\n\n<b>Version 1.4.0</b>\n\nBerichte für den neuen 2016 Format aktualisiert.\n\nNeues modernes Erscheinungsbild.\n\nDienstjahr-Gesamtstundenzähler im Abschnitt Berichte hinzugefügt.\n\nVoreinstellungen für Publikationen im Text wurden entfernt, weil diese nicht mehr benötigt werden.\n\nSpendenzahlungen können direkt in der App durchgeführt werden.\n\nNeue Möglichkeit der Kalkulation in der Zeiterfassung.\n\nEin Fehler, welcher manchmal Wiederherstellung der Daten verhinderte, wurde beseitigt.\n\nEin Fehler, welcher einige Berichte für alte Monate verschwinden ließ, wurde beseitigt.</string>
+  <string name="chk_chrono_calc_auto">Hinzufügen aus Besuchen</string>
   <string name="menu_community">Google+ Community</string>
 </resources>

@@ -25,7 +25,6 @@ Nyílt forráskódú (open source) projekt: https://github.com/jwdroid/jwdroid
 Címkék: JW, Jehova Tanúi, prédikálás, prédikál, szolgálat, jegyzetelő, feljegyzések
 
 </string>
-  <string name="app_name">JW Jegyzetelő</string>
   <string name="lbl_territory_name">Terület név:</string>
   <string name="title_territory_add">Terület hozzáadása</string>
   <string name="lbl_territory_desc">Rövid leírás:</string>
