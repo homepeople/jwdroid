@@ -238,6 +238,7 @@ public class Door extends AppCompatActivity {
                     Intent intent = new Intent(this, Territory.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     intent.putExtra("territory", mTerritoryId);
+                    intent.putExtra("door", mDoorId);
                     startActivity(intent);
                 }
                 else {

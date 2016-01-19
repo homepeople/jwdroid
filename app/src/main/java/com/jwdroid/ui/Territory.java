@@ -135,12 +135,6 @@ public class Territory extends AppCompatActivity implements LoaderCallbacks<Curs
 
         mDisplayMode = prefs.getInt(PREF_DISPLAY_MODE, DISPLAY_LIST);
 
-        if (savedInstanceState != null) {
-            mRememberedActiveViewGroup = savedInstanceState.getInt("rememberedActiveViewGroup", 0);
-            mRememberedActiveViewGroupScroll = savedInstanceState.getInt("rememberedActiveViewGroupScroll", 0);
-            mDisplayMode = savedInstanceState.getInt("displayMode", DISPLAY_LIST);
-        }
-
         Cursor rs;
         SQLiteDatabase db = AppDbOpenHelper.getInstance(Territory.this).getWritableDatabase();
 
@@ -153,6 +147,19 @@ public class Territory extends AppCompatActivity implements LoaderCallbacks<Curs
         rs = db.rawQuery("SELECT name FROM territory WHERE ROWID=?", new String[]{mTerritoryId.toString()});
         rs.moveToFirst();
         mToolbar.setTitle(rs.getString(0));
+
+        Long doorId = getIntent().getExtras().getLong("door");
+        if(doorId != 0) {
+            rs = db.rawQuery("SELECT group_id FROM door WHERE ROWID=?", new String[]{doorId.toString()});
+            rs.moveToFirst();
+            mRememberedActiveViewGroup = rs.getInt(0);
+        }
+
+        if (savedInstanceState != null) {
+            mRememberedActiveViewGroup = savedInstanceState.getInt("rememberedActiveViewGroup", 0);
+            mRememberedActiveViewGroupScroll = savedInstanceState.getInt("rememberedActiveViewGroupScroll", 0);
+            mDisplayMode = savedInstanceState.getInt("displayMode", DISPLAY_LIST);
+        }
 
         mPanelsView = new HorizontalPanelsView(this);
         mPanelsView.setBackgroundColor(Color.parseColor("#eeeeee"));
