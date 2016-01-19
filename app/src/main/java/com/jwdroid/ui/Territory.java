@@ -993,12 +993,19 @@ public class Territory extends AppCompatActivity implements LoaderCallbacks<Curs
                         @Override
                         public void onItemClick(AdapterView<?> parent, View view,
                                                 int position, long id) {
-
                             Intent intent = new Intent(Territory.this, Door.class);
                             intent.putExtra("territory", mTerritoryId);
                             intent.putExtra("door", id);
                             startActivityForResult(intent, 1);
+                        }
+                    });
 
+                    listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+                        @Override
+                        public boolean onItemLongClick(AdapterView<?> arg0, View v,
+                                                       int pos, long id) {
+                            showDoorQuickActions(v, id);
+                            return true;
                         }
                     });
 
@@ -1100,81 +1107,15 @@ public class Territory extends AppCompatActivity implements LoaderCallbacks<Curs
                             btn.setColorStroke(getResources().getColor(Door.COLORS[item.color2]));
                         }
 
-                        final QuickAction listActions = new QuickAction(this);
-                        listActions.addActionItem(new ActionItem(getResources().getString(R.string.action_object_add_na_visit), getResources().getDrawable(R.drawable.ac_doc_empty)));
-                        listActions.addActionItem(new ActionItem(getResources().getString(R.string.action_object_change_color), getResources().getDrawable(R.drawable.ac_color)));
-                        listActions.addActionItem(new ActionItem(getResources().getString(R.string.action_object_change_name), getResources().getDrawable(R.drawable.ac_pencil)));
-                        listActions.addActionItem(new ActionItem(getResources().getString(R.string.action_object_move), getResources().getDrawable(R.drawable.ac_move)));
-                        listActions.addActionItem(new ActionItem(getResources().getString(R.string.action_object_delete), getResources().getDrawable(R.drawable.ac_trash)));
-                        listActions.animateTrack(false);
-                        listActions.setAnimStyle(QuickAction.ANIM_MOVE_FROM_RIGHT);
-
                         btn.setOnLongClickListener(new View.OnLongClickListener() {
 
                             @Override
-                            public boolean onLongClick(View v) {
-                                listActions.show(v, (Long) v.getTag());
+                            public boolean onLongClick(View view) {
+                                showDoorQuickActions(view, (Long) view.getTag());
                                 return true;
                             }
                         });
 
-                        listActions.setOnActionItemClickListener(new QuickAction.OnActionItemClickListener() {
-                            @Override
-                            public void onItemClick(int pos) {
-                                Bundle args;
-                                switch (pos) {
-                                    case 0:    // Add N/A
-                                        Long doorId = listActions.getId();
-                                        addNAVisit(doorId, null);
-
-                                        if (hideVisited)
-                                            listActions.getView().setVisibility(View.INVISIBLE);
-                                        break;
-                                    case 1:    // Цвет
-                                        mDialogItemId = listActions.getId();
-                                        showDialog(DIALOG_COLOR);
-                                        break;
-                                    case 2:    // Заголовок
-                                        mDialogItemId = listActions.getId();
-                                        Door.ChangeNameDialog dialog = new Door.ChangeNameDialog();
-                                        args = new Bundle();
-                                        args.putLong("id", mDialogItemId);
-                                        dialog.setArguments(args);
-                                        dialog.setListener(new Door.ChangeNameDialog.OnDoneListener() {
-
-                                            @Override
-                                            public void onDone(String newName) {
-                                                if (mDisplayMode == DISPLAY_LIST) {
-                                                    ListView list = (ListView) mPanelsView.getActiveViewGroup().findViewById(ID_PANEL_LISTVIEW);
-                                                    TerritoryAdapter adapter = (TerritoryAdapter) list.getAdapter();
-                                                    ((DoorItem) adapter.getItem(adapter.getPositionById(mDialogItemId))).name = newName;
-                                                    adapter.notifyDataSetChanged();
-                                                }
-                                                if (mDisplayMode == DISPLAY_TABLE) {
-                                                    TableLayout table = (TableLayout) mPanelsView.getActiveViewGroup().findViewById(ID_PANEL_TABLE);
-                                                    TriangleButton btn = (TriangleButton) table.findViewWithTag(mDialogItemId);
-                                                    if (btn != null) {
-                                                        btn.setText(newName);
-                                                    }
-                                                }
-                                            }
-                                        });
-
-                                        dialog.show(getSupportFragmentManager(), null);
-
-                                        break;
-                                    case 3:    // Переместить
-                                        registerForContextMenu(listActions.getView());
-                                        listActions.getView().showContextMenu();
-                                        unregisterForContextMenu(listActions.getView());
-                                        break;
-                                    case 4:    // Удалить
-                                        mDialogItemId = listActions.getId();
-                                        showDialog(DIALOG_DELETE);
-                                        break;
-                                }
-                            }
-                        });
 
                         btn.setOnClickListener(new View.OnClickListener() {
 
@@ -1215,6 +1156,82 @@ public class Territory extends AppCompatActivity implements LoaderCallbacks<Curs
                 ((ListView) mPanelsView.getViewGroupAt(mRememberedActiveViewGroup).findViewById(ID_PANEL_LISTVIEW)).setSelection(mRememberedActiveViewGroupScroll);
         }
 
+    }
+
+    private void showDoorQuickActions(final View v, final Long id) {
+
+        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
+
+        final boolean hideVisited = sharedPref.getBoolean("hide_visited", false);
+
+        final QuickAction listActions = new QuickAction(this);
+        listActions.addActionItem(new ActionItem(getResources().getString(R.string.action_object_add_na_visit), getResources().getDrawable(R.drawable.ac_doc_empty)));
+        listActions.addActionItem(new ActionItem(getResources().getString(R.string.action_object_change_color), getResources().getDrawable(R.drawable.ac_color)));
+        listActions.addActionItem(new ActionItem(getResources().getString(R.string.action_object_change_name), getResources().getDrawable(R.drawable.ac_pencil)));
+        listActions.addActionItem(new ActionItem(getResources().getString(R.string.action_object_move), getResources().getDrawable(R.drawable.ac_move)));
+        listActions.addActionItem(new ActionItem(getResources().getString(R.string.action_object_delete), getResources().getDrawable(R.drawable.ac_trash)));
+        listActions.animateTrack(false);
+        listActions.setAnimStyle(QuickAction.ANIM_MOVE_FROM_RIGHT);
+
+        listActions.setOnActionItemClickListener(new QuickAction.OnActionItemClickListener() {
+            @Override
+            public void onItemClick(int pos) {
+                Bundle args;
+                switch (pos) {
+                    case 0:    // Add N/A
+                        Long doorId = listActions.getId();
+                        addNAVisit(doorId, null);
+
+                        if (hideVisited)
+                            listActions.getView().setVisibility(View.INVISIBLE);
+                        break;
+                    case 1:    // Цвет
+                        mDialogItemId = listActions.getId();
+                        showDialog(DIALOG_COLOR);
+                        break;
+                    case 2:    // Заголовок
+                        mDialogItemId = listActions.getId();
+                        Door.ChangeNameDialog dialog = new Door.ChangeNameDialog();
+                        args = new Bundle();
+                        args.putLong("id", mDialogItemId);
+                        dialog.setArguments(args);
+                        dialog.setListener(new Door.ChangeNameDialog.OnDoneListener() {
+
+                            @Override
+                            public void onDone(String newName) {
+                                if (mDisplayMode == DISPLAY_LIST) {
+                                    ListView list = (ListView) mPanelsView.getActiveViewGroup().findViewById(ID_PANEL_LISTVIEW);
+                                    TerritoryAdapter adapter = (TerritoryAdapter) list.getAdapter();
+                                    ((DoorItem) adapter.getItem(adapter.getPositionById(mDialogItemId))).name = newName;
+                                    adapter.notifyDataSetChanged();
+                                }
+                                if (mDisplayMode == DISPLAY_TABLE) {
+                                    TableLayout table = (TableLayout) mPanelsView.getActiveViewGroup().findViewById(ID_PANEL_TABLE);
+                                    TriangleButton btn = (TriangleButton) table.findViewWithTag(mDialogItemId);
+                                    if (btn != null) {
+                                        btn.setText(newName);
+                                    }
+                                }
+                            }
+                        });
+
+                        dialog.show(getSupportFragmentManager(), null);
+
+                        break;
+                    case 3:    // Переместить
+                        registerForContextMenu(listActions.getView());
+                        listActions.getView().showContextMenu();
+                        unregisterForContextMenu(listActions.getView());
+                        break;
+                    case 4:    // Удалить
+                        mDialogItemId = listActions.getId();
+                        showDialog(DIALOG_DELETE);
+                        break;
+                }
+            }
+        });
+
+        listActions.show(v, id);
     }
 
     @Override
