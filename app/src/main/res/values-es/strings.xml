@@ -326,5 +326,5 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes, Testigos 
   <string name="msg_revision_notes_1_4_1" formatted="true"><b>Versión 1.4.1</b>\n\nAñadido enlace a <a href="https://plus.google.com/communities/112371364498094492171">Comunidad Google+</a> en el menú principal.\n\nAñadido enlace al <a href="https://crowdin.com/project/jwdroid/invite">servicio de traducción en línea</a> al diálogo de contribución. ¡Bienvenidos traductores!\n\n<b>Versión 1.4.0</b>\n\nInforme actualizado al nuevo formato de 2016.\n\nNuevo tema con un aspecto más moderno.\n\nAñadido el total de horas anuales a la sección de Informes.\n\nEliminadas las plantillas textuales de las publicaciones al no ser ya necesarias.\n\nAñadida la opción de realizar donaciones para apoyar el desarrollo de esta aplicación.\n\nNuevo modo de calcular las publicaciones en el Cronómetro.\n\nCorregido el error que en ocasiones fallaba al restaurar copias de seguridad.\n\nCorregido el error que hacía desaparecer los datos de informes antiguos.</string>
   <string name="chk_chrono_calc_auto"> Toma de visitas</string>
   <string name="menu_community">Comunidad Google+</string>
-  <string name="menu_about_app">About</string>
+  <string name="menu_about_app">Sobre la aplicación</string>
 </resources>
