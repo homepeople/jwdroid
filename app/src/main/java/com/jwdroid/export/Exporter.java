@@ -30,8 +30,8 @@ public class Exporter {
 			exportTable("door", new String[]{"territory_id","group_id","col","row","name","color1","color2","visits_num","last_date","last_person_name","last_desc","last_person_reject","order_num","manual_color","last_modified_date"});
 			exportTable("person", new String[]{"door_id","name","reject"});
 			exportTable("territory", new String[]{"name","notes","created","started","finished","modified"});
-			exportTable("visit", new String[]{"territory_id","door_id","person_id","date","desc","type","calc_auto","brochures","books","magazines","tracts"});
-			exportTable("session", new String[]{"date","minutes","books","brochures","magazines","tracts","returns","desc"});
+			exportTable("visit", new String[]{"territory_id","door_id","person_id","date","desc","type","calc_auto","brochures","books","magazines","tracts","videos","publications"});
+			exportTable("session", new String[]{"date","minutes","books","brochures","magazines","tracts","returns","desc","videos","publications"});
 		}
 		finally {
 			mZip.close();

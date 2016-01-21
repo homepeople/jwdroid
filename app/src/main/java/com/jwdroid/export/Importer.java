@@ -52,7 +52,7 @@ public class Importer {
 				if(m.matches()) {
 					
 					if(m.group(1).equals("visit"))
-						importTable(m.group(1), new String[]{"territory_id","door_id","person_id","date","desc","type","calc_auto","brochures","books","magazines","tracts"});
+						importTable(m.group(1), new String[]{"territory_id","door_id","person_id","date","desc","type","calc_auto","brochures","books","magazines","tracts","videos","publications"});
 					
 					if(m.group(1).equals("door")) {
 						importTable(m.group(1), new String[]{"territory_id", "group_id", "col", "row", "name", "color1", "color2", "visits_num", "last_date", "last_person_name", "last_desc", "last_person_reject", "order_num", "manual_color", "last_modified_date"});
@@ -65,7 +65,7 @@ public class Importer {
 						importTable(m.group(1), new String[]{"name","notes","created","started","finished","modified"});
 					
 					if(m.group(1).equals("session"))
-						importTable(m.group(1), new String[]{"date","minutes","books","brochures","magazines","tracts","returns","desc"});										
+						importTable(m.group(1), new String[]{"date","minutes","books","brochures","magazines","tracts","returns","desc","videos","publications"});
 				}
 				
 				mEntryInput.close();
@@ -99,7 +99,7 @@ public class Importer {
 				sql1.append(","+column);
 				sql2.append(",?");
 				
-				if(item.get(column).equals("null"))
+				if(item.get(column) == null || item.get(column).equals("null"))
 					values.add(null);
 				else
 					values.add(item.get(column));

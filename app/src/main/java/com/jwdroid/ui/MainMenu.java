@@ -192,7 +192,7 @@ public class MainMenu extends AppCompatActivity {
             catch(Exception e) {
             }
 
-            ((TextView)layout.findViewById(R.id.lbl_thanks)).setText("Anton Chivchalov, Ruben Reis, Luis Montes de Oca, Paul Kruk, Marcin Budziński, Rados Devadesátdva, Stanislav Kolesnik, Matthias Wirobski, Tiago Aguiar, Abel Puertas, Pablo Carrasco Jr, Andrea Isaza, Vytautas Virganavičius, Mrydka Śmigacz, Eugen Betke, Pedro Paulo");
+            ((TextView)layout.findViewById(R.id.lbl_thanks)).setText("Anton Chivchalov, Ruben Reis, Luis Montes de Oca, Paul Kruk, Marcin Budziński, Rados Devadesátdva, Stanislav Kolesnik, Matthias Wirobski, Tiago Aguiar, Abel Puertas, Pablo Carrasco Jr, Andrea Isaza, Vytautas Virganavičius, Mrydka Śmigacz, Eugen Betke, Pedro Paulo, Erik van Brakel, Brendo Gabriel Meireles, Wiktoria Zawisza, Jacek Ziółkowski, Carl Johnson Hansen");
 
             return new AlertDialog.Builder(getActivity())
                     .setView(layout)

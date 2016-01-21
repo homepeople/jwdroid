@@ -110,6 +110,7 @@ public class Territory extends AppCompatActivity implements LoaderCallbacks<Curs
     private HorizontalPanelsView mPanelsView;
 
     private int mRememberedActiveViewGroup = 0, mRememberedActiveViewGroupScroll = 0;
+    private long mRememberedActiveViewGroupItemId = 0;
     private int mDisplayMode = DISPLAY_LIST;
 
     private ColorPicker mColorPicker;
@@ -148,17 +149,19 @@ public class Territory extends AppCompatActivity implements LoaderCallbacks<Curs
         rs.moveToFirst();
         mToolbar.setTitle(rs.getString(0));
 
-        Long doorId = getIntent().getExtras().getLong("door");
-        if(doorId != 0) {
-            rs = db.rawQuery("SELECT group_id FROM door WHERE ROWID=?", new String[]{doorId.toString()});
-            rs.moveToFirst();
-            mRememberedActiveViewGroup = rs.getInt(0);
-        }
-
         if (savedInstanceState != null) {
             mRememberedActiveViewGroup = savedInstanceState.getInt("rememberedActiveViewGroup", 0);
             mRememberedActiveViewGroupScroll = savedInstanceState.getInt("rememberedActiveViewGroupScroll", 0);
             mDisplayMode = savedInstanceState.getInt("displayMode", DISPLAY_LIST);
+        }
+        else {
+            Long doorId = getIntent().getExtras().getLong("door");
+            if(doorId != 0) {
+                rs = db.rawQuery("SELECT group_id FROM door WHERE ROWID=?", new String[]{doorId.toString()});
+                rs.moveToFirst();
+                mRememberedActiveViewGroup = rs.getInt(0);
+                mRememberedActiveViewGroupItemId = doorId;
+            }
         }
 
         mPanelsView = new HorizontalPanelsView(this);
@@ -967,6 +970,11 @@ public class Territory extends AppCompatActivity implements LoaderCallbacks<Curs
             if (!items.containsKey(item.groupId))
                 items.put(item.groupId, new LinkedList<DoorItem>());
 
+            if(item.id == mRememberedActiveViewGroupItemId) {
+                mRememberedActiveViewGroupItemId = 0;
+                mRememberedActiveViewGroupScroll = items.get(item.groupId).size();
+            }
+
             items.get(item.groupId).add(item);
 
             LinearLayout curGroup = (LinearLayout) mPanelsView.getViewGroupAt(item.groupId);
@@ -1162,6 +1170,7 @@ public class Territory extends AppCompatActivity implements LoaderCallbacks<Curs
             else
                 ((ListView) mPanelsView.getViewGroupAt(mRememberedActiveViewGroup).findViewById(ID_PANEL_LISTVIEW)).setSelection(mRememberedActiveViewGroupScroll);
         }
+
 
     }
 
