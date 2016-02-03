@@ -219,13 +219,13 @@ Tags: JW, Jehovos liudytojai, skelbti, tarnyba, programėlė, užrašai
   </string-array>
   <string-array name="plural_studies">
     <item>Biblijos studijos</item>
-    <item>Biblijos studijos</item>
+    <item>Biblijos studijų</item>
     <item>Biblijos studijos</item>
   </string-array>
   <string-array name="plural_visits">
     <item>apsilankymas</item>
-    <item>apsilankymai</item>
     <item>apsilankymų</item>
+    <item>apsilankymai</item>
   </string-array>
   <string name="title_tip">Patarimas</string>
   <string name="msg_person">Gyventojas</string>
@@ -328,4 +328,5 @@ Tags: JW, Jehovos liudytojai, skelbti, tarnyba, programėlė, užrašai
   <string name="chk_chrono_calc_auto">Įtraukti iš apsilankymų</string>
   <string name="menu_community">Google+ bendruomenė</string>
   <string name="menu_about_app">Apie</string>
+  <string name="lbl_calc_studies">Biblijos studijos suskaičiuotos iš atitinkamos aplankymų grupės.</string>
 </resources>

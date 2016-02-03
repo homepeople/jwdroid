@@ -328,4 +328,5 @@ Google+: https://plus.google.com/communities/112371364498094492171
   <string name="chk_chrono_calc_auto">Підрахувати з відвідин</string>
   <string name="menu_community">Спільнота Google+</string>
   <string name="menu_about_app">Про додаток</string>
+  <string name="lbl_calc_studies">Вивчення Біблії взяті з відвідувань з відповідним типом відвідування.</string>
 </resources>

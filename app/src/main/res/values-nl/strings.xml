@@ -279,19 +279,19 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   </string-array>
   <string name="lbl_brochures_tracts">Brochures &amp; tracts:</string>
   <string-array name="plural_brochures_tracts">
-    <item>brochure or tract</item>
-    <item>brochures or tracts</item>
-    <item>brochures or tracts</item>
+    <item>brochure of traktaat</item>
+    <item>brochures of traktaten</item>
+    <item>brochures of traktaten</item>
   </string-array>
-  <string name="lbl_please_wait">Please wait...</string>
-  <string name="title_drive">Backup to Dropbox</string>
+  <string name="lbl_please_wait">Even wachten alstublieft...</string>
+  <string name="title_drive">Backup naar Dropbox</string>
   <string name="lbl_drive">Dropbox</string>
   <string name="lbl_local_folder">Locale map</string>
-  <string name="lbl_drive_desc">Your data can be automatically uploaded to your Dropbox and synced across connected devices</string>
-  <string name="lbl_drive_turn_on">Turn On</string>
+  <string name="lbl_drive_desc">Je gegevens kunnen automatisch worden geupload naar je Dropbox en worden gesynchroniseerd op je verbonden apparaten</string>
+  <string name="lbl_drive_turn_on">Inschakelen</string>
   <string name="lbl_backups_empty">Lijst met Backups is leeg</string>
-  <string name="pref_dropbox_off">Disconnect from Dropbox</string>
-  <string name="pref_dropbox_off_note">Log out from Dropbox account and stop syncing</string>
+  <string name="pref_dropbox_off">Losgekoppeld van Dropbox</string>
+  <string name="pref_dropbox_off_note">Uitloggen bij je Dropbox account en het synchroniseren stoppen</string>
   <string name="msg_tip_hold_plus">Tip: press &amp; hold the \"+\" button to add a big amount of time</string>
   <string name="lbl_placements">Placements:</string>
   <string name="lbl_videos">Video showings:</string>
@@ -305,29 +305,30 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
     <item>video showings</item>
     <item>video showings</item>
   </string-array>
-  <string name="lbl_service_year" formatted="false">%s/%s service year</string>
-  <string name="msg_contribute">You seem to have used JW Droid for some time. We are glad that you find it useful!\n\nThe app was written in 2010, and now we work on an updated, modern version with new features. You could speed up the development by contributing to the project. Thank you!\n\n— JW Droid Team</string>
-  <string name="lbl_contribute">We are glad that you find JW Droid useful! The app was written in 2010, and now we work on an updated, modern version with new features. You could speed up the development by contributing to the project. Thank you!</string>
-  <string name="btn_donate">Donate to support development</string>
-  <string name="btn_review">Review on Google Play</string>
-  <string name="btn_translate">Help with translation</string>
-  <string name="btn_save">Save</string>
-  <string name="btn_send">Send</string>
-  <string name="btn_refresh">Refresh</string>
-  <string name="btn_learn_more">Learn more</string>
-  <string name="btn_no_thanks">No, thanks</string>
-  <string name="btn_rename">Rename</string>
-  <string name="title_contribute">Contribute</string>
-  <string name="lbl_donation">Donation:</string>
-  <string name="lbl_recurring">Recurring:</string>
+  <string name="lbl_service_year" formatted="false">%s/%s dienstjaar</string>
+  <string name="msg_contribute">Het lijkt erop dat je JW Droid al een tijdje gebruikt. We zijn blij dat je het nuttig vindt!\n\nDe app is gemaakt in 2010 en we werken nu aan een bijgewerkte, modernere versie met nieuwe functies. Je kunt de ontwikkeling versnellen door bij te dragen aan het project. Bij voorbaat dank daarvoor!\n\n--JW Droid Team</string>
+  <string name="lbl_contribute">Het lijkt erop dat je JW Droid al een tijdje gebruikt. We zijn blij dat je het nuttig vindt! De app is gemaakt in 2010 en we werken nu aan een bijgewerkte, modernere versie met nieuwe functies. Je kunt de ontwikkeling versnellen door bij te dragen aan het project. Bij voorbaat dank daarvoor!</string>
+  <string name="btn_donate">Doneer voor verdere ontwikkeling</string>
+  <string name="btn_review">Beoordeling op Google Play</string>
+  <string name="btn_translate">Help met vertalen</string>
+  <string name="btn_save">Opslaan</string>
+  <string name="btn_send">Verzenden</string>
+  <string name="btn_refresh">Actualiseren</string>
+  <string name="btn_learn_more">Meer informatie</string>
+  <string name="btn_no_thanks">Nee, bedankt</string>
+  <string name="btn_rename">Hernoem</string>
+  <string name="title_contribute">Draag bij</string>
+  <string name="lbl_donation">Donatie:</string>
+  <string name="lbl_recurring">Periodiek:</string>
   <string-array name="btn_recurring">
-    <item>Just once</item>
-    <item>Every 6 months</item>
-    <item>Every 12 months</item>
+    <item>Eenmalig</item>
+    <item>Elke 6 maanden</item>
+    <item>Elke 12 maanden</item>
   </string-array>
-  <string name="lbl_payments_processed_by">Payments are processed by Google Play.</string>
+  <string name="lbl_payments_processed_by">Afhandeling van betaling via Google Play.</string>
   <string name="msg_revision_notes_1_4_1" formatted="true"><b>Version 1.4.1</b>\n\nAdded a link to <a href="https://plus.google.com/communities/112371364498094492171">Google+ Community</a> to the main menu.\n\nAdded a link to the <a href="https://crowdin.com/project/jwdroid/invite">online translation service</a> to the contribution dialog. Translators are welcome!\n\n<b>Version 1.4.0</b>\n\nUpdated reports to the new 2016 format.\n\nNew modern visual theme.\n\nAdded service year total hour counters to the Reports section.\n\nRemoved placements text templates as they are unneccessary now.\n\nAdded an option to make an in-app donation payment to support the development.\n\nNew placements calculating mode in the Chronometer.\n\nFixed a bug when restoring from the backup failed sometimes.\n\nFixed a bug with disappearing of old report data.</string>
   <string name="chk_chrono_calc_auto"> Uit de bezoeken ophalen (autom.)</string>
   <string name="menu_community">Google+ Community</string>
-  <string name="menu_about_app">About</string>
+  <string name="menu_about_app">Over ons</string>
+  <string name="lbl_calc_studies">Bible studies are taken from visits with the corresponding visit type.</string>
 </resources>

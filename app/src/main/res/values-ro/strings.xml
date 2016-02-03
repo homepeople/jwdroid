@@ -330,4 +330,5 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <string name="chk_chrono_calc_auto"> Ia de la vizite</string>
   <string name="menu_community">Google+ Community</string>
   <string name="menu_about_app">About</string>
+  <string name="lbl_calc_studies">Bible studies are taken from visits with the corresponding visit type.</string>
 </resources>

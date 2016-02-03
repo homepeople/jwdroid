@@ -329,4 +329,5 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <string name="chk_chrono_calc_auto">Добавить из посещений</string>
   <string name="menu_community">Сообщество Google+</string>
   <string name="menu_about_app">О программе</string>
+  <string name="lbl_calc_studies">Изучения Библии подсчитываются из посещений с соответствующим типом.</string>
 </resources>

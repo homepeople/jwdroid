@@ -328,4 +328,5 @@ Tags: TJ, Testemunhas de Jeová, pregação, ministério de campo, organizador, 
   <string name="chk_chrono_calc_auto"> Obter das visitas</string>
   <string name="menu_community">Comunidade Google+</string>
   <string name="menu_about_app">Sobre a App</string>
+  <string name="lbl_calc_studies">Bible studies are taken from visits with the corresponding visit type.</string>
 </resources>

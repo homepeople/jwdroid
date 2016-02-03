@@ -328,4 +328,5 @@ Tags: JZ, Jehovas Zeugen, predigen, Predigtdienst, Planer, Notizen
   <string name="chk_chrono_calc_auto">Hinzufügen aus Besuchen</string>
   <string name="menu_community">Google+ Community</string>
   <string name="menu_about_app">Über</string>
+  <string name="lbl_calc_studies">Bibelstudien werden aus Besuchen mit der entsprechenden Besuchsart hinzugefügt.</string>
 </resources>

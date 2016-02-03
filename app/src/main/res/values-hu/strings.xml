@@ -329,4 +329,5 @@ Címkék: JW, Jehova Tanúi, prédikálás, prédikál, szolgálat, jegyzetelő,
   <string name="chk_chrono_calc_auto">Add from visits</string>
   <string name="menu_community">Google+ Community</string>
   <string name="menu_about_app">About</string>
+  <string name="lbl_calc_studies">Bible studies are taken from visits with the corresponding visit type.</string>
 </resources>

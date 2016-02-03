@@ -327,4 +327,5 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes, Testigos 
   <string name="chk_chrono_calc_auto"> Toma de visitas</string>
   <string name="menu_community">Comunidad Google+</string>
   <string name="menu_about_app">Sobre la aplicación</string>
+  <string name="lbl_calc_studies">Los estudios bíblicos se toman de las visitas con el correspodiente tipo de visita.</string>
 </resources>
