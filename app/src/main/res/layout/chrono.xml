@@ -155,7 +155,8 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/chk_calc_auto"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="2dip">
+                    android:layout_marginTop="2dip"
+                    android:id="@+id/tableLayout">
 
                     <TableRow>
 
@@ -324,6 +325,20 @@
                     </TableRow>
 
                 </TableLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_calc_studies"
+                    android:id="@+id/textView"
+                    android:layout_below="@+id/tableLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:textColor="#999"
+                    android:textSize="14dip"/>
 
             </RelativeLayout>
 
