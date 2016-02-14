@@ -333,5 +333,5 @@ Opdaterede rapporter til den nye 2016-format.\n\nNye moderne visuelle tema.\n\nT
   <string name="chk_chrono_calc_auto">Tilføj fra besøg</string>
   <string name="menu_community">Google+ Community</string>
   <string name="menu_about_app">Om</string>
-  <string name="lbl_calc_studies">Bible studies are taken from visits with the corresponding visit type.</string>
+  <string name="lbl_calc_studies">Bibelstudier er taget fra besøg med den tilsvarende besøg type.</string>
 </resources>

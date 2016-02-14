@@ -327,5 +327,5 @@
   <string name="chk_chrono_calc_auto"> Извлечи от посещенията</string>
   <string name="menu_community">Общност Google+</string>
   <string name="menu_about_app">За приложението</string>
-  <string name="lbl_calc_studies">Bible studies are taken from visits with the corresponding visit type.</string>
+  <string name="lbl_calc_studies">Библейските изучавания са извлечени от посещенията от съответния вид посещение.</string>
 </resources>
