@@ -93,6 +93,9 @@ public class Territory extends AppCompatActivity implements LoaderCallbacks<Curs
 
     private static final int ID_PANEL_LISTVIEW = 100000;
     private static final int ID_PANEL_TABLE = 100001;
+    private static final int ID_WHITE_BAR = 100002;
+    private static final int ID_TABLE_RELATIVE_LAYOUT = 100003;
+
 
     private static final int DISPLAY_LIST = 1;
     private static final int DISPLAY_TABLE = 2;
@@ -1025,8 +1028,16 @@ public class Territory extends AppCompatActivity implements LoaderCallbacks<Curs
                     });
 
                 } else if (mDisplayMode == DISPLAY_TABLE) {
+                    RelativeLayout relativeLayout = new RelativeLayout(this);
+                    relativeLayout.setId(ID_TABLE_RELATIVE_LAYOUT);
+                    curGroup.addView(relativeLayout, new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
+
+
                     ScrollView scroll = new ScrollView(this);
-                    curGroup.addView(scroll, new LinearLayout.LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT));
+                    RelativeLayout.LayoutParams rlp = new RelativeLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
+                    rlp.addRule(RelativeLayout.ALIGN_PARENT_TOP);
+                    rlp.addRule(RelativeLayout.ALIGN_PARENT_LEFT);
+                    relativeLayout.addView(scroll, rlp);
 
                     LinearLayout cont = new LinearLayout(this);
                     scroll.addView(cont, new ScrollView.LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT));
@@ -1036,6 +1047,7 @@ public class Territory extends AppCompatActivity implements LoaderCallbacks<Curs
                     LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
                     //lp.gravity = Gravity.CENTER_HORIZONTAL;
                     lp.topMargin = (int) (10 * density);
+
                     table.setLayoutParams(lp);
                     table.setId(ID_PANEL_TABLE);
 
@@ -1062,6 +1074,25 @@ public class Territory extends AppCompatActivity implements LoaderCallbacks<Curs
             int buttonSize = Integer.parseInt(prefs.getString("table_button_size", "2"));
 
             for (int iPanel = 0; iPanel < mPanelsView.getViewGroupsCount(); iPanel++) {
+
+                if(iPanel == mPanelsView.getViewGroupsCount() - 1 ) {
+                    RelativeLayout relativeLayout = (RelativeLayout) mPanelsView.getViewGroupAt(iPanel).findViewById(ID_TABLE_RELATIVE_LAYOUT);
+                    View whiteBar = new View(this);
+                    whiteBar.setBackgroundColor(Color.parseColor("#ffffff"));
+                    whiteBar.setId(ID_WHITE_BAR);
+                    RelativeLayout.LayoutParams rlp = new RelativeLayout.LayoutParams((int)(10 * density), LayoutParams.MATCH_PARENT);
+                    rlp.addRule(RelativeLayout.ALIGN_PARENT_TOP);
+                    rlp.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
+                    relativeLayout.addView(whiteBar, rlp);
+
+                    View shadow = new View(this);
+                    shadow.setBackgroundResource(R.drawable.shadow_hor);
+                    rlp = new RelativeLayout.LayoutParams((int)(10 * density), LayoutParams.MATCH_PARENT);
+                    rlp.addRule(RelativeLayout.ALIGN_PARENT_TOP);
+                    rlp.addRule(RelativeLayout.LEFT_OF, ID_WHITE_BAR);
+                    relativeLayout.addView(shadow, rlp);
+                }
+
                 TableLayout table = (TableLayout) mPanelsView.getViewGroupAt(iPanel).findViewById(ID_PANEL_TABLE);
 
                 HashMap<Integer, HashMap<Integer, DoorItem>> tableContent = new HashMap<Integer, HashMap<Integer, DoorItem>>();
@@ -1154,10 +1185,10 @@ public class Territory extends AppCompatActivity implements LoaderCallbacks<Curs
         // Последний экран заглушки
 
         LinearLayout curGroupScroll = new LinearLayout(this);
-        curGroupScroll.setLayoutParams(new LayoutParams(width, LayoutParams.WRAP_CONTENT));
+        curGroupScroll.setLayoutParams(new LayoutParams(width, LayoutParams.MATCH_PARENT));
         curGroupScroll.setGravity(Gravity.CENTER);
         curGroupScroll.addView(View.inflate(this, R.layout.group_empty, null));
-        curGroupScroll.setBackgroundColor(Color.parseColor("#eeeeee"));
+        curGroupScroll.setBackgroundColor(Color.parseColor("#ffffff"));
         mPanelsView.addViewGroup(curGroupScroll);
 
 
