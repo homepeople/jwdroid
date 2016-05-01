@@ -258,6 +258,7 @@ public class Session extends AppCompatActivity {
                     intent.putExtra("month", mDate.format("%Y%m"));
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
+                    finish();
                 } else {
                     db.execSQL("INSERT INTO session (date,desc,minutes,magazines,books,brochures,returns,tracts,publications,videos) VALUES(?,?,?,?,?,?,?,?,?,?)",
                             new Object[]{mDate.format3339(false), mDesc, mValues.get(MINUTES), mValues.get(MAGAZINES), mValues.get(BOOKS), mValues.get(BROCHURES), mValues.get(RETURNS), mValues.get(TRACTS), mValues.get(PUBLICATIONS), mValues.get(VIDEOS)});
