@@ -230,6 +230,7 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
     <item>visits</item>
   </string-array>
   <string name="title_tip">Tip</string>
+  <!-- v1.2 -->
   <string name="msg_person">Tenant</string>
   <string name="lbl_person_desc">Tenant description</string>
   <string name="lbl_male">Man</string>
@@ -268,9 +269,11 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <string name="msg_restore_backup_failed">Error restoring backup copy</string>
   <string name="msg_restore_backup_success">Backup has been successfully restored</string>
   <string name="msg_revision_notes">What\'s new</string>
+  <!-- v1.2.1 -->
   <string name="msg_backup_created">Backup created</string>
   <string name="pref_backups_manage">Manage backups</string>
   <string name="pref_backups_manage_note">View list of created backups</string>
+  <!-- v1.3 -->
   <string name="lbl_tracts">Tracts:</string>
   <string-array name="plural_tracts">
     <item>tract</item>
@@ -292,7 +295,9 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <string name="lbl_backups_empty">Backups list is empty</string>
   <string name="pref_dropbox_off">Disconnect from Dropbox</string>
   <string name="pref_dropbox_off_note">Log out from Dropbox account and stop syncing</string>
+  <!-- v1.3.1 -->
   <string name="msg_tip_hold_plus">Tip: press &amp; hold the \"+\" button to add a big amount of time</string>
+  <!-- 1.4.0 -->
   <string name="lbl_placements">Placements:</string>
   <string name="lbl_videos">Video showings:</string>
   <string-array name="plural_placements">
@@ -326,9 +331,11 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
     <item>Every 12 months</item>
   </string-array>
   <string name="lbl_payments_processed_by">Payments are processed by Google Play.</string>
+  <!-- 1.4.1 -->
   <string name="msg_revision_notes_1_4_1" formatted="true"><b>Version 1.4.1</b>\n\nAdded a link to <a href="https://plus.google.com/communities/112371364498094492171">Google+ Community</a> to the main menu.\n\nAdded a link to the <a href="https://crowdin.com/project/jwdroid/invite">online translation service</a> to the contribution dialog. Translators are welcome!\n\n<b>Version 1.4.0</b>\n\nUpdated reports to the new 2016 format.\n\nNew modern visual theme.\n\nAdded service year total hour counters to the Reports section.\n\nRemoved placements text templates as they are unneccessary now.\n\nAdded an option to make an in-app donation payment to support the development.\n\nNew placements calculating mode in the Chronometer.\n\nFixed a bug when restoring from the backup failed sometimes.\n\nFixed a bug with disappearing of old report data.</string>
   <string name="chk_chrono_calc_auto">Add from visits</string>
   <string name="menu_community">Google+ Community</string>
+  <!-- 1.4.2 -->
   <string name="menu_about_app">About</string>
   <string name="lbl_calc_studies">Bible studies are taken from visits with the corresponding visit type.</string>
 </resources>

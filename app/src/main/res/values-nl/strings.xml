@@ -64,7 +64,7 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes    </strin
   <string name="lbl_set_col">Kolom:</string>
   <string name="lbl_numbers_from">Nummers vanaf:</string>
   <string name="lbl_numbers_to">tot:</string>
-  <string name="msg_arrange_after_add">Huishoudens toegevoegd. Voor uw comfort (bijvoorbeeld bij het toevoegen van de ingang van een appartement) kunt u het rooster rangschikken met rijen en kolommen in het \&quot;Rangschikken\&quot;-menu. Wilt u dit nu doen?</string>
+  <string name="msg_arrange_after_add">Huishoudens toegevoegd. Voor uw gemak (bijvoorbeeld bij het toevoegen van de ingang van een appartement) kunt u het rooster rangschikken met rijen en kolommen in het \&quot;Rangschikken\&quot;-menu. Wilt u dit nu doen?</string>
   <string name="msg_error">Fout!</string>
   <string name="msg_object_deleted">Huishouden verwijderd</string>
   <string name="err_invalid_input">Ongeldige invoer!</string>
@@ -226,6 +226,7 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes    </strin
     <item>bezoeken</item>
   </string-array>
   <string name="title_tip">Tip</string>
+  <!-- v1.2 -->
   <string name="msg_person">Bewoner</string>
   <string name="lbl_person_desc">Beschrijving bewoner</string>
   <string name="lbl_male">Man</string>
@@ -264,9 +265,11 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes    </strin
   <string name="msg_restore_backup_failed">Fout bij het terugzetten van de back-up</string>
   <string name="msg_restore_backup_success">Back-up met succes teruggezet</string>
   <string name="msg_revision_notes">Wat is nieuw?</string>
+  <!-- v1.2.1 -->
   <string name="msg_backup_created">Back-up gecreëerd</string>
   <string name="pref_backups_manage">Back-ups beheren</string>
   <string name="pref_backups_manage_note">Lijst met aangemaakte back-ups bekijken</string>
+  <!-- v1.3 -->
   <string name="lbl_tracts">Traktaten:</string>
   <string-array name="plural_tracts">
     <item>traktaat</item>
@@ -288,7 +291,9 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes    </strin
   <string name="lbl_backups_empty">Lijst met Backups is leeg</string>
   <string name="pref_dropbox_off">Losgekoppeld van Dropbox</string>
   <string name="pref_dropbox_off_note">Uitloggen bij je Dropbox account en het synchroniseren stoppen</string>
+  <!-- v1.3.1 -->
   <string name="msg_tip_hold_plus">Tip: druk op&amp; houdt de \"+\" knop ingedrukt om een langere tijd toe te voegen</string>
+  <!-- 1.4.0 -->
   <string name="lbl_placements">Verspreidingen:</string>
   <string name="lbl_videos">Aantal keren filmpjes vertoond:</string>
   <string-array name="plural_placements">
@@ -322,9 +327,11 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes    </strin
     <item>Elke 12 maanden</item>
   </string-array>
   <string name="lbl_payments_processed_by">Afhandeling van betaling via Google Play.</string>
+  <!-- 1.4.1 -->
   <string name="msg_revision_notes_1_4_1" formatted="true"><b>Versie 1.4.1</b>\n\nLink toegevoegd naar <a href="https://plus.google.com/communities/112371364498094492171">Google+ Netwerk</a> naar hoofdmenu.\n\nLink toegevoegd naar<a href="https://crowdin.com/project/jwdroid/invite">online translation service</a> naar de samenwerkruimte. Vertalers zijn welkom!\n\n<b>Version 1.4.0</b>\n\nBijgewerkt rapport naar het nieuwe 2016 formaat.\n\nNieuw visueel thema.\n\nToegevoegd dienstjaar totaal aan de rapportage sectie.\n\ntext sjabloon verwijderd van verspreiding omdat ze onnodig waren geworden.\n\nOptie toegevoegd om een in-app donatie te doen om ontwikkeling te kunnen blijven doen.\n\nNieuwe verspreidingen in de optelmodus Chronometer.\n\nFout verholpen, soms werkte de backup niet.\n\nFout verholpen met verdwenen oude rapportjes.</string>
   <string name="chk_chrono_calc_auto"> Uit de bezoeken ophalen (autom.)</string>
   <string name="menu_community">Google+ Netwerk</string>
+  <!-- 1.4.2 -->
   <string name="menu_about_app">Over ons</string>
-  <string name="lbl_calc_studies">Bible studies are taken from visits with the corresponding visit type.</string>
+  <string name="lbl_calc_studies">Bijbelstudies worden automatisch geteld vanuit uit de bezoeken.</string>
 </resources>

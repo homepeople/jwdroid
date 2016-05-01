@@ -118,7 +118,7 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <string name="action_territory_delete">Şterge</string>
   <string name="lbl_visit_type">Vizită:</string>
   <string-array name="visit_types">
-    <item>N/A</item>
+    <item>Indisponibil</item>
     <item>Vizită iniţială</item>
     <item>Vizită ulterioară</item>
     <item>Studiu biblic</item>
@@ -230,6 +230,7 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
     <item>vizite</item>
   </string-array>
   <string name="title_tip">Sfat</string>
+  <!-- v1.2 -->
   <string name="msg_person">Locatar</string>
   <string name="lbl_person_desc">Descriere locatar</string>
   <string name="lbl_male">Bărbat</string>
@@ -268,9 +269,11 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <string name="msg_restore_backup_failed">Eraore la restaurare backup</string>
   <string name="msg_restore_backup_success">Backup restaurat cu succes</string>
   <string name="msg_revision_notes">Ce-i nou</string>
+  <!-- v1.2.1 -->
   <string name="msg_backup_created">Backup creat</string>
   <string name="pref_backups_manage">Manager backup-uri</string>
   <string name="pref_backups_manage_note">Vizualizeaza lista beckup-urilor create</string>
+  <!-- v1.3 -->
   <string name="lbl_tracts">Pliante:</string>
   <string-array name="plural_tracts">
     <item>Pliant</item>
@@ -287,12 +290,14 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <string name="title_drive">Backup pe Dropbox</string>
   <string name="lbl_drive">Dropbox</string>
   <string name="lbl_local_folder">Folderul local</string>
-  <string name="lbl_drive_desc">Your data can be automatically uploaded to your Dropbox and synced across connected devices</string>
+  <string name="lbl_drive_desc">Informațiile tale pot fi încărcate automat pe Dropbox şi pot fi sincronizate cu mai multe dispozitive</string>
   <string name="lbl_drive_turn_on">Pornește</string>
   <string name="lbl_backups_empty">Lista de backup-uri este goală</string>
   <string name="pref_dropbox_off">Deconectare de pe Dropbox</string>
-  <string name="pref_dropbox_off_note">Log out from Dropbox account and stop syncing</string>
+  <string name="pref_dropbox_off_note">Deconectare de la Dropbox şi oprește sincronizarea</string>
+  <!-- v1.3.1 -->
   <string name="msg_tip_hold_plus">Tip: press &amp; hold the \"+\" button to add a big amount of time</string>
+  <!-- 1.4.0 -->
   <string name="lbl_placements">Publicații oferite:</string>
   <string name="lbl_videos">Materiale video arătate:</string>
   <string-array name="plural_placements">
@@ -305,30 +310,32 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
     <item>Materiale video arătate</item>
     <item>Materiale video arătate</item>
   </string-array>
-  <string name="lbl_service_year" formatted="false">%s/%s An de serviziu</string>
-  <string name="msg_contribute">You seem to have used JW Droid for some time. We are glad that you find it useful!\n\nThe app was written in 2010, and now we work on an updated, modern version with new features. You could speed up the development by contributing to the project. Thank you!\n\n— JW Droid Team</string>
+  <string name="lbl_service_year" formatted="false">%s/%s An de serviciu</string>
+  <string name="msg_contribute">Se pare că folosești JW Droid de ceva timp. Ne bucurăm că găsești utilă această aplicație!\n\n Aplicația a fost creată în anul 2010 iar acum lucrăm la o actualizare pentru acea o versiune modernă cu noi opțiuni. Poți grăbi această dezvoltare contribuind la acest proiect. Mulțumim!\n\n Echipa JWDROID</string>
   <string name="lbl_contribute">We are glad that you find JW Droid useful! The app was written in 2010, and now we work on an updated, modern version with new features. You could speed up the development by contributing to the project. Thank you!</string>
-  <string name="btn_donate">Donate to support development</string>
-  <string name="btn_review">Review on Google Play</string>
-  <string name="btn_translate">Help with translation</string>
-  <string name="btn_save">Save</string>
-  <string name="btn_send">Send</string>
-  <string name="btn_refresh">Refresh</string>
-  <string name="btn_learn_more">Learn more</string>
-  <string name="btn_no_thanks">No, thanks</string>
-  <string name="btn_rename">Rename</string>
-  <string name="title_contribute">Contribute</string>
-  <string name="lbl_donation">Donation:</string>
+  <string name="btn_donate">Donează şi susține dezvoltarea</string>
+  <string name="btn_review">Păreri în Google Play</string>
+  <string name="btn_translate">Ajutor la traducere</string>
+  <string name="btn_save">Salvează</string>
+  <string name="btn_send">Trimite</string>
+  <string name="btn_refresh">Reîntprospătează</string>
+  <string name="btn_learn_more">Învață mai multe</string>
+  <string name="btn_no_thanks">Nu, mulțumesc</string>
+  <string name="btn_rename">Redenumeşte</string>
+  <string name="title_contribute">Contribuie</string>
+  <string name="lbl_donation">Donație:</string>
   <string name="lbl_recurring">Recurring:</string>
   <string-array name="btn_recurring">
-    <item>Just once</item>
-    <item>Every 6 months</item>
-    <item>Every 12 months</item>
+    <item>Doar odată</item>
+    <item>La fiecare 6 luni</item>
+    <item>La fiecare 12 luni</item>
   </string-array>
-  <string name="lbl_payments_processed_by">Payments are processed by Google Play.</string>
+  <string name="lbl_payments_processed_by">Plata este procesată de Google Play.</string>
+  <!-- 1.4.1 -->
   <string name="msg_revision_notes_1_4_1" formatted="true"><b>Version 1.4.1</b>\n\nAdded a link to <a href="https://plus.google.com/communities/112371364498094492171">Google+ Community</a> to the main menu.\n\nAdded a link to the <a href="https://crowdin.com/project/jwdroid/invite">online translation service</a> to the contribution dialog. Translators are welcome!\n\n<b>Version 1.4.0</b>\n\nUpdated reports to the new 2016 format.\n\nNew modern visual theme.\n\nAdded service year total hour counters to the Reports section.\n\nRemoved placements text templates as they are unneccessary now.\n\nAdded an option to make an in-app donation payment to support the development.\n\nNew placements calculating mode in the Chronometer.\n\nFixed a bug when restoring from the backup failed sometimes.\n\nFixed a bug with disappearing of old report data.</string>
   <string name="chk_chrono_calc_auto"> Ia de la vizite</string>
-  <string name="menu_community">Google+ Community</string>
-  <string name="menu_about_app">About</string>
-  <string name="lbl_calc_studies">Bible studies are taken from visits with the corresponding visit type.</string>
+  <string name="menu_community">Comunitatea Google+</string>
+  <!-- 1.4.2 -->
+  <string name="menu_about_app">Despre</string>
+  <string name="lbl_calc_studies">Studiile biblice se preiau de la vizite corespunzător cu tipul vizitei.</string>
 </resources>

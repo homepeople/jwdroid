@@ -30,7 +30,7 @@ Tags: JZ, Jehovas Zeugen, predigen, Predigtdienst, Planer, Notizen
   <string name="err_empty_name">Bitte Namen eingeben!</string>
   <string name="msg_territory_added">Gebiet hinzugefügt</string>
   <string name="msg_territory_deleted">Gebiet entfernt</string>
-  <string name="territory_list_empty">Die Gebietsliste ist leer. Vielleicht möchtest du ein neues Gebiet über die obige Schaltfläche hinzufügen.</string>
+  <string name="territory_list_empty">Die Gebietsliste ist leer. Du kannst ein neues Gebiet über die Schaltfläche \"+\" (oben rechts) hinzufügen.</string>
   <string name="dlg_territory_delete_msg">Das Entfernen des Gebietes kann nicht rückgängig gemacht werden. Bist du dir sicher?</string>
   <string name="dlg_territory_delete_title">Gebiet löschen</string>
   <string name="dlg_territory_add_label">Gebietsname:</string>
@@ -93,7 +93,7 @@ Tags: JZ, Jehovas Zeugen, predigen, Predigtdienst, Planer, Notizen
   <string name="title_territory_list">Gebiete</string>
   <string name="title_people">Personen</string>
   <string name="title_reports">Berichte</string>
-  <string name="lbl_people_list_empty">Die Personenliste ist leer. \n\n Eine neue Person durch die Schaltfläche oben oder in den \&quot;Territories\&quot; hinzufügen.</string>
+  <string name="lbl_people_list_empty">Die Personenliste ist leer. \n\n Eine neue Person durch die \"+\" Schaltfläche (oben) oder in den \&quot;Territories\&quot; hinzufügen.</string>
   <string name="lbl_person_add_from_people">Bitte beachte, dass die Person ohne Zuordnung zu einem Gebiet hinzugefügt wird.</string>
   <string name="title_report">Bericht für %s</string>
   <string name="action_calc_type_sessions">Anhand der Dienstnotizen</string>
@@ -228,6 +228,7 @@ Tags: JZ, Jehovas Zeugen, predigen, Predigtdienst, Planer, Notizen
     <item>Besuche</item>
   </string-array>
   <string name="title_tip">Hinweis</string>
+  <!-- v1.2 -->
   <string name="msg_person">Wohnungsinhaber</string>
   <string name="lbl_person_desc">Beschreibung Wohnungsinhaber</string>
   <string name="lbl_male">Mann</string>
@@ -266,9 +267,11 @@ Tags: JZ, Jehovas Zeugen, predigen, Predigtdienst, Planer, Notizen
   <string name="msg_restore_backup_failed">Fehler bei der Wiederherstellung</string>
   <string name="msg_restore_backup_success">Die Sicherung wurde erfolgreich wiederhergestellt</string>
   <string name="msg_revision_notes">Neuigkeiten</string>
+  <!-- v1.2.1 -->
   <string name="msg_backup_created">Sicherung erstellt</string>
   <string name="pref_backups_manage">Sicherungen verwalten</string>
   <string name="pref_backups_manage_note">Liste der erzeugten Sicherungen anzeigen</string>
+  <!-- v1.3 -->
   <string name="lbl_tracts">Traktate:</string>
   <string-array name="plural_tracts">
     <item>Traktat</item>
@@ -290,7 +293,9 @@ Tags: JZ, Jehovas Zeugen, predigen, Predigtdienst, Planer, Notizen
   <string name="lbl_backups_empty">Liste der Datensicherungen ist leer</string>
   <string name="pref_dropbox_off">Verbindung zu Dropbox trennen</string>
   <string name="pref_dropbox_off_note">Aus Dropbox ausloggen und Synchronisation stoppen</string>
+  <!-- v1.3.1 -->
   <string name="msg_tip_hold_plus">Tipp: drücke &amp; halte den \"+\" Knopf, um eine größere Zeitmenge hinzufügen</string>
+  <!-- 1.4.0 -->
   <string name="lbl_placements">Publikationen:</string>
   <string name="lbl_videos">Videovorführungen:</string>
   <string-array name="plural_placements">
@@ -324,9 +329,11 @@ Tags: JZ, Jehovas Zeugen, predigen, Predigtdienst, Planer, Notizen
     <item>Jedes Jahr</item>
   </string-array>
   <string name="lbl_payments_processed_by">Zahlungen werden in Google Play bearbeitet.</string>
+  <!-- 1.4.1 -->
   <string name="msg_revision_notes_1_4_1" formatted="true"><b>Version 1.4.1</b>\n\nLink zu <a href="https://plus.google.com/communities/112371364498094492171">Google+ Community</a> im Hauptmenü hinzugefügt.\n\nLink zu <a href="https://crowdin.com/project/jwdroid/invite">Online Übersetzungshilfe</a> in Projektunterstützung hinzugefügt. Übersetzer sind willkommen!\n\n<b>Version 1.4.0</b>\n\nBerichte für den neuen 2016 Format aktualisiert.\n\nNeues modernes Erscheinungsbild.\n\nDienstjahr-Gesamtstundenzähler im Abschnitt Berichte hinzugefügt.\n\nVoreinstellungen für Publikationen im Text wurden entfernt, weil diese nicht mehr benötigt werden.\n\nSpendenzahlungen können direkt in der App durchgeführt werden.\n\nNeue Möglichkeit der Kalkulation in der Zeiterfassung.\n\nEin Fehler, welcher manchmal Wiederherstellung der Daten verhinderte, wurde beseitigt.\n\nEin Fehler, welcher einige Berichte für alte Monate verschwinden ließ, wurde beseitigt.</string>
   <string name="chk_chrono_calc_auto">Hinzufügen aus Besuchen</string>
   <string name="menu_community">Google+ Community</string>
+  <!-- 1.4.2 -->
   <string name="menu_about_app">Über</string>
   <string name="lbl_calc_studies">Bibelstudien werden aus Besuchen mit der entsprechenden Besuchsart hinzugefügt.</string>
 </resources>

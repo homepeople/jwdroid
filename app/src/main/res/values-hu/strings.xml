@@ -104,7 +104,7 @@ Címkék: JW, Jehova Tanúi, prédikálás, prédikál, szolgálat, jegyzetelő,
   <string name="msg_session_deleted">Szolgálat törölve</string>
   <string name="action_session_delete">Törlés</string>
   <string name="title_session">Service %s</string>
-  <string name="lbl_report_list_empty">Reports list is empty.</string>
+  <string name="lbl_report_list_empty">Még nincsenek jelentések</string>
   <string name="lbl_report_summary">Összesen</string>
   <string name="lbl_report_empty">Üres jelentés.</string>
   <string name="lbl_session_desc">Megjegyzés a szolgálathoz:</string>
@@ -125,7 +125,7 @@ Címkék: JW, Jehova Tanúi, prédikálás, prédikál, szolgálat, jegyzetelő,
   <string name="lbl_visit_date">Dátum:</string>
   <string name="chk_visit_calc_auto">Take from text</string>
   <string name="msg_choose_color">Válassz színt:</string>
-  <string name="msg_person_desc">Enter tenant description:</string>
+  <string name="msg_person_desc">Írd be a személy nevét:</string>
   <string name="msg_delete_visit">Biztosan törölni akarod ezt a látogatást?</string>
   <string name="msg_delete_person">Biztosan törölni akarod ezt a személyt, és minden hozzá kapcsolódó látogatást?</string>
   <string name="msg_person_deleted">Személy törölve</string>
@@ -136,45 +136,45 @@ Címkék: JW, Jehova Tanúi, prédikálás, prédikál, szolgálat, jegyzetelő,
   <string name="action_person_reject">Nem érdekli</string>
   <string name="action_person_nreject">Mégis érdekli</string>
   <string name="action_visit_delete">Törlés</string>
-  <string name="menu_preferences">Preferences</string>
-  <string name="menu_feedback">Send feedback</string>
-  <string name="menu_help">Help</string>
+  <string name="menu_preferences">Beállítások</string>
+  <string name="menu_feedback">Visszajelzés küldése</string>
+  <string name="menu_help">Súgó</string>
   <string name="menu_session_date">Date and time</string>
   <string name="menu_change_session_date">Change date</string>
   <string name="menu_change_session_time">Change time</string>
   <string name="menu_set_position">Set position</string>
-  <string name="menu_move_up">Move up</string>
-  <string name="menu_move_down">Move down</string>
-  <string name="menu_move_left">Move left</string>
-  <string name="menu_move_right">Move right</string>
+  <string name="menu_move_up">Mozgatás felfelé</string>
+  <string name="menu_move_down">Mozgatás lefelé</string>
+  <string name="menu_move_left">Mozgatás balra</string>
+  <string name="menu_move_right">Mozgatás jobbra</string>
   <string name="menu_territory_info">Info</string>
-  <string name="menu_territory_layout">Layout</string>
-  <string name="menu_territory_arrange">Arrange</string>
-  <string name="menu_territory_shift_up">Move all up</string>
-  <string name="menu_territory_shift_down">Move all down</string>
-  <string name="menu_territory_shift_left">Move all left</string>
-  <string name="menu_territory_shift_right">Move all right</string>
-  <string name="title_preferences">Preferences</string>
-  <string name="pref_title_appearance">Appearance</string>
-  <string name="pref_list_text_rows">Rows number</string>
-  <string name="pref_list_text_rows_note">Number of rows of the last note of the household to display in list view</string>
-  <string name="pref_table_button_size">Button size</string>
-  <string name="pref_table_button_size_note">Size of buttons representing households in grid view</string>
+  <string name="menu_territory_layout">Elrendezés</string>
+  <string name="menu_territory_arrange">Kézi beállítás</string>
+  <string name="menu_territory_shift_up">Mindet felfelé</string>
+  <string name="menu_territory_shift_down">Mindet lefelé</string>
+  <string name="menu_territory_shift_left">Mindet balra</string>
+  <string name="menu_territory_shift_right">Mindet jobbra</string>
+  <string name="title_preferences">Beállítások</string>
+  <string name="pref_title_appearance">Megjelenítés</string>
+  <string name="pref_list_text_rows">Sorok száma</string>
+  <string name="pref_list_text_rows_note">Hány sor látszódjon a háztartásoknál (lista nézetben) az utolsó látogatás jegyzeteiből</string>
+  <string name="pref_table_button_size">Négyzetek mérete</string>
+  <string name="pref_table_button_size_note">A háztartásokat jelölő négyzetek mérete (táblázatos nézetben)</string>
   <string-array name="entries_table_button_size_preference">
-    <item>Small</item>
-    <item>Medium</item>
-    <item>Big</item>
+    <item>Kicsi</item>
+    <item>Közepes</item>
+    <item>Nagy</item>
   </string-array>
-  <string name="pref_title_colors">Colors</string>
-  <string name="pref_autocolor">Auto-set colors</string>
-  <string name="pref_autocolor_note">Automatically set color against certain conditions</string>
+  <string name="pref_title_colors">Színek</string>
+  <string name="pref_autocolor">Automatikus színbeállítás</string>
+  <string name="pref_autocolor_note">Automatikusan állítsa be a színt az alábbi beállítások szerint</string>
   <string name="pref_assign_colors">Szín beállítása</string>
   <string name="pref_color_reject">Nem érdekli</string>
   <string name="pref_color_visit">Látogatás</string>
   <string name="pref_color_return">Újralátogatás</string>
   <string name="pref_color_study">Bibliatanulmányozás</string>
   <string-array name="entries_color_preference">
-    <item>Don\'t change</item>
+    <item>Ne változtassa</item>
     <item>Kék</item>
     <item>Zöld</item>
     <item>Sárga</item>
@@ -229,6 +229,7 @@ Címkék: JW, Jehova Tanúi, prédikálás, prédikál, szolgálat, jegyzetelő,
     <item>visits</item>
   </string-array>
   <string name="title_tip">Tip</string>
+  <!-- v1.2 -->
   <string name="msg_person">Érdeklődő</string>
   <string name="lbl_person_desc">Érdeklődő neve</string>
   <string name="lbl_male">Férfi</string>
@@ -236,18 +237,18 @@ Címkék: JW, Jehova Tanúi, prédikálás, prédikál, szolgálat, jegyzetelő,
   <string name="lbl_male_letter">F</string>
   <string name="lbl_female_letter">N</string>
   <string name="msg_choose_age">Válassz életkort:</string>
-  <string name="lbl_visit_text">Visit content</string>
-  <string name="action_object_add_na_visit">Not at home</string>
+  <string name="lbl_visit_text">A látogatás tartalma</string>
+  <string name="action_object_add_na_visit">Nincs otthon</string>
   <string name="msg_added_na_visit">NO -val megjelölve %s -kor</string>
-  <string name="pref_hide_visited">Hide visited today</string>
-  <string name="pref_hide_visited_note">Hide households visited today (marked with checkbox)</string>
-  <string name="msg_delete_object">All tenants and their visits will be deleted! Do you really want to delete the household?</string>
-  <string name="menu_territory_sort">Sort</string>
-  <string name="msg_territory_sort">Sort list by household name?</string>
+  <string name="pref_hide_visited">A mai látogatások elrejtése</string>
+  <string name="pref_hide_visited_note">Rejtse el azokat a háztartásokat, amelyeket ma már meglátogattuk</string>
+  <string name="msg_delete_object">Itt minden érdeklődő és a hozzájuk kapcsolódó látogatások ki lesznek törölve. Biztosan ki akarod törölni ezt a háztartást?</string>
+  <string name="menu_territory_sort">Sorrend</string>
+  <string name="msg_territory_sort">Sorba rakod a háztartásokat a nevük szerint?</string>
   <string-array name="menu_move_list">
     <item>Set position</item>
-    <item>Move up</item>
-    <item>Move down</item>
+    <item>Mozgatás felfelé</item>
+    <item>Mozgatás lefelé</item>
   </string-array>
   <string name="pref_object_add_sorted">Auto sort</string>
   <string name="pref_object_add_sorted_note">Insert a new household with sorting by name (only for list view)</string>
@@ -267,9 +268,11 @@ Címkék: JW, Jehova Tanúi, prédikálás, prédikál, szolgálat, jegyzetelő,
   <string name="msg_restore_backup_failed">Error restoring backup copy</string>
   <string name="msg_restore_backup_success">Backup has been successfully restored</string>
   <string name="msg_revision_notes">What\'s new</string>
+  <!-- v1.2.1 -->
   <string name="msg_backup_created">Backup created</string>
   <string name="pref_backups_manage">Manage backups</string>
   <string name="pref_backups_manage_note">View list of created backups</string>
+  <!-- v1.3 -->
   <string name="lbl_tracts">Tájékoztatólapok:</string>
   <string-array name="plural_tracts">
     <item>tájékoztatólap</item>
@@ -291,7 +294,9 @@ Címkék: JW, Jehova Tanúi, prédikálás, prédikál, szolgálat, jegyzetelő,
   <string name="lbl_backups_empty">Backups list is empty</string>
   <string name="pref_dropbox_off">Disconnect from Dropbox</string>
   <string name="pref_dropbox_off_note">Log out from Dropbox account and stop syncing</string>
+  <!-- v1.3.1 -->
   <string name="msg_tip_hold_plus">Tip: press &amp; hold the \"+\" button to add a big amount of time</string>
+  <!-- 1.4.0 -->
   <string name="lbl_placements">Kiadványok:</string>
   <string name="lbl_videos">Megnézett videók:</string>
   <string-array name="plural_placements">
@@ -304,30 +309,32 @@ Címkék: JW, Jehova Tanúi, prédikálás, prédikál, szolgálat, jegyzetelő,
     <item>video showings</item>
     <item>video showings</item>
   </string-array>
-  <string name="lbl_service_year" formatted="false">%s/%s service year</string>
-  <string name="msg_contribute">You seem to have used JW Droid for some time. We are glad that you find it useful!\n\nThe app was written in 2010, and now we work on an updated, modern version with new features. You could speed up the development by contributing to the project. Thank you!\n\n— JW Droid Team</string>
-  <string name="lbl_contribute">We are glad that you find JW Droid useful! The app was written in 2010, and now we work on an updated, modern version with new features. You could speed up the development by contributing to the project. Thank you!</string>
-  <string name="btn_donate">Donate to support development</string>
-  <string name="btn_review">Review on Google Play</string>
-  <string name="btn_translate">Help with translation</string>
-  <string name="btn_save">Save</string>
-  <string name="btn_send">Send</string>
-  <string name="btn_refresh">Refresh</string>
-  <string name="btn_learn_more">Learn more</string>
-  <string name="btn_no_thanks">No, thanks</string>
-  <string name="btn_rename">Rename</string>
-  <string name="title_contribute">Contribute</string>
-  <string name="lbl_donation">Donation:</string>
-  <string name="lbl_recurring">Recurring:</string>
+  <string name="lbl_service_year" formatted="false">%s/%s szolgálati év</string>
+  <string name="msg_contribute">Úgy látjuk te is használtad a JW Jegyzetelőt, és nagyon örülünk, ha hasznosnak találtad!\n\n Az alkalmazást 2010-ben készítettük, most pedig azon dolgozunk, hogy tovább fejlesszük ezt a verziót, minél korszerűbbre, több funkcióval. Hozzájárulhatsz a fejlesztések mielőbbi elkészüléséhez azzal, hogy támogatod a projektet. Köszönjük!\n\n --- a JW Jegyzetelő Csapata</string>
+  <string name="lbl_contribute">Nagyon örülünk, hogy hasznosnak találtad a JW Jegyzetelőt. Ezt az alkalmazást 2010-ben készítettük, most pedig azon dolgozunk, hogy tovább fejlesszük ezt a verziót, minél korszerűbbre, több funkcióval. Hozzájárulhatsz a fejlesztések mielőbbi elkészüléséhez azzal, hogy támogatod a projektet. Köszönjük!</string>
+  <string name="btn_donate">Adományozhatsz a fejlesztések támogatására</string>
+  <string name="btn_review">Értékelheted a Google Play-en</string>
+  <string name="btn_translate">Segíthetsz a fordításban</string>
+  <string name="btn_save">Mentés</string>
+  <string name="btn_send">Küldés</string>
+  <string name="btn_refresh">Frissités</string>
+  <string name="btn_learn_more">További információ</string>
+  <string name="btn_no_thanks">Köszönöm, nem</string>
+  <string name="btn_rename">Átnevezés</string>
+  <string name="title_contribute">Hozzájárulás</string>
+  <string name="lbl_donation">Adomány:</string>
+  <string name="lbl_recurring">Rendszeresség:</string>
   <string-array name="btn_recurring">
-    <item>Just once</item>
-    <item>Every 6 months</item>
-    <item>Every 12 months</item>
+    <item>Csak egyszer</item>
+    <item>Félévente</item>
+    <item>Évente</item>
   </string-array>
-  <string name="lbl_payments_processed_by">Payments are processed by Google Play.</string>
+  <string name="lbl_payments_processed_by">Az adományozást a Google Play-en keresztül lehet megtenni.</string>
+  <!-- 1.4.1 -->
   <string name="msg_revision_notes_1_4_1" formatted="true"><b>Version 1.4.1</b>\n\nAdded a link to <a href="https://plus.google.com/communities/112371364498094492171">Google+ Community</a> to the main menu.\n\nAdded a link to the <a href="https://crowdin.com/project/jwdroid/invite">online translation service</a> to the contribution dialog. Translators are welcome!\n\n<b>Version 1.4.0</b>\n\nUpdated reports to the new 2016 format.\n\nNew modern visual theme.\n\nAdded service year total hour counters to the Reports section.\n\nRemoved placements text templates as they are unneccessary now.\n\nAdded an option to make an in-app donation payment to support the development.\n\nNew placements calculating mode in the Chronometer.\n\nFixed a bug when restoring from the backup failed sometimes.\n\nFixed a bug with disappearing of old report data.</string>
   <string name="chk_chrono_calc_auto">Add from visits</string>
   <string name="menu_community">Google+ Community</string>
-  <string name="menu_about_app">About</string>
+  <!-- 1.4.2 -->
+  <string name="menu_about_app">Rólunk</string>
   <string name="lbl_calc_studies">Bible studies are taken from visits with the corresponding visit type.</string>
 </resources>
