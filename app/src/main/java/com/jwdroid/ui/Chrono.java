@@ -1,8 +1,6 @@
 package com.jwdroid.ui;
 
-import android.app.Dialog;
 import android.content.ComponentName;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.content.SharedPreferences;
@@ -14,11 +12,9 @@ import android.os.IBinder;
 import android.preference.PreferenceManager;
 import android.support.v4.app.NavUtils;
 import android.support.v4.app.TaskStackBuilder;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.format.Time;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -44,9 +40,6 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class Chrono extends AppCompatActivity {
-
-    private static final int DIALOG_FINISH = 1;
-    private static final int DIALOG_START = 2;
 
     private static final String PUBLICATIONS = "publications";
     private static final String VIDEOS = "videos";
@@ -130,14 +123,66 @@ public class Chrono extends AppCompatActivity {
         findViewById(R.id.btn_start).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showDialog(DIALOG_START);
+                prefs.edit()
+                        .remove("chronoStartTime")
+                        .putLong("chronoBeginTime", System.currentTimeMillis())
+                        .putInt("chronoPublications", 0)
+                        .putInt("chronoVideos", 0)
+                        .putInt("chronoReturns", 0)
+                        .commit();
+
+                Intent intent = new Intent(Chrono.this, ChronoService.class);
+                startService(intent);
+                bindService(new Intent(Chrono.this, ChronoService.class), mConnection, 0);
             }
         });
 
         findViewById(R.id.btn_finish).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showDialog(DIALOG_FINISH);
+                if (mService != null) {
+
+                    recalcVisits();
+
+                    Time beginTime = new Time();
+                    beginTime.set(prefs.getLong("chronoBeginTime", 0));
+
+                    SQLiteDatabase db = AppDbOpenHelper.getInstance(Chrono.this).getWritableDatabase();
+                    db.execSQL("INSERT INTO session (date, minutes,publications,videos,returns,books,brochures,magazines,tracts) VALUES(?,?,?,?,?,0,0,0,0)",
+                            new Object[]{
+                                    beginTime.format3339(false),
+                                    ChronoService.getCurrentMinutes(Chrono.this),
+                                    prefs.getInt("chronoPublications", 0) + mVisitValues.get(PUBLICATIONS),
+                                    prefs.getInt("chronoVideos", 0) + mVisitValues.get(VIDEOS),
+                                    prefs.getInt("chronoReturns", 0) + mVisitValues.get(RETURNS)});
+
+                    long sessionId = Util.dbFetchLong(db, "SELECT last_insert_rowid()", new String[]{});
+
+                    mService.stop();
+
+                    prefs.edit()
+                            .remove("chronoStartTime")
+                            .remove("chronoBeginTime")
+                            .remove("chronoMinutes")
+                            .remove("chronoPublications")
+                            .remove("chronoVideos")
+                            .remove("chronoReturns")
+                            .putBoolean("serviceJustEnded", true)
+                            .commit();
+
+                    if (prefs.getBoolean("autobackup", true)) {
+
+                        if (DropboxConfig.getAccountManager(Chrono.this).hasLinkedAccount())
+                            new DropboxBackuper(Chrono.this, null).run();
+                        else
+                            new LocalBackuper(Chrono.this, null).run();
+                    }
+
+                    Intent intent = new Intent(Chrono.this, Session.class);
+                    intent.putExtra("session", sessionId);
+                    startActivity(intent);
+                    finish();
+                }
             }
         });
 
@@ -263,95 +308,6 @@ public class Chrono extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
-    @Override
-    protected Dialog onCreateDialog(int id) {
-        Dialog dialog = null;
-        AlertDialog.Builder builder;
-        final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(Chrono.this);
-        LayoutInflater factory = LayoutInflater.from(this);
-        switch (id) {
-            case DIALOG_FINISH:
-                dialog = new AlertDialog.Builder(this)
-                        .setMessage(R.string.msg_chrono_finish)
-                        .setPositiveButton(R.string.btn_yes, new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                if (mService != null) {
-
-                                    recalcVisits();
-
-                                    Time beginTime = new Time();
-                                    beginTime.set(prefs.getLong("chronoBeginTime", 0));
-
-                                    SQLiteDatabase db = AppDbOpenHelper.getInstance(Chrono.this).getWritableDatabase();
-                                    db.execSQL("INSERT INTO session (date, minutes,publications,videos,returns,books,brochures,magazines,tracts) VALUES(?,?,?,?,?,0,0,0,0)",
-                                            new Object[]{
-                                                    beginTime.format3339(false),
-                                                    ChronoService.getCurrentMinutes(Chrono.this),
-                                                    prefs.getInt("chronoPublications", 0) + mVisitValues.get(PUBLICATIONS),
-                                                    prefs.getInt("chronoVideos", 0) + mVisitValues.get(VIDEOS),
-                                                    prefs.getInt("chronoReturns", 0) + mVisitValues.get(RETURNS)});
-
-                                    long sessionId = Util.dbFetchLong(db, "SELECT last_insert_rowid()", new String[]{});
-
-                                    mService.stop();
-
-                                    prefs.edit()
-                                            .remove("chronoStartTime")
-                                            .remove("chronoBeginTime")
-                                            .remove("chronoMinutes")
-                                            .remove("chronoPublications")
-                                            .remove("chronoVideos")
-                                            .remove("chronoReturns")
-                                            .putBoolean("serviceJustEnded", true)
-                                            .commit();
-
-                                    if (prefs.getBoolean("autobackup", true)) {
-
-                                        if (DropboxConfig.getAccountManager(Chrono.this).hasLinkedAccount())
-                                            new DropboxBackuper(Chrono.this, null).run();
-                                        else
-                                            new LocalBackuper(Chrono.this, null).run();
-                                    }
-
-                                    Intent intent = new Intent(Chrono.this, Session.class);
-                                    intent.putExtra("session", sessionId);
-                                    startActivity(intent);
-                                    finish();
-                                }
-                            }
-                        })
-                        .setNegativeButton(R.string.btn_no, null).create();
-                break;
-
-            case DIALOG_START:
-                dialog = new AlertDialog.Builder(this)
-                        .setMessage(R.string.msg_chrono_start)
-                        .setPositiveButton(R.string.btn_yes, new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-
-                                prefs.edit()
-                                        .remove("chronoStartTime")
-                                        .putLong("chronoBeginTime", System.currentTimeMillis())
-                                        .putInt("chronoPublications", 0)
-                                        .putInt("chronoVideos", 0)
-                                        .putInt("chronoReturns", 0)
-                                        .commit();
-
-                                Intent intent = new Intent(Chrono.this, ChronoService.class);
-                                startService(intent);
-                                bindService(new Intent(Chrono.this, ChronoService.class), mConnection, 0);
-                            }
-                        })
-                        .setNegativeButton(R.string.btn_no, null).create();
-                break;
-        }
-
-
-        return dialog;
-    }
 
     @Override
     protected void onDestroy() {
