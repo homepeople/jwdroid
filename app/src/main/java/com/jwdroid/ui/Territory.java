@@ -1083,14 +1083,14 @@ public class Territory extends AppCompatActivity implements LoaderCallbacks<Curs
                     RelativeLayout.LayoutParams rlp = new RelativeLayout.LayoutParams((int)(10 * density), LayoutParams.MATCH_PARENT);
                     rlp.addRule(RelativeLayout.ALIGN_PARENT_TOP);
                     rlp.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
-                    relativeLayout.addView(whiteBar, rlp);
+                    relativeLayout.addView(whiteBar, 0, rlp);
 
                     View shadow = new View(this);
                     shadow.setBackgroundResource(R.drawable.shadow_hor);
                     rlp = new RelativeLayout.LayoutParams((int)(10 * density), LayoutParams.MATCH_PARENT);
                     rlp.addRule(RelativeLayout.ALIGN_PARENT_TOP);
                     rlp.addRule(RelativeLayout.LEFT_OF, ID_WHITE_BAR);
-                    relativeLayout.addView(shadow, rlp);
+                    relativeLayout.addView(shadow, 0, rlp);
                 }
 
                 TableLayout table = (TableLayout) mPanelsView.getViewGroupAt(iPanel).findViewById(ID_PANEL_TABLE);
