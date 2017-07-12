@@ -83,7 +83,7 @@
 
   
   <PreferenceCategory
-  	android:title="@string/pref_title_backup">
+  	android:title="@string/title_drive">
   	
   	<CheckBoxPreference 
   		android:key="autobackup"

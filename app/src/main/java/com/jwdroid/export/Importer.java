@@ -35,7 +35,10 @@ public class Importer {
 		try {
 			
 			ZipEntry entry;
+			int entriesProcessed = 0;
 			while((entry = zis.getNextEntry()) != null) {
+
+				entriesProcessed++;
 				
 				ByteArrayOutputStream baos = new ByteArrayOutputStream();
 		        byte[] buffer = new byte[1024];
@@ -54,22 +57,33 @@ public class Importer {
 					if(m.group(1).equals("visit"))
 						importTable(m.group(1), new String[]{"territory_id","door_id","person_id","date","desc","type","calc_auto","brochures","books","magazines","tracts","videos","publications"});
 					
-					if(m.group(1).equals("door")) {
+					else if(m.group(1).equals("door")) {
 						importTable(m.group(1), new String[]{"territory_id", "group_id", "col", "row", "name", "color1", "color2", "visits_num", "last_date", "last_person_name", "last_desc", "last_person_reject", "order_num", "manual_color", "last_modified_date"});
 					}
 					
-					if(m.group(1).equals("person"))
+					else if(m.group(1).equals("person"))
 						importTable(m.group(1), new String[]{"door_id","name","reject"});
 					
-					if(m.group(1).equals("territory"))
+					else if(m.group(1).equals("territory"))
 						importTable(m.group(1), new String[]{"name","notes","created","started","finished","modified"});
 					
-					if(m.group(1).equals("session"))
+					else if(m.group(1).equals("session"))
 						importTable(m.group(1), new String[]{"date","minutes","books","brochures","magazines","tracts","returns","desc","videos","publications"});
+
+					else {
+						throw new Exception("Invalid filename");
+					}
+				}
+				else {
+					throw new Exception("Invalid filename");
 				}
 				
 				mEntryInput.close();
 				baos.close();
+			}
+
+			if(entriesProcessed == 0) {
+				throw new Exception("No entries processed");
 			}
 		}
 		finally {

@@ -27,6 +27,8 @@ public class Preferences extends PreferenceActivity {
         Preference dropboxPref = (Preference) findPreference("dropbox_off");
 
         dropboxPref.setEnabled(dbxMgr.hasLinkedAccount());
+        ((Preference) findPreference("autobackup")).setEnabled(dbxMgr.hasLinkedAccount());
+        ((Preference) findPreference("num_backups")).setEnabled(dbxMgr.hasLinkedAccount());
 
         dropboxPref.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 
@@ -35,6 +37,8 @@ public class Preferences extends PreferenceActivity {
                 if (dbxMgr.hasLinkedAccount()) {
                     dbxMgr.unlink();
                     preference.setEnabled(false);
+                    ((Preference) findPreference("autobackup")).setEnabled(false);
+                    ((Preference) findPreference("num_backups")).setEnabled(false);
                 }
 
                 return false;

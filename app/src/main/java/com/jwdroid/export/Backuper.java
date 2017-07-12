@@ -2,14 +2,9 @@ package com.jwdroid.export;
 
 import android.content.Context;
 import android.os.AsyncTask;
-import android.text.format.Time;
+import android.util.Log;
 import android.widget.Toast;
 
-import com.dropbox.sync.android.DbxAccountManager;
-import com.dropbox.sync.android.DbxFile;
-import com.dropbox.sync.android.DbxFileSystem;
-import com.dropbox.sync.android.DbxPath;
-import com.jwdroid.DropboxConfig;
 import com.jwdroid.R;
 
 abstract public class Backuper {
@@ -27,12 +22,15 @@ abstract public class Backuper {
 			@Override
 			protected Boolean doInBackground(Void... params) {
 				try {
-					
+
 					backup();
-					
+
 				    return true;
 				}
 				catch (Exception e) {
+
+					Log.e("Backuper", e.toString());
+
 					return false;
 				}
 			}

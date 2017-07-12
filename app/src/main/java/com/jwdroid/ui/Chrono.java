@@ -32,7 +32,6 @@ import com.jwdroid.R;
 import com.jwdroid.RepeatListener;
 import com.jwdroid.Util;
 import com.jwdroid.export.DropboxBackuper;
-import com.jwdroid.export.LocalBackuper;
 
 import java.util.Date;
 import java.util.HashMap;
@@ -174,8 +173,6 @@ public class Chrono extends AppCompatActivity {
 
                         if (DropboxConfig.getAccountManager(Chrono.this).hasLinkedAccount())
                             new DropboxBackuper(Chrono.this, null).run();
-                        else
-                            new LocalBackuper(Chrono.this, null).run();
                     }
 
                     Intent intent = new Intent(Chrono.this, Session.class);

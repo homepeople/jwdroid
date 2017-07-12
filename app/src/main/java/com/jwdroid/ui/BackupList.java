@@ -1,6 +1,5 @@
 package com.jwdroid.ui;
 
-import android.support.v7.app.AlertDialog;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -11,6 +10,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.Html;
@@ -36,14 +36,12 @@ import com.dropbox.sync.android.DbxFile;
 import com.dropbox.sync.android.DbxFileInfo;
 import com.dropbox.sync.android.DbxFileSystem;
 import com.dropbox.sync.android.DbxPath;
-import com.jwdroid.AlphanumComparator;
 import com.jwdroid.BugSenseConfig;
 import com.jwdroid.DropboxConfig;
 import com.jwdroid.R;
 import com.jwdroid.SimpleArrayAdapter;
 import com.jwdroid.export.DropboxBackuper;
 import com.jwdroid.export.Importer;
-import com.jwdroid.export.LocalBackuper;
 
 import net.londatiga.android.ActionItem;
 import net.londatiga.android.QuickAction;
@@ -73,11 +71,10 @@ public class BackupList extends AppCompatActivity /*implements ConnectionCallbac
     static private final int RESOLVE_CONNECTION_REQUEST_CODE = 1;
     static private final int FOLDER_CHOOSE_REQUEST_CODE = 2;
     static private final int REQUEST_LINK_TO_DBX = 3;
+    static private final int REQUEST_FILE = 4;
 
     private BackupListAdapter mListAdapter;
     private ListView mListView;
-
-    private File mRoot, mDir;
 
     private Long mDialogItemId;
 
@@ -94,19 +91,12 @@ public class BackupList extends AppCompatActivity /*implements ConnectionCallbac
         setContentView(R.layout.backup_list);
 
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
-        mToolbar.setTitle(R.string.menu_backups);
+        mToolbar.setTitle(R.string.title_drive);
         setSupportActionBar(mToolbar);
 
         BugSenseConfig.initAndStartSession(this);
 
         mListView = (ListView) findViewById(R.id.backup_list);
-
-        mRoot = Environment.getExternalStorageDirectory();
-
-        mDir = new File(mRoot, "jwdroid");
-        if (!mDir.exists())
-            mDir.mkdir();
-
 
         mListAdapter = new BackupListAdapter(this, null);
 
@@ -185,46 +175,26 @@ public class BackupList extends AppCompatActivity /*implements ConnectionCallbac
 
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
+
             case R.id.menu_add:
+                final ProgressDialog progressDialog = ProgressDialog.show(BackupList.this, "",
+                        getResources().getString(R.string.lbl_please_wait), true);
 
-                final QuickAction addActions = new QuickAction(this);
-                addActions.addActionItem(new ActionItem(getResources().getString(R.string.lbl_drive), getResources().getDrawable(R.drawable.dropbox_small)));
-                addActions.addActionItem(new ActionItem(getResources().getString(R.string.lbl_local_folder), getResources().getDrawable(R.drawable.folder)));
-                addActions.animateTrack(false);
-
-                addActions.setOnActionItemClickListener(new QuickAction.OnActionItemClickListener() {
+                Runnable callback = new Runnable() {
                     @Override
-                    public void onItemClick(int pos) {
-
-                        final ProgressDialog progressDialog = ProgressDialog.show(BackupList.this, "",
-                                getResources().getString(R.string.lbl_please_wait), true);
-
-                        Runnable callback = new Runnable() {
-                            @Override
-                            public void run() {
-                                progressDialog.cancel();
-                                updateContent();
-                                loadDriveContents(false);
-                            }
-                        };
-
-                        switch (pos) {
-                            case 0:    // Один
-                                if (mDbxAcctMgr.hasLinkedAccount())
-                                    new DropboxBackuper(getApplicationContext(), callback).run();
-                                else {
-                                    progressDialog.cancel();
-                                    mDbxAcctMgr.startLink(BackupList.this, REQUEST_LINK_TO_DBX);
-                                }
-                                break;
-                            case 1:    // Неколько
-                                new LocalBackuper(getApplicationContext(), callback).run();
-                                break;
-                        }
+                    public void run() {
+                        progressDialog.cancel();
+                        updateContent();
+                        loadDriveContents(false);
                     }
-                });
+                };
 
-                addActions.show(mToolbar);
+                if (mDbxAcctMgr.hasLinkedAccount())
+                    new DropboxBackuper(getApplicationContext(), callback).run();
+                else {
+                    progressDialog.cancel();
+                    mDbxAcctMgr.startLink(BackupList.this, REQUEST_LINK_TO_DBX);
+                }
                 break;
 
             case R.id.menu_refresh:
@@ -367,18 +337,14 @@ public class BackupList extends AppCompatActivity /*implements ConnectionCallbac
                     public void onClick(DialogInterface dialog, int which) {
                         BackupItem item = (BackupItem) mListAdapter.getItemById(mDialogItemId);
 
-                        if (item.drive) {
-                            try {
-                                DbxFileSystem dbxFs = DbxFileSystem.forAccount(mDbxAcctMgr.getLinkedAccount());
-                                dbxFs.delete(new DbxPath("/" + item.getFilename()));
-                                loadDriveContents(false);
-                            } catch (Exception e) {
-
-                            }
-                        } else {
-                            File file = new File(mDir, item.getFilename());
-                            file.delete();
+                        try {
+                            DbxFileSystem dbxFs = DbxFileSystem.forAccount(mDbxAcctMgr.getLinkedAccount());
+                            dbxFs.delete(new DbxPath("/" + item.getFilename()));
+                            loadDriveContents(false);
+                        } catch (Exception e) {
+                            Log.e(TAG, e.toString());
                         }
+
                         updateContent();
                     }
                 });
@@ -408,39 +374,6 @@ public class BackupList extends AppCompatActivity /*implements ConnectionCallbac
                     items.add(item);
                 }
         }
-
-
-        items.add(new HeadingItem(HeadingItem.HEADING_LOCAL));
-
-        FilenameFilter filter = new BackupFilenameFilter();
-
-        ArrayList<String> names = new ArrayList<String>();
-
-        File[] files = mDir.listFiles(filter);
-        if (files != null)
-            for (File file : files) {
-                names.add(file.getName());
-            }
-
-        Collections.sort(names, new AlphanumComparator());
-        Collections.reverse(names);
-
-        for (String filename : names) {
-
-            File file = new File(mDir, filename);
-            Matcher m = Pattern.compile("^backup_(\\d+)(\\.zip)?$").matcher(file.getName());
-            m.find();
-            Time time = new Time();
-            time.set(Long.parseLong(m.group(1)));
-            Long size = file.length();
-            Boolean zip = m.group(2) != null;
-
-            items.add(new BackupItem(time, size, zip, false));
-        }
-
-        if (names.size() == 0)
-            items.add(new LabelItem());
-
 
         mListAdapter.swapData(items);
     }
@@ -712,6 +645,11 @@ public class BackupList extends AppCompatActivity /*implements ConnectionCallbac
                     updateContent();
                     loadDriveContents(false);
                 }
+                break;
+
+            case REQUEST_FILE:
+
+                break;
         }
     }
 
