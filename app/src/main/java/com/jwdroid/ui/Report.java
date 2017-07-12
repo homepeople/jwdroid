@@ -8,7 +8,6 @@ import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.DataSetObserver;
 import android.database.sqlite.SQLiteDatabase;
-import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.app.LoaderManager.LoaderCallbacks;
@@ -49,11 +48,9 @@ public class Report extends AppCompatActivity implements LoaderCallbacks<Cursor>
     private SessionListAdapter mListAdapter;
     private ListView mListView;
 
-    private String mMonth;
+    private String mMonth, mMonthName;
 
     private Long mDialogItemId;
-
-    private QuickAction mSendTypeActions;
 
     Toolbar mToolbar;
 
@@ -72,9 +69,9 @@ public class Report extends AppCompatActivity implements LoaderCallbacks<Cursor>
 
         mMonth = getIntent().getExtras().getString("month");
 
-        final String monthName = getResources().getStringArray(R.array.months)[Integer.parseInt(mMonth.substring(4, 6)) - 1] + " " + mMonth.substring(0, 4);
+        mMonthName = getResources().getStringArray(R.array.months)[Integer.parseInt(mMonth.substring(4, 6)) - 1] + " " + mMonth.substring(0, 4);
 
-        mToolbar.setTitle(monthName);
+        mToolbar.setTitle(mMonthName);
 
 
         // Set up territory list
@@ -135,53 +132,6 @@ public class Report extends AppCompatActivity implements LoaderCallbacks<Cursor>
         });
 
 
-        mSendTypeActions = new QuickAction(this);
-        mSendTypeActions.addActionItem(new ActionItem("SMS", getResources().getDrawable(R.drawable.ac_spechbubble_sq_line)));
-        mSendTypeActions.addActionItem(new ActionItem("E-mail", getResources().getDrawable(R.drawable.ac_mail)));
-        mSendTypeActions.animateTrack(false);
-
-        mSendTypeActions.setOnActionItemClickListener(new QuickAction.OnActionItemClickListener() {
-            @Override
-            public void onItemClick(int pos) {
-                Bundle args;
-                SQLiteDatabase db;
-                Cursor rs;
-                SummaryInfo data = getSummaryInfo();
-                String text = getResources().getString(R.string.lbl_books) + " " + data.books + "\n" +
-                        getResources().getString(R.string.lbl_brochures_tracts) + " " + (data.brochures + data.tracts) + "\n" +
-                        getResources().getString(R.string.lbl_hours) + " " + (data.minutes / 60) + "\n" +
-                        getResources().getString(R.string.lbl_magazines) + " " + data.magazines + "\n" +
-                        getResources().getString(R.string.lbl_returns) + " " + data.returns + "\n" +
-                        getResources().getString(R.string.lbl_studies) + " " + data.studies;
-
-                if(data.publications > 0) {
-                    text = getResources().getString(R.string.lbl_placements) + " " + data.publications + "\n" +
-                            getResources().getString(R.string.lbl_videos) + " " + data.videos + "\n" +
-                            getResources().getString(R.string.lbl_hours) + " " + (data.minutes / 60) + "\n" +
-                            getResources().getString(R.string.lbl_returns) + " " + data.returns + "\n" +
-                            getResources().getString(R.string.lbl_studies) + " " + data.studies;
-                }
-
-                switch (pos) {
-                    case 0:    // SMS
-                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel"));
-                        intent.setType("vnd.android-dir/mms-sms");
-                        intent.putExtra("sms_body", String.format(getResources().getString(R.string.title_report), monthName) + "\n\n" + text);
-                        startActivity(intent);
-                        break;
-                    case 1: // E-mail
-                        intent = new Intent(Intent.ACTION_SEND);
-                        intent.setType("message/rfc822");
-                        intent.putExtra(Intent.EXTRA_SUBJECT, String.format(getResources().getString(R.string.title_report), monthName));
-                        intent.putExtra(Intent.EXTRA_TEXT, text);
-                        startActivity(Intent.createChooser(intent, null));
-                        break;
-                }
-            }
-        });
-
-
-
 
         final QuickAction summaryTypeActions = new QuickAction(this);
         summaryTypeActions.addActionItem(new ActionItem(getResources().getString(R.string.action_calc_type_sessions), getResources().getDrawable(R.drawable.ac_list_bullets)));
@@ -234,7 +184,19 @@ public class Report extends AppCompatActivity implements LoaderCallbacks<Cursor>
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.menu_send:
-                mSendTypeActions.show(mToolbar);
+
+                SummaryInfo data = getSummaryInfo();
+                String text = getResources().getString(R.string.lbl_placements) + " " + data.publications + "\n" +
+                            getResources().getString(R.string.lbl_videos) + " " + data.videos + "\n" +
+                            getResources().getString(R.string.lbl_hours) + " " + (data.minutes / 60) + "\n" +
+                            getResources().getString(R.string.lbl_returns) + " " + data.returns + "\n" +
+                            getResources().getString(R.string.lbl_studies) + " " + data.studies;
+
+                Intent sendIntent = new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.putExtra(Intent.EXTRA_TEXT, String.format(getResources().getString(R.string.title_report), mMonthName) + "\n\n" + text);
+                sendIntent.setType("text/plain");
+                startActivity(Intent.createChooser(sendIntent, getResources().getText(R.string.btn_send)));
                 break;
 
             case R.id.menu_add:
