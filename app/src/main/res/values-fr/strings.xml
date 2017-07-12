@@ -338,4 +338,8 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <!-- 1.4.2 -->
   <string name="menu_about_app">About</string>
   <string name="lbl_calc_studies">Bible studies are taken from visits with the corresponding visit type.</string>
+  <!-- 1.5.0 -->
+  <string name="action_save_data">Save all data</string>
+  <string name="action_restore_data">Restore all data</string>
+  <string name="msg_revision_notes_1_5" formatted="true"><b>Version 1.5.0</b>\n\nNow you can save and restore data using any file sharing application installed on the device.\n\nReports can be sent using any text messenger installed on the device.</string>
 </resources>

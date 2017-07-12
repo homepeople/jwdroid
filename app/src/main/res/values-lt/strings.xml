@@ -228,6 +228,7 @@ Tags: JW, Jehovos liudytojai, skelbti, tarnyba, programėlė, užrašai
     <item>apsilankymai</item>
   </string-array>
   <string name="title_tip">Patarimas</string>
+  <!-- v1.2 -->
   <string name="msg_person">Gyventojas</string>
   <string name="lbl_person_desc">Gyventojo aprašas</string>
   <string name="lbl_male">Vyras</string>
@@ -266,9 +267,11 @@ Tags: JW, Jehovos liudytojai, skelbti, tarnyba, programėlė, užrašai
   <string name="msg_restore_backup_failed">Klaida atkuriant atsarginę kopiją</string>
   <string name="msg_restore_backup_success">Atsarginė kopija atkurta</string>
   <string name="msg_revision_notes">Kas naujo</string>
+  <!-- v1.2.1 -->
   <string name="msg_backup_created">Atsarginė kopija sukurta</string>
   <string name="pref_backups_manage">Tvarkyti atsargines kopijas</string>
   <string name="pref_backups_manage_note">Žiūrėti atsarginių kopijų sąrašą</string>
+  <!-- v1.3 -->
   <string name="lbl_tracts">Lankstinukai:</string>
   <string-array name="plural_tracts">
     <item>lankstinukas</item>
@@ -290,7 +293,9 @@ Tags: JW, Jehovos liudytojai, skelbti, tarnyba, programėlė, užrašai
   <string name="lbl_backups_empty">Atsarginių kopijų sąrašas tuščias</string>
   <string name="pref_dropbox_off">Atsijungti nuo Dropbox</string>
   <string name="pref_dropbox_off_note">Atsijungti nuo Dropbox paskyros ir sustabdyti sinchronizavimą</string>
+  <!-- v1.3.1 -->
   <string name="msg_tip_hold_plus">Patarimas: jei norite įrašyti daug laiko, nuspauskite ir palaikykite mygtuką „+“</string>
+  <!-- 1.4.0 -->
   <string name="lbl_placements">Spaudinių ir el. failų:</string>
   <string name="lbl_videos">Parodyta vaizdo siužetų:</string>
   <string-array name="plural_placements">
@@ -324,9 +329,15 @@ Tags: JW, Jehovos liudytojai, skelbti, tarnyba, programėlė, užrašai
     <item>Kas 12 mėnesių</item>
   </string-array>
   <string name="lbl_payments_processed_by">Mokėjimai vykdomi per Google Play.</string>
+  <!-- 1.4.1 -->
   <string name="msg_revision_notes_1_4_1" formatted="true"><b>Versija 1.4.1</b>\n\nPrie pagrindinio meniu pridėta nuoroda į <a href="https://plus.google.com/communities/112371364498094492171">Google+ bendruomenę</a>.\n\nPrie parinkties „parama“ pridėta nuoroda į <a href="https://crowdin.com/project/jwdroid/invite">vertimo internetu puslapį</a>. Priimame vertėjų bendradarbiavimą!\n\n<b>Versija 1.4.0</b>\n\nAtaskaitos atnaujintos pagal 2016 m. formatą.\n\nAtnaujinta vartotojo sąsajos išvaizda.\n\nPrie ataskaitų pridėtas visų metų tarnybos valandų skaičiavimas.\n\nPašalintos leidinių tipų santrumpos, nes jų nebereikia.\n\nPridėta galimybė per pačią programą paremti jos kūrimą finansiškai.\n\nNaujas išplatintų spaudinių ir elektroninių failų skaičiavimo režimas laikmačio lange.\n\nIštaisyta klaida, dėl kurios kartais nepavykdavo atkurti duomenų iš atsarginės kopijos.\n\nIštaisyta klaida, dėl kurios dingdavo senų ataskaitų duomenys.</string>
   <string name="chk_chrono_calc_auto">Įtraukti iš apsilankymų</string>
   <string name="menu_community">Google+ bendruomenė</string>
+  <!-- 1.4.2 -->
   <string name="menu_about_app">Apie</string>
   <string name="lbl_calc_studies">Biblijos studijos suskaičiuotos iš atitinkamos aplankymų grupės.</string>
+  <!-- 1.5.0 -->
+  <string name="action_save_data">Save all data</string>
+  <string name="action_restore_data">Restore all data</string>
+  <string name="msg_revision_notes_1_5" formatted="true"><b>Version 1.5.0</b>\n\nNow you can save and restore data using any file sharing application installed on the device.\n\nReports can be sent using any text messenger installed on the device.</string>
 </resources>

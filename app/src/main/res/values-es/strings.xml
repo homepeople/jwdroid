@@ -227,6 +227,7 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes, Testigos 
     <item>visitas</item>
   </string-array>
   <string name="title_tip">Contribución</string>
+  <!-- v1.2 -->
   <string name="msg_person">Amo de casa</string>
   <string name="lbl_person_desc">Descripción del amo</string>
   <string name="lbl_male">Hombre</string>
@@ -265,9 +266,11 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes, Testigos 
   <string name="msg_restore_backup_failed">Error al restablecer la copia.</string>
   <string name="msg_restore_backup_success">La copia ha sido restablecida </string>
   <string name="msg_revision_notes">Lo nuevo</string>
+  <!-- v1.2.1 -->
   <string name="msg_backup_created">Copia de datos creada!</string>
   <string name="pref_backups_manage">Organizar copias</string>
   <string name="pref_backups_manage_note">Ver lista de copias de datos</string>
+  <!-- v1.3 -->
   <string name="lbl_tracts">Tratados:</string>
   <string-array name="plural_tracts">
     <item>tratado</item>
@@ -289,7 +292,9 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes, Testigos 
   <string name="lbl_backups_empty">La lista de copias de seguridad está vacía</string>
   <string name="pref_dropbox_off">Desconectar Dropbox</string>
   <string name="pref_dropbox_off_note">Cerrar sesión de Dropbox y parar sincronización</string>
+  <!-- v1.3.1 -->
   <string name="msg_tip_hold_plus">Consejo: deja pulsado &amp; el \"+\" para añadir el tiempo rápidamente</string>
+  <!-- 1.4.0 -->
   <string name="lbl_placements">Publicaciones:</string>
   <string name="lbl_videos">Presentaciones de Vídeos:</string>
   <string-array name="plural_placements">
@@ -323,9 +328,15 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes, Testigos 
     <item>Cada 12 meses</item>
   </string-array>
   <string name="lbl_payments_processed_by">Los pagos son procesados por Google Play.</string>
+  <!-- 1.4.1 -->
   <string name="msg_revision_notes_1_4_1" formatted="true"><b>Versión 1.4.1</b>\n\nAñadido enlace a <a href="https://plus.google.com/communities/112371364498094492171">Comunidad Google+</a> en el menú principal.\n\nAñadido enlace al <a href="https://crowdin.com/project/jwdroid/invite">servicio de traducción en línea</a> al diálogo de contribución. ¡Bienvenidos traductores!\n\n<b>Versión 1.4.0</b>\n\nInforme actualizado al nuevo formato de 2016.\n\nNuevo tema con un aspecto más moderno.\n\nAñadido el total de horas anuales a la sección de Informes.\n\nEliminadas las plantillas textuales de las publicaciones al no ser ya necesarias.\n\nAñadida la opción de realizar donaciones para apoyar el desarrollo de esta aplicación.\n\nNuevo modo de calcular las publicaciones en el Cronómetro.\n\nCorregido el error que en ocasiones fallaba al restaurar copias de seguridad.\n\nCorregido el error que hacía desaparecer los datos de informes antiguos.</string>
   <string name="chk_chrono_calc_auto"> Toma de visitas</string>
   <string name="menu_community">Comunidad Google+</string>
+  <!-- 1.4.2 -->
   <string name="menu_about_app">Sobre la aplicación</string>
   <string name="lbl_calc_studies">Los estudios bíblicos se toman de las visitas con el correspodiente tipo de visita.</string>
+  <!-- 1.5.0 -->
+  <string name="action_save_data">Save all data</string>
+  <string name="action_restore_data">Restore all data</string>
+  <string name="msg_revision_notes_1_5" formatted="true"><b>Version 1.5.0</b>\n\nNow you can save and restore data using any file sharing application installed on the device.\n\nReports can be sent using any text messenger installed on the device.</string>
 </resources>

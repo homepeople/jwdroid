@@ -64,7 +64,7 @@ Tagi: Świadkowie Jehowy, Biblia, służba, głoszenie    </string>
   <string name="msg_arrange_after_add">Mieszkania zostały dodane. Dla twojej wygody (na przykład, jeżeli dodajesz blok mieszkalny) możesz zaplanować siatkę z rzędami i kolumnami w menu \&quot;Planowanie\&quot;. Czy chcesz zrobić to teraz?</string>
   <string name="msg_error">Błąd!</string>
   <string name="msg_object_deleted">Mieszkanie usunięto</string>
-  <string name="err_invalid_input">Nieprawidłowe dane wejściowe!</string>
+  <string name="err_invalid_input">Nieprawidłowe dane!</string>
   <string name="err_no_cols_value">Wprowadź liczbę kolumn!</string>
   <string name="action_object_change_name">Nagłówek</string>
   <string name="action_object_change_color">Kolor</string>
@@ -90,7 +90,7 @@ Tagi: Świadkowie Jehowy, Biblia, służba, głoszenie    </string>
   <string name="title_reports">Sprawozdania</string>
   <string name="lbl_people_list_empty">Lista osób jest pusta. \n\nDodaj nową osobę przez przycisk powyżej albo w &amp;quot;Tereny&amp;quot; sekcja.</string>
   <string name="lbl_person_add_from_people">Zauważ, że ta osoba będzie dodana bez powiązania z jakimkolwiek terenem.</string>
-  <string name="title_report">Sprawozdanie dla %s</string>
+  <string name="title_report">Sprawozdanie za %s</string>
   <string name="action_calc_type_sessions">Przez listę służby</string>
   <string name="action_calc_type_visits">Przez wizyty</string>
   <string name="lbl_report_no_data">Brak danych</string>
@@ -219,10 +219,11 @@ Tagi: Świadkowie Jehowy, Biblia, służba, głoszenie    </string>
   </string-array>
   <string-array name="plural_visits">
     <item>wizyta</item>
-    <item>wizyta</item>
+    <item>odwiedziny</item>
     <item>wizyty</item>
   </string-array>
   <string name="title_tip">Wskazówka</string>
+  <!-- v1.2 -->
   <string name="msg_person">Mieszkaniec</string>
   <string name="lbl_person_desc">Opis mieszkańca</string>
   <string name="lbl_male">Mężczyzna</string>
@@ -261,9 +262,11 @@ Tagi: Świadkowie Jehowy, Biblia, służba, głoszenie    </string>
   <string name="msg_restore_backup_failed">Błąd odtwarzania kopii zapasowej</string>
   <string name="msg_restore_backup_success">Kopia zapasowa została z powodzeniem przywrócona</string>
   <string name="msg_revision_notes">Co nowego</string>
+  <!-- v1.2.1 -->
   <string name="msg_backup_created">Utworzono kopię zapasową</string>
   <string name="pref_backups_manage">Zarządzaj kopiami zapasowymi</string>
   <string name="pref_backups_manage_note">Pokaż listę stworzonych kopii zapasowych</string>
+  <!-- v1.3 -->
   <string name="lbl_tracts">Traktaty:</string>
   <string-array name="plural_tracts">
     <item>traktat</item>
@@ -285,7 +288,9 @@ Tagi: Świadkowie Jehowy, Biblia, służba, głoszenie    </string>
   <string name="lbl_backups_empty">Lista kopii zapasowych jest pusta</string>
   <string name="pref_dropbox_off">Odłącz od Dropbox\'a</string>
   <string name="pref_dropbox_off_note">Wyloguj się z konta Dropbox i zatrzymaj synchronizację</string>
+  <!-- v1.3.1 -->
   <string name="msg_tip_hold_plus">Podpowiedź: naciśnij i przytrzymaj przycisk \"+\" by dodać większą ilość czasu</string>
+  <!-- 1.4.0 -->
   <string name="lbl_placements">Publikacje:</string>
   <string name="lbl_videos">Wyświetlone filmy:</string>
   <string-array name="plural_placements">
@@ -319,9 +324,15 @@ Tagi: Świadkowie Jehowy, Biblia, służba, głoszenie    </string>
     <item>Co 12 miesięcy</item>
   </string-array>
   <string name="lbl_payments_processed_by">Płatności są obsługiwane przez Google Play.</string>
+  <!-- 1.4.1 -->
   <string name="msg_revision_notes_1_4_1" formatted="true"><b>Wersja 1.4.1</b>\n\nDodano odnośnik do <a href="https://plus.google.com/communities/112371364498094492171">Społeczności Google+</a> do menu głównego.\n\nDodano odnośnik do <a href="https://crowdin.com/project/jwdroid/invite">serwisu tłumaczeń online</a> to okienka wsparcia. Zapraszamy tłumaczy!\n\n<b>Wersja 1.4.0</b>\n\nZaktualizowano sprawozdania do nowego formatu w roku 2016.\n\nNowy nowoczesny wygląd.\n\nDodano zliczanie godzin w roku słuzbowym w widoku Sprawozdań.\n\nUsunięto szablony czasopism ponieważ nie są już potrzebne.\n\nDodano opcję dotacji wewnątrz aplikacji w celu wsparcia rozwoju.\n\nNowy sposób zliczania pozostawionych czasopism w Pomiarze Czasu.\n\nNaprawiono błąd kiedy przywracanie z kopii zapasowej czasem nie działa.\n\nNaprawiono błąd ze znikającymi starszymi sprawozdaniami.</string>
   <string name="chk_chrono_calc_auto"> Weź z odwiedzin</string>
   <string name="menu_community">Społeczność Google+</string>
+  <!-- 1.4.2 -->
   <string name="menu_about_app">O aplikacji</string>
-  <string name="lbl_calc_studies">Bible studies are taken from visits with the corresponding visit type.</string>
+  <string name="lbl_calc_studies">Studia biblijne są liczone z odwiedzin odpowiedniego typu.</string>
+  <!-- 1.5.0 -->
+  <string name="action_save_data">Save all data</string>
+  <string name="action_restore_data">Restore all data</string>
+  <string name="msg_revision_notes_1_5" formatted="true"><b>Version 1.5.0</b>\n\nNow you can save and restore data using any file sharing application installed on the device.\n\nReports can be sent using any text messenger installed on the device.</string>
 </resources>

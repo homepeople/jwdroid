@@ -336,4 +336,8 @@ Tags: TJ, Testemunhas de Jeová, pregação, ministério de campo, organizador, 
   <!-- 1.4.2 -->
   <string name="menu_about_app">Sobre a App</string>
   <string name="lbl_calc_studies">Os Estudos Bíblicos são contabilizados no menu PESSOA, de acordo com o tipo da visita feita.</string>
+  <!-- 1.5.0 -->
+  <string name="action_save_data">Save all data</string>
+  <string name="action_restore_data">Restore all data</string>
+  <string name="msg_revision_notes_1_5" formatted="true"><b>Version 1.5.0</b>\n\nNow you can save and restore data using any file sharing application installed on the device.\n\nReports can be sent using any text messenger installed on the device.</string>
 </resources>

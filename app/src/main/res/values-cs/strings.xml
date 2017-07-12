@@ -33,7 +33,7 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <string name="msg_territory_added">Obvod přidán</string>
   <string name="msg_territory_deleted">Obvod odstraněn</string>
   <string name="territory_list_empty">Sezam obvodů je prázdný. Můžete přidat obvod pomocí tlačítka nahoře.</string>
-  <string name="dlg_territory_delete_msg">Odstranění obvodu je trvalé a nelze vrátit zpět. Jste ji jistí že jej chcete odstranit?</string>
+  <string name="dlg_territory_delete_msg">Odstranění obvodu je trvalé a akci nelze vrátit zpět. Opravdu jej chceš odstranit?</string>
   <string name="dlg_territory_delete_title">Odstranit obvod</string>
   <string name="dlg_territory_add_label">Název obvodu:</string>
   <string name="dlg_territory_add_note">Například: název ulice, číslo obvodu</string>
@@ -230,6 +230,7 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
     <item>visits</item>
   </string-array>
   <string name="title_tip">Tip</string>
+  <!-- v1.2 -->
   <string name="msg_person">Zájemce</string>
   <string name="lbl_person_desc">Popis zájemce</string>
   <string name="lbl_male">Muž</string>
@@ -268,9 +269,11 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <string name="msg_restore_backup_failed">Chyba obnovení zálohy</string>
   <string name="msg_restore_backup_success">Záloha byla úspěšně obnovena</string>
   <string name="msg_revision_notes">What\'s new</string>
+  <!-- v1.2.1 -->
   <string name="msg_backup_created">Záloha vytvořena</string>
   <string name="pref_backups_manage">Správa záloh</string>
   <string name="pref_backups_manage_note">Zobrazení seznamu vytvořených záloh</string>
+  <!-- v1.3 -->
   <string name="lbl_tracts">Tracts:</string>
   <string-array name="plural_tracts">
     <item>tract</item>
@@ -292,7 +295,9 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <string name="lbl_backups_empty">Záloha není vytvořena</string>
   <string name="pref_dropbox_off">Odpojení od Dropbox</string>
   <string name="pref_dropbox_off_note">Log out from Dropbox account and stop syncing</string>
+  <!-- v1.3.1 -->
   <string name="msg_tip_hold_plus">Tip: press &amp; hold the \"+\" button to add a big amount of time</string>
+  <!-- 1.4.0 -->
   <string name="lbl_placements">Všechny publikace:</string>
   <string name="lbl_videos">Přehraná videa:</string>
   <string-array name="plural_placements">
@@ -326,9 +331,15 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
     <item>Every 12 months</item>
   </string-array>
   <string name="lbl_payments_processed_by">Payments are processed by Google Play.</string>
+  <!-- 1.4.1 -->
   <string name="msg_revision_notes_1_4_1" formatted="true"><b>Version 1.4.1</b>\n\nAdded a link to <a href="https://plus.google.com/communities/112371364498094492171">Google+ Community</a> to the main menu.\n\nAdded a link to the <a href="https://crowdin.com/project/jwdroid/invite">online translation service</a> to the contribution dialog. Translators are welcome!\n\n<b>Version 1.4.0</b>\n\nUpdated reports to the new 2016 format.\n\nNew modern visual theme.\n\nAdded service year total hour counters to the Reports section.\n\nRemoved placements text templates as they are unneccessary now.\n\nAdded an option to make an in-app donation payment to support the development.\n\nNew placements calculating mode in the Chronometer.\n\nFixed a bug when restoring from the backup failed sometimes.\n\nFixed a bug with disappearing of old report data.</string>
   <string name="chk_chrono_calc_auto"> Použít z návštěv</string>
   <string name="menu_community">Google+ Community</string>
-  <string name="menu_about_app">About</string>
+  <!-- 1.4.2 -->
+  <string name="menu_about_app">O programu</string>
   <string name="lbl_calc_studies">Bible studies are taken from visits with the corresponding visit type.</string>
+  <!-- 1.5.0 -->
+  <string name="action_save_data">Save all data</string>
+  <string name="action_restore_data">Restore all data</string>
+  <string name="msg_revision_notes_1_5" formatted="true"><b>Version 1.5.0</b>\n\nNow you can save and restore data using any file sharing application installed on the device.\n\nReports can be sent using any text messenger installed on the device.</string>
 </resources>

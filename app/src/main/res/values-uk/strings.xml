@@ -228,6 +228,7 @@ Google+: https://plus.google.com/communities/112371364498094492171
     <item>відвідин</item>
   </string-array>
   <string name="title_tip">Підказка</string>
+  <!-- v1.2 -->
   <string name="msg_person">Мешканець</string>
   <string name="lbl_person_desc">Опис мешканця</string>
   <string name="lbl_male">Чоловік</string>
@@ -266,9 +267,11 @@ Google+: https://plus.google.com/communities/112371364498094492171
   <string name="msg_restore_backup_failed">Помилка при відновленні резервної копії</string>
   <string name="msg_restore_backup_success">Резервна копія успішно відновлена</string>
   <string name="msg_revision_notes">Що нового</string>
+  <!-- v1.2.1 -->
   <string name="msg_backup_created">Резервна копія створена</string>
   <string name="pref_backups_manage">Управління резервними копіями</string>
   <string name="pref_backups_manage_note">Перегляд списку збережених резервних копій</string>
+  <!-- v1.3 -->
   <string name="lbl_tracts">Буклети:</string>
   <string-array name="plural_tracts">
     <item>буклет</item>
@@ -290,7 +293,9 @@ Google+: https://plus.google.com/communities/112371364498094492171
   <string name="lbl_backups_empty">Список резервних копій порожній</string>
   <string name="pref_dropbox_off">Відключити Dropbox</string>
   <string name="pref_dropbox_off_note">Вийти з аккаунта Dropbox і припинити синхронізацію</string>
+  <!-- v1.3.1 -->
   <string name="msg_tip_hold_plus">Підказка: натисніть і тримайте кнопку \"+\", щоб додати більше часу</string>
+  <!-- 1.4.0 -->
   <string name="lbl_placements">Публикації:</string>
   <string name="lbl_videos">Покази відео:</string>
   <string-array name="plural_placements">
@@ -324,9 +329,15 @@ Google+: https://plus.google.com/communities/112371364498094492171
     <item>Раз на рік</item>
   </string-array>
   <string name="lbl_payments_processed_by">Платежі обробляються Google Play.</string>
+  <!-- 1.4.1 -->
   <string name="msg_revision_notes_1_4_1" formatted="true"><b>Версия 1.4.1</b>\n\nДобавлена ссылка на <a href="https://plus.google.com/communities/112371364498094492171">сообщество Google+</a> в главное меню.\n\nДобавлена ссылка на <a href="https://crowdin.com/project/jwdroid/invite">онлайн-сервис переводов</a> в меню "Поддержать проект".\n\n<b>Версия 1.4.0</b>\n\nНовый формат отчетов в 2016 году.\n\nОбновлена визуальная тема приложения.\n\nДобавлены счетчики суммы часов за служебный год.\n\nУбраны шаблоны литературы в тексте посещения, т.к. они теперь не нужны.\n\nДобавлена возможность сделать пожертвование через платеж внутри приложения.\n\nНовый режим подсчета литературы в Хронометре.\n\nИсправлен баг, из-за которого иногда не получалось восстановить резервную копию.\n\nИсправлен баг с пропаданием отчетов за старые месяцы.</string>
   <string name="chk_chrono_calc_auto">Підрахувати з відвідин</string>
   <string name="menu_community">Спільнота Google+</string>
+  <!-- 1.4.2 -->
   <string name="menu_about_app">Про додаток</string>
   <string name="lbl_calc_studies">Вивчення Біблії взяті з відвідувань з відповідним типом відвідування.</string>
+  <!-- 1.5.0 -->
+  <string name="action_save_data">Save all data</string>
+  <string name="action_restore_data">Restore all data</string>
+  <string name="msg_revision_notes_1_5" formatted="true"><b>Version 1.5.0</b>\n\nNow you can save and restore data using any file sharing application installed on the device.\n\nReports can be sent using any text messenger installed on the device.</string>
 </resources>

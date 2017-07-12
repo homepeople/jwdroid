@@ -230,6 +230,7 @@ Hvad er nyt i denne udgivelse:
     <item>besøg</item>
   </string-array>
   <string name="title_tip">Tip</string>
+  <!-- v1.2 -->
   <string name="msg_person">Lejer</string>
   <string name="lbl_person_desc">Lejer deskription</string>
   <string name="lbl_male">Manden</string>
@@ -268,9 +269,11 @@ Hvad er nyt i denne udgivelse:
   <string name="msg_restore_backup_failed">Fejl genoprette sikkerhedskopi</string>
   <string name="msg_restore_backup_success">Backup er blevet succesfuldt gendannet</string>
   <string name="msg_revision_notes">Hvad er nyt</string>
+  <!-- v1.2.1 -->
   <string name="msg_backup_created">Backup skabt</string>
   <string name="pref_backups_manage">Administrer sikkerhedskopier</string>
   <string name="pref_backups_manage_note">Se liste over oprettede sikkerhedskopier</string>
+  <!-- v1.3 -->
   <string name="lbl_tracts">Traktater:</string>
   <string-array name="plural_tracts">
     <item>traktaten</item>
@@ -292,7 +295,9 @@ Hvad er nyt i denne udgivelse:
   <string name="lbl_backups_empty">Sikkerhedskopier listen er tom</string>
   <string name="pref_dropbox_off">Afbryd fra Dropbox</string>
   <string name="pref_dropbox_off_note">Log af fra Dropbox-konto og stoppe synkronisering</string>
+  <!-- v1.3.1 -->
   <string name="msg_tip_hold_plus">Tip: trykke &amp; knappen nede \"+\" for at tilføje en stor mængde tid</string>
+  <!-- 1.4.0 -->
   <string name="lbl_placements">Placeringer:</string>
   <string name="lbl_videos">Video fremvisninger:</string>
   <string-array name="plural_placements">
@@ -327,11 +332,17 @@ Den app blev skrevet i 2010, og nu arbejder vi på en opdateret, moderne version
     <item>Hver 12. måned</item>
   </string-array>
   <string name="lbl_payments_processed_by">Betalinger behandles af Google Play.</string>
+  <!-- 1.4.1 -->
   <string name="msg_revision_notes_1_4_1" formatted="true"><b>Version 1.4.1</b>\n\nTilføjet et link til <a href="https://plus.google.com/communities/112371364498094492171">Google+ Community</a> 
 til hovedmenuen.\n\nTilføjet et link til <a href="https://crowdin.com/project/jwdroid/invite">online oversættelsesservice</a> til dialogboksen bidraget. Oversættere er velkomne!\n\n<b>Version 1.4.0</b>\n\n
 Opdaterede rapporter til den nye 2016-format.\n\nNye moderne visuelle tema.\n\nTilføjet service year samlede timetællere til afsnittet Rapporter.\n\nRemoved placements text templates as they are unnecessary now.\n\nAdded an option to make an in-app donation payment to support the development.\n\nNye placeringer, der beregner mode i Kronometer.\n\nRettet en fejl, når gendannelse fra sikkerhedskopien mislykkedes tider.\n\nRettet en fejl med at forsvinde af gamle rapportdata.</string>
   <string name="chk_chrono_calc_auto">Tilføj fra besøg</string>
   <string name="menu_community">Google+ Community</string>
+  <!-- 1.4.2 -->
   <string name="menu_about_app">Om</string>
   <string name="lbl_calc_studies">Bibelstudier er taget fra besøg med den tilsvarende besøg type.</string>
+  <!-- 1.5.0 -->
+  <string name="action_save_data">Save all data</string>
+  <string name="action_restore_data">Restore all data</string>
+  <string name="msg_revision_notes_1_5" formatted="true"><b>Version 1.5.0</b>\n\nNow you can save and restore data using any file sharing application installed on the device.\n\nReports can be sent using any text messenger installed on the device.</string>
 </resources>

@@ -229,6 +229,7 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
     <item>посещений</item>
   </string-array>
   <string name="title_tip">Подсказка</string>
+  <!-- v1.2 -->
   <string name="msg_person">Жилец</string>
   <string name="lbl_person_desc">Описание жильца</string>
   <string name="lbl_male">Мужчина</string>
@@ -267,9 +268,11 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <string name="msg_restore_backup_failed">Ошибка при восстановлении данных</string>
   <string name="msg_restore_backup_success">Данные успешно восстановлены</string>
   <string name="msg_revision_notes">Что нового</string>
+  <!-- v1.2.1 -->
   <string name="msg_backup_created">Данные сохранены</string>
   <string name="pref_backups_manage">Управление резервными копиями</string>
   <string name="pref_backups_manage_note">Просмотр списка сохраненных резервных копий</string>
+  <!-- v1.3 -->
   <string name="lbl_tracts">Буклеты:</string>
   <string-array name="plural_tracts">
     <item>буклет</item>
@@ -291,7 +294,9 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <string name="lbl_backups_empty">Список пуст</string>
   <string name="pref_dropbox_off">Отключить Dropbox</string>
   <string name="pref_dropbox_off_note">Выйти из аккаунта Dropbox и прекратить синхронизацию</string>
+  <!-- v1.3.1 -->
   <string name="msg_tip_hold_plus">Подсказка: нажмите и держите кнопку \"+\", чтобы добавить больше времени</string>
+  <!-- 1.4.0 -->
   <string name="lbl_placements">Публикации:</string>
   <string name="lbl_videos">Показы видео:</string>
   <string-array name="plural_placements">
@@ -325,9 +330,15 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
     <item>Раз в год</item>
   </string-array>
   <string name="lbl_payments_processed_by">Платежи обрабатываются Google Play.</string>
+  <!-- 1.4.1 -->
   <string name="msg_revision_notes_1_4_1" formatted="true"><b>Версия 1.4.1</b>\n\nДобавлена ссылка на <a href="https://plus.google.com/communities/112371364498094492171">сообщество Google+</a> в главное меню.\n\nДобавлена ссылка на <a href="https://crowdin.com/project/jwdroid/invite">онлайн-сервис переводов</a> в меню "Поддержать проект".\n\n<b>Версия 1.4.0</b>\n\nНовый формат отчетов в 2016 году.\n\nОбновлена визуальная тема приложения.\n\nДобавлены счетчики суммы часов за служебный год.\n\nУбраны шаблоны литературы в тексте посещения, т.к. они теперь не нужны.\n\nДобавлена возможность сделать пожертвование через платеж внутри приложения.\n\nНовый режим подсчета литературы в Хронометре.\n\nИсправлен баг, из-за которого иногда не получалось восстановить резервную копию.\n\nИсправлен баг с пропаданием отчетов за старые месяцы.</string>
   <string name="chk_chrono_calc_auto">Добавить из посещений</string>
   <string name="menu_community">Сообщество Google+</string>
+  <!-- 1.4.2 -->
   <string name="menu_about_app">О программе</string>
   <string name="lbl_calc_studies">Изучения Библии подсчитываются из посещений с соответствующим типом.</string>
+  <!-- 1.5.0 -->
+  <string name="action_save_data">Сохранить все данные</string>
+  <string name="action_restore_data">Восстановить все данные</string>
+  <string name="msg_revision_notes_1_5" formatted="true"><b>Версия 1.5.0</b>\n\nСохранять и восстанавливать резервные копии данных теперь можно с помощью любой подходящей программы, установленной на устройстве.\n\nОтчеты можно слать с помощью любого мессенджера, установленного на устройстве.</string>
 </resources>

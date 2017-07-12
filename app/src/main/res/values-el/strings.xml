@@ -29,7 +29,7 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <string name="lbl_territory_name">Territory name:</string>
   <string name="title_territory_add">Add territory</string>
   <string name="lbl_territory_desc">Short description:</string>
-  <string name="err_empty_name">Enter the name!</string>
+  <string name="err_empty_name">Εισαγωγή του ονόματος!</string>
   <string name="msg_territory_added">Territory added</string>
   <string name="msg_territory_deleted">Territory removed</string>
   <string name="territory_list_empty">Territory list is empty. You may add a new territory by the button above.</string>
@@ -39,37 +39,37 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <string name="dlg_territory_add_note">For example, street name</string>
   <string name="btn_add">Add</string>
   <string name="btn_ok">OK</string>
-  <string name="btn_yes">Yes</string>
-  <string name="btn_no">No</string>
+  <string name="btn_yes">Ναι</string>
+  <string name="btn_no">Όχι</string>
   <string name="btn_cancel">Cancel</string>
-  <string name="lbl_magazines">Magazines:</string>
-  <string name="lbl_brochures">Brochures:</string>
-  <string name="lbl_books">Books:</string>
+  <string name="lbl_magazines">Περιοδικά:</string>
+  <string name="lbl_brochures">Φυλλάδιο:</string>
+  <string name="lbl_books">Βιβλία:</string>
   <string name="lbl_returns">Return visits:</string>
-  <string name="lbl_hours">Hours:</string>
+  <string name="lbl_hours">Ώρες:</string>
   <string name="lbl_studies">B. studies:</string>
   <string name="title_chrono">Chronometer</string>
   <string name="lbl_chrono_started_time">Started at %s</string>
   <string name="lbl_chrono_stopped">Chronometer is stopped</string>
-  <string name="btn_chrono_pause">Pause</string>
-  <string name="btn_chrono_resume">Resume</string>
-  <string name="btn_chrono_finish">Finish</string>
-  <string name="btn_chrono_start">Start</string>
-  <string name="msg_chrono_finish">End service?</string>
-  <string name="msg_chrono_start">Start service?</string>
-  <string name="msg_chrono_service_started">Service chronometer started</string>
-  <string name="lbl_chrono_current_time">Service time:</string>
+  <string name="btn_chrono_pause">Παύση</string>
+  <string name="btn_chrono_resume">Συνέχιση</string>
+  <string name="btn_chrono_finish">Τέλος</string>
+  <string name="btn_chrono_start">Αρχή</string>
+  <string name="msg_chrono_finish">Τελειώστε υπηρεσίας;</string>
+  <string name="msg_chrono_start">Έναρξη υπηρεσίας;</string>
+  <string name="msg_chrono_service_started">Υπηρεσία ξεκίνησε</string>
+  <string name="lbl_chrono_current_time">Υπηρεσία χρόνο:</string>
   <string name="lbl_chrono_service_note">Select to go to chronometer</string>
-  <string name="action_add_single_object">Add one</string>
-  <string name="action_add_many_objects">Add some</string>
+  <string name="action_add_single_object">Προσθέστε ένα</string>
+  <string name="action_add_many_objects">Προσθέστε ένα</string>
   <string name="dlg_add_single_object_note">For example, apartment or house number</string>
   <string name="msg_object_name">Enter heading:</string>
   <string name="lbl_set_row">Row:</string>
   <string name="lbl_set_col">Column:</string>
   <string name="lbl_numbers_from">Numbers from:</string>
-  <string name="lbl_numbers_to">to:</string>
+  <string name="lbl_numbers_to">προς:</string>
   <string name="msg_arrange_after_add">Households added. For your convenience (for example, if you add a condominium entrance) you may arrange the grid by rows and columns in the \&quot;Arrange\&quot; menu. Would you like to do it now?</string>
-  <string name="msg_error">Error!</string>
+  <string name="msg_error">Λάθος!</string>
   <string name="msg_object_deleted">Household deleted</string>
   <string name="err_invalid_input">Invalid input!</string>
   <string name="err_no_cols_value">Enter number of columns!</string>
@@ -338,4 +338,8 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <!-- 1.4.2 -->
   <string name="menu_about_app">About</string>
   <string name="lbl_calc_studies">Bible studies are taken from visits with the corresponding visit type.</string>
+  <!-- 1.5.0 -->
+  <string name="action_save_data">Save all data</string>
+  <string name="action_restore_data">Restore all data</string>
+  <string name="msg_revision_notes_1_5" formatted="true"><b>Version 1.5.0</b>\n\nNow you can save and restore data using any file sharing application installed on the device.\n\nReports can be sent using any text messenger installed on the device.</string>
 </resources>
