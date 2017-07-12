@@ -1,10 +1,12 @@
 package com.jwdroid.ui;
 
 import android.app.Dialog;
+import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.ParcelFileDescriptor;
@@ -217,22 +219,48 @@ public class MainMenu extends AppCompatActivity {
 
             case REQUEST_RESTORE:
                 if(resultCode == RESULT_OK) {
-                    Toast.makeText(getApplicationContext(), data.getData().toString(), Toast.LENGTH_LONG).show();
 
-                    Uri uri = data.getData();
+                    final ProgressDialog progressDialog = ProgressDialog.show(MainMenu.this, "",
+                            getResources().getString(R.string.lbl_please_wait), true);
 
-                    try {
-                        ParcelFileDescriptor pfd = getContentResolver().openFileDescriptor(uri, "r");
-                        FileDescriptor fd = pfd.getFileDescriptor();
-                        FileInputStream is = new FileInputStream(fd);
-                        new Importer(getApplicationContext(), is).run();
-                        is.close();
-                        Toast.makeText(getApplicationContext(), getResources().getString(R.string.msg_restore_backup_success), Toast.LENGTH_LONG).show();
-                    }
-                    catch(Exception e) {
-                        Toast.makeText(getApplicationContext(), R.string.msg_restore_backup_failed, Toast.LENGTH_LONG).show();
-                        Log.e(TAG, e.toString());
-                    }
+                    new AsyncTask<Uri, Void, Boolean>() {
+                        @Override
+                        protected Boolean doInBackground(Uri... params) {
+                            boolean result = true;
+                            try {
+
+                                ParcelFileDescriptor pfd = getContentResolver().openFileDescriptor(params[0], "r");
+                                FileDescriptor fd = pfd.getFileDescriptor();
+                                FileInputStream is = new FileInputStream(fd);
+                                new Importer(MainMenu.this, is).run();
+                                is.close();
+                                result = true;
+                            }
+                            catch(Exception e) {
+                                result = false;
+                                Log.e(TAG, e.toString());
+                            }
+
+                            return result;
+                        }
+
+                        @Override
+                        protected void onPostExecute(Boolean result) {
+
+                            progressDialog.cancel();
+
+                            if (result) {
+                                Toast.makeText(getApplicationContext(), getResources().getString(R.string.msg_restore_backup_success), Toast.LENGTH_LONG).show();
+                            } else {
+                                Toast.makeText(getApplicationContext(), getResources().getString(R.string.msg_restore_backup_failed), Toast.LENGTH_LONG).show();
+                            }
+
+                            super.onPostExecute(result);
+                        }
+
+                    }.execute(data.getData());
+
+
                 }
                 break;
         }
