@@ -337,7 +337,7 @@ Tags: JW, Jehovos liudytojai, skelbti, tarnyba, programėlė, užrašai
   <string name="menu_about_app">Apie</string>
   <string name="lbl_calc_studies">Biblijos studijos suskaičiuotos iš atitinkamos aplankymų grupės.</string>
   <!-- 1.5.0 -->
-  <string name="action_save_data">Save all data</string>
-  <string name="action_restore_data">Restore all data</string>
-  <string name="msg_revision_notes_1_5" formatted="true"><b>Version 1.5.0</b>\n\nNow you can save and restore data using any file sharing application installed on the device.\n\nReports can be sent using any text messenger installed on the device.</string>
+  <string name="action_save_data">Išsaugoti visus duomenis</string>
+  <string name="action_restore_data">Atkurti visus duomenis</string>
+  <string name="msg_revision_notes_1_5" formatted="true"><b>Versija 1.5.0</b>\n\nDabar duomenis išsaugoti ir atkurti galima naudojant bet kurią įrenginyje įdiegtą failų bendrinimo programą.\n\nAtaskaitas galima siųsti naudojant bet kurią įrenginyje įdiegtą žinučių siuntimo programą.</string>
 </resources>

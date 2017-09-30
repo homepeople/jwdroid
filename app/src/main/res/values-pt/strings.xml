@@ -93,7 +93,7 @@ Tags: TJ, Testemunhas de Jeová, pregação, ministério de campo, organizador, 
   <string name="title_territory_list">Territórios</string>
   <string name="title_people">Pessoas</string>
   <string name="title_reports">Relatórios</string>
-  <string name="lbl_people_list_empty">A lista de pessoas está vazia. \n\nPara adicionar uma nova pessoa clique no botão acima ou na secção &amp;quot;Territórios&amp;quot;.</string>
+  <string name="lbl_people_list_empty">A lista de pessoas está vazia. \n\nPara adicionar uma nova pessoa clique no botão acima ou na secção \&quot;Territórios\&quot;.</string>
   <string name="lbl_person_add_from_people">Note que esta pessoa será adicionada sem nenhum território atribuído.</string>
   <string name="title_report">Relatório de %s</string>
   <string name="action_calc_type_sessions">Por lista do serviço</string>
@@ -337,7 +337,7 @@ Tags: TJ, Testemunhas de Jeová, pregação, ministério de campo, organizador, 
   <string name="menu_about_app">Sobre a App</string>
   <string name="lbl_calc_studies">Os Estudos Bíblicos são contabilizados no menu PESSOA, de acordo com o tipo da visita feita.</string>
   <!-- 1.5.0 -->
-  <string name="action_save_data">Save all data</string>
-  <string name="action_restore_data">Restore all data</string>
-  <string name="msg_revision_notes_1_5" formatted="true"><b>Version 1.5.0</b>\n\nNow you can save and restore data using any file sharing application installed on the device.\n\nReports can be sent using any text messenger installed on the device.</string>
+  <string name="action_save_data">Salvar todos os dados</string>
+  <string name="action_restore_data">Restaurar todos os dados</string>
+  <string name="msg_revision_notes_1_5" formatted="true"><b>Versão 1.5.0</b>\n\nAgora pode guardar e restaurar todos os dados usando qualquer aplicação de partilha de ficheiros.\n\nOs relatórios podem agora ser enviados através de qualquer aplicação de troca de mensagens.</string>
 </resources>
