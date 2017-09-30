@@ -1098,16 +1098,18 @@ public class Territory extends AppCompatActivity implements LoaderCallbacks<Curs
                 HashMap<Integer, HashMap<Integer, DoorItem>> tableContent = new HashMap<Integer, HashMap<Integer, DoorItem>>();
 
                 int rowsFrom = 0, rowsTo = 0, colsFrom = 0, colsTo = 0;
-                for (Iterator<DoorItem> iter = items.get(iPanel).iterator(); iter.hasNext(); ) {
-                    DoorItem i = iter.next();
-                    if (!tableContent.containsKey(i.row))
-                        tableContent.put(i.row, new HashMap<Integer, DoorItem>());
-                    tableContent.get(i.row).put(i.col, i);
+                if(items.get(iPanel) != null) {
+                    for (Iterator<DoorItem> iter = items.get(iPanel).iterator(); iter.hasNext(); ) {
+                        DoorItem i = iter.next();
+                        if (!tableContent.containsKey(i.row))
+                            tableContent.put(i.row, new HashMap<Integer, DoorItem>());
+                        tableContent.get(i.row).put(i.col, i);
 
-                    if (rowsTo < i.row) rowsTo = i.row;
-                    if (rowsFrom > i.row) rowsFrom = i.row;
-                    if (colsTo < i.col) colsTo = i.col;
-                    if (colsFrom > i.col) colsFrom = i.col;
+                        if (rowsTo < i.row) rowsTo = i.row;
+                        if (rowsFrom > i.row) rowsFrom = i.row;
+                        if (colsTo < i.col) colsTo = i.col;
+                        if (colsFrom > i.col) colsFrom = i.col;
+                    }
                 }
 
                 for (int row = rowsFrom; row <= rowsTo; row++) {
