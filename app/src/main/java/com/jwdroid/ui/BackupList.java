@@ -9,7 +9,6 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.Environment;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -31,11 +30,11 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.dropbox.sync.android.DbxAccountManager;
-import com.dropbox.sync.android.DbxFile;
-import com.dropbox.sync.android.DbxFileInfo;
-import com.dropbox.sync.android.DbxFileSystem;
-import com.dropbox.sync.android.DbxPath;
+import com.dropbox.core.DbxDownloader;
+import com.dropbox.core.android.Auth;
+import com.dropbox.core.v2.DbxClientV2;
+import com.dropbox.core.v2.files.ListFolderResult;
+import com.dropbox.core.v2.files.Metadata;
 import com.jwdroid.BugSenseConfig;
 import com.jwdroid.DropboxConfig;
 import com.jwdroid.R;
@@ -47,11 +46,7 @@ import net.londatiga.android.ActionItem;
 import net.londatiga.android.QuickAction;
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.FilenameFilter;
-import java.io.InputStream;
-import java.io.OutputStream;
 import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -79,7 +74,7 @@ public class BackupList extends AppCompatActivity /*implements ConnectionCallbac
     private Long mDialogItemId;
 
     //private GoogleApiClient mGoogleApiClient;
-    private DbxAccountManager mDbxAcctMgr;
+    private DbxClientV2 mDbxClient = null;
     private boolean mDriveConnected = false, mDriveConnecting = false, mRequestDriveAccess = false;
     private List<BackupItem> mDriveContents = null;
 
@@ -149,14 +144,22 @@ public class BackupList extends AppCompatActivity /*implements ConnectionCallbac
 	        .addOnConnectionFailedListener(this)
 	        .build();*/
 
-        mDbxAcctMgr = DropboxConfig.getAccountManager(this);
-
-        if (mDbxAcctMgr.hasLinkedAccount())
-            loadDriveContents(false);
-
         updateContent();
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        final String dbxAccessToken = DropboxConfig.getToken(BackupList.this);
+        if (dbxAccessToken != null) {
+            mDriveContents = null;
+            mDbxClient = DropboxConfig.getDbxClient(dbxAccessToken);
+            updateContent();
+            loadDriveContents(false);
+        }
     }
 
     @Override
@@ -189,19 +192,18 @@ public class BackupList extends AppCompatActivity /*implements ConnectionCallbac
                     }
                 };
 
-                if (mDbxAcctMgr.hasLinkedAccount())
+                if (mDbxClient != null)
                     new DropboxBackuper(getApplicationContext(), callback).run();
                 else {
                     progressDialog.cancel();
-                    mDbxAcctMgr.startLink(BackupList.this, REQUEST_LINK_TO_DBX);
+                    Auth.startOAuth2Authentication(BackupList.this, DropboxConfig.appKey);
                 }
                 break;
 
             case R.id.menu_refresh:
                 mDriveContents = null;
                 updateContent();
-                if (mDbxAcctMgr.hasLinkedAccount())
-                    loadDriveContents(true);
+                loadDriveContents(true);
                 break;
 
         }
@@ -256,50 +258,19 @@ public class BackupList extends AppCompatActivity /*implements ConnectionCallbac
                             protected Boolean doInBackground(BackupItem... params) {
                                 boolean result = true;
 
-                                try {
-
-                                    File root = Environment.getExternalStorageDirectory();
-
+                               try {
                                     Time time = new Time();
                                     time.setToNow();
 
                                     BackupItem backupItem = params[0];
-                                    InputStream is;
-                                    DbxFile dbxFile = null;
-
-                                    if (backupItem.drive) {
-                                        DbxFileSystem dbxFs = DbxFileSystem.forAccount(mDbxAcctMgr.getLinkedAccount());
-                                        dbxFile = dbxFs.open(new DbxPath("/" + backupItem.getFilename()));
-                                        is = dbxFile.getReadStream();
-                                    } else {
-                                        String filename = root.getAbsolutePath() + "/jwdroid/" + backupItem.getFilename();
-                                        is = new FileInputStream(filename);
-                                    }
-
+                                    DbxDownloader downloader = mDbxClient.files().download("/" + backupItem.getFilename());
                                     try {
-                                        if (backupItem.zip) {
-                                            new Importer(BackupList.this, is).run();
-                                        } else {
-                                            new File("/data/data/com.jwdroid/databases/jwdroid").delete();
-
-                                            OutputStream databaseOutputStream = new FileOutputStream("/data/data/com.jwdroid/databases/jwdroid");
-
-                                            byte[] buffer = new byte[1];
-                                            int length;
-                                            while ((length = is.read(buffer)) > 0) {
-                                                databaseOutputStream.write(buffer);
-                                            }
-
-                                            databaseOutputStream.flush();
-                                            databaseOutputStream.close();
-                                        }
+                                        new Importer(BackupList.this, downloader.getInputStream()).run();
                                     } catch (Exception e) {
                                         Log.e(TAG, e.toString());
                                         result = false;
                                     } finally {
-                                        is.close();
-                                        if (dbxFile != null)
-                                            dbxFile.close();
+                                        downloader.close();
                                     }
 
                                 } catch (Exception e) {
@@ -337,15 +308,23 @@ public class BackupList extends AppCompatActivity /*implements ConnectionCallbac
                     public void onClick(DialogInterface dialog, int which) {
                         BackupItem item = (BackupItem) mListAdapter.getItemById(mDialogItemId);
 
-                        try {
-                            DbxFileSystem dbxFs = DbxFileSystem.forAccount(mDbxAcctMgr.getLinkedAccount());
-                            dbxFs.delete(new DbxPath("/" + item.getFilename()));
-                            loadDriveContents(false);
-                        } catch (Exception e) {
-                            Log.e(TAG, e.toString());
-                        }
+                        new AsyncTask<String,Void,Void>() {
+                            @Override
+                            protected Void doInBackground(String... params) {
+                                try {
+                                    mDbxClient.files().deleteV2("/" + params[0]);
+                                } catch (Exception e) {
+                                    Log.e(TAG, e.toString());
+                                }
+                                return null;
+                            }
 
-                        updateContent();
+                            @Override
+                            protected void onPostExecute(Void aVoid) {
+                                loadDriveContents(false);
+                                updateContent();
+                            }
+                        }.execute(item.getFilename());
                     }
                 });
                 break;
@@ -362,7 +341,7 @@ public class BackupList extends AppCompatActivity /*implements ConnectionCallbac
         items.add(new HeadingItem(HeadingItem.HEADING_GOOGLE));
         if (mDriveConnecting)
             items.add(new LoadingItem());
-        else if (!mDbxAcctMgr.hasLinkedAccount())
+        else if (mDbxClient == null)
             items.add(new DriveItem());
         else if (mDriveContents == null)
             items.add(new LoadingItem());
@@ -421,13 +400,11 @@ public class BackupList extends AppCompatActivity /*implements ConnectionCallbac
 
     private class BackupItem extends ListItem {
         Time time;
-        Long size;
         Boolean zip, drive;
 
-        public BackupItem(Time t, Long s, Boolean z, Boolean d) {
+        public BackupItem(Time t, Boolean z, Boolean d) {
             type = TYPE_ITEM;
             time = t;
-            size = s;
             zip = z;
             drive = d;
         }
@@ -527,8 +504,7 @@ public class BackupList extends AppCompatActivity /*implements ConnectionCallbac
                             //updateContent();
                             //mGoogleApiClient.connect();
 
-                            mDbxAcctMgr.startLink(BackupList.this, REQUEST_LINK_TO_DBX);
-
+                            Auth.startOAuth2Authentication(BackupList.this, DropboxConfig.appKey);
                         }
                     });
                 }
@@ -566,8 +542,6 @@ public class BackupList extends AppCompatActivity /*implements ConnectionCallbac
 
             Date date = new Date(backupItem.time.toMillis(true));
             holder.name.setText(Html.fromHtml(DateFormat.getDateInstance(DateFormat.LONG).format(date) + ", " + android.text.format.DateFormat.getTimeFormat(mContext).format(date)));
-
-            holder.size.setText(String.format("%d KB", backupItem.size / 1024));
 
             return convertView;
         }
@@ -655,29 +629,37 @@ public class BackupList extends AppCompatActivity /*implements ConnectionCallbac
 
     private void loadDriveContents(final boolean force) {
 
+        if(mDbxClient == null) {
+            return;
+        }
+
         new AsyncTask() {
             @Override
             protected Object doInBackground(Object... params) {
                 List<BackupItem> contents = new ArrayList<BackupItem>();
 
                 try {
-                    DbxFileSystem dbxFs = DbxFileSystem.forAccount(mDbxAcctMgr.getLinkedAccount());
 
-                    if (force)
-                        dbxFs.syncNowAndWait();
-
-                    List<DbxFileInfo> list = dbxFs.listFolder(new DbxPath("/"));
-
+                    ListFolderResult result = mDbxClient.files().listFolder("");
                     Pattern p = Pattern.compile("^backup_(\\d+)\\.zip$");
-                    for (DbxFileInfo item : list) {
-                        Log.d(TAG, item.path.getName());
-                        Matcher m = p.matcher(item.path.getName());
-                        if (m.matches()) {
-                            Time time = new Time();
-                            time.set(Long.parseLong(m.group(1)));
-                            Long size = item.size;
-                            contents.add(new BackupItem(time, size, true, true));
+                    while (true) {
+                        for (Metadata metadata : result.getEntries()) {
+                            String name = metadata.getName();
+                            Log.w(TAG, name);
+
+                            Matcher m = p.matcher(name);
+                            if (m.matches()) {
+                                Time time = new Time();
+                                time.set(Long.parseLong(m.group(1)));
+                                contents.add(new BackupItem(time, true, true));
+                            }
                         }
+
+                        if (!result.getHasMore()) {
+                            break;
+                        }
+
+                        result = mDbxClient.files().listFolderContinue(result.getCursor());
                     }
 
                     Collections.reverse(contents);
@@ -686,32 +668,7 @@ public class BackupList extends AppCompatActivity /*implements ConnectionCallbac
 
                 }
 				
-				
-				/*DriveFolder folder = getDriveFolder(mGoogleApiClient);
-				if(folder == null)
-					return null;
-				
-				MetadataBufferResult metadataBufferResult = folder.listChildren(mGoogleApiClient).await();
-				
-				if(!metadataBufferResult.getStatus().isSuccess())
-					return null;
-				
-				MetadataBuffer buffer = metadataBufferResult.getMetadataBuffer();
-				Pattern p = Pattern.compile("^backup_(\\d+)\\.zip$");
-				for(int i=0; i<buffer.getCount(); i++) {
-					Metadata item = buffer.get(i);
-					Log.d(TAG,item.getTitle());
-					Matcher m = p.matcher(item.getTitle());
-			    	if(m.matches()) {
-			    		Time time = new Time();
-			    		time.set(Long.parseLong(m.group(1)));
-			    		Long size = item.getFileSize();
-			    		contents.add(new BackupItem(time,size,true,true));	
-			    	}
-			    	Log.d(TAG,"next "+buffer.getNextPageToken());
-			    	
-				}
-				buffer.close();*/
+
 
 
                 return contents;
@@ -728,21 +685,21 @@ public class BackupList extends AppCompatActivity /*implements ConnectionCallbac
 
 
     }
-	
+
 	/*static public DriveFolder getDriveFolder(Context context, GoogleApiClient client) {
-		
-		
+
+
 		DriveFolder rootFolder = Drive.DriveApi.getRootFolder(client);
 		DriveFolder folder;
-		
+
 		Query query = new Query.Builder()
 			.addFilter(Filters.eq(SearchableField.TITLE, "jwdroid2"))
 			.build();
 		MetadataBufferResult metadataBufferResult = rootFolder.queryChildren(client, query).await();
-		
+
 		if(!metadataBufferResult.getStatus().isSuccess())
 			return null;
-		
+
 		MetadataBuffer buffer = metadataBufferResult.getMetadataBuffer();
 		if(buffer.getCount() == 0) {
 			MetadataChangeSet changeSet = new MetadataChangeSet.Builder()
@@ -751,16 +708,16 @@ public class BackupList extends AppCompatActivity /*implements ConnectionCallbac
 			DriveFolderResult driveFolderResult = rootFolder.createFolder(client, changeSet).await();
 			if(!driveFolderResult.getStatus().isSuccess())
 				return null;
-						
-			folder = driveFolderResult.getDriveFolder();						
+
+			folder = driveFolderResult.getDriveFolder();
 		}
 		else {
 			DriveId id = buffer.get(0).getDriveId();
-			folder = Drive.DriveApi.getFolder(client, id);					
+			folder = Drive.DriveApi.getFolder(client, id);
 		}
-		
+
 		buffer.close();
-		
+
 		return folder;
 	}*/
 

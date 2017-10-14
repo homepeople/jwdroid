@@ -108,11 +108,12 @@
 
         <service android:name=".ChronoService"></service>
 
-        <activity android:name="com.dropbox.sync.android.DbxAuthActivity" />
         <activity
-            android:name="com.dropbox.client2.android.AuthActivity"
+            android:name="com.dropbox.core.android.AuthActivity"
+            android:configChanges="orientation|keyboard"
             android:launchMode="singleTask">
             <intent-filter>
+
                 <data android:scheme="db-nll1o6m22dxqt40" />
 
                 <action android:name="android.intent.action.VIEW" />

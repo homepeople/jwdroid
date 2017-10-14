@@ -171,7 +171,7 @@ public class Chrono extends AppCompatActivity {
 
                     if (prefs.getBoolean("autobackup", true)) {
 
-                        if (DropboxConfig.getAccountManager(Chrono.this).hasLinkedAccount())
+                        if (DropboxConfig.getToken(Chrono.this) != null)
                             new DropboxBackuper(Chrono.this, null).run();
                     }
 

@@ -37,10 +37,12 @@ abstract public class Backuper {
 			protected void onPostExecute(Boolean result) {
 				if(result) {
 					Toast.makeText(mContext, mContext.getResources().getString(R.string.msg_backup_created), Toast.LENGTH_LONG).show();
-					if(mCallback != null) mCallback.run();
 				}
-				else
+				else {
 					Toast.makeText(mContext, mContext.getResources().getString(R.string.msg_backup_failed), Toast.LENGTH_LONG).show();
+				}
+				if(mCallback != null) mCallback.run();
+
 			};
 		}.execute();
 	}

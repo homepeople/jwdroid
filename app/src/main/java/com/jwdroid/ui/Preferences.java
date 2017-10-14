@@ -5,7 +5,6 @@ import android.preference.Preference;
 import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceActivity;
 
-import com.dropbox.sync.android.DbxAccountManager;
 import com.jwdroid.BugSenseConfig;
 import com.jwdroid.DropboxConfig;
 import com.jwdroid.R;
@@ -22,25 +21,21 @@ public class Preferences extends PreferenceActivity {
 
         addPreferencesFromResource(R.xml.preferences);
 
-        final DbxAccountManager dbxMgr = DropboxConfig.getAccountManager(Preferences.this);
+        final Preference dropboxPref = (Preference) findPreference("dropbox_off");
 
-        Preference dropboxPref = (Preference) findPreference("dropbox_off");
-
-        dropboxPref.setEnabled(dbxMgr.hasLinkedAccount());
-        ((Preference) findPreference("autobackup")).setEnabled(dbxMgr.hasLinkedAccount());
-        ((Preference) findPreference("num_backups")).setEnabled(dbxMgr.hasLinkedAccount());
+        Boolean dropboxEnabled = DropboxConfig.getToken(this) != null;
+        dropboxPref.setEnabled(dropboxEnabled);
+        ((Preference) findPreference("autobackup")).setEnabled(dropboxEnabled);
+        ((Preference) findPreference("num_backups")).setEnabled(dropboxEnabled);
 
         dropboxPref.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 
             @Override
             public boolean onPreferenceClick(Preference preference) {
-                if (dbxMgr.hasLinkedAccount()) {
-                    dbxMgr.unlink();
-                    preference.setEnabled(false);
-                    ((Preference) findPreference("autobackup")).setEnabled(false);
-                    ((Preference) findPreference("num_backups")).setEnabled(false);
-                }
-
+                DropboxConfig.clearToken(Preferences.this);
+                preference.setEnabled(false);
+                ((Preference) findPreference("autobackup")).setEnabled(false);
+                ((Preference) findPreference("num_backups")).setEnabled(false);
                 return false;
             }
         });
