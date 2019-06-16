@@ -311,8 +311,8 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
     <item>videot</item>
   </string-array>
   <string name="lbl_service_year" formatted="false">%s/%s teenistusaasta</string>
-  <string name="msg_contribute">You seem to have used JW Droid for some time. We are glad that you find it useful!\n\nThe app was written in 2010, and now we work on an updated, modern version with new features. You could speed up the development by contributing to the project. Thank you!\n\n— JW Droid Team</string>
-  <string name="lbl_contribute">We are glad that you find JW Droid useful! The app was written in 2010, and now we work on an updated, modern version with new features. You could speed up the development by contributing to the project. Thank you!</string>
+  <string name="msg_contribute">You seem to have used Ministry Pad for some time. We are glad that you find it useful!\n\nThe app was written in 2010, and now we work on an updated, modern version with new features. You could speed up the development by contributing to the project. Thank you!\n\n— Ministry Pad Team</string>
+  <string name="lbl_contribute">We are glad that you find Ministry Pad useful! The app was written in 2010, and now we work on an updated, modern version with new features. You could speed up the development by contributing to the project. Thank you!</string>
   <string name="btn_donate">Donate to support development</string>
   <string name="btn_review">Review on Google Play</string>
   <string name="btn_translate">Help with translation</string>

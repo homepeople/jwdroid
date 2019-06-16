@@ -309,7 +309,7 @@ Tags: JZ, Jehovas Zeugen, predigen, Predigtdienst, Planer, Notizen
     <item>Videovorführungen</item>
   </string-array>
   <string name="lbl_service_year" formatted="false">%s/%s Dienstjahr</string>
-  <string name="msg_contribute">Wie es scheint, benutzt du JW Droid bereits eine Zeit lang. Wir freuen uns, dass sich diese App für dich als nützlich erwiesen hat!\n\nDiese App wurde im Jahr 2010 geschrieben, und jetzt arbeiten wir an einer moderneren Verion mit neuen Funktionen. Du kannst die Entwicklung beschleunigen, in dem du dieses Projekt unterstützt. Danke!\n\n— JW Droid Team</string>
+  <string name="msg_contribute">Wie es scheint, benutzt du Ministry Pad bereits eine Zeit lang. Wir freuen uns, dass sich diese App für dich als nützlich erwiesen hat!\n\nDiese App wurde im Jahr 2010 geschrieben, und jetzt arbeiten wir an einer moderneren Verion mit neuen Funktionen. Du kannst die Entwicklung beschleunigen, in dem du dieses Projekt unterstützt. Danke!\n\n— Ministry Pad Team</string>
   <string name="lbl_contribute">Wir freuen uns, dass sich diese App für dich als nützlich erwiesen hat!\n\nDiese App wurde im Jahr 2010 geschrieben, und jetzt arbeiten wir an einer moderneren Verion mit neuen Funktionen. Du kannst die Entwicklung beschleunigen, in dem du dieses Projekt unterstützt. Danke!</string>
   <string name="btn_donate">Spende, um Entwicklung zu unterstützen</string>
   <string name="btn_review">Auf Google Play bewerten</string>

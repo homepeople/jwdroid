@@ -27,7 +27,7 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
 **add the same translated tags here**
     </string>
 
-    <string name="app_name" translatable="false">JW Droid</string>
+    <string name="app_name" translatable="false">Ministry Pad</string>
 
     <string name="lbl_territory_name">Territory name:</string>
     <string name="title_territory_add">Add territory</string>
@@ -356,8 +356,8 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
         <item>video showings</item>
     </string-array>
     <string name="lbl_service_year" formatted="false">%s/%s service year</string>
-    <string name="msg_contribute">You seem to have used JW Droid for some time. We are glad that you find it useful!\n\nThe app was written in 2010, and now we work on an updated, modern version with new features. You could speed up the development by contributing to the project. Thank you!\n\n&#8212; JW Droid Team</string>
-    <string name="lbl_contribute">We are glad that you find JW Droid useful! The app was written in 2010, and now we work on an updated, modern version with new features. You could speed up the development by contributing to the project. Thank you!</string>
+    <string name="msg_contribute">You seem to have used Ministry Pad for some time. We are glad that you find it useful!\n\nThe app was written in 2010, and now we work on an updated, modern version with new features. You could speed up the development by contributing to the project. Thank you!\n\n&#8212; Ministry Pad Team</string>
+    <string name="lbl_contribute">We are glad that you find Ministry Pad useful! The app was written in 2010, and now we work on an updated, modern version with new features. You could speed up the development by contributing to the project. Thank you!</string>
     <string name="btn_donate">Donate to support development</string>
     <string name="btn_review">Review on Google Play</string>
     <string name="btn_translate">Help with translation</string>
@@ -395,6 +395,8 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
     <string name="action_save_data">Save all data</string>
     <string name="action_restore_data">Restore all data</string>
     <string name="msg_revision_notes_1_5" formatted="true"><b>Version 1.5.0</b>\n\nNow you can save and restore data using any file sharing application installed on the device.\n\nReports can be sent using any text messenger installed on the device.</string>
+
+    <string name="msg_revision_notes_1_5_3" formatted="true"><b>JW Droid is now Ministry Pad!</b>\n\nThe app has been renamed to comply with JW® trademark regulations. The new name "Ministry Pad" will be used from now on.</string>
 
 
 

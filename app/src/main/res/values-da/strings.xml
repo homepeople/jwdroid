@@ -311,9 +311,9 @@ Hvad er nyt i denne udgivelse:
     <item>video fremvisninger</item>
   </string-array>
   <string name="lbl_service_year" formatted="false">%s/%s år tjeneste</string>
-  <string name="msg_contribute">Du synes at have brugt JW Droid i nogen tid. Vi er glade for, at du finder det nyttigt!\n\n
-Den app blev skrevet i 2010, og nu arbejder vi på en opdateret, moderne version med nye funktioner. Du kunne fremskynde udviklingen ved at bidrage til projektet. Tak!\n\n- JW Droid Team</string>
-  <string name="lbl_contribute">Vi er glade for, at du finder JW Droid nyttigt! Den app blev skrevet i 2010, og nu arbejder vi på en opdateret, moderne version med nye funktioner. Du kunne fremskynde udviklingen ved at bidrage til projektet. Tak!</string>
+  <string name="msg_contribute">Du synes at have brugt Ministry Pad i nogen tid. Vi er glade for, at du finder det nyttigt!\n\n
+Den app blev skrevet i 2010, og nu arbejder vi på en opdateret, moderne version med nye funktioner. Du kunne fremskynde udviklingen ved at bidrage til projektet. Tak!\n\n- Ministry Pad Team</string>
+  <string name="lbl_contribute">Vi er glade for, at du finder Ministry Pad nyttigt! Den app blev skrevet i 2010, og nu arbejder vi på en opdateret, moderne version med nye funktioner. Du kunne fremskynde udviklingen ved at bidrage til projektet. Tak!</string>
   <string name="btn_donate">Doner for at støtte udviklingen</string>
   <string name="btn_review">Review om Google Play</string>
   <string name="btn_translate">Hjælp til oversættelse</string>

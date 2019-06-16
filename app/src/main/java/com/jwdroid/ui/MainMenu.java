@@ -268,9 +268,9 @@ public class MainMenu extends AppCompatActivity {
 
     private void showRevisionNotes() {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        if (!prefs.getBoolean("revision_notes_1_5", false)) {
+        if (!prefs.getBoolean("revision_notes_1_5_3", false)) {
             SharedPreferences.Editor editor = prefs.edit();
-            editor.putBoolean("revision_notes_1_5", true);
+            editor.putBoolean("revision_notes_1_5_3", true);
             editor.commit();
 
             DialogFragment dialog = new ChangelogDialog();
@@ -291,7 +291,7 @@ public class MainMenu extends AppCompatActivity {
         public Dialog onCreateDialog(Bundle savedInstanceState) {
             return new AlertDialog.Builder(getActivity())
                     .setTitle(R.string.msg_revision_notes)
-                    .setMessage(R.string.msg_revision_notes_1_5)
+                    .setMessage(R.string.msg_revision_notes_1_5_3)
                     .setPositiveButton(R.string.btn_ok, null).create();
         }
 

@@ -306,8 +306,8 @@ Tag-uri: JW,Martorii lui Iehova, predicare, lucrare, teritoriu, notițe    </str
     <item>Materiale video arătate</item>
   </string-array>
   <string name="lbl_service_year" formatted="false">%s/%s An de serviciu</string>
-  <string name="msg_contribute">Se pare că folosești JW Droid de ceva timp. Ne bucurăm că găsești utilă această aplicație!\n\n Aplicația a fost creată în anul 2010 iar acum lucrăm la o actualizare pentru acea o versiune modernă cu noi opțiuni. Poți grăbi această dezvoltare contribuind la acest proiect. Mulțumim!\n\n Echipa JWDROID</string>
-  <string name="lbl_contribute">Ne bucurăm că JW Droid îți este de folos. Această aplicație a fost realizată în 2010, iar acum lucrăm la o versiune actualizată, modernă, cu noi caracteristici. Poți grăbi acest lucru contribuind şi tu la acest proiect. Mulțumim!</string>
+  <string name="msg_contribute">Se pare că folosești Ministry Pad de ceva timp. Ne bucurăm că găsești utilă această aplicație!\n\n Aplicația a fost creată în anul 2010 iar acum lucrăm la o actualizare pentru acea o versiune modernă cu noi opțiuni. Poți grăbi această dezvoltare contribuind la acest proiect. Mulțumim!\n\n Echipa JWDROID</string>
+  <string name="lbl_contribute">Ne bucurăm că Ministry Pad îți este de folos. Această aplicație a fost realizată în 2010, iar acum lucrăm la o versiune actualizată, modernă, cu noi caracteristici. Poți grăbi acest lucru contribuind şi tu la acest proiect. Mulțumim!</string>
   <string name="btn_donate">Donează şi susține dezvoltarea</string>
   <string name="btn_review">Păreri în Google Play</string>
   <string name="btn_translate">Ajutor la traducere</string>

@@ -16,7 +16,7 @@ Utilidades:
 * Seguimiento detallado de todas las salidas al servicio del campo con todas las estadísticas relevantes.
 * Crear informes mensuales y compartirlos por correo electrónico o SMS.
 * Guardar los datos en Dropbox y sincronizar dispositivos conectados.
-* Aplicación completamente gratis, sin anuncios. Si lo desea, puede hacer donaciones mediante pagos in-app para apoyar el desarrollo de JW Droid.
+* Aplicación completamente gratis, sin anuncios. Si lo desea, puede hacer donaciones mediante pagos in-app para apoyar el desarrollo de Ministry Pad.
 
 Deje sus comentarios o preguntas en nuestra comunidad Google+: https://plus.google.com/communities/112371364498094492171
 
@@ -308,7 +308,7 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes, Testigos 
     <item>presentaciones de vídeos</item>
   </string-array>
   <string name="lbl_service_year" formatted="false">%s/%s año de servicio</string>
-  <string name="msg_contribute">Parece que ha estando JW Droid por algún tiempo ya. ¡Nos complace saber que haya encontrado esta aplicación útil!\n\nLa versión corriente se completó en el 2010, y ahora estamos trabajando en una versión actualizada y moderna, con algunas funciones addicionales. Usted podría colaborar con nosotros para acelerar el desarrollo de la aplicación. ¡Muchas gracias!\n\n— JW Droid Team</string>
+  <string name="msg_contribute">Parece que ha estando Ministry Pad por algún tiempo ya. ¡Nos complace saber que haya encontrado esta aplicación útil!\n\nLa versión corriente se completó en el 2010, y ahora estamos trabajando en una versión actualizada y moderna, con algunas funciones addicionales. Usted podría colaborar con nosotros para acelerar el desarrollo de la aplicación. ¡Muchas gracias!\n\n— Ministry Pad Team</string>
   <string name="lbl_contribute">¡Nos complace saber que haya encontrado esta aplicación útil!\n\nLa versión corriente se completó en el 2010, y ahora estamos trabajando en una versión actualizada y moderna, con algunas funciones addicionales. Usted podría colaborar con nosotros para acelerar el desarrollo de la aplicación. ¡Muchas gracias!</string>
   <string name="btn_donate">Donar para apoyar el desarrollo</string>
   <string name="btn_review">Revisión en Google Play</string>

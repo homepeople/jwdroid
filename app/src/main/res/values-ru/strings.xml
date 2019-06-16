@@ -310,7 +310,7 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
     <item>показов видео</item>
   </string-array>
   <string name="lbl_service_year" formatted="false">%s/%s служебный год</string>
-  <string name="msg_contribute">Похоже, вы используете JW Droid уже некоторое время. Мы рады, что приложение стало для вас полезным!\n\nЭто приложение было написано в 2010 году. Сейчас мы работаем над обновленной современной версией с новыми функциями. Вы можете ускорить разработку, поддержав проект. Спасибо!\n\n— Команда JW Droid</string>
+  <string name="msg_contribute">Похоже, вы используете Ministry Pad уже некоторое время. Мы рады, что приложение стало для вас полезным!\n\nЭто приложение было написано в 2010 году. Сейчас мы работаем над обновленной современной версией с новыми функциями. Вы можете ускорить разработку, поддержав проект. Спасибо!\n\n— Команда Ministry Pad</string>
   <string name="lbl_contribute">Мы рады, что приложение стало для вас полезным!\n\nЭта программа была написана в 2010 году. Сейчас мы работаем над обновленной современной версией с новыми функциями. Вы можете ускорить разработку, поддержав проект. Спасибо!</string>
   <string name="btn_donate">Поддержать материально</string>
   <string name="btn_review">Оставить отзыв в Google Play</string>
@@ -341,4 +341,6 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <string name="action_save_data">Сохранить все данные</string>
   <string name="action_restore_data">Восстановить все данные</string>
   <string name="msg_revision_notes_1_5" formatted="true"><b>Версия 1.5.0</b>\n\nСохранять и восстанавливать резервные копии данных теперь можно с помощью любой подходящей программы, установленной на устройстве.\n\nОтчеты можно слать с помощью любого мессенджера, установленного на устройстве.</string>
+
+  <string name="msg_revision_notes_1_5_3" formatted="true"><b>JW Droid теперь называется Ministry Pad!</b>\n\nПриложение было переименовано для удовлетворения требований зарегистрированной марки JW®. С данного момента будет использоваться новое название "Ministry Pad".</string>
 </resources>

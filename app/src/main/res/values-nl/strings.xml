@@ -307,8 +307,8 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes    </strin
     <item>filmpjes vertoond</item>
   </string-array>
   <string name="lbl_service_year" formatted="false">%s/%s dienstjaar</string>
-  <string name="msg_contribute">Het lijkt erop dat je JW Droid al een tijdje gebruikt. We zijn blij dat je het nuttig vindt!\n\nDe app is gemaakt in 2010 en we werken nu aan een bijgewerkte, modernere versie met nieuwe functies. Je kunt de ontwikkeling versnellen door bij te dragen aan het project. Bij voorbaat dank daarvoor!\n\n--JW Droid Team</string>
-  <string name="lbl_contribute">Het lijkt erop dat je JW Droid al een tijdje gebruikt. We zijn blij dat je het nuttig vindt! De app is gemaakt in 2010 en we werken nu aan een bijgewerkte, modernere versie met nieuwe functies. Je kunt de ontwikkeling versnellen door bij te dragen aan het project. Bij voorbaat dank daarvoor!</string>
+  <string name="msg_contribute">Het lijkt erop dat je Ministry Pad al een tijdje gebruikt. We zijn blij dat je het nuttig vindt!\n\nDe app is gemaakt in 2010 en we werken nu aan een bijgewerkte, modernere versie met nieuwe functies. Je kunt de ontwikkeling versnellen door bij te dragen aan het project. Bij voorbaat dank daarvoor!\n\n--Ministry Pad Team</string>
+  <string name="lbl_contribute">Het lijkt erop dat je Ministry Pad al een tijdje gebruikt. We zijn blij dat je het nuttig vindt! De app is gemaakt in 2010 en we werken nu aan een bijgewerkte, modernere versie met nieuwe functies. Je kunt de ontwikkeling versnellen door bij te dragen aan het project. Bij voorbaat dank daarvoor!</string>
   <string name="btn_donate">Doneer voor verdere ontwikkeling</string>
   <string name="btn_review">Beoordeling op Google Play</string>
   <string name="btn_translate">Help met vertalen</string>

@@ -304,7 +304,7 @@ Tagi: Świadkowie Jehowy, Biblia, służba, głoszenie    </string>
     <item>wyświetlone filmy</item>
   </string-array>
   <string name="lbl_service_year" formatted="false">%s%s służba roczna</string>
-  <string name="msg_contribute">Wygląda na to, że używasz JW Droid już od jakiegoś czasu. Cieszymy się, że jest tobie przydatny!\n\nAplikacja została napisana w 2010 roku i obecnie pracujemy nad zaktualizowaną, nowoczesną wersją z nowymi funkcjami. Możesz przyspieszyć prace rozwojowe przez udział w projekcie. Dziękujemy!\n\n— Zespół JW Droid</string>
+  <string name="msg_contribute">Wygląda na to, że używasz Ministry Pad już od jakiegoś czasu. Cieszymy się, że jest tobie przydatny!\n\nAplikacja została napisana w 2010 roku i obecnie pracujemy nad zaktualizowaną, nowoczesną wersją z nowymi funkcjami. Możesz przyspieszyć prace rozwojowe przez udział w projekcie. Dziękujemy!\n\n— Zespół Ministry Pad</string>
   <string name="lbl_contribute">Cieszymy się, że jest tobie przydatny! Aplikacja została napisana w 2010 roku i obecnie pracujemy nad zaktualizowaną, nowoczesną wersją z nowymi funkcjami. Możesz przyspieszyć prace rozwojowe przez udział w projekcie. Dziękujemy!</string>
   <string name="btn_donate">Dotacja by wesprzeć rozwój</string>
   <string name="btn_review">Wystaw recenzję na Google Play</string>

@@ -59,7 +59,7 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
   <string name="msg_chrono_start">Spustit čas služby?</string>
   <string name="msg_chrono_service_started">Čas služby běží</string>
   <string name="lbl_chrono_current_time">Čas služby:</string>
-  <string name="lbl_chrono_service_note">Stisknutím otevřete JW DROID stopky</string>
+  <string name="lbl_chrono_service_note">Stisknutím otevřete Ministry Pad stopky</string>
   <string name="action_add_single_object">Přidat jednu</string>
   <string name="action_add_many_objects">Přidat několik</string>
   <string name="dlg_add_single_object_note">Například: číslo bytu, domu, nebo jméno</string>
@@ -311,8 +311,8 @@ Tags: JW, Jehovah\'s Witnesses, preaching, ministry, organizer, notes
     <item>přehraných videí</item>
   </string-array>
   <string name="lbl_service_year" formatted="false">%s/%s služební rok</string>
-  <string name="msg_contribute">Vypadá to, že už používáš JW Droid nějakou dobu. Jsme rádi, že je program pro tebe užitečný!\n\nAplikace byla vytvořena v roce 2010 a stále pracujeme na aktualizované, moderní verzi s novými, nebo vylepšenými funkcemi. Vývoj aplikace urychlíš tím, že přispěješ na projekt. Děkujeme!\n\n- JW Droid tým</string>
-  <string name="lbl_contribute">Jsme rádi, že používáte JW Droid! Aplikace byla vytvořena v roce 2010 a stále pracujeme na aktualizované moderní verzi, s novými funkcemi. Vývoj můžete urychlit tím, že přispějete na projekt. Děkuji!</string>
+  <string name="msg_contribute">Vypadá to, že už používáš Ministry Pad nějakou dobu. Jsme rádi, že je program pro tebe užitečný!\n\nAplikace byla vytvořena v roce 2010 a stále pracujeme na aktualizované, moderní verzi s novými, nebo vylepšenými funkcemi. Vývoj aplikace urychlíš tím, že přispěješ na projekt. Děkujeme!\n\n- Ministry Pad tým</string>
+  <string name="lbl_contribute">Jsme rádi, že používáte Ministry Pad! Aplikace byla vytvořena v roce 2010 a stále pracujeme na aktualizované moderní verzi, s novými funkcemi. Vývoj můžete urychlit tím, že přispějete na projekt. Děkuji!</string>
   <string name="btn_donate">Přispět na vývoj</string>
   <string name="btn_review">Přidat recenzi v Obchod Play</string>
   <string name="btn_translate">Pomoc s překladem</string>

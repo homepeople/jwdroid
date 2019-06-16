@@ -309,8 +309,8 @@ Tags: JW, Jehovos liudytojai, skelbti, tarnyba, programėlė, užrašai
     <item>vaizdo siužetai</item>
   </string-array>
   <string name="lbl_service_year" formatted="false">%s–%s tarnybiniai metai</string>
-  <string name="msg_contribute">Atrodo, programa JW Droid naudojatės jau kuris laikas. Džiaugiamės, kad ji jums naudinga!\n\nPrograma buvo sukurta 2010 m. ir dabar kuriame naujesnę, modernesnę jos versiją su naujomis funkcijomis. Prie šios veiklos galite prisidėti ir jūs. Labai ačiū!\n\n(JW Droid komanda)</string>
-  <string name="lbl_contribute">Džiaugiamės, kad programa JW Droid jums naudinga! Ji buvo sukurta 2010 m. ir dabar kuriame naujesnę, modernesnę jos versiją su naujomis funkcijomis. Prie šios veiklos galite prisidėti ir jūs. Labai ačiū!</string>
+  <string name="msg_contribute">Atrodo, programa Ministry Pad naudojatės jau kuris laikas. Džiaugiamės, kad ji jums naudinga!\n\nPrograma buvo sukurta 2010 m. ir dabar kuriame naujesnę, modernesnę jos versiją su naujomis funkcijomis. Prie šios veiklos galite prisidėti ir jūs. Labai ačiū!\n\n(Ministry Pad komanda)</string>
+  <string name="lbl_contribute">Džiaugiamės, kad programa Ministry Pad jums naudinga! Ji buvo sukurta 2010 m. ir dabar kuriame naujesnę, modernesnę jos versiją su naujomis funkcijomis. Prie šios veiklos galite prisidėti ir jūs. Labai ačiū!</string>
   <string name="btn_donate">Paremti programą finansiškai</string>
   <string name="btn_review">Rašyti atsiliepimą Google Play</string>
   <string name="btn_translate">Prisidėti prie vertimo</string>
